@@ -1,4 +1,4 @@
-export const chapters: Record<string, string[]> = {
+{
   "10-English": [
     "A Letter to God",
     "Nelson Mandela: Long Walk to Freedom",
@@ -36,7 +36,11 @@ export const chapters: Record<string, string[]> = {
     "Chapter 12",
     "Chapter 13"
   ],
-  "10-Hindi": ["Kshitij - Bhag 2", "Kritika - Bhag 2", "Sanchayan - Bhag 2"],
+  "10-Hindi": [
+    "Kshitij - Bhag 2",
+    "Kritika - Bhag 2",
+    "Sanchayan - Bhag 2"
+  ],
   "10-Mathematics": [
     "Real Numbers",
     "Polynomials",
@@ -54,7 +58,10 @@ export const chapters: Record<string, string[]> = {
     "Statistics",
     "Probability"
   ],
-  "10-Sanskrit": ["Shemushi - Bhag 2", "Abhyasvan Bhav"],
+  "10-Sanskrit": [
+    "Shemushi - Bhag 2",
+    "Abhyasvan Bhav"
+  ],
   "10-Science": [
     "Chemical Reactions and Equations",
     "Acids, Bases and Salts",
@@ -203,8 +210,22 @@ export const chapters: Record<string, string[]> = {
     "Tuples and Dictionaries",
     "Societal Impact"
   ],
-  "11-Computers and Communication Technology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "11-Creative Writing and Translation": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+  "11-Computers and Communication Technology": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "11-Creative Writing and Translation": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4"
+  ],
   "11-Economics": [
     "Indian Economy on the Eve of Independence",
     "Indian Economy 1950-1990",
@@ -240,7 +261,16 @@ export const chapters: Record<string, string[]> = {
     "Birth",
     "The Tale of Melon City"
   ],
-  "11-Fine Art": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
+  "11-Fine Art": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
   "11-Geography": [
     "Chapter 1",
     "Chapter 2",
@@ -257,7 +287,16 @@ export const chapters: Record<string, string[]> = {
     "Chapter 13",
     "Chapter 14"
   ],
-  "11-Graphics design": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
+  "11-Graphics design": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
   "11-Health and Physical Education": [
     "Chapter 1",
     "Chapter 2",
@@ -283,11 +322,50 @@ export const chapters: Record<string, string[]> = {
     "Chapter 9",
     "Chapter 10"
   ],
-  "11-Hindi": ["Antra - Bhag 1", "Aroh - Bhag 1", "Vitan - Bhag 1"],
-  "11-History": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
-  "11-Home Science": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
-  "11-Informatics Practices": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "11-Knowledge Traditions Practices of India": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9"],
+  "11-Hindi": [
+    "Antra - Bhag 1",
+    "Aroh - Bhag 1",
+    "Vitan - Bhag 1"
+  ],
+  "11-History": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
+  "11-Home Science": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
+  "11-Informatics Practices": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "11-Knowledge Traditions Practices of India": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8",
+    "Chapter 9"
+  ],
   "11-Mathematics": [
     "Sets",
     "Relations and Functions",
@@ -321,9 +399,36 @@ export const chapters: Record<string, string[]> = {
     "Oscillations",
     "Waves"
   ],
-  "11-Political Science": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "11-Psychology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "11-Sangeet": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
+  "11-Political Science": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "11-Psychology": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "11-Sangeet": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
   "11-Sanskrit": [
     "Chapter 1",
     "Chapter 2",
@@ -337,7 +442,13 @@ export const chapters: Record<string, string[]> = {
     "Chapter 10",
     "Chapter 11"
   ],
-  "11-Sociology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
+  "11-Sociology": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5"
+  ],
   "11-Urdu": [
     "Chapter 1",
     "Chapter 2",
@@ -360,7 +471,13 @@ export const chapters: Record<string, string[]> = {
     "Chapter 19",
     "Chapter 20"
   ],
-  "11-Vocational": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
+  "11-Vocational": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5"
+  ],
   "12-Accountancy": [
     "Financial Statements of Not-for-Profit Organisations",
     "Accounting for Partnership Firms - Fundamentals",
@@ -455,7 +572,12 @@ export const chapters: Record<string, string[]> = {
     "Data Communication",
     "Security Aspects"
   ],
-  "12-Creative Writing & Translation": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+  "12-Creative Writing & Translation": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4"
+  ],
   "12-Economics": [
     "Introduction to Macroeconomics",
     "National Income Accounting",
@@ -495,13 +617,66 @@ export const chapters: Record<string, string[]> = {
     "On the Face of It",
     "Memories of Childhood"
   ],
-  "12-Fine Art": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "12-Geography": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8"],
-  "12-Heritage Crafts": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9"],
-  "12-Hindi": ["Antra - Bhag 2", "Aroh - Bhag 2", "Vitan - Bhag 2"],
-  "12-History": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-  "12-Home Science": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
-  "12-Informatics Practices": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
+  "12-Fine Art": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "12-Geography": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "12-Heritage Crafts": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8",
+    "Chapter 9"
+  ],
+  "12-Hindi": [
+    "Antra - Bhag 2",
+    "Aroh - Bhag 2",
+    "Vitan - Bhag 2"
+  ],
+  "12-History": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4"
+  ],
+  "12-Home Science": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
+  "12-Informatics Practices": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
   "12-Mathematics": [
     "Relations and Functions",
     "Inverse Trigonometric Functions",
@@ -548,9 +723,33 @@ export const chapters: Record<string, string[]> = {
     "Semiconductor Electronics",
     "Communication Systems"
   ],
-  "12-Political Science": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
-  "12-Psychology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
-  "12-Sangeet": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
+  "12-Political Science": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
+  "12-Psychology": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
+  "12-Sangeet": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
   "12-Sanskrit": [
     "Chapter 1",
     "Chapter 2",
@@ -563,7 +762,15 @@ export const chapters: Record<string, string[]> = {
     "Chapter 9",
     "Chapter 10"
   ],
-  "12-Sociology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
+  "12-Sociology": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
   "12-Urdu": [
     "Chapter 1",
     "Chapter 2",
@@ -647,7 +854,13 @@ export const chapters: Record<string, string[]> = {
     "Chapter 22",
     "Chapter 23"
   ],
-  "14-Vocational": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
+  "14-Vocational": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5"
+  ],
   "6-Arts": [
     "Chapter 1",
     "Chapter 2",
@@ -672,7 +885,13 @@ export const chapters: Record<string, string[]> = {
     "Chapter 21",
     "Chapter 22"
   ],
-  "6-English": ["Fables and Folk Tales", "Friendship", "Nurturing Nature", "Sports and Wellness", "Culture and Tradition"],
+  "6-English": [
+    "Fables and Folk Tales",
+    "Friendship",
+    "Nurturing Nature",
+    "Sports and Wellness",
+    "Culture and Tradition"
+  ],
   "6-Hindi": [
     "मातृभूमि",
     "गोल",
@@ -755,7 +974,13 @@ export const chapters: Record<string, string[]> = {
     "Chapter 12",
     "Chapter 13"
   ],
-  "6-Physical Education and Well Being": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
+  "6-Physical Education and Well Being": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5"
+  ],
   "6-Punjabi": [
     "Chapter 1",
     "Chapter 2",
@@ -869,7 +1094,14 @@ export const chapters: Record<string, string[]> = {
     "Chapter 13",
     "Chapter 14"
   ],
-  "6-Vocational Education": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"],
+  "6-Vocational Education": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6"
+  ],
   "7-Arts": [
     "Chapter 1",
     "Chapter 2",
@@ -938,7 +1170,14 @@ export const chapters: Record<string, string[]> = {
     "Constructions and Tilings",
     "Finding the Unknown"
   ],
-  "7-Physical Education and Well Being": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"],
+  "7-Physical Education and Well Being": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6"
+  ],
   "7-Sanskrit": [
     "वन्दे भारतमातरम्",
     "नित्यं पिबामः सुभाषितरसम्",
@@ -1001,7 +1240,15 @@ export const chapters: Record<string, string[]> = {
     "Chapter 13",
     "Chapter 14"
   ],
-  "7-Vocational Education": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
+  "7-Vocational Education": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
   "8-Arts": [
     "Chapter 1",
     "Chapter 2",
@@ -1058,7 +1305,14 @@ export const chapters: Record<string, string[]> = {
     "Algebra Play",
     "Area"
   ],
-  "8-Physical Education and Well Being": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"],
+  "8-Physical Education and Well Being": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6"
+  ],
   "8-Sanskrit": [
     "संगच्छध्वं संवदध्वम्",
     "अल्पानामपि वस्तूनां संहतिः कार्यसाधिका",
@@ -1131,7 +1385,15 @@ export const chapters: Record<string, string[]> = {
     "Chapter 21",
     "Chapter 22"
   ],
-  "8-Vocational Education": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
+  "8-Vocational Education": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7"
+  ],
   "9-Arts": [
     "Chapter 1",
     "Chapter 2",
@@ -1172,7 +1434,11 @@ export const chapters: Record<string, string[]> = {
     "A House is Not a Home",
     "The Beggar"
   ],
-  "9-Hindi": ["Kshitij - Bhag 1", "Kritika - Bhag 1", "Sanchayan - Bhag 1"],
+  "9-Hindi": [
+    "Kshitij - Bhag 1",
+    "Kritika - Bhag 1",
+    "Sanchayan - Bhag 1"
+  ],
   "9-Mathematics": [
     "Orienting Yourself: The Use of Coordinates",
     "Introduction to Linear Polynomials",
@@ -1183,8 +1449,18 @@ export const chapters: Record<string, string[]> = {
     "The Mathematics of Maybe: Introduction to Probability",
     "Predicting What Comes Next?: Exploring Sequences and Progressions"
   ],
-  "9-Physical Education and Well Being": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"],
-  "9-Sanskrit": ["Shemushi - Bhag 1", "Abhyasvan Bhav"],
+  "9-Physical Education and Well Being": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5",
+    "Chapter 6"
+  ],
+  "9-Sanskrit": [
+    "Shemushi - Bhag 1",
+    "Abhyasvan Bhav"
+  ],
   "9-Science": [
     "Matter in Our Surroundings",
     "Is Matter Around Us Pure?",
@@ -1252,14 +1528,11 @@ export const chapters: Record<string, string[]> = {
     "Chapter 14",
     "Chapter 15"
   ],
-  "9-Vocational": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
-};
-
-export function getChapters(classId: number, subject: string): string[] {
-  const key = `${classId}-${subject}`;
-  return chapters[key] || Array.from({ length: classId >= 11 ? 12 : 10 }, (_, i) => `Chapter ${i + 1} (Placeholder)`);
-}
-
-export function isPlaceholder(classId: number, subject: string): boolean {
-  return !chapters[`${classId}-${subject}`];
+  "9-Vocational": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3",
+    "Chapter 4",
+    "Chapter 5"
+  ]
 }
