@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
 import FeatureCard from "@/components/cards/FeatureCard";
@@ -21,25 +21,52 @@ function StatCard({ target, label }: { target: number; label: string }) {
   );
 }
 
+function Particles() {
+  const [particles, setParticles] = useState<React.ReactNode[]>([]);
+
+  useEffect(() => {
+    setParticles(
+      Array.from({ length: 8 }, (_, i) => (
+        <div
+          key={i}
+          className="ph-particle"
+          style={{
+            width: `${12 + Math.random() * 20}px`,
+            height: `${12 + Math.random() * 20}px`,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDuration: `${15 + Math.random() * 15}s`,
+            animationDelay: `${Math.random() * -20}s`,
+            opacity: `${0.03 + Math.random() * 0.05}`,
+          }}
+        />
+      ))
+    );
+  }, []);
+
+  return <>{particles}</>;
+}
+
+function SectionErrorBoundary({ children, label }: { children: React.ReactNode; label: string }) {
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    const handler = (event: ErrorEvent) => {
+      console.error(`Section "${label}" error:`, event.error);
+      setHasError(true);
+    };
+    window.addEventListener("error", handler);
+    return () => window.removeEventListener("error", handler);
+  }, [label]);
+
+  if (hasError) {
+    return <div className="sec" role="alert">⚠️ Failed to load {label}</div>;
+  }
+
+  return <>{children}</>;
+}
+
 export default function HomePage() {
-  const router = useRouter();
-
-  const particles = Array.from({ length: 8 }, (_, i) => (
-    <div
-      key={i}
-      className="ph-particle"
-      style={{
-        width: `${12 + Math.random() * 20}px`,
-        height: `${12 + Math.random() * 20}px`,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        animationDuration: `${15 + Math.random() * 15}s`,
-        animationDelay: `${Math.random() * -20}s`,
-        opacity: `${0.03 + Math.random() * 0.05}`,
-      }}
-    />
-  ));
-
   return (
     <>
       {/* Hero Section */}
@@ -47,7 +74,9 @@ export default function HomePage() {
         <div className="ph-bg" />
         <div className="ph-grid" />
         <div className="ph-glow" />
-        <div className="ph-particles">{particles}</div>
+        <div className="ph-particles">
+          <Particles />
+        </div>
         <div className="ph-fade" />
         <div className="hero-c">
           <div className="hero-seq hero-pill">
@@ -75,35 +104,43 @@ export default function HomePage() {
       </section>
 
       {/* Classes Section */}
-      <section className="sec" aria-label="Class selection">
-        <div className="sec-h reveal">
-          <div className="lab">Explore Classes</div>
-          <h2>Choose Your Class</h2>
-          <p>Complete NCERT-aligned study material for every grade</p>
-        </div>
-        <div className="g g-cls stagger">
-          {classes.map((cls) => (
-            <ClassCard key={cls.id} classData={cls} />
-          ))}
-        </div>
-      </section>
+      <SectionErrorBoundary label="Classes">
+        <section className="sec" aria-label="Class selection">
+          <div className="sec-h reveal">
+            <div className="lab">Explore Classes</div>
+            <h2>Choose Your Class</h2>
+            <p>Complete NCERT-aligned study material for every grade</p>
+          </div>
+          <div className="g g-cls stagger">
+            {classes && classes.length > 0
+              ? classes.map((cls) => (
+                  <ClassCard key={cls.id} classData={cls} />
+                ))
+              : <p className="empty-state">No classes available</p>}
+          </div>
+        </section>
+      </SectionErrorBoundary>
 
       {/* Features Section */}
-      <div className="sec-divider" />
-      <section className="sec" aria-label="Features">
-        <div className="sec-h reveal">
-          <div className="lab">Why StudyVerse</div>
-          <h2>Everything You Need to Succeed</h2>
-          <p>
-            Comprehensive learning resources designed for CBSE students
-          </p>
-        </div>
-        <div className="g g-4 stagger">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} {...feature} />
-          ))}
-        </div>
-      </section>
+      <SectionErrorBoundary label="Features">
+        <div className="sec-divider" />
+        <section className="sec" aria-label="Features">
+          <div className="sec-h reveal">
+            <div className="lab">Why StudyVerse</div>
+            <h2>Everything You Need to Succeed</h2>
+            <p>
+              Comprehensive learning resources designed for CBSE students
+            </p>
+          </div>
+          <div className="g g-4 stagger">
+            {features && features.length > 0
+              ? features.map((feature) => (
+                  <FeatureCard key={feature.title} {...feature} />
+                ))
+              : <p className="empty-state">No features available</p>}
+          </div>
+        </section>
+      </SectionErrorBoundary>
     </>
   );
 }
