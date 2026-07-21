@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Class } from "@/types";
+import { getSubjectIcon } from "@/data/subject-icons";
 
 interface ClassCardProps {
   classData: Class;
@@ -20,7 +21,7 @@ export default function ClassCard({ classData }: ClassCardProps) {
       <div className="meta">{subjects.length} Subjects</div>
       <div className="subj-preview">
         {subjects.slice(0, 6).map((s) => (
-          <span key={s}>📘</span>
+          <span key={s}>{getSubjectIcon(s)}</span>
         ))}
       </div>
     </Link>

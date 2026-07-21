@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { classes } from "@/data/classes";
+import { getSubjectIcon } from "@/data/subject-icons";
 
 export const metadata: Metadata = {
   title: "All Classes — StudyVerse",
@@ -67,7 +68,7 @@ export default function ClassesPage() {
               <div className="meta">{cls.subjects.length} Subjects</div>
               <div className="subj-preview">
                 {cls.subjects.slice(0, 6).map((s) => (
-                  <span key={s}>📘</span>
+                  <span key={s}>{getSubjectIcon(s)}</span>
                 ))}
               </div>
             </Link>
