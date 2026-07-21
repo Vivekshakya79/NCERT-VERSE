@@ -1,0 +1,134 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model for authentication and profiles
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  passwordHash  String?
+  image         String?
+  role          UserRole @default(STUDENT)
+  streak        Int      @default(0)
+  lastActive    DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  bookmarks    Bookmark[]
+  quizResults  QuizResult[]
+  progress     Progress[]
+  sessions     Session[]
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+enum UserRole {
+  STUDENT
+  ADMIN
+}
+
+// Content models
+model Subject {
+  id        String   @id @default(cuid())
+  name      String
+  classId   String
+  icon      String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  class       Class       @relation(fields: [classId], references: [id])
+  chapters    Chapter[]
+  quizResults QuizResult[]
+  progress    Progress[]
+}
+
+model Class {
+  id        String   @id @default(cuid())
+  number    Int      @unique
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  subjects  Subject[]
+  chapters  Chapter[]
+  progress  Progress[]
+}
+
+model Chapter {
+  id        String   @id @default(cuid())
+  number    Int
+  name      String
+  subjectId String
+  classId   String
+  content   String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  subject     Subject       @relation(fields: [subjectId], references: [id])
+  class       Class         @relation(fields: [classId], references: [id])
+  bookmarks   Bookmark[]
+  quizResults QuizResult[]
+  progress    Progress[]
+}
+
+// Bookmark model (server-side persistence)
+model Bookmark {
+  id        String   @id @default(cuid())
+  userId    String
+  chapterId String
+  createdAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id])
+  chapter Chapter @relation(fields: [chapterId], references: [id])
+
+  @@unique([userId, chapterId])
+}
+
+// Quiz results
+model QuizResult {
+  id        String   @id @default(cuid())
+  userId    String
+  subjectId String
+  chapterId String?
+  score     Int
+  total     Int
+  createdAt DateTime @default(now())
+
+  user    User     @relation(fields: [userId], references: [id])
+  subject Subject  @relation(fields: [subjectId], references: [id])
+  chapter Chapter? @relation(fields: [chapterId], references: [id])
+}
+
+// User progress tracking
+model Progress {
+  id        String   @id @default(cuid())
+  userId    String
+  classId   String
+  subjectId String
+  chapterId String?
+  completed Boolean  @default(false)
+  timeSpent Int      @default(0) // in minutes
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user    User     @relation(fields: [userId], references: [id])
+  class   Class    @relation(fields: [classId], references: [id])
+  subject Subject  @relation(fields: [subjectId], references: [id])
+  chapter Chapter? @relation(fields: [chapterId], references: [id])
+
+  @@unique([userId, classId, subjectId, chapterId])
+}
