@@ -6,6 +6,7 @@ import ScrollProgress from "@/components/layout/ScrollProgress";
 import BackToTop from "@/components/layout/BackToTop";
 import KeyboardShortcutsModal from "@/components/layout/KeyboardShortcutsModal";
 import ToastContainer from "@/components/layout/ToastContainer";
+import RevealObserver from "@/components/layout/RevealObserver";
 
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +20,7 @@ export default function LayoutClient({ children }: { children: React.ReactNode }
       <KeyboardShortcutsModal />
       <ToastContainer />
       <Footer />
+      <RevealObserver />
     </>
   );
 }

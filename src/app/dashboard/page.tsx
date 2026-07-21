@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Particles from "@/components/features/Particles";
 
 const dashboardStats = [
   { label: "Study Hours", value: "14.5", change: "↑ 23%", changeType: "up" as const },
@@ -23,29 +24,13 @@ const subjectProgress = [
 ];
 
 export default function DashboardPage() {
-  const particles = Array.from({ length: 8 }, (_, i) => (
-    <div
-      key={i}
-      className="ph-particle"
-      style={{
-        width: `${12 + Math.random() * 20}px`,
-        height: `${12 + Math.random() * 20}px`,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        animationDuration: `${15 + Math.random() * 15}s`,
-        animationDelay: `${Math.random() * -20}s`,
-        opacity: `${0.03 + Math.random() * 0.05}`,
-      }}
-    />
-  ));
-
   return (
     <>
       <div className="ph">
         <div className="ph-bg" />
         <div className="ph-grid" />
         <div className="ph-glow" />
-        <div className="ph-particles">{particles}</div>
+        <div className="ph-particles"><Particles /></div>
         <div className="ph-fade" />
         <div className="ph-content">
           <div className="ph-badge">Dashboard</div>
