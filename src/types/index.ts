@@ -2,6 +2,7 @@ export interface Class {
   id: number;
   name: string;
   subjects: string[];
+  hiddenSubjects?: string[];
 }
 
 export interface SubjectIconMap {

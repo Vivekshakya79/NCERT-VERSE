@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getClassById } from "@/data/classes";
+import { getClassById, isSubjectHidden } from "@/data/classes";
 import { getChapters, isPlaceholder } from "@/data/chapters";
 import { getSubjectIcon } from "@/data/subject-icons";
 
@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cls = getClassById(parseInt(classId));
   const decodedSubject = decodeURIComponent(subject);
   if (!cls) return { title: "Not Found — StudyVerse" };
+  if (isSubjectHidden(cls.id, decodedSubject)) return { title: "Not Found — StudyVerse" };
   return {
     title: `${decodedSubject} — Class ${classId} — StudyVerse`,
     description: `Complete study material for ${decodedSubject} Class ${classId} CBSE. Access NCERT solutions, chapter notes, MCQs, and more.`,
@@ -30,6 +31,7 @@ export default async function SubjectPage({ params }: Props) {
   const cls = getClassById(parseInt(classId));
   const decodedSubject = decodeURIComponent(subject);
   if (!cls) notFound();
+  if (isSubjectHidden(cls.id, decodedSubject)) notFound();
 
   const chapters = getChapters(cls.id, decodedSubject);
   const ph = isPlaceholder(cls.id, decodedSubject);

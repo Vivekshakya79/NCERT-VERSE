@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getClassById } from "@/data/classes";
+import { getClassById, isSubjectHidden } from "@/data/classes";
 import { getChapters } from "@/data/chapters";
 import { getSubjectIcon } from "@/data/subject-icons";
 import ChapterClient from "./chapter-client";
@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const chapterIdx = parseInt(chapter);
 
   if (!cls) return { title: "Not Found — StudyVerse" };
+  if (isSubjectHidden(cls.id, decodedSubject)) return { title: "Not Found — StudyVerse" };
   const chapters = getChapters(cls.id, decodedSubject);
   const chapterName = chapters[chapterIdx] || "Unknown Chapter";
 
@@ -38,6 +39,7 @@ export default async function ChapterPage({ params }: Props) {
   const chapterIdx = parseInt(chapter);
 
   if (!cls) notFound();
+  if (isSubjectHidden(cls.id, decodedSubject)) notFound();
   const chapters = getChapters(cls.id, decodedSubject);
   const chapterName = chapters[chapterIdx] || "Unknown Chapter";
   if (chapterIdx >= chapters.length) notFound();

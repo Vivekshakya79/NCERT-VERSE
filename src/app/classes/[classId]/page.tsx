@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getClassById } from "@/data/classes";
-import { getChapters, isPlaceholder } from "@/data/chapters";
+import { getClassById, getVisibleSubjects } from "@/data/classes";
+import { getChapters } from "@/data/chapters";
 import { getSubjectIcon } from "@/data/subject-icons";
 
 interface Props {
@@ -28,6 +28,8 @@ export default async function ClassPage({ params }: Props) {
   const { classId } = await params;
   const cls = getClassById(parseInt(classId));
   if (!cls) notFound();
+
+  const visibleSubjects = getVisibleSubjects(cls);
 
   const particles = Array.from({ length: 8 }, (_, i) => (
     <div
@@ -56,7 +58,7 @@ export default async function ClassPage({ params }: Props) {
         <div className="ph-content">
           <div className="ph-badge">CBSE 2026-27</div>
           <h1>{cls.name}</h1>
-          <p>{cls.subjects.length} subjects</p>
+          <p>{visibleSubjects.length} subjects</p>
         </div>
       </div>
 
@@ -74,7 +76,7 @@ export default async function ClassPage({ params }: Props) {
         </div>
 
         <div className="g g-4 stagger">
-          {cls.subjects.map((subject) => {
+          {visibleSubjects.map((subject) => {
             const chapters = getChapters(cls.id, subject);
             return (
               <Link

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getClassById } from "@/data/classes";
+import { getClassById, getVisibleSubjects } from "@/data/classes";
 import { getSubjectIcon } from "@/data/subject-icons";
 
 interface Props {
@@ -23,6 +23,8 @@ export default async function NCERTClassPage({ params }: Props) {
   const { classId } = await params;
   const cls = getClassById(parseInt(classId));
   if (!cls) notFound();
+
+  const visibleSubjects = getVisibleSubjects(cls);
 
   const particles = Array.from({ length: 8 }, (_, i) => (
     <div
@@ -65,7 +67,7 @@ export default async function NCERTClassPage({ params }: Props) {
         </nav>
 
         <div className="g g-4 stagger">
-          {cls.subjects.map((subject) => (
+          {visibleSubjects.map((subject) => (
             <Link
               key={subject}
               href={`/ncert/${cls.id}/${encodeURIComponent(subject)}`}

@@ -14,6 +14,17 @@ const classes = [
   { number: 14, name: "Vocational" },
 ];
 
+const HIDDEN_SUBJECTS = new Set([
+  "Urdu", "Sanskrit", "Skill Education", "Vocational", "Vocational Education",
+  "Physical Education and Well Being", "Health and Physical Education", "Arts",
+  "Kannada", "Malayalam", "Marathi", "Nepali", "Punjabi", "Santhali", "Tamil",
+  "Fine Art", "Sangeet", "Heritage Crafts", "Creative Writing and Translation",
+  "Creative Writing & Translation", "Graphics design", "New Age Graphics Design",
+  "Computers and Communication Technology", "Knowledge Traditions Practices of India",
+]);
+
+// Keep ALL subjects (visible + hidden) so the DB has a complete record.
+// Hidden subjects are marked with hidden:true but are not deleted.
 const subjectsByClass = {
   6: ["Arts", "English", "Hindi", "Kannada", "Malayalam", "Marathi", "Mathematics", "Nepali", "Physical Education and Well Being", "Punjabi", "Sanskrit", "Santhali", "Science", "Social Science", "Tamil", "Urdu", "Vocational Education"],
   7: ["Arts", "English", "Hindi", "Mathematics", "Physical Education and Well Being", "Sanskrit", "Science", "Social Science", "Urdu", "Vocational Education"],
@@ -162,11 +173,13 @@ async function main() {
     if (!cls) continue;
 
     for (const subjectName of subjectList) {
+      const isHidden = HIDDEN_SUBJECTS.has(subjectName);
       const subject = await prisma.subject.create({
         data: {
           name: subjectName,
           classId: cls.id,
           order: subjectList.indexOf(subjectName),
+          hidden: isHidden,
         },
       });
 

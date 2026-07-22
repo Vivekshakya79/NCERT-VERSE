@@ -1,5 +1,6 @@
 import { classes } from "@/data/classes";
 import { getChapters } from "@/data/chapters";
+import { isSubjectHidden } from "@/data/classes";
 
 export interface SearchMatch {
   title: string;
@@ -21,6 +22,9 @@ export function performSearch(query: string): SearchMatch[] {
       });
     }
     cls.subjects.forEach((sub) => {
+      // Skip hidden subjects in search results
+      if (isSubjectHidden(cls.id, sub)) return;
+
       if (sub.toLowerCase().includes(lq)) {
         results.push({
           title: sub,
