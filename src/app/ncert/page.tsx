@@ -34,7 +34,7 @@ export default function NCERTPage() {
 
   return (
     <>
-      <div className="ph">
+      <div className="ph ph-ncert">
         <div className="ph-bg" />
         <div className="ph-grid" />
         <div className="ph-glow" />
@@ -47,14 +47,14 @@ export default function NCERTPage() {
         </div>
       </div>
 
-      <section className="sec">
+      <section className="sec sec-ncert">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link>
           <span aria-hidden="true">›</span>
           <span aria-current="page">NCERT</span>
         </nav>
 
-        <div className="g g-cls stagger">
+        <div className="g-cls-ncert stagger">
           {classes.map((cls) => (
             <Link
               key={cls.id}
