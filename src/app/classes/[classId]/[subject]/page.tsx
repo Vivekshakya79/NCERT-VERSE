@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getClassById, isSubjectHidden } from "@/data/classes";
 import { getChapters, isPlaceholder } from "@/data/chapters";
 import { getSubjectIcon } from "@/data/subject-icons";
@@ -15,6 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const decodedSubject = decodeURIComponent(subject);
   if (!cls) return { title: "Not Found — StudyVerse" };
   if (isSubjectHidden(cls.id, decodedSubject)) return { title: "Not Found — StudyVerse" };
+  // For Class 9 Mathematics, redirect metadata to NCERT section
+  if (cls.id === 9 && decodedSubject === "Mathematics") {
+    redirect(`/ncert/${cls.id}/${encodeURIComponent(decodedSubject)}`);
+  }
   return {
     title: `${decodedSubject} — Class ${classId} — StudyVerse`,
     description: `Complete study material for ${decodedSubject} Class ${classId} CBSE. Access NCERT solutions, chapter notes, MCQs, and more.`,
@@ -32,6 +36,11 @@ export default async function SubjectPage({ params }: Props) {
   const decodedSubject = decodeURIComponent(subject);
   if (!cls) notFound();
   if (isSubjectHidden(cls.id, decodedSubject)) notFound();
+
+  // For Class 9 Mathematics, redirect to the NCERT Ganita Manjari solutions
+  if (cls.id === 9 && decodedSubject === "Mathematics") {
+    redirect(`/ncert/${cls.id}/${encodeURIComponent(decodedSubject)}`);
+  }
 
   const chapters = getChapters(cls.id, decodedSubject);
   const ph = isPlaceholder(cls.id, decodedSubject);

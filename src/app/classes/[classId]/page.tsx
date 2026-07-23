@@ -78,10 +78,14 @@ export default async function ClassPage({ params }: Props) {
         <div className="g g-4 stagger">
           {visibleSubjects.map((subject) => {
             const chapters = getChapters(cls.id, subject);
+            // For Class 9 Mathematics, link directly to the NCERT Ganita Manjari solutions
+            const href = cls.id === 9 && subject === "Mathematics"
+              ? `/ncert/${cls.id}/${encodeURIComponent(subject)}`
+              : `/classes/${cls.id}/${encodeURIComponent(subject)}`;
             return (
               <Link
                 key={subject}
-                href={`/classes/${cls.id}/${encodeURIComponent(subject)}`}
+                href={href}
                 className="chip"
               >
                 <span className="chip-ico" aria-hidden="true">
