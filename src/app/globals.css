@@ -1963,3 +1963,512 @@
 [data-theme="dark"] .skeleton {
   background: linear-gradient(90deg, var(--bd-l) 25%, #334155 50%, var(--bd-l) 75%);
 }
+
+/* ===== SOLUTION VIEWER ===== */
+.sol-sec {
+  padding-top: 20px;
+}
+
+/* Exercise List */
+.ex-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+.ex-item {
+  background: var(--card);
+  border: 1.5px solid var(--bd);
+  border-radius: var(--r-sm);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  box-shadow: var(--sh);
+  transition: border-color var(--hover), box-shadow var(--hover), transform var(--hover);
+}
+.ex-item:hover {
+  border-color: var(--pri);
+  transform: translateY(-2px);
+  box-shadow: var(--sh-h);
+}
+.ex-item-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.ex-item-content { flex: 1; min-width: 0; }
+.ex-item-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tx);
+  margin-bottom: 2px;
+  font-family: var(--body);
+}
+.ex-item-content p {
+  font-size: 13px;
+  color: var(--tx-3);
+}
+.sol-badge-ready {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: rgba(34,197,94,.08);
+  color: var(--success);
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: var(--body);
+  margin-left: 8px;
+}
+
+/* Exercise Header */
+.ex-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.ex-header-info { flex: 1; }
+.ex-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--heading);
+  margin-bottom: 4px;
+}
+.ex-meta {
+  font-size: 14px;
+  color: var(--tx-3);
+}
+
+/* Question Grid */
+.sol-question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+.sol-q-card {
+  background: var(--card);
+  border: 1.5px solid var(--bd);
+  border-radius: var(--r);
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: var(--sh);
+  transition: border-color var(--hover), box-shadow var(--hover), transform var(--hover);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sol-q-card:hover {
+  border-color: var(--pri);
+  transform: translateY(-3px);
+  box-shadow: var(--sh-h);
+}
+.sol-q-card-num {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pri);
+  font-family: var(--heading);
+}
+.sol-q-card-preview {
+  font-size: 14px;
+  color: var(--tx-2);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.sol-q-card-steps {
+  font-size: 12px;
+  color: var(--tx-3);
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* Solution Viewer */
+.sol-viewer {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Progress */
+.sol-progress {
+  background: var(--card);
+  border: 1.5px solid var(--bd);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--sh);
+}
+.sol-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.sol-progress-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tx-2);
+}
+.sol-progress-pct {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pri);
+}
+.sol-progress-bar {
+  height: 6px;
+  background: var(--bd-l);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.sol-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--pri), var(--pri-xl));
+  border-radius: 99px;
+  transition: width 300ms ease;
+}
+
+/* Exercise Tabs */
+.sol-ex-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.sol-ex-tab {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--bd);
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tx-2);
+  cursor: pointer;
+  transition: border-color var(--hover), color var(--hover), background var(--hover);
+}
+.sol-ex-tab:hover {
+  border-color: var(--pri);
+  color: var(--pri);
+}
+.sol-ex-tab.on {
+  background: var(--pri);
+  color: #fff;
+  border-color: var(--pri);
+}
+
+/* Question Number Nav */
+.sol-q-nav {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.sol-q-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid var(--bd);
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tx-2);
+  cursor: pointer;
+  transition: border-color var(--hover), color var(--hover), background var(--hover), transform var(--hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sol-q-dot:hover {
+  border-color: var(--pri);
+  color: var(--pri);
+  transform: translateY(-1px);
+}
+.sol-q-dot.on {
+  background: var(--pri);
+  color: #fff;
+  border-color: var(--pri);
+  transform: scale(1.1);
+}
+
+/* Cards */
+.sol-card {
+  background: var(--card);
+  border: 1.5px solid var(--bd);
+  border-radius: var(--r);
+  padding: 24px 28px;
+  margin-bottom: 16px;
+  box-shadow: var(--sh);
+  transition: border-color var(--hover), box-shadow var(--hover);
+}
+.sol-card:hover {
+  border-color: rgba(37,99,235,.2);
+  box-shadow: var(--sh-h);
+}
+.sol-card-answer {
+  border-left: 4px solid var(--success);
+}
+.sol-card-formula {
+  border-left: 4px solid var(--warning);
+  background: rgba(245,158,11,.02);
+}
+.sol-card-notes {
+  border-left: 4px solid var(--pri);
+  background: rgba(37,99,235,.02);
+}
+.sol-card-header {
+  margin-bottom: 14px;
+}
+
+/* Badges */
+.sol-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  background: rgba(37,99,235,.08);
+  border: 1px solid rgba(37,99,235,.12);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--pri);
+  font-family: var(--body);
+}
+.sol-badge-green {
+  background: rgba(34,197,94,.08);
+  border-color: rgba(34,197,94,.12);
+  color: var(--success);
+}
+.sol-badge-purple {
+  background: rgba(168,85,247,.08);
+  border-color: rgba(168,85,247,.12);
+  color: #A855F7;
+}
+.sol-badge-orange {
+  background: rgba(245,158,11,.08);
+  border-color: rgba(245,158,11,.12);
+  color: var(--warning);
+}
+.sol-badge-blue {
+  background: rgba(37,99,235,.08);
+  border-color: rgba(37,99,235,.12);
+  color: var(--pri);
+}
+.sol-badge-teal {
+  background: rgba(20,184,166,.08);
+  border-color: rgba(20,184,166,.12);
+  color: #14B8A6;
+}
+.sol-badge-yellow {
+  background: rgba(245,158,11,.08);
+  border-color: rgba(245,158,11,.12);
+  color: #D97706;
+}
+
+/* Question */
+.sol-question-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--tx);
+}
+.sol-question-text strong {
+  color: var(--tx);
+}
+
+/* Steps */
+.sol-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sol-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.sol-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--pri);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--heading);
+}
+.sol-step-content {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--tx-2);
+  padding-top: 4px;
+}
+
+/* Answer */
+.sol-answer {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--tx);
+  line-height: 1.7;
+}
+
+/* Formula Box */
+.sol-formula-box {
+  padding: 16px;
+  border-radius: var(--r-sm);
+}
+.sol-formula-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--tx);
+  margin-bottom: 8px;
+}
+.sol-formula-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--tx-2);
+  font-family: "Times New Roman", serif;
+}
+
+/* Table */
+.sol-table-wrapper {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+.sol-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.sol-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: var(--tx-2);
+  background: var(--bg);
+  border-bottom: 2px solid var(--bd);
+  font-size: 14px;
+}
+.sol-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--bd-l);
+  color: var(--tx-2);
+}
+.sol-table tr:hover td {
+  background: rgba(37,99,235,.02);
+}
+
+/* Diagram */
+.sol-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+.sol-diagram-inner {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.sol-diagram-inner svg {
+  max-width: 100%;
+  height: auto;
+}
+.sol-diagram-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--r-sm);
+  box-shadow: var(--sh);
+}
+.sol-diagram-caption {
+  font-size: 13px;
+  color: var(--tx-3);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Notes */
+.sol-notes {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--tx-2);
+  padding: 8px 0;
+}
+
+/* Navigation Buttons */
+.sol-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.sol-nav-buttons .btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Empty State */
+.sol-empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+.sol-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.sol-empty h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.sol-empty p {
+  font-size: 16px;
+  color: var(--tx-3);
+  margin-bottom: 24px;
+}
+
+/* LaTeX styles */
+.sol-latex {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  color: var(--tx);
+  padding: 0 2px;
+}
+.sol-latex-block {
+  display: block;
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--tx);
+  padding: 8px 0;
+  margin: 8px 0;
+  background: rgba(37,99,235,.02);
+  border-radius: var(--r-sm);
+}
+
+/* Dark mode overrides for solution viewer */
+[data-theme="dark"] .sol-card:hover {
+  border-color: rgba(37,99,235,.3);
+}
+[data-theme="dark"] .sol-step-num {
+  background: var(--pri-l);
+}
+[data-theme="dark"] .sol-badge {
+  background: rgba(37,99,235,.15);
+  border-color: rgba(37,99,235,.2);
+}
+[data-theme="dark"] .sol-latex-block {
+  background: rgba(37,99,235,.05);
+}
+[data-theme="dark"] .ex-item:hover {
+  border-color: rgba(37,99,235,.3);
+  box-shadow: 0 8px 24px -4px rgba(37,99,235,.15), 0 4px 8px -2px rgba(0,0,0,.2);
+}

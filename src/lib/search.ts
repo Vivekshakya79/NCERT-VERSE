@@ -1,6 +1,7 @@
 import { classes } from "@/data/classes";
 import { getChapters } from "@/data/chapters";
 import { isSubjectHidden } from "@/data/classes";
+import { searchSolutions } from "@/data/solutions-data";
 
 export interface SearchMatch {
   title: string;
@@ -44,5 +45,15 @@ export function performSearch(query: string): SearchMatch[] {
     });
   });
 
-  return results.slice(0, 8);
+  // Include solution search results
+  const solutionResults = searchSolutions(query);
+  solutionResults.forEach((sr) => {
+    results.push({
+      title: `Q${sr.question.questionNumber} — ${sr.exerciseName} — ${sr.chapterName}`,
+      meta: `Class ${sr.classId} · ${sr.subject} · Solution`,
+      href: `/ncert/${sr.classId}/${encodeURIComponent(sr.subject)}/${sr.chapterIdx}/exercise/${encodeURIComponent(sr.exerciseName)}/${sr.question.id}`,
+    });
+  });
+
+  return results.slice(0, 12);
 }

@@ -83,6 +83,53 @@ export interface ChapterSection {
   description: string;
 }
 
+// Solution types
+export interface SolutionStep {
+  step: number;
+  content: string; // Markdown + LaTeX
+}
+
+export interface FormulaBox {
+  title: string;
+  content: string; // LaTeX
+}
+
+export interface QuestionSolution {
+  id: string;
+  questionNumber: number;
+  question: string; // Markdown + LaTeX
+  solution: SolutionStep[];
+  answer?: string;
+  formulaBox?: FormulaBox;
+  diagram?: {
+    type: "svg" | "canvas" | "image";
+    content: string;
+    caption?: string;
+  };
+  notes?: string;
+  tableData?: {
+    headers: string[];
+    rows: string[][];
+  };
+}
+
+export interface Exercise {
+  name: string; // e.g., "Exercise 1.1"
+  questions: QuestionSolution[];
+}
+
+export interface ChapterSolutions {
+  classId: number;
+  subject: string;
+  chapterIdx: number;
+  chapterName: string;
+  exercises: Exercise[];
+}
+
+export interface SolutionsData {
+  [key: string]: ChapterSolutions; // key: "{classId}-{subject}-{chapterIdx}"
+}
+
 export interface BreadcrumbItem {
   label: string;
   href?: string;
