@@ -220,18 +220,6 @@ export const classes: Class[] = [
       "Urdu",
     ],
   },
-  {
-    id: 13,
-    name: "Class XI & XII Combined",
-    subjects: ["Hindi"],
-    hiddenSubjects: ["Heritage Crafts", "Sanskrit", "Urdu"],
-  },
-  {
-    id: 14,
-    name: "Vocational",
-    subjects: [],
-    hiddenSubjects: ["Vocational"],
-  },
 ];
 
 export function getClassById(id: number): Class | undefined {

@@ -10,8 +10,7 @@ const classes = [
   { number: 10, name: "Class 10" },
   { number: 11, name: "Class 11" },
   { number: 12, name: "Class 12" },
-  { number: 13, name: "Class XI & XII Combined" },
-  { number: 14, name: "Vocational" },
+
 ];
 
 const HIDDEN_SUBJECTS = new Set([
@@ -33,8 +32,7 @@ const subjectsByClass = {
   10: ["English", "Health and Physical Education", "Hindi", "Mathematics", "Sanskrit", "Science", "Social Science", "Urdu"],
   11: ["Accountancy", "Biology", "Biotechnology", "Business Studies", "Chemistry", "Computer Science", "Computers and Communication Technology", "Creative Writing and Translation", "Economics", "English", "Fine Art", "Geography", "Graphics design", "Health and Physical Education", "Heritage Crafts", "Hindi", "History", "Home Science", "Informatics Practices", "Knowledge Traditions Practices of India", "Mathematics", "Physics", "Political Science", "Psychology", "Sangeet", "Sanskrit", "Sociology", "Urdu", "Vocational"],
   12: ["Accountancy", "Biology", "Biotechnology", "Business Studies", "Chemistry", "Computer Science", "Creative Writing & Translation", "Economics", "English", "Fine Art", "Geography", "Heritage Crafts", "Hindi", "History", "Home Science", "Informatics Practices", "Mathematics", "New Age Graphics Design", "Physics", "Political Science", "Psychology", "Sangeet", "Sanskrit", "Sociology", "Urdu"],
-  13: ["Heritage Crafts", "Hindi", "Sanskrit", "Urdu"],
-  14: ["Vocational"],
+
 };
 
 const chapters = {
@@ -100,11 +98,7 @@ const chapters = {
   "12-Sanskrit": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10"],
   "12-Sociology": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7"],
   "12-Urdu": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12"],
-  "13-Heritage Crafts": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10"],
-  "13-Hindi": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12", "Chapter 13", "Chapter 14", "Chapter 15", "Chapter 16"],
-  "13-Sanskrit": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12"],
-  "13-Urdu": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12", "Chapter 13", "Chapter 14", "Chapter 15", "Chapter 16", "Chapter 17", "Chapter 18", "Chapter 19", "Chapter 20", "Chapter 21", "Chapter 22", "Chapter 23"],
-  "14-Vocational": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"],
+
   "6-Arts": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6", "Chapter 7", "Chapter 8", "Chapter 9", "Chapter 10", "Chapter 11", "Chapter 12", "Chapter 13", "Chapter 14", "Chapter 15", "Chapter 16", "Chapter 17", "Chapter 18", "Chapter 19", "Chapter 20", "Chapter 21", "Chapter 22"],
   "6-English": ["Fables and Folk Tales", "Friendship", "Nurturing Nature", "Sports and Wellness", "Culture and Tradition"],
   "6-Hindi": ["मातृभूमि", "गोल", "पहली बूँद", "हार की जीत", "रहीम के दोहे", "मेरी माँ", "जलते चलो", "सत्रिया और बिहू नृत्य", "गाँव-शहर", "पार नज़र के", "चिड़िया की बच्ची", "हिंद देश के निवासी", "पत्र लेखन", "लोकगीत", "नए इलाके में...", "वन के मार्ग में"],
