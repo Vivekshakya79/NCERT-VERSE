@@ -1,0 +1,57 @@
+{
+  "name": "Exercise 3.1",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.1-q1",
+      "questionNumber": 1,
+      "question": "How will you describe the position of a table lamp on your study table to another person?",
+      "solution": [
+        { "step": 1, "content": "To describe the position of a table lamp, we need a reference point and distances along two perpendicular directions." },
+        { "step": 2, "content": "Consider the bottom-left corner of the table as the origin (0, 0)." },
+        { "step": 3, "content": "Measure the distance of the lamp from the left edge of the table (say $x$ cm)." },
+        { "step": 4, "content": "Measure the distance of the lamp from the bottom edge of the table (say $y$ cm)." },
+        { "step": 5, "content": "Then the position of the lamp is given by the ordered pair $(x, y)$, called its coordinates." },
+        { "step": 6, "content": "For example, if the lamp is 30 cm from the left edge and 45 cm from the bottom edge, its position is $(30, 45)$." }
+      ],
+      "answer": "The position can be described using an ordered pair of distances from two perpendicular edges of the table.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Cartesian Coordinate System",
+        "content": "A point is represented by an ordered pair $(x, y)$, where $x$ is the distance from the vertical axis and $y$ is the distance from the horizontal axis."
+      }
+    },
+    {
+      "id": "9-math-2-ex3.1-q2",
+      "questionNumber": 2,
+      "question": "(Street Plan): A city has two main roads which cross each other at the centre of the city. These two roads are along the North-South direction and East-West direction. All other streets of the city run parallel to these roads and are 200 m apart. There are 5 streets in each direction. Using $1 \\text{ cm} = 200 \\text{ m}$, draw a model of the city. Answer the following: **(i) How many cross-streets can be formed?**",
+      "solution": [
+        { "step": 1, "content": "We have 5 streets parallel to the North-South direction and 5 streets parallel to the East-West direction." },
+        { "step": 2, "content": "Each North-South street intersects each East-West street at a unique point." },
+        { "step": 3, "content": "Total number of cross-streets = $5 \\times 5 = 25$" },
+        { "step": 4, "content": "Therefore, **25 cross-streets** can be formed." }
+      ],
+      "answer": "25 cross-streets can be formed.",
+      "verified": true
+    },
+    {
+      "id": "9-math-2-ex3.1-q3",
+      "questionNumber": 3,
+      "question": "In which quadrant or on which axis do each of the points $(-2, 4)$, $(3, -1)$, $(-1, 0)$, $(1, 2)$ and $(-3, -5)$ lie?",
+      "solution": [
+        { "step": 1, "content": "Recall the sign conventions for quadrants:" },
+        { "step": 2, "content": "Quadrant I: $(+, +)$\nQuadrant II: $(-, +)$\nQuadrant III: $(-, -)$\nQuadrant IV: $(+, -)$" },
+        { "step": 3, "content": "For $(-2, 4)$: $x$ is negative, $y$ is positive → **Quadrant II**" },
+        { "step": 4, "content": "For $(3, -1)$: $x$ is positive, $y$ is negative → **Quadrant IV**" },
+        { "step": 5, "content": "For $(-1, 0)$: $y$ is zero → lies on the **negative $x$-axis**" },
+        { "step": 6, "content": "For $(1, 2)$: $x$ is positive, $y$ is positive → **Quadrant I**" },
+        { "step": 7, "content": "For $(-3, -5)$: $x$ is negative, $y$ is negative → **Quadrant III**" }
+      ],
+      "answer": "$(-2,4)$ → II, $(3,-1)$ → IV, $(-1,0)$ → negative $x$-axis, $(1,2)$ → I, $(-3,-5)$ → III",
+      "verified": false,
+      "formulaBox": {
+        "title": "Quadrant Signs",
+        "content": "QI: $(+,+)$\nQII: $(-,+)$\nQIII: $(-,-)$\nQIV: $(+,-)$"
+      }
+    }
+  ]
+}

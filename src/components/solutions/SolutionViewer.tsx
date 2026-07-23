@@ -207,6 +207,7 @@ export default function SolutionViewer({
       <div className="sol-card">
         <div className="sol-card-header">
           <span className="sol-badge">{currentExercise} · Q{question.questionNumber}</span>
+          {question.verified && <span className="sol-badge sol-badge-verified">✅ Verified Solution</span>}
         </div>
         <div className="sol-question">
           <div

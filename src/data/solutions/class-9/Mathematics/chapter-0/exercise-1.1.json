@@ -1,0 +1,96 @@
+{
+  "name": "Exercise 1.1",
+  "questions": [
+    {
+      "id": "9-math-0-ex1.1-q1",
+      "questionNumber": 1,
+      "question": "Is zero a rational number? Can you write it in the form $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\neq 0$?",
+      "solution": [
+        { "step": 1, "content": "A rational number is any number that can be expressed in the form $\\frac{p}{q}$, where $p$ and $q$ are integers and $q \\neq 0$." },
+        { "step": 2, "content": "Zero can be expressed in this form:" },
+        { "step": 3, "content": "$$0 = \\frac{0}{1} = \\frac{0}{2} = \\frac{0}{3} = \\dots$$" },
+        { "step": 4, "content": "Since 0 can be written as $\\frac{0}{q}$ for any non-zero integer $q$, zero **is** a rational number." }
+      ],
+      "answer": "Yes, zero is a rational number. It can be written as $\\frac{0}{1}, \\frac{0}{2}, \\frac{0}{3}$, etc.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Definition of Rational Number",
+        "content": "$$\\text{A number is rational if it can be written as } \\frac{p}{q}, \\; p,q \\in \\mathbb{Z}, \\; q \\neq 0$$"
+      }
+    },
+    {
+      "id": "9-math-0-ex1.1-q2",
+      "questionNumber": 2,
+      "question": "Find six rational numbers between 3 and 4.",
+      "solution": [
+        { "step": 1, "content": "We know that between any two rational numbers, there exist infinitely many rational numbers." },
+        { "step": 2, "content": "Write 3 and 4 with denominator 7:" },
+        { "step": 3, "content": "$$3 = \\frac{21}{7} \\quad \\text{and} \\quad 4 = \\frac{28}{7}$$" },
+        { "step": 4, "content": "Now the numbers between $\\frac{21}{7}$ and $\\frac{28}{7}$ are:" },
+        { "step": 5, "content": "$$\\frac{22}{7}, \\frac{23}{7}, \\frac{24}{7}, \\frac{25}{7}, \\frac{26}{7}, \\frac{27}{7}$$" },
+        { "step": 6, "content": "These are six rational numbers between 3 and 4." }
+      ],
+      "answer": "$$\\frac{22}{7}, \\frac{23}{7}, \\frac{24}{7}, \\frac{25}{7}, \\frac{26}{7}, \\frac{27}{7}$$",
+      "verified": true,
+      "notes": "Alternative method: Use the formula $\\frac{a+b}{2}$ recursively to find rational numbers between any two numbers."
+    },
+    {
+      "id": "9-math-0-ex1.1-q3",
+      "questionNumber": 3,
+      "question": "Find five rational numbers between $\\frac{3}{5}$ and $\\frac{4}{5}$.",
+      "solution": [
+        { "step": 1, "content": "We need five rational numbers between $\\frac{3}{5}$ and $\\frac{4}{5}$." },
+        { "step": 2, "content": "First, write both fractions with a common denominator. Let's use denominator 30:" },
+        { "step": 3, "content": "$$\\frac{3}{5} = \\frac{18}{30} \\quad \\text{and} \\quad \\frac{4}{5} = \\frac{24}{30}$$" },
+        { "step": 4, "content": "Now the numbers between $\\frac{18}{30}$ and $\\frac{24}{30}$ are:" },
+        { "step": 5, "content": "$$\\frac{19}{30}, \\frac{20}{30}, \\frac{21}{30}, \\frac{22}{30}, \\frac{23}{30}$$" },
+        { "step": 6, "content": "Simplifying: $\\frac{20}{30} = \\frac{2}{3}$, $\\frac{21}{30} = \\frac{7}{10}$, $\\frac{22}{30} = \\frac{11}{15}$" },
+        { "step": 7, "content": "Therefore, five rational numbers between $\\frac{3}{5}$ and $\\frac{4}{5}$ are:" },
+        { "step": 8, "content": "$$\\frac{19}{30}, \\frac{2}{3}, \\frac{7}{10}, \\frac{11}{15}, \\frac{23}{30}$$" }
+      ],
+      "answer": "$$\\frac{19}{30}, \\frac{2}{3}, \\frac{7}{10}, \\frac{11}{15}, \\frac{23}{30}$$",
+      "verified": true
+    },
+    {
+      "id": "9-math-0-ex1.1-q4",
+      "questionNumber": 4,
+      "question": "State whether the following statements are true or false. Give reasons for your answers. **(i) Every natural number is a whole number.**",
+      "solution": [
+        { "step": 1, "content": "Natural numbers: $\\{1, 2, 3, 4, \\dots\\}$" },
+        { "step": 2, "content": "Whole numbers: $\\{0, 1, 2, 3, 4, \\dots\\}$" },
+        { "step": 3, "content": "Every natural number (1, 2, 3, ...) is also present in the set of whole numbers." },
+        { "step": 4, "content": "Therefore, the statement is **True**. Every natural number is a whole number." }
+      ],
+      "answer": "True. Natural numbers are a subset of whole numbers.",
+      "verified": true
+    },
+    {
+      "id": "9-math-0-ex1.1-q5",
+      "questionNumber": 5,
+      "question": "State whether the following statements are true or false. Give reasons for your answers. **(ii) Every integer is a whole number.**",
+      "solution": [
+        { "step": 1, "content": "Integers: $\\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$" },
+        { "step": 2, "content": "Whole numbers: $\\{0, 1, 2, 3, 4, \\dots\\}$" },
+        { "step": 3, "content": "Negative integers like $-1, -2, -3, \\dots$ are NOT present in the set of whole numbers." },
+        { "step": 4, "content": "Therefore, the statement is **False**. Every integer is NOT a whole number." }
+      ],
+      "answer": "False. Negative integers are not whole numbers.",
+      "verified": true
+    },
+    {
+      "id": "9-math-0-ex1.1-q6",
+      "questionNumber": 6,
+      "question": "State whether the following statements are true or false. Give reasons for your answers. **(iii) Every rational number is a whole number.**",
+      "solution": [
+        { "step": 1, "content": "Rational numbers: Numbers that can be written as $\\frac{p}{q}$ where $p,q \\in \\mathbb{Z}, q \\neq 0$." },
+        { "step": 2, "content": "Whole numbers: $\\{0, 1, 2, 3, 4, \\dots\\}$" },
+        { "step": 3, "content": "Consider $\\frac{1}{2}$. It is a rational number but NOT a whole number." },
+        { "step": 4, "content": "Similarly, $\\frac{3}{4}, \\frac{7}{5}, \\frac{2}{3}$ etc. are rational numbers that are not whole numbers." },
+        { "step": 5, "content": "Therefore, the statement is **False**. Every rational number is NOT a whole number." }
+      ],
+      "answer": "False. Many rational numbers (like $\\frac{1}{2}$) are not whole numbers.",
+      "verified": false,
+      "notes": "While every whole number is a rational number, the converse is not true."
+    }
+  ]
+}

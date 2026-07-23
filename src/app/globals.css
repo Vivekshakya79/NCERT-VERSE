@@ -2265,6 +2265,11 @@
   border-color: rgba(245,158,11,.12);
   color: #D97706;
 }
+.sol-badge-verified {
+  background: rgba(34,197,94,.1);
+  border-color: rgba(34,197,94,.15);
+  color: #16A34A;
+}
 
 /* Question */
 .sol-question-text {

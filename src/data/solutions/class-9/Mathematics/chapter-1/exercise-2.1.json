@@ -1,0 +1,51 @@
+{
+  "name": "Exercise 2.1",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.1-q1",
+      "questionNumber": 1,
+      "question": "Which of the following expressions are polynomials in one variable and which are not? State reasons for your answer. **(i) $4x^2 - 3x + 7$**",
+      "solution": [
+        { "step": 1, "content": "A polynomial in one variable is an expression of the form $a_nx^n + a_{n-1}x^{n-1} + \\dots + a_1x + a_0$, where $a_i$ are constants and $n$ is a non-negative integer." },
+        { "step": 2, "content": "Given expression: $4x^2 - 3x + 7$" },
+        { "step": 3, "content": "This expression contains only one variable $x$." },
+        { "step": 4, "content": "The powers of $x$ are 2, 1, and 0, all of which are non-negative integers." },
+        { "step": 5, "content": "Therefore, $4x^2 - 3x + 7$ **is** a polynomial in one variable $x$." }
+      ],
+      "answer": "Yes, it is a polynomial in one variable $x$.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Definition of Polynomial in One Variable",
+        "content": "$$p(x) = a_nx^n + a_{n-1}x^{n-1} + \\dots + a_1x + a_0, \\quad n \\in \\mathbb{W}$$"
+      }
+    },
+    {
+      "id": "9-math-1-ex2.1-q2",
+      "questionNumber": 2,
+      "question": "Write the coefficients of $x^2$ in each of the following: **(i) $2 + x^2 + x$**",
+      "solution": [
+        { "step": 1, "content": "Given expression: $2 + x^2 + x$" },
+        { "step": 2, "content": "Writing in standard form: $x^2 + x + 2$" },
+        { "step": 3, "content": "The coefficient of $x^2$ is the constant multiplied by $x^2$." },
+        { "step": 4, "content": "Therefore, the coefficient of $x^2$ is **1**." }
+      ],
+      "answer": "Coefficient of $x^2$ is 1.",
+      "verified": true
+    },
+    {
+      "id": "9-math-1-ex2.1-q3",
+      "questionNumber": 3,
+      "question": "Give one example each of a binomial of degree 35, and of a monomial of degree 100.",
+      "solution": [
+        { "step": 1, "content": "A **binomial** is a polynomial with exactly two terms." },
+        { "step": 2, "content": "A binomial of degree 35 must have the highest power of the variable equal to 35." },
+        { "step": 3, "content": "Example of a binomial of degree 35: **$x^{35} + 1$**" },
+        { "step": 4, "content": "A **monomial** is a polynomial with exactly one term." },
+        { "step": 5, "content": "A monomial of degree 100 must have the highest power of the variable equal to 100." },
+        { "step": 6, "content": "Example of a monomial of degree 100: **$x^{100}$** or **$5x^{100}$**" }
+      ],
+      "answer": "Binomial of degree 35: $x^{35} + 1$\nMonomial of degree 100: $x^{100}$",
+      "verified": true
+    }
+  ]
+}

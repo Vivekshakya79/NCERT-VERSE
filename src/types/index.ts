@@ -100,6 +100,7 @@ export interface QuestionSolution {
   question: string; // Markdown + LaTeX
   solution: SolutionStep[];
   answer?: string;
+  verified: boolean; // Whether the solution has been verified by subject experts
   formulaBox?: FormulaBox;
   diagram?: {
     type: "svg" | "canvas" | "image";
