@@ -53,7 +53,13 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
-        <div className="ph-bg" />
+        <div className="hero-bg" aria-hidden="true">
+          <div className="hero-blob" />
+          <div className="hero-blob" />
+          <div className="hero-blob" />
+          <div className="hero-blob" />
+          <div className="hero-blob" />
+        </div>
         <div className="ph-fade" />
         <div className="hero-c">
           <div className="hero-seq hero-pill">
