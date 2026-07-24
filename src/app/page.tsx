@@ -9,14 +9,12 @@ import FeatureCard from "@/components/cards/FeatureCard";
 import { classes } from "@/data/classes";
 import { features } from "@/data/features";
 import { useCountUp } from "@/hooks/useCountUp";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
 function StatCard({ target, label }: { target: number; label: string }) {
-  const observerRef = useIntersectionObserver();
   const count = useCountUp(target, 1500, true);
 
   return (
-    <div className="h-stat" ref={observerRef}>
+    <div className="h-stat">
       <b>{count.toLocaleString()}+</b>
       <span>{label}</span>
     </div>
@@ -55,31 +53,11 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
-        <div className="ph-mesh">
-          <div className="ph-mesh-g" />
-          <div className="ph-mesh-g" />
-          <div className="ph-mesh-g" />
-          <div className="ph-mesh-g" />
-          <div className="ph-mesh-g" />
-        </div>
-        <div className="ph-light-tr" />
-        <div className="ph-light-left" />
-        <div className="ph-aurora" />
-        <div className="ph-glass" />
-        <div className="ph-noise" />
-        <div className="ph-grid" />
-        <div className="ph-blobs">
-          <div className="ph-blob" />
-          <div className="ph-blob" />
-          <div className="ph-blob" />
-          <div className="ph-blob" />
-          <div className="ph-blob" />
-          <div className="ph-blob" />
-        </div>
+        <div className="ph-bg" />
         <div className="ph-fade" />
         <div className="hero-c">
           <div className="hero-seq hero-pill">
-            <span className="hero-dot" role="status" aria-label="Live" />
+            <span className="hero-pill-dot" aria-hidden="true" />
             Trusted by 50,000+ CBSE Students
           </div>
           <h1 className="hero-seq">

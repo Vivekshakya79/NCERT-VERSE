@@ -11,24 +11,7 @@ import RevealObserver from "@/components/layout/RevealObserver";
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* Signature Background System — layered mesh, glows, grid & noise */}
-      <div className="bg-layer" aria-hidden="true">
-        <div className="bg-mesh">
-          <div className="bg-orb" />
-          <div className="bg-orb" />
-          <div className="bg-orb" />
-          <div className="bg-orb" />
-          <div className="bg-orb" />
-        </div>
-        <div className="bg-glows">
-          <div className="bg-glow" />
-          <div className="bg-glow" />
-          <div className="bg-glow" />
-          <div className="bg-glow" />
-        </div>
-        <div className="bg-grid" />
-        <div className="bg-noise" />
-      </div>
+      {/* Background gradient is applied via body in CSS — no animated layers */}
       <ScrollProgress />
       <Navbar />
       <main id="main-content" role="main" tabIndex={-1}>
