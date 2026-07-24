@@ -4,6 +4,15 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
+  FileEdit,
+  CheckCircle,
+  Lightbulb,
+  Ruler,
+  ChartColumn,
+  Book,
+  AlertTriangle,
+} from "lucide-react";
+import {
   QuestionSolution,
   Exercise,
 } from "@/types";
@@ -149,7 +158,7 @@ export default function SolutionViewer({
   if (!exercise || !question) {
     return (
       <div className="sol-empty">
-        <div className="sol-empty-icon">📝</div>
+        <div className="sol-empty-icon"><FileEdit size={40} /></div>
         <h3>No solutions available yet</h3>
         <p>Solutions for this exercise are being prepared.</p>
         <Link href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`} className="btn btn-p">
@@ -207,7 +216,7 @@ export default function SolutionViewer({
       <div className="sol-card">
         <div className="sol-card-header">
           <span className="sol-badge">{currentExercise} · Q{question.questionNumber}</span>
-          {question.verified && <span className="sol-badge sol-badge-verified">✅ Verified Solution</span>}
+          {question.verified && <span className="sol-badge sol-badge-verified"><CheckCircle size={14} style={{ marginRight: 4 }} /> Verified Solution</span>}
         </div>
         <div className="sol-question">
           <div
@@ -220,7 +229,7 @@ export default function SolutionViewer({
       {/* Solution Steps */}
       <div className="sol-card">
         <div className="sol-card-header">
-          <span className="sol-badge sol-badge-green">💡 Step-by-Step Solution</span>
+          <span className="sol-badge sol-badge-green"><Lightbulb size={14} style={{ marginRight: 4 }} /> Step-by-Step Solution</span>
         </div>
         <div className="sol-steps">
           {question.solution.map((step) => (
@@ -239,7 +248,7 @@ export default function SolutionViewer({
       {question.answer && (
         <div className="sol-card sol-card-answer">
           <div className="sol-card-header">
-            <span className="sol-badge sol-badge-purple">✅ Final Answer</span>
+            <span className="sol-badge sol-badge-purple"><CheckCircle size={14} style={{ marginRight: 4 }} /> Final Answer</span>
           </div>
           <div
             className="sol-answer"
@@ -252,7 +261,7 @@ export default function SolutionViewer({
       {question.formulaBox && (
         <div className="sol-card sol-card-formula">
           <div className="sol-card-header">
-            <span className="sol-badge sol-badge-orange">📐 Formula Box</span>
+            <span className="sol-badge sol-badge-orange"><Ruler size={14} style={{ marginRight: 4 }} /> Formula Box</span>
           </div>
           <div className="sol-formula-box">
             <h4 className="sol-formula-title">{question.formulaBox.title}</h4>
@@ -268,7 +277,7 @@ export default function SolutionViewer({
       {question.tableData && (
         <div className="sol-card">
           <div className="sol-card-header">
-            <span className="sol-badge sol-badge-blue">📊 Table</span>
+            <span className="sol-badge sol-badge-blue"><ChartColumn size={14} style={{ marginRight: 4 }} /> Table</span>
           </div>
           <TableView headers={question.tableData.headers} rows={question.tableData.rows} />
         </div>
@@ -278,7 +287,7 @@ export default function SolutionViewer({
       {question.diagram && (
         <div className="sol-card">
           <div className="sol-card-header">
-            <span className="sol-badge sol-badge-teal">📐 Diagram</span>
+            <span className="sol-badge sol-badge-teal"><Ruler size={14} style={{ marginRight: 4 }} /> Diagram</span>
           </div>
           <DiagramView diagram={question.diagram} />
         </div>
@@ -288,7 +297,7 @@ export default function SolutionViewer({
       {question.notes && (
         <div className="sol-card sol-card-notes">
           <div className="sol-card-header">
-            <span className="sol-badge sol-badge-yellow">📝 Note</span>
+            <span className="sol-badge sol-badge-yellow"><FileEdit size={14} style={{ marginRight: 4 }} /> Note</span>
           </div>
           <div
             className="sol-notes"
@@ -310,7 +319,7 @@ export default function SolutionViewer({
           href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`}
           className="btn btn-s"
         >
-          📖 Chapter
+          <Book size={16} style={{ marginRight: 6 }} /> Chapter
         </Link>
         <button
           className="btn btn-p"

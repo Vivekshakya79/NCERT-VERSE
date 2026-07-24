@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AlertTriangle } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
 import FeatureCard from "@/components/cards/FeatureCard";
@@ -60,7 +61,12 @@ function SectionErrorBoundary({ children, label }: { children: React.ReactNode; 
   }, [label]);
 
   if (hasError) {
-    return <div className="sec" role="alert">⚠️ Failed to load {label}</div>;
+    return (
+      <div className="sec" role="alert">
+        <AlertTriangle size={20} style={{ marginRight: 8, verticalAlign: "middle" }} />
+        Failed to load {label}
+      </div>
+    );
   }
 
   return <>{children}</>;

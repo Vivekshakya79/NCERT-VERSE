@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Book } from "lucide-react";
 import { classes } from "@/data/classes";
 
 export const metadata: Metadata = {
@@ -61,7 +62,7 @@ export default function NCERTPage() {
               href={`/ncert/${cls.id}`}
               className="cls-card glow-card"
             >
-              <span className="cls-ico" aria-hidden="true">📗</span>
+              <span className="cls-ico" aria-hidden="true"><Book size={24} /></span>
               <div className="num">{cls.id}</div>
               <div className="ttl">{cls.name}</div>
             </Link>

@@ -21,14 +21,14 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
           return (
             <span key={i}>
               <Link href={item.href}>{item.label}</Link>
-              <span aria-hidden="true">›</span>
+              <span className="sep" aria-hidden="true">›</span>
             </span>
           );
         }
         return (
           <span key={i}>
             <span>{item.label}</span>
-            <span aria-hidden="true">›</span>
+            <span className="sep" aria-hidden="true">›</span>
           </span>
         );
       })}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { House } from "lucide-react";
 
 export default function NotFound() {
   const router = useRouter();
@@ -13,7 +14,7 @@ export default function NotFound() {
       <p>The page you&apos;re looking for doesn&apos;t exist or has been moved.</p>
       <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
         <Link href="/" className="btn btn-p">
-          🏠 Go Home
+          <House size={16} style={{ marginRight: 8 }} /> Go Home
         </Link>
         <button className="btn btn-s" onClick={() => router.back()}>
           ← Go Back

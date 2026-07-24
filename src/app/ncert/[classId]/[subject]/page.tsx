@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Book } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getClassById, isSubjectHidden } from "@/data/classes";
 import { getChapters } from "@/data/chapters";
@@ -83,7 +84,7 @@ export default async function NCERTSubjectPage({ params }: Props) {
               href={`/ncert/${cls.id}/${encodeURIComponent(decodedSubject)}/${i}`}
               className="ch-item"
             >
-              <div className="ch-ico" aria-hidden="true">📗</div>
+              <div className="ch-ico" aria-hidden="true"><Book size={18} /></div>
               <div className="ch-content">
                 <h4>Chapter {i + 1} — {ch}</h4>
                 <p>NCERT Solutions</p>

@@ -11,6 +11,10 @@ import RevealObserver from "@/components/layout/RevealObserver";
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   return (
     <>
+      {/* Ambient Background Circles */}
+      <div className="ambient-circle" aria-hidden="true" />
+      <div className="ambient-circle" aria-hidden="true" />
+      <div className="ambient-circle" aria-hidden="true" />
       <ScrollProgress />
       <Navbar />
       <main id="main-content" role="main" tabIndex={-1}>

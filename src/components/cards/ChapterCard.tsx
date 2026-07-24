@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 
 interface ChapterCardProps {
   classId: number;
@@ -20,7 +21,9 @@ export default function ChapterCard({
       href={`/classes/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`}
       className={`ch-item ${isPlaceholder ? "placeholder" : ""}`}
     >
-      <div className="ch-ico" aria-hidden="true">📘</div>
+      <div className="ch-ico" aria-hidden="true">
+        <BookOpen size={18} />
+      </div>
       <div className="ch-content">
         <h4>Chapter {chapterIdx + 1} — {chapterName}</h4>
         <p>Class {classId} · {subject}</p>

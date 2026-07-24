@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BookOpen, Heart } from "lucide-react";
 import { useToast } from "@/contexts/ToastContext";
 import { footerLinks, socialLinks } from "@/data/features";
 
@@ -44,7 +45,7 @@ export default function Footer() {
       <div className="ft-w">
         <div className="ft-grid">
           <div className="ft-brand">
-            <h3><span aria-hidden="true">📘</span> StudyVerse</h3>
+            <h3><BookOpen size={22} aria-hidden="true" /> StudyVerse</h3>
             <p>India&apos;s NCERT-aligned educational platform for CBSE Classes 6-12. Empowering 50,000+ students with premium study materials.</p>
             <div className="ft-social">
               {socialLinks.map((social) => (
@@ -75,7 +76,7 @@ export default function Footer() {
         </div>
         <div className="ft-bot">
           <span>© {currentYear} StudyVerse. Not affiliated with NCERT or CBSE.</span>
-          <span>Made with ❤️ for Indian students</span>
+          <span>Made with <Heart size={14} style={{ display: "inline", verticalAlign: "middle", color: "#ef4444" }} /> for Indian students</span>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 "use client";
 
+import { CheckCircle, XCircle, Info } from "lucide-react";
 import { useToast } from "@/contexts/ToastContext";
 
 export default function ToastContainer() {
@@ -7,10 +8,10 @@ export default function ToastContainer() {
 
   if (toasts.length === 0) return null;
 
-  const icons: Record<string, string> = {
-    success: "✅",
-    error: "❌",
-    info: "ℹ️",
+  const icons: Record<string, React.ReactNode> = {
+    success: <CheckCircle size={16} style={{ flexShrink: 0 }} />,
+    error: <XCircle size={16} style={{ flexShrink: 0 }} />,
+    info: <Info size={16} style={{ flexShrink: 0 }} />,
   };
 
   return (

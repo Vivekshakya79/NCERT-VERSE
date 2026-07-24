@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Sun, Moon, Keyboard, Clock, House, BookOpen, Book, Bot, Trophy, BarChart, Settings, LogOut } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useToast } from "@/contexts/ToastContext";
 import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
@@ -92,7 +93,7 @@ export default function Navbar() {
               aria-label={`Toggle ${isDark ? "light" : "dark"} mode`}
               title="Toggle dark mode (Ctrl+Shift+D)"
             >
-              {isDark ? "☀️" : "🌙"}
+              {isDark ? <Sun size={16} /> : <Moon size={16} />}
             </button>
             <button
               className="theme-btn"
@@ -103,7 +104,7 @@ export default function Navbar() {
               aria-label="Keyboard shortcuts"
               title="Keyboard shortcuts (?)"
             >
-              ⌨️
+              <Keyboard size={16} />
             </button>
             <div className="history-trigger">
               <button
@@ -112,7 +113,7 @@ export default function Navbar() {
                 aria-label="Recent history"
                 title="Recent history"
               >
-                ⏱️
+                <Clock size={16} />
               </button>
               {historyOpen && (
                 <div className="history-dropdown open" id="historyDropdown">
@@ -177,19 +178,19 @@ export default function Navbar() {
             className={isActive(link.href) ? "on" : ""}
             onClick={toggleMobile}
           >
-            {link.label === "Home" && "🏠 "}
-            {link.label === "Classes" && "📚 "}
-            {link.label === "NCERT" && "📗 "}
-            {link.label === "AI Tools" && "🤖 "}
-            {link.label === "Quiz" && "🏆 "}
-            {link.label === "Dashboard" && "📊 "}
-            {link.label === "Admin" && "⚙️ "}
+            {link.label === "Home" && <House size={16} style={{ marginRight: 8 }} />}
+            {link.label === "Classes" && <BookOpen size={16} style={{ marginRight: 8 }} />}
+            {link.label === "NCERT" && <Book size={16} style={{ marginRight: 8 }} />}
+            {link.label === "AI Tools" && <Bot size={16} style={{ marginRight: 8 }} />}
+            {link.label === "Quiz" && <Trophy size={16} style={{ marginRight: 8 }} />}
+            {link.label === "Dashboard" && <BarChart size={16} style={{ marginRight: 8 }} />}
+            {link.label === "Admin" && <Settings size={16} style={{ marginRight: 8 }} />}
             {link.label}
           </Link>
         ))}
         <div className="mob-divider" />
         <Link href="/dashboard" onClick={toggleMobile} style={{ color: "var(--pri)", fontWeight: 700 }}>
-          🚪 Sign In
+          <LogOut size={16} style={{ marginRight: 8 }} /> Sign In
         </Link>
         <div className="mob-divider" />
         <button
@@ -199,7 +200,7 @@ export default function Navbar() {
           }}
           className="mob-theme-btn"
         >
-          {isDark ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode"}
+          {isDark ? <><Sun size={16} style={{ marginRight: 8 }} /> Toggle Light Mode</> : <><Moon size={16} style={{ marginRight: 8 }} /> Toggle Dark Mode</>}
         </button>
         <button
           onClick={() => {
@@ -208,7 +209,7 @@ export default function Navbar() {
           }}
           className="mob-theme-btn"
         >
-          ⌨️ Keyboard Shortcuts
+          <Keyboard size={16} style={{ marginRight: 8 }} /> Keyboard Shortcuts
         </button>
       </div>
     </>

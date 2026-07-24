@@ -5,9 +5,7 @@ export interface Class {
   hiddenSubjects?: string[];
 }
 
-export interface SubjectIconMap {
-  [key: string]: string;
-}
+
 
 export interface ChapterEntry {
   classId: number;

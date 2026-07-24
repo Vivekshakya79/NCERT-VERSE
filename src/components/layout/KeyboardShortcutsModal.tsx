@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Keyboard } from "lucide-react";
 
 const shortcuts = [
   { keys: ["G", "H"], label: "Go to Home" },
@@ -37,7 +38,7 @@ export default function KeyboardShortcutsModal() {
     <div className="kb-overlay" id="kbOverlay" onClick={close} aria-hidden="true">
       <div className="kb-modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-label="Keyboard shortcuts">
         <h3>
-          ⌨️ Keyboard Shortcuts
+          <Keyboard size={22} style={{ display: "inline", verticalAlign: "middle", marginRight: 8 }} /> Keyboard Shortcuts
           <button className="kb-close" onClick={close} aria-label="Close shortcuts">
             ✕
           </button>

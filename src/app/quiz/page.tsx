@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Clock } from "lucide-react";
 import Particles from "@/components/features/Particles";
 
 const quizQuestions = [
@@ -43,19 +44,20 @@ export default function QuizPage() {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              padding: "16px 20px",
-              background: "var(--card)",
-              border: "1.5px solid var(--bd)",
+              padding: "16px 24px",
+              background: "rgba(255,255,255,.04)",
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
+              border: "1px solid rgba(255,255,255,.08)",
               borderRadius: "var(--r)",
               marginBottom: "10px",
-              boxShadow: "var(--sh)",
             }}
           >
             <span style={{ fontSize: "15px", color: "var(--tx-3)" }}>
               Question 1 of 10
             </span>
             <span style={{ fontWeight: 700, fontSize: "18px", color: "var(--warning)" }}>
-              ⏱ 04:32
+              <Clock size={16} style={{ marginRight: 6, verticalAlign: "middle" }} /> 04:32
             </span>
           </div>
 

@@ -1,14 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import { Flame, FileEdit, Trophy, Download, Hand } from "lucide-react";
 import Particles from "@/components/features/Particles";
 
 const dashboardStats = [
   { label: "Study Hours", value: "14.5", change: "↑ 23%", changeType: "up" as const },
   { label: "Chapters", value: "28", change: "↑ 4", changeType: "up" as const },
   { label: "Quiz Avg", value: "82%", change: "↑ 5%", changeType: "up" as const },
-  { label: "Streak", value: "7 🔥", change: "Best!", changeType: "up" as const },
+  { label: "Streak", value: "7", change: "Best!", changeType: "up" as const },
 ];
+
+const activityIcons: Record<string, React.ReactNode> = {
+  "📝": <FileEdit size={20} />,
+  "🏆": <Trophy size={20} />,
+  "📥": <Download size={20} />,
+};
 
 const recentActivity = [
   { icon: "📝", title: "Trigonometry Notes", meta: "2h ago" },
@@ -34,7 +41,7 @@ export default function DashboardPage() {
         <div className="ph-fade" />
         <div className="ph-content">
           <div className="ph-badge">Dashboard</div>
-          <h1>Welcome back, Vivek 👋</h1>
+          <h1>Welcome back, Vivek <Hand size={22} style={{ display: "inline", verticalAlign: "middle" }} /></h1>
           <p>7-day streak active!</p>
         </div>
       </div>
@@ -50,7 +57,7 @@ export default function DashboardPage() {
           {dashboardStats.map((stat) => (
             <div key={stat.label} className="d-stat">
               <small>{stat.label}</small>
-              <b>{stat.value}</b>
+              <b>{stat.value}{stat.label === "Streak" && <Flame size={18} style={{ display: "inline", verticalAlign: "middle", color: "var(--pri-xl)" }} />}</b>
               <span className="up">{stat.change}</span>
             </div>
           ))}
@@ -59,11 +66,12 @@ export default function DashboardPage() {
         <div className="g g-3 stagger">
           <div
             style={{
-              background: "var(--card)",
-              border: "1.5px solid var(--bd)",
+              background: "rgba(255,255,255,.04)",
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
+              border: "1px solid rgba(255,255,255,.08)",
               borderRadius: "var(--r)",
-              padding: "24px",
-              boxShadow: "var(--sh)",
+              padding: "28px",
             }}
           >
             <h4 style={{ fontSize: "20px", marginBottom: "16px" }}>
@@ -83,7 +91,7 @@ export default function DashboardPage() {
                 }}
               >
                 <span style={{ fontSize: "20px" }} aria-hidden="true">
-                  {activity.icon}
+                  {activityIcons[activity.icon] || activity.icon}
                 </span>
                 <div>
                   <b
@@ -105,11 +113,12 @@ export default function DashboardPage() {
 
           <div
             style={{
-              background: "var(--card)",
-              border: "1.5px solid var(--bd)",
+              background: "rgba(255,255,255,.04)",
+              backdropFilter: "blur(16px)",
+              WebkitBackdropFilter: "blur(16px)",
+              border: "1px solid rgba(255,255,255,.08)",
               borderRadius: "var(--r)",
-              padding: "24px",
-              boxShadow: "var(--sh)",
+              padding: "28px",
             }}
           >
             <h4 style={{ fontSize: "20px", marginBottom: "16px" }}>

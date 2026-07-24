@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import { Book, FileEdit, Sigma, Download } from "lucide-react";
 import { useToast } from "@/contexts/ToastContext";
 import { isBookmarked, toggleBookmark as toggleBm } from "@/lib/storage";
 import type { Exercise } from "@/types";
@@ -33,27 +34,27 @@ export default function NCERTChapterClient({
   const handleBookmark = useCallback(() => {
     const newState = toggleBm(classId, subject, chapterIdx, chapterName);
     setBookmarked(newState);
-    showToast(newState ? "Bookmarked! ⭐" : "Bookmark removed", newState ? "success" : "info");
+    showToast(newState ? "Bookmarked!" : "Bookmark removed", newState ? "success" : "info");
   }, [classId, subject, chapterIdx, chapterName, showToast]);
 
   return (
     <>
       <div className="actions-bar">
         <button className="btn btn-p" onClick={() => showToast("Download coming soon", "info")}>
-          📥 Download
+          <Download size={16} /> Download
         </button>
         <button
           className={`btn btn-s${bookmarked ? " bm-on" : ""}`}
           onClick={handleBookmark}
         >
-          {bookmarked ? "⭐ Bookmarked" : "🔖 Bookmark"}
+          {bookmarked ? "Bookmarked" : "Bookmark"}
         </button>
       </div>
 
       <div className="stagger" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
         {/* Exercise Solutions */}
         <div className="content-section">
-          <h3>📖 Exercise Solutions
+          <h3><Book size={18} style={{ display: "inline", verticalAlign: "middle", marginRight: 8 }} /> Exercise Solutions
             {exercises.length > 0 && <span className="sol-badge-ready">{exercises.length} exercises</span>}
           </h3>
           {exercises.length > 0 ? (
@@ -64,7 +65,7 @@ export default function NCERTChapterClient({
                   href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}/exercise/${encodeURIComponent(ex.name)}/${ex.questions[0]?.id || ""}`}
                   className="ex-item stagger"
                 >
-                  <div className="ex-item-icon">📝</div>
+                  <div className="ex-item-icon"><FileEdit size={18} /></div>
                   <div className="ex-item-content">
                     <h4>{ex.name}</h4>
                     <p>{ex.questions.length} Question{ex.questions.length !== 1 ? "s" : ""}</p>
@@ -90,11 +91,11 @@ export default function NCERTChapterClient({
         </div>
 
         <div className="content-section">
-          <h3>📝 Intext Questions <span className="placeholder-badge">Coming Soon</span></h3>
+          <h3><FileEdit size={18} style={{ display: "inline", verticalAlign: "middle", marginRight: 8 }} /> Intext Questions <span className="placeholder-badge">Coming Soon</span></h3>
           <p>In-text solutions will appear here once published.</p>
         </div>
         <div className="content-section">
-          <h3>🔢 Additional Exercises <span className="placeholder-badge">Coming Soon</span></h3>
+          <h3><Sigma size={18} style={{ display: "inline", verticalAlign: "middle", marginRight: 8 }} /> Additional Exercises <span className="placeholder-badge">Coming Soon</span></h3>
           <p>Supplementary exercises are being prepared.</p>
         </div>
       </div>

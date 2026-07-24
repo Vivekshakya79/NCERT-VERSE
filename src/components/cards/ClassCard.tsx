@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 import { Class } from "@/types";
 import { getSubjectIcon } from "@/data/subject-icons";
 
@@ -15,7 +16,9 @@ export default function ClassCard({ classData }: ClassCardProps) {
       className="cls-card glow-card"
       aria-label={`${name}: ${subjects.length} subjects`}
     >
-      <span className="cls-ico" aria-hidden="true">📘</span>
+      <span className="cls-ico" aria-hidden="true">
+        <BookOpen size={24} />
+      </span>
       <div className="num">{id}</div>
       <div className="ttl">{name}</div>
       <div className="meta">{subjects.length} Subjects</div>

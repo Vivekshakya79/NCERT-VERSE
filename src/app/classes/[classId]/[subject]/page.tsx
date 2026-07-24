@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { BookOpen, AlertTriangle } from "lucide-react";
 import { notFound, redirect } from "next/navigation";
 import { getClassById, isSubjectHidden } from "@/data/classes";
 import { getChapters, isPlaceholder } from "@/data/chapters";
@@ -124,7 +125,8 @@ export default async function SubjectPage({ params }: Props) {
               color: "#92400E",
             }}
           >
-            ⚠️ Some chapters use placeholder names and will be updated soon.
+            <AlertTriangle size={16} style={{ marginRight: 8, verticalAlign: "middle" }} />
+            Some chapters use placeholder names and will be updated soon.
           </div>
         )}
 
@@ -138,7 +140,7 @@ export default async function SubjectPage({ params }: Props) {
               href={`/classes/${cls.id}/${encodeURIComponent(decodedSubject)}/${i}`}
               className={`ch-item ${ch.includes("Placeholder") ? "placeholder" : ""}`}
             >
-              <div className="ch-ico" aria-hidden="true">📘</div>
+              <div className="ch-ico" aria-hidden="true"><BookOpen size={18} /></div>
               <div className="ch-content">
                 <h4>Chapter {i + 1} — {ch}</h4>
                 <p>Class {cls.id} · {decodedSubject}</p>

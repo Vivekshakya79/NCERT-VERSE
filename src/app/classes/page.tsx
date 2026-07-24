@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 import { classes } from "@/data/classes";
 import { getSubjectIcon } from "@/data/subject-icons";
 
@@ -62,7 +63,7 @@ export default function ClassesPage() {
               href={`/classes/${cls.id}`}
               className="cls-card glow-card"
             >
-              <span className="cls-ico" aria-hidden="true">📘</span>
+              <span className="cls-ico" aria-hidden="true"><BookOpen size={24} /></span>
               <div className="num">{cls.id}</div>
               <div className="ttl">{cls.name}</div>
               <div className="meta">{cls.subjects.length} Subjects</div>

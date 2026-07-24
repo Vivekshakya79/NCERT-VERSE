@@ -2,6 +2,22 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import {
+  Book,
+  FileEdit,
+  ClipboardList,
+  HelpCircle,
+  CheckCircle2,
+  PenTool,
+  RefreshCw,
+  Sigma,
+  BrainCircuit,
+  FileText,
+  Calendar,
+  BookOpen,
+  Link,
+  Download,
+} from "lucide-react";
 import { useToast } from "@/contexts/ToastContext";
 import { isBookmarked, toggleBookmark as toggleBm, addToHistory } from "@/lib/storage";
 
@@ -12,6 +28,22 @@ interface ChapterClientProps {
   chapterName: string;
   totalChapters: number;
 }
+
+const sectionIcons: Record<string, React.ReactNode> = {
+  "📖": <Book size={18} />,
+  "📝": <FileEdit size={18} />,
+  "📋": <ClipboardList size={18} />,
+  "❓": <HelpCircle size={18} />,
+  "✅": <CheckCircle2 size={18} />,
+  "✍️": <PenTool size={18} />,
+  "🔄": <RefreshCw size={18} />,
+  "🔢": <Sigma size={18} />,
+  "🧠": <BrainCircuit size={18} />,
+  "📄": <FileText size={18} />,
+  "📅": <Calendar size={18} />,
+  "📑": <BookOpen size={18} />,
+  "🔗": <Link size={18} />,
+};
 
 const sections = [
   { icon: "📖", title: "Chapter Overview" },
@@ -48,7 +80,7 @@ export default function ChapterClient({
   const handleBookmark = useCallback(() => {
     const newState = toggleBm(classId, subject, chapterIdx, chapterName);
     setBookmarked(newState);
-    showToast(newState ? "Bookmarked! ⭐" : "Bookmark removed", newState ? "success" : "info");
+    showToast(newState ? "Bookmarked!" : "Bookmark removed", newState ? "success" : "info");
   }, [classId, subject, chapterIdx, chapterName, showToast]);
 
   const handleCopyLink = useCallback(() => {
@@ -82,16 +114,16 @@ export default function ChapterClient({
           className="btn btn-p"
           onClick={() => showToast("Download coming soon", "info")}
         >
-          📥 Download PDF
+          <Download size={16} /> Download PDF
         </button>
         <button
           className={`btn btn-s${bookmarked ? " bm-on" : ""}`}
           onClick={handleBookmark}
         >
-          {bookmarked ? "⭐ Bookmarked" : "🔖 Bookmark"}
+          {bookmarked ? "Bookmarked" : "Bookmark"}
         </button>
         <button className="btn btn-s" onClick={handleCopyLink}>
-          🔗 Share
+          <Link size={16} /> Share
         </button>
         <button
           className="btn btn-s"
@@ -107,14 +139,14 @@ export default function ChapterClient({
         {sections.map((sec) => (
           <div key={sec.title} className="content-section">
             <h3>
-              {sec.icon} {sec.title}{" "}
+              {sectionIcons[sec.icon] || sec.icon} {sec.title}{" "}
               <span className="placeholder-badge">Coming Soon</span>
             </h3>
             <p>Content is being prepared by our team. Stay tuned for updates!</p>
           </div>
         ))}
         <div className="content-section">
-          <h3>💬 Comments</h3>
+          <h3>Comments</h3>
           <p>Login to comment on this chapter.</p>
         </div>
       </div>
