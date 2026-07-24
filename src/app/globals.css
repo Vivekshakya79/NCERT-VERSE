@@ -1181,27 +1181,13 @@
   .cls-card:nth-child(7)::before { background: var(--blue-dark); }
   .cls-card:nth-child(8)::before { background: var(--blue-royal); }
 
-  .cls-card::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 30% 40%, rgba(144,204,255,.06) 0%, transparent 60%);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 600ms var(--ease);
-    border-radius: inherit;
-  }
-  .cls-card:hover::after { opacity: 1; }
   .cls-card:hover {
-    background: var(--glass-hover);
     border-color: rgba(74,158,255,.2);
-    transform: translateY(-8px);
+    transform: translateY(-6px) scale(1.02);
     box-shadow:
       0 24px 64px -16px rgba(74,158,255,.16),
-      0 8px 24px -8px rgba(0,0,0,.06);
+      0 8px 24px -8px rgba(0,0,0,.06),
+      0 0 32px rgba(74,158,255,.08);
   }
   .cls-card:active { transform: translateY(-2px) scale(0.98); transition-duration: 80ms; }
 
@@ -1218,11 +1204,6 @@
     color: var(--pri);
     transition: all var(--hover);
   }
-  .cls-card:hover .cls-ico {
-    background: linear-gradient(135deg, rgba(74,158,255,.14), rgba(108,184,255,.08));
-    border-color: rgba(74,158,255,.25);
-    transform: scale(1.08);
-  }
   .cls-card .cls-ico svg { width: 24px; height: 24px; }
 
   .cls-card .num {
@@ -1233,10 +1214,6 @@
     margin-bottom: 4px;
     transition: color var(--hover), transform var(--hover);
     line-height: 1;
-  }
-  .cls-card:hover .num {
-    color: var(--pri);
-    transform: scale(1.08);
   }
   .cls-card .ttl {
     font-size: 17px;
@@ -1250,9 +1227,6 @@
     margin-top: 6px;
     transition: color var(--hover);
   }
-  .cls-card:hover .ttl,
-  .cls-card:hover .meta,
-  .cls-card:hover .cls-ico { color: var(--pri); }
   .cls-card .subj-preview {
     display: flex;
     flex-wrap: wrap;
@@ -1272,9 +1246,7 @@
     letter-spacing: .5px;
   }
   .cls-card:hover .subj-preview span {
-    background: rgba(74,158,255,.1);
     transform: translateY(-2px);
-    color: var(--tx-2);
   }
   .cls-card .subj-preview span:nth-child(2) { transition-delay: 40ms; }
   .cls-card .subj-preview span:nth-child(3) { transition-delay: 80ms; }
