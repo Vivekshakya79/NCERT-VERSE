@@ -3,7 +3,7 @@
  *
  * 6 organic glow regions arranged in a J.J. Thomson "plum pudding" layout:
  * one large center glow behind the heading, with smaller "electron" glows
- * scattered irregularly around it, plus 8 electron particle dots with
+ * scattered irregularly around it, plus 10 electron particle dots with
  * live floating movement.
  *
  * Animated only transform: translate3d() / translate() — GPU accelerated, 60 FPS.
@@ -19,6 +19,8 @@ export function HeroAmbientBackground() {
       <div className="hero-ambient-glow" />
       <div className="hero-ambient-glow" />
       <div className="hero-ambient-electrons">
+        <div className="hero-ambient-electron" />
+        <div className="hero-ambient-electron" />
         <div className="hero-ambient-electron" />
         <div className="hero-ambient-electron" />
         <div className="hero-ambient-electron" />

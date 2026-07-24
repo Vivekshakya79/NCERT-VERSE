@@ -789,69 +789,85 @@
     will-change: transform;
   }
 
-  /* Electron 1 — Upper-left floating dot */
+  /* Electron 1 — Far left edge, near top */
   .hero-ambient-electrons .hero-ambient-electron:nth-child(1) {
-    width: 18px; height: 18px;
-    top: 18%; left: 15%;
-    background: rgba(37,99,235,.09);
-    animation: he1 28s ease-in-out infinite;
-    animation-delay: -3s;
-  }
-  /* Electron 2 — Upper-right floating dot */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(2) {
     width: 14px; height: 14px;
-    top: 12%; right: 18%;
-    background: rgba(59,130,246,.08);
-    animation: he2 24s ease-in-out infinite;
-    animation-delay: -8s;
+    top: 8%; left: 2%;
+    background: rgba(37,99,235,.08);
+    animation: he1 30s ease-in-out infinite;
+    animation-delay: -2s;
   }
-  /* Electron 3 — Left of center heading */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(3) {
-    width: 20px; height: 20px;
-    top: 38%; left: 8%;
-    background: rgba(30,64,175,.07);
-    animation: he3 32s ease-in-out infinite;
-    animation-delay: -12s;
-  }
-  /* Electron 4 — Right of center heading */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(4) {
-    width: 12px; height: 12px;
-    top: 42%; right: 10%;
-    background: rgba(37,99,235,.1);
-    animation: he4 22s ease-in-out infinite;
-    animation-delay: -5s;
-  }
-  /* Electron 5 — Above heading area */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(5) {
-    width: 22px; height: 22px;
-    top: 4%; left: 45%;
-    background: rgba(29,78,216,.06);
-    animation: he5 30s ease-in-out infinite;
-    animation-delay: -16s;
-  }
-  /* Electron 6 — Below CTA left */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(6) {
-    width: 16px; height: 16px;
-    top: 60%; left: 25%;
-    background: rgba(59,130,246,.08);
-    animation: he6 26s ease-in-out infinite;
-    animation-delay: -10s;
-  }
-  /* Electron 7 — Below CTA right */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(7) {
-    width: 10px; height: 10px;
-    top: 65%; right: 28%;
-    background: rgba(37,99,235,.09);
-    animation: he7 35s ease-in-out infinite;
+  /* Electron 2 — Upper-left area */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(2) {
+    width: 18px; height: 18px;
+    top: 18%; left: 12%;
+    background: rgba(59,130,246,.07);
+    animation: he2 25s ease-in-out infinite;
     animation-delay: -7s;
   }
-  /* Electron 8 — Bottom center area */
-  .hero-ambient-electrons .hero-ambient-electron:nth-child(8) {
-    width: 24px; height: 24px;
-    top: 78%; left: 48%;
-    background: rgba(30,64,175,.05);
-    animation: he8 20s ease-in-out infinite;
+  /* Electron 3 — Far right edge, upper */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(3) {
+    width: 20px; height: 20px;
+    top: 5%; right: 3%;
+    background: rgba(30,64,175,.06);
+    animation: he3 28s ease-in-out infinite;
     animation-delay: -14s;
+  }
+  /* Electron 4 — Center-left, mid-height */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(4) {
+    width: 12px; height: 12px;
+    top: 30%; left: 5%;
+    background: rgba(37,99,235,.09);
+    animation: he4 22s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+  /* Electron 5 — Exact center behind heading */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(5) {
+    width: 24px; height: 24px;
+    top: 45%; left: 48%;
+    background: rgba(29,78,216,.05);
+    animation: he5 35s ease-in-out infinite;
+    animation-delay: -18s;
+  }
+  /* Electron 6 — Center-right, mid-height */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(6) {
+    width: 16px; height: 16px;
+    top: 35%; right: 6%;
+    background: rgba(59,130,246,.08);
+    animation: he6 32s ease-in-out infinite;
+    animation-delay: -10s;
+  }
+  /* Electron 7 — Lower-left */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(7) {
+    width: 10px; height: 10px;
+    top: 65%; left: 4%;
+    background: rgba(37,99,235,.1);
+    animation: he7 20s ease-in-out infinite;
+    animation-delay: -5s;
+  }
+  /* Electron 8 — Lower-right */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(8) {
+    width: 22px; height: 22px;
+    top: 62%; right: 3%;
+    background: rgba(30,64,175,.05);
+    animation: he8 26s ease-in-out infinite;
+    animation-delay: -12s;
+  }
+  /* Electron 9 — Bottom edge, center-left */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(9) {
+    width: 15px; height: 15px;
+    top: 82%; left: 15%;
+    background: rgba(37,99,235,.07);
+    animation: he9 33s ease-in-out infinite;
+    animation-delay: -8s;
+  }
+  /* Electron 10 — Bottom edge, right */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(10) {
+    width: 13px; height: 13px;
+    top: 88%; right: 12%;
+    background: rgba(59,130,246,.06);
+    animation: he10 29s ease-in-out infinite;
+    animation-delay: -16s;
   }
 
   /* Dark mode: slightly brighter electrons */
@@ -895,6 +911,15 @@
   @keyframes he8 {
     0%, 100% { transform: translate3d(0, 0, 0); }
     50% { transform: translate3d(-8px, -5px, 0); }
+  }
+  @keyframes he9 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    33% { transform: translate3d(-7px, 9px, 0); }
+    66% { transform: translate3d(5px, -6px, 0); }
+  }
+  @keyframes he10 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(6px, -10px, 0); }
   }
 
   /* ===== SEARCH BOX ===== */
