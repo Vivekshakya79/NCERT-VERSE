@@ -17,29 +17,30 @@ export const metadata: Metadata = {
 };
 
 export default function NCERTPage() {
-  const particles = Array.from({ length: 8 }, (_, i) => (
-    <div
-      key={i}
-      className="ph-particle"
-      style={{
-        width: `${12 + Math.random() * 20}px`,
-        height: `${12 + Math.random() * 20}px`,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`,
-        animationDuration: `${15 + Math.random() * 15}s`,
-        animationDelay: `${Math.random() * -20}s`,
-        opacity: `${0.03 + Math.random() * 0.05}`,
-      }}
-    />
-  ));
-
   return (
     <>
       <div className="ph ph-ncert">
-        <div className="ph-bg" />
+        <div className="ph-mesh">
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+        </div>
+        <div className="ph-light-tr" />
+        <div className="ph-light-left" />
+        <div className="ph-aurora" />
+        <div className="ph-glass" />
+        <div className="ph-noise" />
         <div className="ph-grid" />
-        <div className="ph-glow" />
-        <div className="ph-particles">{particles}</div>
+        <div className="ph-blobs">
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+        </div>
         <div className="ph-fade" />
         <div className="ph-content">
           <div className="ph-badge">NCERT Solutions</div>

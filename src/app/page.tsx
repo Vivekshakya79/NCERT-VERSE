@@ -22,57 +22,6 @@ function StatCard({ target, label }: { target: number; label: string }) {
   );
 }
 
-function Particles() {
-  const [particles, setParticles] = useState<React.ReactNode[]>([]);
-
-  useEffect(() => {
-    setParticles(
-      Array.from({ length: 4 }, (_, i) => (
-        <div
-          key={i}
-          className="ph-particle"
-          style={{
-            width: `${6 + Math.random() * 10}px`,
-            height: `${6 + Math.random() * 10}px`,
-            left: `${10 + Math.random() * 80}%`,
-            top: `${10 + Math.random() * 80}%`,
-            animationDuration: `${20 + Math.random() * 20}s`,
-            animationDelay: `${Math.random() * -30}s`,
-            opacity: `${0.02 + Math.random() * 0.04}`,
-          }}
-        />
-      ))
-    );
-  }, []);
-
-  return <>{particles}</>;
-}
-
-function FloatingOrbs() {
-  const [orbs, setOrbs] = useState<React.ReactNode[]>([]);
-
-  useEffect(() => {
-    setOrbs(
-      Array.from({ length: 3 }, (_, i) => (
-        <div
-          key={i}
-          className="hero-orb"
-          style={{
-            width: `${200 + Math.random() * 300}px`,
-            height: `${200 + Math.random() * 300}px`,
-            left: `${10 + Math.random() * 60}%`,
-            top: `${5 + Math.random() * 40}%`,
-            animationDuration: `${18 + Math.random() * 12}s`,
-            animationDelay: `${Math.random() * -10}s`,
-          }}
-        />
-      ))
-    );
-  }, []);
-
-  return <>{orbs}</>;
-}
-
 function SectionErrorBoundary({ children, label }: { children: React.ReactNode; label: string }) {
   const [hasError, setHasError] = useState(false);
 
@@ -102,14 +51,26 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
-        <div className="ph-bg" />
-        <div className="ph-grid" />
-        <div className="ph-glow" />
-        <div className="ph-orbs">
-          <FloatingOrbs />
+        <div className="ph-mesh">
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
+          <div className="ph-mesh-g" />
         </div>
-        <div className="ph-particles">
-          <Particles />
+        <div className="ph-light-tr" />
+        <div className="ph-light-left" />
+        <div className="ph-aurora" />
+        <div className="ph-glass" />
+        <div className="ph-noise" />
+        <div className="ph-grid" />
+        <div className="ph-blobs">
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
+          <div className="ph-blob" />
         </div>
         <div className="ph-fade" />
         <div className="hero-c">
