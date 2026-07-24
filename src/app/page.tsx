@@ -27,18 +27,18 @@ function Particles() {
 
   useEffect(() => {
     setParticles(
-      Array.from({ length: 8 }, (_, i) => (
+      Array.from({ length: 4 }, (_, i) => (
         <div
           key={i}
           className="ph-particle"
           style={{
-            width: `${12 + Math.random() * 20}px`,
-            height: `${12 + Math.random() * 20}px`,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animationDuration: `${15 + Math.random() * 15}s`,
-            animationDelay: `${Math.random() * -20}s`,
-            opacity: `${0.03 + Math.random() * 0.05}`,
+            width: `${6 + Math.random() * 10}px`,
+            height: `${6 + Math.random() * 10}px`,
+            left: `${10 + Math.random() * 80}%`,
+            top: `${10 + Math.random() * 80}%`,
+            animationDuration: `${20 + Math.random() * 20}s`,
+            animationDelay: `${Math.random() * -30}s`,
+            opacity: `${0.02 + Math.random() * 0.04}`,
           }}
         />
       ))
@@ -46,6 +46,31 @@ function Particles() {
   }, []);
 
   return <>{particles}</>;
+}
+
+function FloatingOrbs() {
+  const [orbs, setOrbs] = useState<React.ReactNode[]>([]);
+
+  useEffect(() => {
+    setOrbs(
+      Array.from({ length: 3 }, (_, i) => (
+        <div
+          key={i}
+          className="hero-orb"
+          style={{
+            width: `${200 + Math.random() * 300}px`,
+            height: `${200 + Math.random() * 300}px`,
+            left: `${10 + Math.random() * 60}%`,
+            top: `${5 + Math.random() * 40}%`,
+            animationDuration: `${18 + Math.random() * 12}s`,
+            animationDelay: `${Math.random() * -10}s`,
+          }}
+        />
+      ))
+    );
+  }, []);
+
+  return <>{orbs}</>;
 }
 
 function SectionErrorBoundary({ children, label }: { children: React.ReactNode; label: string }) {
@@ -80,6 +105,9 @@ export default function HomePage() {
         <div className="ph-bg" />
         <div className="ph-grid" />
         <div className="ph-glow" />
+        <div className="ph-orbs">
+          <FloatingOrbs />
+        </div>
         <div className="ph-particles">
           <Particles />
         </div>
