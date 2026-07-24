@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Clock } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 
 const quizQuestions = [
   {
@@ -17,15 +18,7 @@ export default function QuizPage() {
 
   return (
     <>
-      <div className="ph">
-      <div className="ph-bg" />
-        <div className="ph-fade" />
-        <div className="ph-content">
-          <div className="ph-badge">Test Yourself</div>
-          <h1>Quiz Center</h1>
-          <p>Quizzes, challenges, leaderboards</p>
-        </div>
-      </div>
+      <PageHero badge="Test Yourself" title="Quiz Center" description="Quizzes, challenges, leaderboards" />
 
       <section className="sec">
         <nav className="breadcrumb" aria-label="Breadcrumb">

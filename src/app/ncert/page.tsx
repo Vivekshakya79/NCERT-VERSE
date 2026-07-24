@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Book } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 import { classes } from "@/data/classes";
 
 export const metadata: Metadata = {
@@ -19,15 +20,7 @@ export const metadata: Metadata = {
 export default function NCERTPage() {
   return (
     <>
-      <div className="ph ph-ncert">
-      <div className="ph-bg" />
-        <div className="ph-fade" />
-        <div className="ph-content">
-          <div className="ph-badge">NCERT Solutions</div>
-          <h1>NCERT Solutions</h1>
-          <p>Class → Subject → Chapter → Solutions</p>
-        </div>
-      </div>
+      <PageHero badge="NCERT Solutions" title="NCERT Solutions" description="Class → Subject → Chapter → Solutions" className="ph-ncert" />
 
       <section className="sec sec-ncert">
         <nav className="breadcrumb" aria-label="Breadcrumb">

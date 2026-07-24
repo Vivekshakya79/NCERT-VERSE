@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { aiTools } from "@/data/features";
+import { PageHero } from "@/components/ui/PageHero";
 import FeatureCard from "@/components/cards/FeatureCard";
 
 export const metadata: Metadata = {
@@ -18,15 +19,7 @@ export const metadata: Metadata = {
 export default function AIPage() {
   return (
     <>
-      <div className="ph">
-      <div className="ph-bg" />
-        <div className="ph-fade" />
-        <div className="ph-content">
-          <div className="ph-badge">AI-Powered</div>
-          <h1>AI Study Tools</h1>
-          <p>Smart assistants for faster learning</p>
-        </div>
-      </div>
+      <PageHero badge="AI-Powered" title="AI Study Tools" description="Smart assistants for faster learning" />
 
       <section className="sec">
         <nav className="breadcrumb" aria-label="Breadcrumb">

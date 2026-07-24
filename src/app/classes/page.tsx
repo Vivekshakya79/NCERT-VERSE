@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 import { classes } from "@/data/classes";
 import { getSubjectIcon } from "@/data/subject-icons";
 
@@ -20,15 +21,7 @@ export const metadata: Metadata = {
 export default function ClassesPage() {
   return (
     <>
-      <div className="ph">
-      <div className="ph-bg" />
-        <div className="ph-fade" />
-        <div className="ph-content">
-          <div className="ph-badge">CBSE 2026-27</div>
-          <h1>All Classes</h1>
-          <p>Select a class to explore subjects and chapters</p>
-        </div>
-      </div>
+      <PageHero badge="CBSE 2026-27" title="All Classes" description="Select a class to explore subjects and chapters" />
 
       <section className="sec">
         <nav className="breadcrumb" aria-label="Breadcrumb">

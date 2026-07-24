@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Flame, FileEdit, Trophy, Download, Hand } from "lucide-react";
+import { AmbientBackground } from "@/components/ui/AmbientBackground";
 
 const dashboardStats = [
   { label: "Study Hours", value: "14.5", change: "↑ 23%", changeType: "up" as const },
@@ -33,7 +34,7 @@ export default function DashboardPage() {
   return (
     <>
       <div className="ph">
-      <div className="ph-bg" />
+      <AmbientBackground />
         <div className="ph-fade" />
         <div className="ph-content">
           <div className="ph-badge">Dashboard</div>
