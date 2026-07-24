@@ -37,16 +37,8 @@ export default function Navbar() {
     return pathname.startsWith(href);
   };
 
-  const getHistory = () => {
-    try {
-      return JSON.parse(localStorage.getItem("sv-history") || "[]");
-    } catch {
-      return [];
-    }
-  };
-
   const handleToggleHistory = () => {
-    setHistoryOpen(!historyOpen);
+    setHistoryOpen((prev) => !prev);
   };
 
   return (

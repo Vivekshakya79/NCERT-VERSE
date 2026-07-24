@@ -1,10 +1,12 @@
+import { memo } from "react";
+
 interface PageHeroProps {
   badge: string;
   title: string;
   description?: string;
 }
 
-export function PageHero({ badge, title, description }: PageHeroProps) {
+export const PageHero = memo(function PageHero({ badge, title, description }: PageHeroProps) {
   return (
     <div className="ph">
       <div className="ph-mesh">
@@ -36,4 +38,4 @@ export function PageHero({ badge, title, description }: PageHeroProps) {
       </div>
     </div>
   );
-}
+});

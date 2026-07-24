@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { memo } from "react";
 import { BreadcrumbItem } from "@/types";
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
+const Breadcrumb = memo(function Breadcrumb({ items }: BreadcrumbProps) {
   return (
     <nav className="breadcrumb" aria-label="Breadcrumb">
       {items.map((item, i) => {
@@ -34,4 +35,6 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       })}
     </nav>
   );
-}
+});
+
+export default Breadcrumb;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { memo } from "react";
 import { BookOpen } from "lucide-react";
 
 interface ChapterCardProps {
@@ -9,7 +10,7 @@ interface ChapterCardProps {
   isPlaceholder?: boolean;
 }
 
-export default function ChapterCard({
+const ChapterCard = memo(function ChapterCard({
   classId,
   subject,
   chapterIdx,
@@ -42,4 +43,6 @@ export default function ChapterCard({
       </svg>
     </Link>
   );
-}
+});
+
+export default ChapterCard;

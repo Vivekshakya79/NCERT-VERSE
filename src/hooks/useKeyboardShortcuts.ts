@@ -60,7 +60,9 @@ export function useKeyboardShortcuts(onToggleTheme: () => void) {
       // G key for navigation
       if (e.key === "g" && !e.ctrlKey && !e.metaKey && !e.altKey) {
         e.preventDefault();
+        let timeoutId: ReturnType<typeof setTimeout>;
         const handler = (ev: KeyboardEvent) => {
+          clearTimeout(timeoutId);
           document.removeEventListener("keydown", handler);
           const route = ROUTES[ev.key];
           if (route && !ev.ctrlKey && !ev.metaKey && !ev.altKey) {
@@ -68,7 +70,7 @@ export function useKeyboardShortcuts(onToggleTheme: () => void) {
           }
         };
         document.addEventListener("keydown", handler);
-        setTimeout(() => document.removeEventListener("keydown", handler), 1000);
+        timeoutId = setTimeout(() => document.removeEventListener("keydown", handler), 1000);
       }
     };
 

@@ -21,7 +21,7 @@ export default function KeyboardShortcutsModal() {
     const handleKeyDown = (e: KeyboardEvent) => {
       const overlay = document.getElementById("kbOverlay");
       if (!overlay || !overlay.classList.contains("open")) return;
-      if (e.key === "Escape" || e.key === "?") {
+      if (e.key === "Escape") {
         overlay.classList.remove("open");
         e.preventDefault();
       }

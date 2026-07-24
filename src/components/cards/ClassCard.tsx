@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { memo } from "react";
 import { BookOpen } from "lucide-react";
 import { Class } from "@/types";
 import { getSubjectIcon } from "@/data/subject-icons";
@@ -7,7 +8,7 @@ interface ClassCardProps {
   classData: Class;
 }
 
-export default function ClassCard({ classData }: ClassCardProps) {
+const ClassCard = memo(function ClassCard({ classData }: ClassCardProps) {
   const { id, name, subjects } = classData;
 
   return (
@@ -29,4 +30,6 @@ export default function ClassCard({ classData }: ClassCardProps) {
       </div>
     </Link>
   );
-}
+});
+
+export default ClassCard;

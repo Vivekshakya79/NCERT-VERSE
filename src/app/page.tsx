@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { AlertTriangle, BookOpen, Book } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
@@ -25,15 +25,18 @@ function StatCard({ target, label }: { target: number; label: string }) {
 
 function SectionErrorBoundary({ children, label }: { children: React.ReactNode; label: string }) {
   const [hasError, setHasError] = useState(false);
+  const hasErrorRef = useRef(hasError);
+  hasErrorRef.current = hasError;
 
   useEffect(() => {
-    const handler = (event: ErrorEvent) => {
-      console.error(`Section "${label}" error:`, event.error);
-      setHasError(true);
+    const handler = () => {
+      if (!hasErrorRef.current) {
+        setHasError(true);
+      }
     };
-    window.addEventListener("error", handler);
+    window.addEventListener("error", handler, { once: true });
     return () => window.removeEventListener("error", handler);
-  }, [label]);
+  }, []);
 
   if (hasError) {
     return (

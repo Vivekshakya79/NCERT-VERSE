@@ -1,15 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 /**
  * Global IntersectionObserver that adds `.visible` class to all
  * `.reveal` and `.stagger` elements when they enter the viewport.
  *
- * This replicates the scroll-reveal behavior from the original HTML
- * and was missing from the Next.js port.
+ * Uses a single observer instance with debounced mutation observation
+ * for minimal performance overhead.
  */
 export default function RevealObserver() {
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -22,20 +24,28 @@ export default function RevealObserver() {
       },
       { threshold: 0.06, rootMargin: "0px 0px -30px 0px" }
     );
+    observerRef.current = observer;
 
-    // Observe all current and future .reveal and .stagger elements
-    const observe = () => {
-      document.querySelectorAll<HTMLElement>(".reveal, .stagger").forEach((el) => {
-        if (!el.classList.contains("visible")) {
-          observer.observe(el);
-        }
-      });
-    };
+    // Observe all current .reveal and .stagger elements
+    document.querySelectorAll<HTMLElement>(".reveal, .stagger").forEach((el) => {
+      if (!el.classList.contains("visible")) {
+        observer.observe(el);
+      }
+    });
 
-    observe();
+    // Debounced mutation observer for dynamically loaded content
+    let mutationTimeout: ReturnType<typeof setTimeout>;
+    const mutationObserver = new MutationObserver(() => {
+      clearTimeout(mutationTimeout);
+      mutationTimeout = setTimeout(() => {
+        document.querySelectorAll<HTMLElement>(".reveal, .stagger").forEach((el) => {
+          if (!el.classList.contains("visible")) {
+            observer.observe(el);
+          }
+        });
+      }, 200);
+    });
 
-    // Re-observe when DOM changes (for dynamically loaded content)
-    const mutationObserver = new MutationObserver(observe);
     mutationObserver.observe(document.body, {
       childList: true,
       subtree: true,
@@ -44,9 +54,9 @@ export default function RevealObserver() {
     return () => {
       observer.disconnect();
       mutationObserver.disconnect();
+      clearTimeout(mutationTimeout);
     };
   }, []);
 
-  // This component doesn't render anything
   return null;
 }

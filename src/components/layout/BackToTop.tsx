@@ -1,14 +1,25 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function BackToTop() {
   const [show, setShow] = useState(false);
+  const rafRef = useRef<number>(0);
 
   useEffect(() => {
-    const handler = () => setShow(window.scrollY > 300);
+    const handler = () => {
+      if (!rafRef.current) {
+        rafRef.current = requestAnimationFrame(() => {
+          setShow(window.scrollY > 300);
+          rafRef.current = 0;
+        });
+      }
+    };
     window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   const scrollToTop = () => {

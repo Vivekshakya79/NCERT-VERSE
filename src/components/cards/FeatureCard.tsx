@@ -1,3 +1,4 @@
+import { memo } from "react";
 import {
   BookOpen,
   PenTool,
@@ -41,7 +42,7 @@ interface FeatureCardProps {
   description: string;
 }
 
-export default function FeatureCard({ icon, title, description }: FeatureCardProps) {
+const FeatureCard = memo(function FeatureCard({ icon, title, description }: FeatureCardProps) {
   const Icon = iconMap[icon] || BookOpen;
   return (
     <div className="feat-card" tabIndex={0}>
@@ -50,4 +51,6 @@ export default function FeatureCard({ icon, title, description }: FeatureCardPro
       <p>{description}</p>
     </div>
   );
-}
+});
+
+export default FeatureCard;

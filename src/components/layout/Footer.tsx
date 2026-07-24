@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { memo } from "react";
 import { BookOpen, Heart } from "lucide-react";
 import { useToast } from "@/contexts/ToastContext";
 import { footerLinks, socialLinks } from "@/data/features";
 
-function SocialIcon({ type }: { type: string }) {
+const SocialIcon = memo(function SocialIcon({ type }: { type: string }) {
   switch (type) {
     case "youtube":
       return (
@@ -34,7 +35,7 @@ function SocialIcon({ type }: { type: string }) {
     default:
       return null;
   }
-}
+});
 
 export default function Footer() {
   const { showToast } = useToast();

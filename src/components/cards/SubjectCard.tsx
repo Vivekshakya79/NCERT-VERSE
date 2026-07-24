@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { memo } from "react";
 import { getSubjectIcon } from "@/data/subject-icons";
 
 interface SubjectCardProps {
@@ -7,7 +8,7 @@ interface SubjectCardProps {
   chapterCount: number;
 }
 
-export default function SubjectCard({ classId, subject, chapterCount }: SubjectCardProps) {
+const SubjectCard = memo(function SubjectCard({ classId, subject, chapterCount }: SubjectCardProps) {
   return (
     <Link
       href={`/classes/${classId}/${encodeURIComponent(subject)}`}
@@ -30,4 +31,6 @@ export default function SubjectCard({ classId, subject, chapterCount }: SubjectC
       </svg>
     </Link>
   );
-}
+});
+
+export default SubjectCard;
