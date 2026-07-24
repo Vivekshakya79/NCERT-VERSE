@@ -57,8 +57,6 @@ export default function HomePage() {
           <div className="hero-blob" />
           <div className="hero-blob" />
           <div className="hero-blob" />
-          <div className="hero-blob" />
-          <div className="hero-blob" />
         </div>
         <div className="ph-fade" />
         <div className="hero-c">

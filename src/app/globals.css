@@ -537,7 +537,7 @@
     font-weight: 500;
   }
 
-  /* ===== HERO ANIMATED BACKGROUND ===== */
+  /* ===== HERO ANIMATED BACKGROUND (perf: 3 blobs, no blur, GPU compose) ===== */
   .hero-bg {
     position: absolute;
     inset: 0;
@@ -551,89 +551,61 @@
     will-change: transform;
     pointer-events: none;
   }
+  /* Blob 1 — Top: Deep Blue → Royal Blue (brightest, sits above heading) */
   .hero-blob:nth-child(1) {
-    width: 900px;
+    width: 1100px;
     height: 900px;
-    top: -250px;
-    left: -200px;
-    background: radial-gradient(circle at 40% 40%, rgba(30,58,138,.65) 0%, rgba(30,58,138,.15) 35%, transparent 55%);
-    filter: blur(60px);
-    opacity: .65;
-    animation: blobFloat1 35s ease-in-out infinite;
-  }
-  .hero-blob:nth-child(2) {
-    width: 850px;
-    height: 850px;
     top: -300px;
-    right: -200px;
-    background: radial-gradient(circle at 60% 40%, rgba(37,99,235,.6) 0%, rgba(37,99,235,.12) 35%, transparent 55%);
-    filter: blur(60px);
-    opacity: .6;
-    animation: blobFloat2 30s ease-in-out infinite;
-  }
-  .hero-blob:nth-child(3) {
-    width: 1200px;
-    height: 1200px;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle at 50% 50%, rgba(59,130,246,.5) 0%, rgba(59,130,246,.1) 30%, transparent 50%);
-    filter: blur(70px);
-    opacity: .55;
-    animation: blobFloat3 40s ease-in-out infinite;
+    transform: translate3d(-50%, 0, 0);
+    background: radial-gradient(ellipse at 50% 40%, rgba(30,58,138,.7) 0%, rgba(37,99,235,.25) 18%, rgba(59,130,246,.08) 35%, transparent 48%);
+    opacity: .7;
+    animation: heroBlob1 35s ease-in-out infinite;
   }
-  .hero-blob:nth-child(4) {
-    width: 700px;
-    height: 700px;
-    bottom: -180px;
-    left: -120px;
-    background: radial-gradient(circle at 50% 60%, rgba(96,165,250,.45) 0%, rgba(96,165,250,.1) 30%, transparent 50%);
-    filter: blur(50px);
-    opacity: .5;
-    animation: blobFloat4 28s ease-in-out infinite;
-  }
-  .hero-blob:nth-child(5) {
+  /* Blob 2 — Center: Bright Blue (behind heading, preserves -50% centering) */
+  .hero-blob:nth-child(2) {
     width: 800px;
     height: 800px;
-    bottom: -220px;
-    right: -150px;
-    background: radial-gradient(circle at 40% 50%, rgba(147,197,253,.35) 0%, rgba(147,197,253,.08) 35%, transparent 55%);
-    filter: blur(50px);
-    opacity: .45;
-    animation: blobFloat5 32s ease-in-out infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    background: radial-gradient(circle at 50% 50%, rgba(59,130,246,.5) 0%, rgba(59,130,246,.1) 22%, transparent 45%);
+    opacity: .5;
+    animation: heroBlob2 40s ease-in-out infinite;
+  }
+  /* Blob 3 — Bottom: Sky Blue → Soft Blue (softest, sits below content) */
+  .hero-blob:nth-child(3) {
+    width: 900px;
+    height: 700px;
+    bottom: -200px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    background: radial-gradient(ellipse at 50% 60%, rgba(96,165,250,.35) 0%, rgba(147,197,253,.1) 22%, transparent 45%);
+    opacity: .4;
+    animation: heroBlob3 30s ease-in-out infinite;
   }
 
-  @keyframes blobFloat1 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(45px, -35px) scale(1.06); }
-    66% { transform: translate(-25px, 25px) scale(0.94); }
+  /* Keyframes — only translate3d + scale, 30-40s, small movement (20-40px max) */
+  @keyframes heroBlob1 {
+    0%, 100% { transform: translate3d(-50%, 0, 0) scale(1); }
+    33% { transform: translate3d(-44%, -12px, 0) scale(1.03); }
+    66% { transform: translate3d(-56%, 18px, 0) scale(0.97); }
   }
-  @keyframes blobFloat2 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(-35px, 45px) scale(1.04); }
-    66% { transform: translate(25px, -25px) scale(0.96); }
+  @keyframes heroBlob2 {
+    0%, 100% { transform: translate3d(-50%, -50%, 0) scale(1); }
+    25% { transform: translate3d(-48%, -54%, 0) scale(1.04); }
+    50% { transform: translate3d(-52%, -46%, 0) scale(0.96); }
+    75% { transform: translate3d(-49%, -51%, 0) scale(1.02); }
   }
-  @keyframes blobFloat3 {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); }
-    25% { transform: translate(-44%, -54%) scale(1.05); }
-    50% { transform: translate(-56%, -46%) scale(0.95); }
-    75% { transform: translate(-48%, -52%) scale(1.03); }
-  }
-  @keyframes blobFloat4 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(35px, -25px) scale(1.07); }
-  }
-  @keyframes blobFloat5 {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(-30px, 20px) scale(0.93); }
+  @keyframes heroBlob3 {
+    0%, 100% { transform: translate3d(-50%, 0, 0) scale(1); }
+    50% { transform: translate3d(-47%, -18px, 0) scale(1.05); }
   }
 
-  /* Dark mode: slightly reduce blob opacity for a more refined look */
-  [data-theme="dark"] .hero-blob:nth-child(1) { opacity: .5; }
-  [data-theme="dark"] .hero-blob:nth-child(2) { opacity: .45; }
-  [data-theme="dark"] .hero-blob:nth-child(3) { opacity: .4; }
-  [data-theme="dark"] .hero-blob:nth-child(4) { opacity: .35; }
-  [data-theme="dark"] .hero-blob:nth-child(5) { opacity: .3; }
+  /* Dark mode: slightly reduce blob opacity */
+  [data-theme="dark"] .hero-blob:nth-child(1) { opacity: .55; }
+  [data-theme="dark"] .hero-blob:nth-child(2) { opacity: .4; }
+  [data-theme="dark"] .hero-blob:nth-child(3) { opacity: .3; }
 
   /* ===== SEARCH BOX ===== */
   .search-box {
