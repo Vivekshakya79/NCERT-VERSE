@@ -6,7 +6,7 @@ import { AlertTriangle, BookOpen, Book } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
 import FeatureCard from "@/components/cards/FeatureCard";
-import { AmbientBackground } from "@/components/ui/AmbientBackground";
+import { HeroAmbientBackground } from "@/components/ui/HeroAmbientBackground";
 import { classes } from "@/data/classes";
 import { features } from "@/data/features";
 import { useCountUp } from "@/hooks/useCountUp";
@@ -54,7 +54,7 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
-        <AmbientBackground />
+        <HeroAmbientBackground />
         <div className="ph-fade" />
         <div className="hero-c">
           <div className="hero-seq hero-pill">

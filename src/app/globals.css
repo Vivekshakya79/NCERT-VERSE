@@ -664,6 +664,117 @@
   [data-theme="dark"] .ambient-glow:nth-child(6) { opacity: .7; }
   [data-theme="dark"] .ambient-glow:nth-child(7) { opacity: .7; }
 
+  /* ===== HERO AMBIENT BACKGROUND (home page — J.J. Thomson organic layout) ===== */
+  .hero-ambient-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .hero-ambient-glow {
+    position: absolute;
+    border-radius: 50%;
+    will-change: transform;
+    pointer-events: none;
+  }
+  /* Glow 1 — Center behind heading ("pudding"), largest, darkest blue */
+  .hero-ambient-glow:nth-child(1) {
+    width: 1100px;
+    height: 1100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle at 50% 45%, rgba(30,64,175,.16) 0%, rgba(29,78,216,.08) 15%, rgba(30,64,175,.04) 30%, rgba(30,64,175,.01) 50%, transparent 62%);
+    animation: hgCenter 55s ease-in-out infinite;
+    animation-delay: -5s;
+  }
+  /* Glow 2 — Upper-left "electron" */
+  .hero-ambient-glow:nth-child(2) {
+    width: 700px;
+    height: 700px;
+    top: 8%;
+    left: 12%;
+    background: radial-gradient(circle at 50% 50%, rgba(37,99,235,.14) 0%, rgba(37,99,235,.06) 20%, rgba(37,99,235,.02) 40%, transparent 55%);
+    animation: hgFloat1 48s ease-in-out infinite;
+    animation-delay: -15s;
+  }
+  /* Glow 3 — Upper-right "electron" */
+  .hero-ambient-glow:nth-child(3) {
+    width: 500px;
+    height: 500px;
+    top: 5%;
+    right: 8%;
+    background: radial-gradient(circle at 50% 50%, rgba(59,130,246,.12) 0%, rgba(59,130,246,.05) 20%, rgba(59,130,246,.02) 40%, transparent 55%);
+    animation: hgFloat2 42s ease-in-out infinite;
+    animation-delay: -25s;
+  }
+  /* Glow 4 — Left-mid "electron" */
+  .hero-ambient-glow:nth-child(4) {
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left: 2%;
+    background: radial-gradient(circle at 50% 50%, rgba(29,78,216,.13) 0%, rgba(29,78,216,.05) 20%, rgba(29,78,216,.02) 40%, transparent 55%);
+    animation: hgFloat3 45s ease-in-out infinite;
+    animation-delay: -8s;
+  }
+  /* Glow 5 — Right-mid "electron" */
+  .hero-ambient-glow:nth-child(5) {
+    width: 650px;
+    height: 650px;
+    top: 42%;
+    right: 3%;
+    background: radial-gradient(circle at 50% 50%, rgba(37,99,235,.11) 0%, rgba(37,99,235,.04) 20%, rgba(37,99,235,.01) 40%, transparent 55%);
+    animation: hgFloat4 50s ease-in-out infinite;
+    animation-delay: -35s;
+  }
+  /* Glow 6 — Bottom "electron" */
+  .hero-ambient-glow:nth-child(6) {
+    width: 900px;
+    height: 900px;
+    top: 73%;
+    left: 55%;
+    background: radial-gradient(circle at 50% 50%, rgba(30,64,175,.1) 0%, rgba(29,78,216,.05) 20%, rgba(30,64,175,.02) 40%, transparent 55%);
+    animation: hgFloat5 40s ease-in-out infinite;
+    animation-delay: -20s;
+  }
+
+  /* Hero ambient keyframes — only translate3d/translate, 40-60s, 10-20px movement */
+  @keyframes hgCenter {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    33% { transform: translate(-48%, -51%) scale(1.015); }
+    66% { transform: translate(-52%, -49%) scale(0.985); }
+  }
+  @keyframes hgFloat1 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(12px, -8px, 0); }
+  }
+  @keyframes hgFloat2 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-10px, 6px, 0); }
+  }
+  @keyframes hgFloat3 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(8px, 10px, 0); }
+  }
+  @keyframes hgFloat4 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-6px, -14px, 0); }
+  }
+  @keyframes hgFloat5 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(10px, -6px, 0); }
+  }
+
+  /* Hero dark mode: slightly reduce opacity */
+  [data-theme="dark"] .hero-ambient-glow:nth-child(1) { opacity: .8; }
+  [data-theme="dark"] .hero-ambient-glow:nth-child(2) { opacity: .75; }
+  [data-theme="dark"] .hero-ambient-glow:nth-child(3) { opacity: .7; }
+  [data-theme="dark"] .hero-ambient-glow:nth-child(4) { opacity: .75; }
+  [data-theme="dark"] .hero-ambient-glow:nth-child(5) { opacity: .7; }
+  [data-theme="dark"] .hero-ambient-glow:nth-child(6) { opacity: .7; }
+
   /* ===== SEARCH BOX ===== */
   .search-box {
     max-width: 600px;
