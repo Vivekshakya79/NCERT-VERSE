@@ -775,6 +775,128 @@
   [data-theme="dark"] .hero-ambient-glow:nth-child(5) { opacity: .7; }
   [data-theme="dark"] .hero-ambient-glow:nth-child(6) { opacity: .7; }
 
+  /* ===== ELECTRON PARTICLES (J.J. Thomson model) ===== */
+  .hero-ambient-electrons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero-ambient-electron {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  /* Electron 1 — Upper-left floating dot */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(1) {
+    width: 18px; height: 18px;
+    top: 18%; left: 15%;
+    background: rgba(37,99,235,.09);
+    animation: he1 28s ease-in-out infinite;
+    animation-delay: -3s;
+  }
+  /* Electron 2 — Upper-right floating dot */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(2) {
+    width: 14px; height: 14px;
+    top: 12%; right: 18%;
+    background: rgba(59,130,246,.08);
+    animation: he2 24s ease-in-out infinite;
+    animation-delay: -8s;
+  }
+  /* Electron 3 — Left of center heading */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(3) {
+    width: 20px; height: 20px;
+    top: 38%; left: 8%;
+    background: rgba(30,64,175,.07);
+    animation: he3 32s ease-in-out infinite;
+    animation-delay: -12s;
+  }
+  /* Electron 4 — Right of center heading */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(4) {
+    width: 12px; height: 12px;
+    top: 42%; right: 10%;
+    background: rgba(37,99,235,.1);
+    animation: he4 22s ease-in-out infinite;
+    animation-delay: -5s;
+  }
+  /* Electron 5 — Above heading area */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(5) {
+    width: 22px; height: 22px;
+    top: 4%; left: 45%;
+    background: rgba(29,78,216,.06);
+    animation: he5 30s ease-in-out infinite;
+    animation-delay: -16s;
+  }
+  /* Electron 6 — Below CTA left */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(6) {
+    width: 16px; height: 16px;
+    top: 60%; left: 25%;
+    background: rgba(59,130,246,.08);
+    animation: he6 26s ease-in-out infinite;
+    animation-delay: -10s;
+  }
+  /* Electron 7 — Below CTA right */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(7) {
+    width: 10px; height: 10px;
+    top: 65%; right: 28%;
+    background: rgba(37,99,235,.09);
+    animation: he7 35s ease-in-out infinite;
+    animation-delay: -7s;
+  }
+  /* Electron 8 — Bottom center area */
+  .hero-ambient-electrons .hero-ambient-electron:nth-child(8) {
+    width: 24px; height: 24px;
+    top: 78%; left: 48%;
+    background: rgba(30,64,175,.05);
+    animation: he8 20s ease-in-out infinite;
+    animation-delay: -14s;
+  }
+
+  /* Dark mode: slightly brighter electrons */
+  [data-theme="dark"] .hero-ambient-electron {
+    opacity: .85;
+  }
+
+  /* — Electron orbital keyframes (translate3d only — GPU accelerated) — */
+  @keyframes he1 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    33% { transform: translate3d(8px, -6px, 0); }
+    66% { transform: translate3d(-5px, 4px, 0); }
+  }
+  @keyframes he2 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-6px, 8px, 0); }
+  }
+  @keyframes he3 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    33% { transform: translate3d(-10px, -5px, 0); }
+    66% { transform: translate3d(4px, 8px, 0); }
+  }
+  @keyframes he4 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(8px, -7px, 0); }
+  }
+  @keyframes he5 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    33% { transform: translate3d(-6px, -10px, 0); }
+    66% { transform: translate3d(7px, -3px, 0); }
+  }
+  @keyframes he6 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(5px, 12px, 0); }
+  }
+  @keyframes he7 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    33% { transform: translate3d(9px, 6px, 0); }
+    66% { transform: translate3d(-4px, -10px, 0); }
+  }
+  @keyframes he8 {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-8px, -5px, 0); }
+  }
+
   /* ===== SEARCH BOX ===== */
   .search-box {
     max-width: 600px;
