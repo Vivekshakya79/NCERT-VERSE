@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { AlertTriangle } from "lucide-react";
+import Link from "next/link";
+import { AlertTriangle, BookOpen, Book } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
 import FeatureCard from "@/components/cards/FeatureCard";
@@ -86,6 +87,16 @@ export default function HomePage() {
             Premium study materials for CBSE Classes 6 to 12. NCERT solutions,
             chapter notes, MCQs, and AI-powered tools.
           </p>
+          <div className="hero-seq hero-cta">
+            <Link href="/classes" className="btn btn-p">
+              <BookOpen size={18} />
+              Browse Classes
+            </Link>
+            <Link href="/ncert" className="btn btn-s">
+              <Book size={18} />
+              View NCERT Solutions
+            </Link>
+          </div>
           <div className="hero-seq search-box search-enter">
             <SearchBar />
           </div>
