@@ -2896,6 +2896,7 @@
 [data-theme="dark"] .content-section::after,
 [data-theme="dark"] .quiz-opt::after,
 [data-theme="dark"] .ex-item::after,
+[data-theme="dark"] .faq-item::after,
 [data-theme="dark"] .sol-question::after {
   background: radial-gradient(circle at 25% 20%, rgba(59,130,246,.08), rgba(59,130,246,.03) 35%, transparent 70%);
 }
@@ -3241,6 +3242,19 @@
   box-shadow: var(--sh-premium), var(--sh-inner), var(--sh-glow);
   transition: box-shadow var(--hover), background var(--hover), transform var(--hover), border-color var(--hover);
   position: relative;
+}
+.faq-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 25% 20%, var(--shine-start), var(--shine-mid) 35%, var(--shine-end) 70%);
+  opacity: 0;
+  transition: opacity 400ms ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.faq-item:hover::after {
+  opacity: 1;
 }
 .faq-item:hover {
   background: rgba(255,255,255,.82);
