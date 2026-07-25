@@ -2,13 +2,14 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { AlertTriangle, BookOpen, Book } from "lucide-react";
+import { AlertTriangle, BookOpen, Book, HelpCircle, Sparkles, GraduationCap, PenTool, CheckCircle, Bot, BarChart, Smartphone } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
-import FeatureCard from "@/components/cards/FeatureCard";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import { HeroAmbientBackground } from "@/components/ui/HeroAmbientBackground";
 import { classes } from "@/data/classes";
 import { features } from "@/data/features";
+import { faqData } from "@/data/faq";
 import { useCountUp } from "@/hooks/useCountUp";
 
 function StatCard({ target, label }: { target: number; label: string }) {
@@ -52,6 +53,13 @@ function SectionErrorBoundary({ children, label }: { children: React.ReactNode; 
 export default function HomePage() {
   return (
     <>
+      {/* Global Floating Particles */}
+      <div className="bg-particles" aria-hidden="true">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <div key={i} className="bg-particle" />
+        ))}
+      </div>
+
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
         <HeroAmbientBackground />
@@ -110,23 +118,68 @@ export default function HomePage() {
         </section>
       </SectionErrorBoundary>
 
-      {/* Features Section */}
+      {/* Why Choose Us Section */}
       <SectionErrorBoundary label="Features">
         <div className="sec-divider" />
         <section className="sec" aria-label="Features">
           <div className="sec-h reveal">
-            <div className="lab">Why StudyVerse</div>
+            <div className="lab-badge">
+              <Sparkles size={14} />
+              Why StudyVerse
+            </div>
             <h2>Everything You Need to Succeed</h2>
             <p>
-              Comprehensive learning resources designed for CBSE students
+              Comprehensive learning resources designed for CBSE students —
+              from NCERT solutions to AI-powered study tools
             </p>
           </div>
           <div className="g g-4 stagger">
             {features && features.length > 0
-              ? features.map((feature) => (
-                  <FeatureCard key={feature.title} {...feature} />
+              ? features.map((feature, idx) => (
+                  <div key={feature.title} className="feat-card" tabIndex={0} style={{ position: 'relative' }}>
+                    <span className="feat-num">{String(idx + 1).padStart(2, '0')}</span>
+                    <div className="feat-ico" aria-hidden="true">
+                      {(() => {
+                        const icons: Record<string, React.ReactNode> = {
+                          BookOpen: <BookOpen size={24} />,
+                          PenTool: <PenTool size={24} />,
+                          CheckCircle: <CheckCircle size={24} />,
+                          Bot: <Bot size={24} />,
+                          BarChart: <BarChart size={24} />,
+                          Smartphone: <Smartphone size={24} />,
+                        };
+                        return icons[feature.icon] || <BookOpen size={24} />;
+                      })()}
+                    </div>
+                    <h4>{feature.title}</h4>
+                    <p>{feature.description}</p>
+                  </div>
                 ))
               : <p className="empty-state">No features available</p>}
+          </div>
+        </section>
+      </SectionErrorBoundary>
+
+      {/* FAQ Section */}
+      <SectionErrorBoundary label="FAQ">
+        <div className="sec-divider" />
+        <section className="sec" aria-label="Frequently asked questions">
+          <div className="sec-h reveal">
+            <div className="lab-badge">
+              <HelpCircle size={14} />
+              FAQ
+            </div>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about StudyVerse</p>
+          </div>
+          <FaqAccordion items={faqData} />
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <p style={{ color: 'var(--tx-3)', fontSize: 15 }}>
+              Still have questions?{' '}
+              <Link href="#" style={{ color: 'var(--pri)', fontWeight: 600, textDecoration: 'none' }}>
+                Get in touch
+              </Link>
+            </p>
           </div>
         </section>
       </SectionErrorBoundary>
