@@ -102,8 +102,8 @@
   --sh-glow-lg: 0 0 60px rgba(37,99,235,.1), 0 0 120px rgba(37,99,235,.05);
   --sh-inner: inset 0 1.5px 0 rgba(255,255,255,.7);
   --sh-inner-deep: inset 0 1px 0 rgba(255,255,255,.4);
-  --glass-rich: rgba(255,255,255,.78);
-  --glass-border-rich: rgba(255,255,255,.55);
+  --glass-rich: rgba(255,255,255,.88);
+  --glass-border-rich: rgba(255,255,255,.4);
   --shine-start: rgba(255,255,255,.4);
   --shine-mid: rgba(255,255,255,.15);
   --shine-end: transparent;
@@ -967,8 +967,8 @@
     position: relative;
     border-radius: 22px;
     background: rgba(255,255,255,.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,.4);
     transition: border-color var(--hover), box-shadow var(--hover);
     box-shadow: var(--sh-premium);
@@ -1022,8 +1022,8 @@
     left: 0;
     right: 0;
     background: rgba(255,255,255,.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,.35);
     border-radius: 22px;
     max-height: 340px;
@@ -1352,8 +1352,8 @@
   /* ===== GLASS CARD ===== */
   .glass-card {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 32px;
@@ -1430,8 +1430,8 @@
   /* ===== CLASS CARDS ===== */
   .cls-card {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 36px 28px;
@@ -1547,8 +1547,8 @@
   /* ===== CHIP (Subject Card) ===== */
   .chip {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 22px 26px;
@@ -1640,8 +1640,8 @@
   /* ===== CHAPTER ITEM ===== */
   .ch-item {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 26px 30px;
@@ -1742,8 +1742,8 @@
   /* ===== FEATURE CARDS ===== */
   .feat-card {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 32px 30px;
@@ -1829,8 +1829,8 @@
   /* ===== CONTENT SECTION ===== */
   .content-section {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 28px 32px;
@@ -1949,8 +1949,8 @@
   .d-stat {
     padding: 24px;
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     box-shadow: var(--sh-premium), var(--sh-inner), var(--sh-glow);
@@ -2043,8 +2043,8 @@
   .tbl-wrap {
     overflow-x: auto;
     background: rgba(255,255,255,.65);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,.35);
     border-radius: 22px;
     box-shadow: var(--sh-premium), var(--sh-inner), var(--sh-glow);
@@ -2112,8 +2112,8 @@
   /* ===== QUIZ ===== */
   .quiz-opt {
     background: var(--glass-rich);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 1px solid var(--glass-border-rich);
     border-radius: 22px;
     padding: 20px 24px;
@@ -2436,8 +2436,8 @@
   text-align: center;
   padding: 48px 28px;
   background: var(--glass-rich);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px dashed rgba(37,99,235,.15);
   border-radius: 22px;
   margin: 24px 0;
@@ -2472,8 +2472,8 @@
   top: calc(100% + 10px);
   right: 0;
   background: rgba(255,255,255,.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255,255,255,.35);
   border-radius: 22px;
   min-width: 280px;
@@ -2510,8 +2510,8 @@
 /* ===== FOOTER ===== */
 .ft {
   background: rgba(255,255,255,.6);
-  backdrop-filter: blur(20px) saturate(1.6);
-  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding: 80px 32px 40px;
   margin-top: 80px;
   border-top: 1px solid rgba(255,255,255,.2);
@@ -2834,8 +2834,8 @@
 }
 [data-theme="dark"] .h-stat {
   background: rgba(15,23,42,.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-color: rgba(59,130,246,.1);
 }
 [data-theme="dark"] .h-stat::before {
@@ -2848,8 +2848,8 @@
 [data-theme="dark"] .h-stat b { color: var(--pri-l); }
 [data-theme="dark"] .search-box .search-input-wrap {
   background: rgba(15,23,42,.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-color: rgba(59,130,246,.1);
 }
 [data-theme="dark"] .search-box .search-input-wrap:focus-within {
@@ -2871,6 +2871,12 @@
 [data-theme="dark"] .empty-state,
 [data-theme="dark"] .search-results,
 [data-theme="dark"] .history-dropdown,
+[data-theme="dark"] .faq-item {
+  background: rgba(15,23,42,.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-color: rgba(59,130,246,.1);
+}
 [data-theme="dark"] .toast,
 [data-theme="dark"] .kb-modal,
 [data-theme="dark"] .admin-panel,
@@ -2902,8 +2908,8 @@
 }
 [data-theme="dark"] .ft {
   background: rgba(11,17,32,.72);
-  backdrop-filter: blur(20px) saturate(1.6);
-  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-top-color: rgba(59,130,246,.06);
 }
 [data-theme="dark"] .ft::before {
@@ -2916,8 +2922,8 @@
 }
 [data-theme="dark"] .search-results,
 [data-theme="dark"] .history-dropdown {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   box-shadow: 0 24px 60px rgba(0,0,0,.5);
   border-color: rgba(59,130,246,.1);
 }
@@ -3038,8 +3044,8 @@
 }
 .ex-item {
   background: var(--glass-rich);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid var(--glass-border-rich);
   border-radius: 22px;
   padding: 16px 20px;
@@ -3135,8 +3141,8 @@
   margin-bottom: 12px;
   overflow: hidden;
   background: var(--glass-rich);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   box-shadow: var(--sh-premium), var(--sh-inner), var(--sh-glow);
   transition: transform var(--hover), box-shadow var(--hover), border-color var(--hover), background var(--hover);
   position: relative;
@@ -3234,8 +3240,8 @@
 }
 .faq-item {
   background: var(--glass-rich);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid var(--glass-border-rich);
   border-radius: 22px;
   overflow: hidden;
