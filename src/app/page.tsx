@@ -55,6 +55,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
         <HeroAmbientBackground />
+        <div className="ph-grid" />
         <div className="ph-fade" />
         <div className="hero-c">
           <div className="hero-seq hero-pill">

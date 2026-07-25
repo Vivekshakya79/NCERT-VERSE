@@ -402,6 +402,15 @@
       radial-gradient(ellipse 70% 50% at 30% 40%, rgba(37,99,235,.04) 0%, transparent 60%),
       radial-gradient(ellipse 50% 40% at 70% 50%, rgba(37,99,235,.03) 0%, transparent 60%);
   }
+  /* White dot grid overlay on page heroes */
+  .ph-grid {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.15) 1px, transparent 0);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 1;
+  }
   /* Bottom fade transition */
   .ph-fade {
     position: absolute;
@@ -460,6 +469,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .hero .ph-grid {
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.15) 1px, transparent 0);
+    background-size: 28px 28px;
   }
   .hero .ph-fade {
     bottom: 0;
@@ -558,6 +572,16 @@
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
+  }
+  /* White dot grid overlay on ambient backgrounds */
+  .ambient-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.15) 1px, transparent 0);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 1;
   }
   .ambient-glow {
     position: absolute;

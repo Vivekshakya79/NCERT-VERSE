@@ -12,6 +12,7 @@ export const PageHero = memo(function PageHero({ badge, title, description, clas
   return (
     <div className={`ph${className ? ` ${className}` : ''}`}>
       <AmbientBackground />
+      <div className="ph-grid" />
       <div className="ph-fade" />
       <div className="ph-content">
         <div className="ph-badge">{badge}</div>
