@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { AmbientBackground } from "./AmbientBackground";
+import { HeroAmbientBackground } from "./HeroAmbientBackground";
 
 interface PageHeroProps {
   badge: string;
@@ -11,7 +11,7 @@ interface PageHeroProps {
 export const PageHero = memo(function PageHero({ badge, title, description, className }: PageHeroProps) {
   return (
     <div className={`ph${className ? ` ${className}` : ''}`}>
-      <AmbientBackground />
+      <HeroAmbientBackground />
       <div className="ph-grid" />
       <div className="ph-fade" />
       <div className="ph-content">
