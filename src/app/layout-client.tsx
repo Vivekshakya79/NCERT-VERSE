@@ -11,16 +11,11 @@ import RevealObserver from "@/components/layout/RevealObserver";
 export default function LayoutClient({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* Ambient mesh background layers */}
+      {/* Subtle ambient gradient background */}
       <div className="ambient-bg" aria-hidden="true">
-        <div className="ambient-glow" style={{ top: '5%', left: '10%', width: '500px', height: '500px', animationDelay: '0s' }} />
-        <div className="ambient-glow" style={{ top: '20%', right: '-5%', width: '600px', height: '600px', animationDelay: '-8s' }} />
-        <div className="ambient-glow" style={{ bottom: '10%', left: '20%', width: '450px', height: '450px', animationDelay: '-16s' }} />
-        <div className="ambient-glow" style={{ bottom: '30%', right: '30%', width: '350px', height: '350px', animationDelay: '-24s' }} />
-        <div className="ambient-glow" style={{ top: '50%', left: '50%', width: '400px', height: '400px', animationDelay: '-32s' }} />
-        <div className="ambient-glow" style={{ top: '70%', left: '5%', width: '300px', height: '300px', animationDelay: '-40s' }} />
-        <div className="ambient-glow" style={{ top: '10%', left: '60%', width: '250px', height: '250px', animationDelay: '-48s' }} />
-        <div className="ambient-grid" />
+        <div className="ambient-glow" />
+        <div className="ambient-glow" />
+        <div className="ambient-glow" />
       </div>
       <ScrollProgress />
       <Navbar />
