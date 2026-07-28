@@ -7,9 +7,9 @@ import { ChapterSolutions, Exercise, QuestionSolution } from "@/types";
 // ============================================================
 
 // Import Class 9 Mathematics exercise JSON files
-import class9Ch0Ex1_1 from "./solutions/class-9/Mathematics/chapter-0/exercise-1.1.json";
-import class9Ch1Ex2_1 from "./solutions/class-9/Mathematics/chapter-1/exercise-2.1.json";
-import class9Ch2Ex3_1 from "./solutions/class-9/Mathematics/chapter-2/exercise-3.1.json";
+import class9Ch0Ex1_1 from "./solutions/class-9/Mathematics/chapter-0/exercise-set-1.1.json";
+import class9Ch0Ex1_2 from "./solutions/class-9/Mathematics/chapter-0/exercise-set-1.2.json";
+import class9Ch0EndOfChapter from "./solutions/class-9/Mathematics/chapter-0/end-of-chapter.json";
 
 // ============================================================
 // CHAPTER MANIFEST
@@ -17,29 +17,17 @@ import class9Ch2Ex3_1 from "./solutions/class-9/Mathematics/chapter-2/exercise-3
 // Add new chapters here by importing the JSON file and adding an entry.
 // ============================================================
 const chapterManifest: Record<string, ChapterSolutions> = {
-  // Class 9 — Mathematics — Chapter 0: Number Systems
+  // Class 9 — Mathematics — Chapter 0: Orienting Yourself: The Use of Coordinates
   "9-mathematics-0": {
     classId: 9,
     subject: "Mathematics",
     chapterIdx: 0,
-    chapterName: "Number Systems",
-    exercises: [class9Ch0Ex1_1 as unknown as Exercise],
-  },
-  // Class 9 — Mathematics — Chapter 1: Polynomials
-  "9-mathematics-1": {
-    classId: 9,
-    subject: "Mathematics",
-    chapterIdx: 1,
-    chapterName: "Polynomials",
-    exercises: [class9Ch1Ex2_1 as unknown as Exercise],
-  },
-  // Class 9 — Mathematics — Chapter 2: Coordinate Geometry
-  "9-mathematics-2": {
-    classId: 9,
-    subject: "Mathematics",
-    chapterIdx: 2,
-    chapterName: "Coordinate Geometry",
-    exercises: [class9Ch2Ex3_1 as unknown as Exercise],
+    chapterName: "Orienting Yourself: The Use of Coordinates",
+    exercises: [
+      class9Ch0Ex1_1 as unknown as Exercise,
+      class9Ch0Ex1_2 as unknown as Exercise,
+      class9Ch0EndOfChapter as unknown as Exercise,
+    ],
   },
 };
 

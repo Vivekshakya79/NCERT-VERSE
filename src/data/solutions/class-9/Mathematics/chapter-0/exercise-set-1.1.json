@@ -1,0 +1,75 @@
+{
+  "name": "Exercise sEt 1.1",
+  "questions": [
+    {
+      "id": "9-math-0-ex1.1-q1",
+      "questionNumber": 1,
+      "question": "Referring to Fig. 1.3, answer the following questions: **(i)** If $D_1R_1$ represents the door to Reiaan's room, how far is the door from the left wall (the $y$-axis) of the room? How far is the door from the $x$-axis?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the diagram:** Fig. 1.3 shows Reiaan's room with corners $OABC$ on a coordinate plane. The left wall of the room lies along the $y$-axis, and the bottom wall lies along the $x$-axis. The door $D_1R_1$ is on the bottom wall (along the $x$-axis)." },
+        { "step": 2, "content": "**Distance from the left wall ($y$-axis):** The distance of any point from the $y$-axis is its $x$-coordinate. The door starts at $D_1$. Looking at Fig. 1.3, we read the $x$-coordinate of $D_1$ by seeing how far $D_1$ is to the right of the $y$-axis (origin)." },
+        { "step": 3, "content": "**Reading $D_1$ from the diagram:** In Fig. 1.3, $D_1$ is located **8.5 units** to the right of the $y$-axis. Since the scale is 1 cm $=$ 1 foot, this means $D_1$ is 8.5 feet from the left wall." },
+        { "step": 4, "content": "**Distance from the $x$-axis:** The distance of a point from the $x$-axis is its $y$-coordinate. The door $D_1R_1$ lies along the bottom wall which coincides with the $x$-axis. Therefore, the $y$-coordinate of both $D_1$ and $R_1$ is $0$." },
+        { "step": 5, "content": "**Conclusion:** The door is **8.5 units** (8.5 feet) from the left wall ($y$-axis) and **0 units** from the $x$-axis (since it lies on the $x$-axis)." }
+      ],
+      "answer": "Distance from left wall ($y$-axis) = **8.5 units** (feet). Distance from $x$-axis = **0 units** (the door is on the $x$-axis).",
+      "verified": false,
+      "notes": "**Common Mistake:** Some students think the distance from the $x$-axis is the $x$-coordinate, and distance from the $y$-axis is the $y$-coordinate. Remember: the $x$-coordinate measures distance from the $y$-axis, and the $y$-coordinate measures distance from the $x$-axis.",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"40\" y1=\"260\" x2=\"380\" y2=\"260\" stroke=\"#333\" stroke-width=\"2\"/><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"260\" stroke=\"#333\" stroke-width=\"2\"/><polyline points=\"40,260 380,260 380,20 40,20 40,260\" stroke=\"#4a90d9\" stroke-width=\"3\" fill=\"rgba(74,144,217,0.1)\"/><text x=\"35\" y=\"15\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">y</text><text x=\"375\" y=\"275\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">x</text><text x=\"35\" y=\"265\" font-size=\"11\" fill=\"#333\">O</text><text x=\"35\" y=\"30\" font-size=\"11\" fill=\"#333\">A</text><text x=\"375\" y=\"265\" font-size=\"11\" fill=\"#333\">C</text><text x=\"375\" y=\"25\" font-size=\"11\" fill=\"#333\">B</text><line x1=\"215\" y1=\"260\" x2=\"290\" y2=\"260\" stroke=\"#e74c3c\" stroke-width=\"6\"/><text x=\"238\" y=\"253\" font-size=\"10\" fill=\"#e74c3c\">D₁R₁</text><line x1=\"40\" y1=\"210\" x2=\"105\" y2=\"210\" stroke=\"#e67e22\" stroke-width=\"5\"/><text x=\"55\" y=\"205\" font-size=\"10\" fill=\"#e67e22\">Bathroom Door</text></svg>",
+        "caption": "Fig. 1.3: Reiaan's room floor plan showing corners OABC, the room door D₁R₁ on the x-axis, and the bathroom door on the y-axis."
+      }
+    },
+    {
+      "id": "9-math-0-ex1.1-q2",
+      "questionNumber": 2,
+      "question": "Referring to Fig. 1.3: **(ii)** What are the coordinates of $D_1$?",
+      "solution": [
+        { "step": 1, "content": "**Understanding coordinates:** The coordinates of a point are written as $(x, y)$, where $x$ is the perpendicular distance from the $y$-axis and $y$ is the perpendicular distance from the $x$-axis." },
+        { "step": 2, "content": "**Reading the $x$-coordinate of $D_1$:** From Fig. 1.3, $D_1$ is 8.5 units to the right of the $y$-axis. Therefore, the $x$-coordinate is 8.5." },
+        { "step": 3, "content": "**Reading the $y$-coordinate of $D_1$:** $D_1$ lies on the $x$-axis (the bottom wall of the room). Any point on the $x$-axis has $y = 0$. Therefore, the $y$-coordinate is 0." },
+        { "step": 4, "content": "**Conclusion:** The coordinates of $D_1$ are $(8.5, 0)$." }
+      ],
+      "answer": "$$D_1 = (8.5, 0)$$",
+      "verified": false,
+      "formulaBox": {
+        "title": "Coordinates of a Point",
+        "content": "$$\\text{Coordinates} = (x, y) \\quad \\text{where}\\quad x = \\text{distance from } y\\text{-axis},\\; y = \\text{distance from } x\\text{-axis}$$"
+      },
+      "notes": "**Exam Tip:** If a point lies on the $x$-axis, its $y$-coordinate is always 0. If a point lies on the $y$-axis, its $x$-coordinate is always 0. The origin $O$ is $(0, 0)$."
+    },
+    {
+      "id": "9-math-0-ex1.1-q3",
+      "questionNumber": 3,
+      "question": "Referring to Fig. 1.3: **(iii)** If $R_1$ is the point $(11.5, 0)$, how wide is the door? Do you think this is a comfortable width for the room door? If a person in a wheelchair wants to enter the room, will he/she be able to do so easily?",
+      "solution": [
+        { "step": 1, "content": "**Finding the width of the door:** The door $D_1R_1$ extends from $D_1$ to $R_1$ along the $x$-axis. $D_1 = (8.5, 0)$ and $R_1 = (11.5, 0)$. Since both points lie on the $x$-axis, the door width is simply the difference between their $x$-coordinates." },
+        { "step": 2, "content": "**Calculating the width:** $$\\text{Door width} = x\\text{-coordinate of } R_1 - x\\text{-coordinate of } D_1 = 11.5 - 8.5 = 3 \\text{ units (feet)}$$" },
+        { "step": 3, "content": "**Is this comfortable?** A standard room door width is typically 3 feet (approximately 0.9 metres). A width of 3 feet is considered standard and comfortable for most people." },
+        { "step": 4, "content": "**Wheelchair accessibility:** According to accessibility standards (ADA), the minimum clear width for a wheelchair-accessible door is 32 inches (approximately 2.67 feet). Since 3 feet (36 inches) exceeds this minimum, a person in a wheelchair **would be able to enter** the room comfortably." }
+      ],
+      "answer": "Door width = $11.5 - 8.5 = \\mathbf{3\\text{ ft}}$. Yes, this is a comfortable standard width. Yes, a person in a wheelchair can enter easily as 3 ft exceeds the minimum 32 inch requirement.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Distance Between Two Points on the x-axis",
+        "content": "$$\\text{Distance} = |x_2 - x_1| \\quad \\text{when } y_1 = y_2 = 0$$"
+      },
+      "notes": "**Real-life connection:** In India, standard room doors are about 3 ft (0.9 m) wide. Bathroom doors are usually 2.5 ft (0.75 m) wide. Wheelchair-accessible doors should be at least 32 inches (≈ 2.67 ft) wide.\n\n**Think and Reflect:** Look around your home and school — what are the standard door widths you observe? Are they suitable for people in wheelchairs?"
+    },
+    {
+      "id": "9-math-0-ex1.1-q4",
+      "questionNumber": 4,
+      "question": "Referring to Fig. 1.3: **(iv)** If $B_1(0, 1.5)$ and $B_2(0, 4)$ represent the ends of the bathroom door, is the bathroom door narrower or wider than the room door?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the bathroom door:** The bathroom door is on the left wall (the $y$-axis), with ends at $B_1(0, 1.5)$ and $B_2(0, 4)$. Since both points lie on the $y$-axis, the width of the bathroom door is the difference between their $y$-coordinates." },
+        { "step": 2, "content": "**Calculating the bathroom door width:** $$\\text{Bathroom door width} = y\\text{-coordinate of } B_2 - y\\text{-coordinate of } B_1 = 4 - 1.5 = 2.5 \\text{ units (feet)}$$" },
+        { "step": 3, "content": "**Recall the room door width:** From question (iii), we found the room door width to be 3 feet." },
+        { "step": 4, "content": "**Comparing the two:** $$\\text{Room door: } 3\\text{ ft} \\;\\;\\; \\text{Bathroom door: } 2.5\\text{ ft}$$ $$3 \\text{ ft} > 2.5 \\text{ ft, so: }$$" }
+      ],
+      "answer": "The bathroom door is **narrower** (2.5 ft) than the room door (3 ft).",
+      "verified": false,
+      "notes": "**Common Mistake:** Students often confuse which coordinate to use. When both points lie on the $y$-axis, subtract their $y$-coordinates. Remember:\n- Points on $x$-axis: $(x, 0)$ — distance = difference in $x$-coordinates\n- Points on $y$-axis: $(0, y)$ — distance = difference in $y$-coordinates"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Exercise sEt 1.2",
+  "questions": [
+    {
+      "id": "9-math-0-ex1.2-q1",
+      "questionNumber": 1,
+      "question": "On a graph sheet, mark the $x$-axis and $y$-axis and the origin $O$. Mark points from $(-7, 0)$ to $(13, 0)$ on the $x$-axis and from $(0, -15)$ to $(0, 12)$ on the $y$-axis. (Use the scale $1$ cm $= 1$ unit.) Place Reiaan's rectangular study table with three of its feet at the points $(8, 9)$, $(11, 9)$ and $(11, 7)$.\n\n**(i)** Where will the fourth foot of the table be?\n**(ii)** Is this a good spot for the table?\n**(iii)** What is the width of the table? The length? Can you make out the height of the table?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the problem:** A rectangular table has 4 feet (legs) at its four corners. A rectangle has opposite sides equal and parallel. Given three feet at $(8, 9)$, $(11, 9)$ and $(11, 7)$, we need to find the fourth corner." },
+        { "step": 2, "content": "**Plot the given points:**\n- Point 1: $(8, 9)$ — Let's call this $A$\n- Point 2: $(11, 9)$ — Let's call this $B$\n- Point 3: $(11, 7)$ — Let's call this $C$\n\n| Point | $x$ | $y$ |\n|-------|-----|-----|\n| $A$ | 8 | 9 |\n| $B$ | 11 | 9 |\n| $C$ | 11 | 7 |" },
+        { "step": 3, "content": "**Identify the rectangular layout:**\n- $A(8, 9)$ and $B(11, 9)$ share the same $y$-coordinate (9), so $AB$ is a **horizontal** side\n- $B(11, 9)$ and $C(11, 7)$ share the same $x$-coordinate (11), so $BC$ is a **vertical** side\n- Since adjacent sides of a rectangle are perpendicular, $A \\to B \\to C$ form two adjacent sides of the rectangle" },
+        { "step": 4, "content": "**Find the fourth corner:**\n- The fourth corner $D$ must complete the rectangle\n- $D$ must be horizontally aligned with $C$ (same $y$-coordinate) and vertically aligned with $A$ (same $x$-coordinate)\n- Therefore, $D$ has the $x$-coordinate of $A$ and the $y$-coordinate of $C$:\n$$D = (8, 7)$$" },
+        { "step": 5, "content": "**(ii) Is this a good spot?**\n- The table is placed at coordinates $(8, 9)$, $(11, 9)$, $(11, 7)$, $(8, 7)$ in Fig. 1.5's layout\n- Whether it is a good spot depends on the furniture arrangement shown in Fig. 1.5. Students should observe the position of the table relative to walls, doors, and other furniture in the floor plan and evaluate if it allows comfortable movement." },
+        { "step": 6, "content": "**(iii) Finding width and length:**\n- **Width** (along $x$-direction) = $x_B - x_A = 11 - 8 = 3$ units (feet)\n- **Length** (along $y$-direction) = $y_A - y_D = 9 - 7 = 2$ units (feet)\n- **Height:** A 2-D floor plan only shows $x$ and $y$ coordinates. The height of the table (along the $z$-axis) cannot be determined from a 2-D coordinate plane. We would need additional information (a 3-D view or elevation drawing) to know the height." }
+      ],
+      "answer": "**(i)** The fourth foot is at $\\mathbf{(8, 7)}$.  \n**(ii)** Depends on the layout — observe Fig. 1.5 to see positioning relative to walls and furniture.  \n**(iii)** Width = **3 ft**, Length = **2 ft**. Height cannot be determined from the 2-D floor plan.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Rectangle Property",
+        "content": "In a rectangle, opposite sides are equal and parallel. Adjacent sides are perpendicular."
+      },
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 200 150\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"50\" y=\"30\" width=\"80\" height=\"60\" fill=\"rgba(74,144,217,0.15)\" stroke=\"#4a90d9\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"90\" r=\"4\" fill=\"#e74c3c\"/><text x=\"42\" y=\"105\" font-size=\"10\" fill=\"#333\">A (8,9)</text><circle cx=\"130\" cy=\"90\" r=\"4\" fill=\"#e74c3c\"/><text x=\"122\" y=\"105\" font-size=\"10\" fill=\"#333\">B (11,9)</text><circle cx=\"130\" cy=\"30\" r=\"4\" fill=\"#e74c3c\"/><text x=\"122\" y=\"25\" font-size=\"10\" fill=\"#333\">C (11,7)</text><circle cx=\"50\" cy=\"30\" r=\"4\" fill=\"#2ecc71\"/><text x=\"35\" y=\"22\" font-size=\"10\" fill=\"#2ecc71\" font-weight=\"bold\">D (8,7)</text><line x1=\"50\" y1=\"90\" x2=\"130\" y2=\"90\" stroke=\"#555\" stroke-width=\"1\" stroke-dasharray=\"4\"/><text x=\"75\" y=\"98\" font-size=\"10\" fill=\"#555\">3 ft</text><line x1=\"50\" y1=\"90\" x2=\"50\" y2=\"30\" stroke=\"#555\" stroke-width=\"1\" stroke-dasharray=\"4\"/><text x=\"35\" y=\"65\" font-size=\"10\" fill=\"#555\">2 ft</text></svg>",
+        "caption": "Rectangular table with feet at A(8,9), B(11,9), C(11,7), and the fourth foot D(8,7)."
+      }
+    },
+    {
+      "id": "9-math-0-ex1.2-q2",
+      "questionNumber": 2,
+      "question": "If the bathroom door has a hinge at $B_1$ and opens into the bedroom, will it hit the wardrobe? Are there any changes you would suggest if the door is made wider?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the setup:** The bathroom door has its hinge at $B_1(0, 1.5)$ on the $y$-axis (left wall). The door opens into Reiaan's bedroom. The wardrobe's position is shown in Fig. 1.5." },
+        { "step": 2, "content": "**The hinge and swing:** A door hinged at $B_1$ swings outward (or inward) along an arc. The door's swing path needs clearance. If the wardrobe is placed too close to the door's swing path, the door will hit it." },
+        { "step": 3, "content": "**From Fig. 1.5:** Look at the floor plan to see the position of the wardrobe relative to the bathroom door. Measure the distance from the door's swing path to the wardrobe." },
+        { "step": 4, "content": "**Analysis:** If the bathroom door width is 2.5 ft (from $B_1$ to $B_2$), and the door swings out, it will occupy a quarter-circle of radius 2.5 ft from $B_1$. If the wardrobe lies within this region, the door will hit the wardrobe." },
+        { "step": 5, "content": "**Suggestions if made wider:** If the door is made wider:\n- Check if there is enough wall space for a wider door frame\n- Ensure the wider door's swing path still clears the wardrobe\n- Consider a sliding door as an alternative to save space\n- Any widening should also consider the bathroom's internal layout" }
+      ],
+      "answer": "Refer to Fig. 1.5 to check if the wardrobe lies within the door's swing arc (radius 2.5 ft from $B_1$). Make suggestions based on the observed layout.",
+      "verified": false,
+      "notes": "**Exam Tip:** In such practical problems, always consider:\n1. The path of the door swing (door's radius)\n2. The clearance needed for comfortable use\n3. Alternative door types (sliding, folding) if space is tight"
+    },
+    {
+      "id": "9-math-0-ex1.2-q3",
+      "questionNumber": 3,
+      "question": "Look at Reiaan's bathroom.\n\n**(i)** What are the coordinates of the four corners $O$, $F$, $R$, and $P$ of the bathroom?\n**(ii)** What is the shape of the showering area $SHWR$ in Reiaan's bathroom? Write the coordinates of the four corners.\n**(iii)** Mark off a $3$ ft $\\times$ $2$ ft space for the washbasin and a $2$ ft $\\times$ $3$ ft space for the toilet. Write the coordinates of the corners of these spaces.",
+      "solution": [
+        { "step": 1, "content": "**Understanding the layout:** From Fig. 1.5, Reiaan's bathroom is located near the origin. The four corners are labelled $O$, $F$, $R$, and $P$ where $O$ is the origin $(0, 0)$." },
+        { "step": 2, "content": "**(i) Reading coordinates from Fig. 1.5:**\n- $O = (0, 0)$ — the origin (bottom-left corner of the bathroom)\n- $F$ = Look at Fig. 1.5 — read the $x$ and $y$ coordinates of point $F$\n- $R$ = Look at Fig. 1.5 — read the $x$ and $y$ coordinates of point $R$\n- $P$ = Look at Fig. 1.5 — read the $x$ and $y$ coordinates of point $P$\n\nTo read each coordinate, find the perpendicular distances from the $y$-axis ($x$-coordinate) and $x$-axis ($y$-coordinate)." },
+        { "step": 3, "content": "**Method to read coordinates from a graph:**\n1. From the point, draw a perpendicular line to the $x$-axis → the value where it meets is the $y$-coordinate\n2. From the point, draw a perpendicular line to the $y$-axis → the value where it meets is the $x$-coordinate\n3. Write the ordered pair as $(x, y)$" },
+        { "step": 4, "content": "**(ii) Shape of $SHWR$ (showering area):**\n- Look at Fig. 1.5 to identify the showering area labelled $SHWR$\n- From the coordinates of its four corners, determine the shape:\n  - If all angles are $90^\\circ$ with equal adjacent sides → **Square**\n  - If all angles are $90^\\circ$ with unequal adjacent sides → **Rectangle**\n  - If one corner is a right angle and the rest form a specific shape → could be a **right-angled trapezium** or other quadrilateral" },
+        { "step": 5, "content": "**(iii) Marking the washbasin and toilet spaces:**\n- **Washbasin:** $3$ ft $\\times$ $2$ ft — choose an appropriate location within the bathroom\n  - For example, place it along one wall with corners at $(x, y)$, $(x+3, y)$, $(x+3, y+2)$, $(x, y+2)$\n- **Toilet:** $2$ ft $\\times$ $3$ ft — place it in another part of the bathroom\n  - For example, corners at $(a, b)$, $(a+2, b)$, $(a+2, b+3)$, $(a, b+3)$\n- The exact coordinates depend on the bathroom layout shown in Fig. 1.5" }
+      ],
+      "answer": "**(i)** Read $O$, $F$, $R$, $P$ from Fig. 1.5. $O = (0,0)$.  \n**(ii)** Observe the shape of $SHWR$ in Fig. 1.5 and note the coordinates of its four corners.  \n**(iii)** Place the $3\\times 2$ ft washbasin and $2\\times 3$ ft toilet spaces appropriately in the bathroom, reading all coordinates from the figure.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Reading Coordinates from a Graph",
+        "content": "$$\\text{Point } P = (x, y) \\quad\\text{where}\\quad \\begin{cases} x = \\text{distance from } y\\text{-axis} \\\\ y = \\text{distance from } x\\text{-axis} \\end{cases}$$"
+      },
+      "notes": "**Common Mistake:** Always read the $x$-coordinate first and the $y$-coordinate second. The point $(3, 4)$ is NOT the same as $(4, 3)$!"
+    },
+    {
+      "id": "9-math-0-ex1.2-q4",
+      "questionNumber": 4,
+      "question": "Other rooms in the house:\n\n**(i)** Reiaan's room door leads from the dining room which has the length $18$ ft and width $15$ ft. The length of the dining room extends from point $P$ to point $A$. Sketch the dining room and mark the coordinates of its corners.\n\n**(ii)** Place a rectangular $5$ ft $\\times$ $3$ ft dining table precisely in the centre of the dining room. Write down the coordinates of the feet of the table.",
+      "solution": [
+        { "step": 1, "content": "**(i) Understanding the dining room:**\n- The dining room has dimensions: length $18$ ft, width $15$ ft\n- The length extends from point $P$ (a corner of the bathroom) to point $A$ (a corner of Reiaan's room)\n- From Fig. 1.5, read the coordinates of $P$ and $A$\n- The dining room is a rectangle of size $18 \\times 15$ ft" },
+        { "step": 2, "content": "**Finding the corners of the dining room:**\n- If $P$ is one corner and $A$ is the opposite corner along the length, then:\n  - Let the $x$-axis direction represent the width\n  - Let the $y$-axis direction represent the length (or vice versa)\n- If $P = (x_P, y_P)$ and the length $18$ ft runs from $P$ to $A$:\n  - $A$ is $18$ units away from $P$ in the appropriate direction\n- The other two corners can be found by extending $15$ ft perpendicular to the line $PA$\n- This gives 4 corners: $P$, $P + (15, 0)$, $P + (15, 18)$, $P + (0, 18)$ (or similar, depending on orientation)" },
+        { "step": 3, "content": "**Sketch the dining room:**\nDraw a rectangle with the four corners properly labelled. The exact coordinates depend on the positions shown in Fig. 1.5." },
+        { "step": 4, "content": "**(ii) Placing the dining table in the centre:**\n- The dining table is $5$ ft $\\times$ $3$ ft\n- The table should be placed precisely at the centre of the $18 \\times 15$ ft dining room\n- Center of the dining room = $\\left(\\frac{x_{\\min} + x_{\\max}}{2},\\; \\frac{y_{\\min} + y_{\\max}}{2}\\right)$" },
+        { "step": 5, "content": "**Finding the table feet coordinates:**\nSuppose the dining room corners are at $(x_0, y_0)$, $(x_0+15, y_0)$, $(x_0+15, y_0+18)$, $(x_0, y_0+18)$:\n- Centre of dining room: $\\left(x_0 + \\frac{15}{2},\\; y_0 + \\frac{18}{2}\\right) = (x_0 + 7.5,\\; y_0 + 9)$\n- Table centre should match dining room centre\n- Since the table is $5 \\times 3$ ft, the four feet are at:\n  $$\\left(x_0 + 7.5 - \\frac{5}{2},\\; y_0 + 9 - \\frac{3}{2}\\right) = (x_0 + 5,\\; y_0 + 7.5)$$\n  $$\\left(x_0 + 5 + 5,\\; y_0 + 7.5\\right) = (x_0 + 10,\\; y_0 + 7.5)$$\n  $$\\left(x_0 + 10,\\; y_0 + 7.5 + 3\\right) = (x_0 + 10,\\; y_0 + 10.5)$$\n  $$\\left(x_0 + 5,\\; y_0 + 10.5\\right)$$" }
+      ],
+      "answer": "**(i)** Read $P$ and $A$ from Fig. 1.5. The dining room is $18$ ft $\\times$ $15$ ft, with length from $P$ to $A$. Sketch the rectangle and label its four corners.  \n**(ii)** The $5\\times 3$ ft table placed centrally: the feet coordinates depend on the dining room's position in Fig. 1.5. Use the formula: feet are $\\pm 2.5$ ft horizontally and $\\pm 1.5$ ft vertically from the room's centre.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Centre of a Rectangle",
+        "content": "$$\\text{Centre} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$ where $(x_1, y_1)$ and $(x_2, y_2)$ are opposite corners."
+      }
+    }
+  ]
+}

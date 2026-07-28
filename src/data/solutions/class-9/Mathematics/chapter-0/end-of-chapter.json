@@ -1,0 +1,304 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-0-ec-q1",
+      "questionNumber": 1,
+      "question": "What are the $x$-coordinate and $y$-coordinate of the point of intersection of the two axes?",
+      "solution": [
+        { "step": 1, "content": "The two axes are the $x$-axis (horizontal line) and the $y$-axis (vertical line). Their point of intersection is called the **origin**." },
+        { "step": 2, "content": "At the origin, the distance from the $x$-axis is $0$ and the distance from the $y$-axis is also $0$." },
+        { "step": 3, "content": "Therefore, the origin has coordinates $(0, 0)$." }
+      ],
+      "answer": "The point of intersection (origin) has $x$-coordinate $= \\mathbf{0}$ and $y$-coordinate $= \\mathbf{0}$. It is denoted by $O(0, 0)$.",
+      "verified": false,
+      "notes": "**Remember:** The origin is the reference point for all coordinates. All distances are measured from this point."
+    },
+    {
+      "id": "9-math-0-ec-q2",
+      "questionNumber": 2,
+      "question": "Point $W$ has $x$-coordinate equal to $-5$. Can you predict the coordinates of point $H$ which is on the line through $W$ parallel to the $y$-axis? Which quadrants can $H$ lie in?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the setup:** Point $W$ has an $x$-coordinate of $-5$. Its $y$-coordinate is not given, so we can write $W = (-5, y_W)$ for some value $y_W$." },
+        { "step": 2, "content": "**The line through $W$ parallel to the $y$-axis:** A line parallel to the $y$-axis is vertical. All points on this line share the same $x$-coordinate. Therefore, any point on this line has $x = -5$." },
+        { "step": 3, "content": "**Coordinates of $H$:** Since $H$ lies on this vertical line, its $x$-coordinate must also be $-5$. The $y$-coordinate can be any real number. So $H = (-5, y)$ for some real number $y$." },
+        { "step": 4, "content": "**Quadrants for $H$:** \n- If $y > 0$, then $H$ has $x < 0$ and $y > 0$, so it lies in **Quadrant II**\n- If $y < 0$, then $H$ has $x < 0$ and $y < 0$, so it lies in **Quadrant III**\n- If $y = 0$, then $H$ lies on the $x$-axis between Quadrants II and III" }
+      ],
+      "answer": "$H = (-5, y)$, where $y$ is any real number. $H$ can lie in **Quadrant II** (if $y > 0$) or **Quadrant III** (if $y < 0$).",
+      "verified": false,
+      "formulaBox": {
+        "title": "Points on a Vertical Line",
+        "content": "All points on a line parallel to the $y$-axis have the same $x$-coordinate: $$(k,\\; y) \\text{ for any } y$$"
+      },
+      "notes": "**Exam Tip:** Remember: \n- Lines parallel to $y$-axis: same $x$, varying $y$ (vertical)\n- Lines parallel to $x$-axis: same $y$, varying $x$ (horizontal)"
+    },
+    {
+      "id": "9-math-0-ec-q3",
+      "questionNumber": 3,
+      "question": "Consider the points $R(3, 0)$, $A(0, -2)$, $M(-5, -2)$ and $P(-5, 2)$. If they are joined in the same order, predict:\n\n**(i)** Two sides of $RAMP$ that are perpendicular to each other.\n**(ii)** One side of $RAMP$ that is parallel to one of the axes.\n**(iii)** Two points that are mirror images of each other in one axis. Which axis will this be?\n\nNow plot the points and verify your predictions.",
+      "solution": [
+        { "step": 1, "content": "**Plot the points:** The vertices in order are $R(3, 0) \\to A(0, -2) \\to M(-5, -2) \\to P(-5, 2) \\to$ back to $R$." },
+        { "step": 2, "content": "**Identifying the sides:**\n- $RA$: from $(3, 0)$ to $(0, -2)$\n- $AM$: from $(0, -2)$ to $(-5, -2)$\n- $MP$: from $(-5, -2)$ to $(-5, 2)$\n- $PR$: from $(-5, 2)$ to $(3, 0)$" },
+        { "step": 3, "content": "**Analysing slopes:**\n- $AM$: $y$-coordinates are the same ($-2$) → **horizontal**, slope $= 0$\n- $MP$: $x$-coordinates are the same ($-5$) → **vertical**, slope is undefined\n- $AM$ $\\perp$ $MP$ because a horizontal line and a vertical line are always perpendicular" },
+        { "step": 4, "content": "**(i) Perpendicular sides:** $AM$ (horizontal) and $MP$ (vertical) are perpendicular to each other." },
+        { "step": 5, "content": "**(ii) Side parallel to an axis:** \n- $AM$ is parallel to the $x$-axis (horizontal)\n- $MP$ is parallel to the $y$-axis (vertical)" },
+        { "step": 6, "content": "**(iii) Mirror images:** $M(-5, -2)$ and $P(-5, 2)$ share the same $x$-coordinate ($-5$) and have opposite $y$-coordinates. This means $M$ is the reflection of $P$ (or vice versa) across the **$x$-axis**.\n\nVerification: Reflecting $(-5, 2)$ in the $x$-axis gives $(-5, -2) = M$, $\\checkmark$" }
+      ],
+      "answer": "**(i)** $AM \\perp MP$  \n**(ii)** $AM \\parallel x$-axis, $MP \\parallel y$-axis  \n**(iii)** $M(-5, -2)$ and $P(-5, 2)$ are mirror images in the $\\mathbf{x}$-axis",
+      "verified": false,
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#999\" stroke-width=\"1\"/><line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#999\" stroke-width=\"1\"/><polygon points=\"275,130 230,170 125,170 125,90\" fill=\"rgba(74,144,217,0.2)\" stroke=\"#4a90d9\" stroke-width=\"2\"/><circle cx=\"275\" cy=\"130\" r=\"4\" fill=\"#e74c3c\"/><text x=\"280\" y=\"128\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">R(3,0)</text><circle cx=\"230\" cy=\"170\" r=\"4\" fill=\"#e74c3c\"/><text x=\"235\" y=\"185\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">A(0,-2)</text><circle cx=\"125\" cy=\"170\" r=\"4\" fill=\"#e74c3c\"/><text x=\"100\" y=\"185\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">M(-5,-2)</text><circle cx=\"125\" cy=\"90\" r=\"4\" fill=\"#e74c3c\"/><text x=\"100\" y=\"85\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">P(-5,2)</text><text x=\"195\" y=\"15\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">y</text><text x=\"375\" y=\"165\" font-size=\"12\" fill=\"#333\" font-weight=\"bold\">x</text></svg>",
+        "caption": "Quadrilateral RAMP with vertices R(3,0), A(0,-2), M(-5,-2), P(-5,2). AM is horizontal, MP is vertical."
+      },
+      "notes": "**Common Mistake:** When checking for perpendicular sides, look for one horizontal side (same $y$) and one vertical side (same $x$). A horizontal line is always perpendicular to a vertical line."
+    },
+    {
+      "id": "9-math-0-ec-q4",
+      "questionNumber": 4,
+      "question": "Plot point $Z(5, -6)$ on the Cartesian plane. Construct a right-angled triangle $IZN$ and find the lengths of the three sides. (Comment: Answers may differ from person to person.)",
+      "solution": [
+        { "step": 1, "content": "**Plotting $Z$:** Point $Z$ has coordinates $(5, -6)$ — $5$ units to the right of the $y$-axis and $6$ units below the $x$-axis (Quadrant IV)." },
+        { "step": 2, "content": "**Constructing a right-angled triangle $IZN$:** We need to choose points $I$ and $N$ such that $\\triangle IZN$ is right-angled at $Z$ (or at another vertex). One simple way is to make $IZ$ vertical and $ZN$ horizontal." },
+        { "step": 3, "content": "**Choose $I$ directly above $Z$:** $I = (5, 0)$ — vertically above $Z$, on the $x$-axis." },
+        { "step": 4, "content": "**Choose $N$ directly to the left of $Z$:** $N = (0, -6)$ — horizontally left of $Z$, on the $y$-axis." },
+        { "step": 5, "content": "**Verifying the right angle:** \n- $IZ$ is vertical (from $(5,0)$ to $(5,-6)$)\n- $ZN$ is horizontal (from $(5,-6)$ to $(0,-6)$)\n- Vertical $\\perp$ horizontal, so $\\angle IZN = 90^\\circ$ $\\checkmark$" },
+        { "step": 6, "content": "**Finding the side lengths:**\n- $IZ$: vertical distance $= |0 - (-6)| = 6$ units\n- $ZN$: horizontal distance $= |0 - 5| = 5$ units\n- $IN$ (hypotenuse, using Baudhāyana–Pythagoras Theorem): \n$$IN = \\sqrt{IZ^2 + ZN^2} = \\sqrt{6^2 + 5^2} = \\sqrt{36 + 25} = \\sqrt{61} \\approx 7.81 \\text{ units}$$" }
+      ],
+      "answer": "Sample triangle: $I(5, 0)$, $Z(5, -6)$, $N(0, -6)$.  \nSides: $IZ = \\mathbf{6}$ units, $ZN = \\mathbf{5}$ units, $IN = \\mathbf{\\sqrt{61}} \\approx 7.81$ units.  \n(Your answer may differ based on your choice of $I$ and $N$.)",
+      "verified": false,
+      "formulaBox": {
+        "title": "Baudhāyana–Pythagoras Theorem",
+        "content": "$$c^2 = a^2 + b^2 \\quad\\text{where } c \\text{ is the hypotenuse}$$"
+      },
+      "notes": "**Why answers differ:** The problem is open-ended. As long as $\\triangle IZN$ has a right angle, any valid construction is acceptable. Always check that $IZ^2 + ZN^2 = IN^2$ (or whichever sides form the right angle)."
+    },
+    {
+      "id": "9-math-0-ec-q5",
+      "questionNumber": 5,
+      "question": "What would a system of coordinates be like if we did not have negative numbers? Would this system allow us to locate all the points on a 2-D plane?",
+      "solution": [
+        { "step": 1, "content": "**Understanding the role of negative numbers:** In the Cartesian coordinate system, negative numbers allow us to represent points to the left of the $y$-axis (negative $x$) and below the $x$-axis (negative $y$)." },
+        { "step": 2, "content": "**Without negative numbers:** If we only had non-negative numbers ($0$ and positive numbers), we could only describe points with $x \\geq 0$ and $y \\geq 0$." },
+        { "step": 3, "content": "**Region covered:** This would restrict us to **Quadrant I** only — the region where both $x$ and $y$ are non-negative." },
+        { "step": 4, "content": "**Points we could NOT locate:**\n- Points in Quadrant II (negative $x$, positive $y$) — e.g., $(-3, 4)$\n- Points in Quadrant III (both negative) — e.g., $(-2, -5)$\n- Points in Quadrant IV (positive $x$, negative $y$) — e.g., $(6, -3)$" },
+        { "step": 5, "content": "**Conclusion:** No, this system would **not** allow us to locate all points on a 2-D plane. It would only cover one-fourth of the plane (Quadrant I and the non-negative parts of the axes)." }
+      ],
+      "answer": "Without negative numbers, the coordinate system would only cover Quadrant I ($x \\geq 0, y \\geq 0$). It would **not** allow us to locate points in Quadrants II, III, or IV.",
+      "verified": false,
+      "notes": "**Historical note:** Brahmagupta (c. 628 CE) formalised the notion and use of zero and negative numbers as algebraic entities. Without this work, the four-quadrant Cartesian plane as we know it would be impossible.\n\n**Reflection:** This shows why negative numbers are essential — they allow coordinates to describe the entire plane, not just one quadrant."
+    },
+    {
+      "id": "9-math-0-ec-q6",
+      "questionNumber": 6,
+      "question": "Are the points $M(-3, -4)$, $A(0, 0)$ and $G(6, 8)$ on the same straight line? Suggest a method to check this without plotting and joining the points.",
+      "solution": [
+        { "step": 1, "content": "**Method:** Three points are collinear (lie on the same straight line) if the slope between any two pairs of points is equal. Equivalently, the area of the triangle formed by the three points is zero." },
+        { "step": 2, "content": "**Using slopes:** Check if slope $MA =$ slope $AG$.\n\nSlope $MA = \\dfrac{y_A - y_M}{x_A - x_M} = \\dfrac{0 - (-4)}{0 - (-3)} = \\dfrac{4}{3}$\n\nSlope $AG = \\dfrac{y_G - y_A}{x_G - x_A} = \\dfrac{8 - 0}{6 - 0} = \\dfrac{8}{6} = \\dfrac{4}{3}$" },
+        { "step": 3, "content": "**Comparison:** Slope $MA =$ slope $AG = \\dfrac{4}{3}$. Since the slopes are equal and point $A$ is common to both segments, the three points $M$, $A$, and $G$ lie on the **same straight line**." }
+      ],
+      "answer": "Yes, $M(-3, -4)$, $A(0, 0)$ and $G(6, 8)$ are **collinear**. Method: Since slope $MA$ $=$ slope $AG$ $= \\dfrac{4}{3}$, they lie on the same line.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Collinearity Test (Slope Method)",
+        "content": "$$\\text{Points } P, Q, R \\text{ are collinear if } \\frac{y_Q - y_P}{x_Q - x_P} = \\frac{y_R - y_Q}{x_R - x_Q}$$"
+      },
+      "notes": "**Alternative method:** Calculate the area of triangle $MAG$. If area $= 0$, the points are collinear.\n\n$$\\text{Area} = \\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$"
+    },
+    {
+      "id": "9-math-0-ec-q7",
+      "questionNumber": 7,
+      "question": "Use your method (from Problem 6) to check if the points $R(-5, -1)$, $B(-2, -5)$ and $C(4, -12)$ are on the same straight line. Now plot both sets of points and check your answers.",
+      "solution": [
+        { "step": 1, "content": "**Using the slope method:** Check if slope $RB =$ slope $BC$.\n\nSlope $RB = \\dfrac{y_B - y_R}{x_B - x_R} = \\dfrac{-5 - (-1)}{-2 - (-5)} = \\dfrac{-4}{3}$\n\nSlope $BC = \\dfrac{y_C - y_B}{x_C - x_B} = \\dfrac{-12 - (-5)}{4 - (-2)} = \\dfrac{-7}{6}$" },
+        { "step": 2, "content": "**Comparison:** Slope $RB = -\\dfrac{4}{3}$ and slope $BC = -\\dfrac{7}{6}$.\n\n$-\\dfrac{4}{3} = -\\dfrac{8}{6} \\neq -\\dfrac{7}{6}$\n\nSince the slopes are **not equal**, the points $R$, $B$, and $C$ are **not collinear**." },
+        { "step": 3, "content": "**Verification by plotting (Problem 6):** \n- $M(-3, -4)$, $A(0, 0)$, $G(6, 8)$ — all lie on the line $y = \\frac{4}{3}x$, confirmed by slope check.\n\n**Plotting these points:**\n- $R(-5, -1)$, $B(-2, -5)$, $C(4, -12)$ — they form a triangle when plotted, confirming they are not on the same line." }
+      ],
+      "answer": "No, $R(-5, -1)$, $B(-2, -5)$ and $C(4, -12)$ are **not collinear** because slope $RB = -\\dfrac{4}{3}$ but slope $BC = -\\dfrac{7}{6}$.",
+      "verified": false,
+      "notes": "**Algebraic check using area formula:**\n$$\\text{Area} = \\frac{1}{2}|(-5)(-5-(-12)) + (-2)(-12-(-1)) + 4(-1-(-5))|$$\n$$= \\frac{1}{2}|(-5)(7) + (-2)(-11) + 4(4)| = \\frac{1}{2}|-35 + 22 + 16| = \\frac{3}{2} \\neq 0$$\n\nThe area is non-zero, confirming non-collinearity."
+    },
+    {
+      "id": "9-math-0-ec-q8",
+      "questionNumber": 8,
+      "question": "Using the origin as one vertex, plot the vertices of:\n\n**(i)** A right-angled isosceles triangle.\n**(ii)** An isosceles triangle with one vertex in Quadrant III and the other in Quadrant IV.",
+      "solution": [
+        { "step": 1, "content": "**(i) Right-angled isosceles triangle with origin:**\nLet the origin $O(0, 0)$ be the vertex containing the right angle. We need two points $P$ and $Q$ such that $OP \\perp OQ$ and $OP = OQ$." },
+        { "step": 2, "content": "**Choosing the points:** Take $P(3, 0)$ on the $x$-axis and $Q(0, 3)$ on the $y$-axis.\n- $OP = 3$ units, $OQ = 3$ units $\\Rightarrow OP = OQ$ (isosceles)\n- $OP$ is along the $x$-axis, $OQ$ is along the $y$-axis $\\Rightarrow OP \\perp OQ$\n- Hypotenuse $PQ = \\sqrt{3^2 + 3^2} = \\sqrt{18} = 3\\sqrt{2}$ units" },
+        { "step": 3, "content": "**Alternative choices:** Any points of the form $(a, 0)$ and $(0, a)$, or $(a, a)$ and $(a, -a)$ with the origin, work as long as $a \\neq 0$." },
+        { "step": 4, "content": "**(ii) Isosceles triangle with vertices in Quadrant III and Quadrant IV:**\nPlace the origin $O(0, 0)$ at the apex. Choose one vertex in Quadrant III ($x < 0, y < 0$) and another in Quadrant IV ($x > 0, y < 0$) such that their distances from $O$ are equal." },
+        { "step": 5, "content": "**Choosing the points:**\n- Take $A(-3, -1)$ in Quadrant III\n- Take $B(3, -1)$ in Quadrant IV\n- $OA = \\sqrt{(-3)^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OB = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OA = OB$, so $\\triangle OAB$ is isosceles $\\checkmark$\n- $A$ is in QIII, $B$ is in QIV $\\checkmark$" }
+      ],
+      "answer": "**(i)** $O(0, 0)$, $P(3, 0)$, $Q(0, 3)$ — right-angled isosceles with $OP \\perp OQ$ and $OP = OQ = 3$.\n**(ii)** $O(0, 0)$, $A(-3, -1)$ (QIII), $B(3, -1)$ (QIV) — isosceles with $OA = OB = \\sqrt{10}$.\n(Answers may vary.)",
+      "verified": false,
+      "formulaBox": {
+        "title": "Distance Formula (Baudhāyana–Pythagoras)",
+        "content": "$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$"
+      },
+      "notes": "**Common Mistake:** For the right-angled isosceles triangle, make sure the **right angle** is actually where you intend it to be. Check using perpendicular slopes (product $= -1$) or the Pythagoras theorem."
+    },
+    {
+      "id": "9-math-0-ec-q9",
+      "questionNumber": 9,
+      "question": "The following table shows the coordinates of points $S$, $M$ and $T$. In each case, state whether $M$ is the midpoint of segment $ST$. Justify your answer.\n\n| $S$ | $M$ | $T$ | Is $M$ the midpoint of $ST$? | Reason |\n|-----|-----|-----|------------------------------|--------|\n| $(-3, 0)$ | $(0, 0)$ | $(3, 0)$ | | |\n| $(2, 3)$ | $(3, 4)$ | $(4, 5)$ | | |\n| $(0, 0)$ | $(0, 5)$ | $(0, -10)$ | | |\n| $(-8, 7)$ | $(0, -2)$ | $(6, -3)$ | | |\n\nWhen $M$ is the midpoint of $ST$, can you find any connection between the coordinates of $M$, $S$ and $T$?",
+      "solution": [
+        { "step": 1, "content": "**Midpoint formula:** The midpoint $M$ of segment $ST$ where $S(x_1, y_1)$ and $T(x_2, y_2)$ is:\n$$M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)$$" },
+        { "step": 2, "content": "**Row 1:** $S(-3,0)$, $M(0,0)$, $T(3,0)$\nMidpoint $= \\left(\\frac{-3 + 3}{2},\\; \\frac{0 + 0}{2}\\right) = (0, 0) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint." },
+        { "step": 3, "content": "**Row 2:** $S(2,3)$, $M(3,4)$, $T(4,5)$\nMidpoint $= \\left(\\frac{2 + 4}{2},\\; \\frac{3 + 5}{2}\\right) = (3, 4) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint." },
+        { "step": 4, "content": "**Row 3:** $S(0,0)$, $M(0,5)$, $T(0,-10)$\nMidpoint $= \\left(\\frac{0 + 0}{2},\\; \\frac{0 + (-10)}{2}\\right) = (0, -5) \\neq (0, 5)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint." },
+        { "step": 5, "content": "**Row 4:** $S(-8,7)$, $M(0,-2)$, $T(6,-3)$\nMidpoint $= \\left(\\frac{-8 + 6}{2},\\; \\frac{7 + (-3)}{2}\\right) = (-1, 2) \\neq (0, -2)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint." },
+        { "step": 6, "content": "**The connection:** When $M$ is the midpoint of $ST$, the coordinates of $M$ are the averages of the coordinates of $S$ and $T$:\n$$M = \\left(\\frac{x_S + x_T}{2},\\; \\frac{y_S + y_T}{2}\\right)$$" }
+      ],
+      "answer": "| $S$ | $M$ | $T$ | Is $M$ the midpoint? | Reason |\n|-----|-----|-----|----------------------|--------|\n| $(-3,0)$ | $(0,0)$ | $(3,0)$ | **Yes** | $(\\frac{-3+3}{2},\\frac{0+0}{2}) = (0,0)$ |\n| $(2,3)$ | $(3,4)$ | $(4,5)$ | **Yes** | $(\\frac{2+4}{2},\\frac{3+5}{2}) = (3,4)$ |\n| $(0,0)$ | $(0,5)$ | $(0,-10)$ | **No** | Midpoint is $(0,-5)$, not $(0,5)$ |\n| $(-8,7)$ | $(0,-2)$ | $(6,-3)$ | **No** | Midpoint is $(-1,2)$, not $(0,-2)$ |\n\n**Connection:** When $M$ is the midpoint, $M = \\left(\\frac{x_S + x_T}{2},\\; \\frac{y_S + y_T}{2}\\right)$.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Midpoint Formula",
+        "content": "$$M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)$$"
+      },
+      "tableData": {
+        "headers": ["S", "M", "T", "Is M the midpoint?", "Reason"],
+        "rows": [
+          ["(-3, 0)", "(0, 0)", "(3, 0)", "Yes", "((−3+3)/2, (0+0)/2) = (0, 0)"],
+          ["(2, 3)", "(3, 4)", "(4, 5)", "Yes", "((2+4)/2, (3+5)/2) = (3, 4)"],
+          ["(0, 0)", "(0, 5)", "(0, −10)", "No", "((0+0)/2, (0+(−10))/2) = (0, −5) ≠ (0, 5)"],
+          ["(−8, 7)", "(0, −2)", "(6, −3)", "No", "((−8+6)/2, (7+(−3))/2) = (−1, 2) ≠ (0, −2)"]
+        ]
+      }
+    },
+    {
+      "id": "9-math-0-ec-q10",
+      "questionNumber": 10,
+      "question": "Use the connection you found to find the coordinates of $B$ given that $M(-7, 1)$ is the midpoint of $A(3, -4)$ and $B(x, y)$.",
+      "solution": [
+        { "step": 1, "content": "**Using the midpoint formula:** If $M$ is the midpoint of $A(x_A, y_A)$ and $B(x_B, y_B)$, then:\n$$M = \\left(\\frac{x_A + x_B}{2},\\; \\frac{y_A + y_B}{2}\\right)$$" },
+        { "step": 2, "content": "**Substituting the known values:**\n$A(3, -4)$, $M(-7, 1)$, $B(x, y)$\n\n$$(-7, 1) = \\left(\\frac{3 + x}{2},\\; \\frac{-4 + y}{2}\\right)$$" },
+        { "step": 3, "content": "**Finding $x$:** \n$$-7 = \\frac{3 + x}{2}$$\n$$-14 = 3 + x$$\n$$x = -14 - 3 = -17$$" },
+        { "step": 4, "content": "**Finding $y$:**\n$$1 = \\frac{-4 + y}{2}$$\n$$2 = -4 + y$$\n$$y = 2 + 4 = 6$$" }
+      ],
+      "answer": "$B(-17, 6)$",
+      "verified": false,
+      "formulaBox": {
+        "title": "Midpoint Formula (rearranged)",
+        "content": "If $M(x_M, y_M)$ is the midpoint of $A(x_A, y_A)$ and $B(x_B, y_B)$:\n$$x_B = 2x_M - x_A,\\quad y_B = 2y_M - y_A$$"
+      }
+    },
+    {
+      "id": "9-math-0-ec-q11",
+      "questionNumber": 11,
+      "question": "Let $P$, $Q$ be points of trisection of $AB$, with $P$ closer to $A$, and $Q$ closer to $B$. Using your knowledge of how to find the coordinates of the midpoint of a segment, how would you find the coordinates of $P$ and $Q$? Do this for the case when the points are $A(4, 7)$ and $B(16, -2)$.",
+      "solution": [
+        { "step": 1, "content": "**Understanding trisection:** Trisection means dividing into three equal parts. If $P$ and $Q$ trisect $AB$ with $P$ closer to $A$:\n$$AP = PQ = QB$$\n$$AP : PB = 1 : 2 \\quad\\text{and}\\quad AQ : QB = 2 : 1$$" },
+        { "step": 2, "content": "**Method 1 — Using section formula:** For a point dividing $AB$ in the ratio $m : n$:\n$$\\text{Point} = \\left(\\frac{mx_B + nx_A}{m + n},\\; \\frac{my_B + ny_A}{m + n}\\right)$$\n\n$P$ divides $AB$ in ratio $AP : PB = 1 : 2$:\n$$P = \\left(\\frac{1 \\times 16 + 2 \\times 4}{1 + 2},\\; \\frac{1 \\times (-2) + 2 \\times 7}{1 + 2}\\right) = \\left(\\frac{16 + 8}{3},\\; \\frac{-2 + 14}{3}\\right) = \\left(\\frac{24}{3},\\; \\frac{12}{3}\\right) = (8, 4)$$" },
+        { "step": 3, "content": "$Q$ divides $AB$ in ratio $AQ : QB = 2 : 1$:\n$$Q = \\left(\\frac{2 \\times 16 + 1 \\times 4}{2 + 1},\\; \\frac{2 \\times (-2) + 1 \\times 7}{2 + 1}\\right) = \\left(\\frac{32 + 4}{3},\\; \\frac{-4 + 7}{3}\\right) = \\left(\\frac{36}{3},\\; \\frac{3}{3}\\right) = (12, 1)$$" },
+        { "step": 4, "content": "**Method 2 — Using the midpoint concept iteratively:** \n- Find the midpoint $M$ of $AB$: $M = \\left(\\frac{4+16}{2},\\; \\frac{7+(-2)}{2}\\right) = (10, 2.5)$\n- Find midpoint $P$ of $AM$: $P = \\left(\\frac{4+10}{2},\\; \\frac{7+2.5}{2}\\right) = (7, 4.75)$ ❌ — This gives equal segments but NOT trisection.\n\nNote: The iterative midpoint method does NOT directly give trisection points. The section formula is needed." },
+        { "step": 5, "content": "**Verification:**\n- $AP = \\sqrt{(8-4)^2 + (4-7)^2} = \\sqrt{16 + 9} = 5$\n- $PQ = \\sqrt{(12-8)^2 + (1-4)^2} = \\sqrt{16 + 9} = 5$\n- $QB = \\sqrt{(16-12)^2 + (-2-1)^2} = \\sqrt{16 + 9} = 5$\n- $AP = PQ = QB = 5$ units $\\checkmark$" }
+      ],
+      "answer": "$P(8, 4)$ and $Q(12, 1)$.  \nMethod: Use the section formula with $AP : PB = 1 : 2$ for $P$ and $AQ : QB = 2 : 1$ for $Q$.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Section Formula",
+        "content": "$$\\text{Point dividing } AB \\text{ in ratio } m:n = \\left(\\frac{mx_2 + nx_1}{m+n},\\; \\frac{my_2 + ny_1}{m+n}\\right)$$"
+      },
+      "notes": "**Key insight:** For trisection, the two division ratios are $1:2$ and $2:1$. The sum $(m+n)$ is always $3$ (three equal parts)."
+    },
+    {
+      "id": "9-math-0-ec-q12",
+      "questionNumber": 12,
+      "question": "**(i)** Given the points $A(1, -8)$, $B(-4, 7)$ and $C(-7, -4)$, show that they lie on a circle $K$ whose centre is the origin $O(0, 0)$. What is the radius of circle $K$?\n\n**(ii)** Given the points $D(-5, 6)$ and $E(0, 9)$, check whether $D$ and $E$ lie within the circle, on the circle, or outside the circle $K$.",
+      "solution": [
+        { "step": 1, "content": "**(i) Points on a circle centered at origin:** A point lies on a circle centred at $O(0, 0)$ with radius $r$ if its distance from $O$ equals $r$. We need to check if $OA = OB = OC$." },
+        { "step": 2, "content": "**Calculating $OA$:** Using the distance formula:\n$$OA = \\sqrt{(1 - 0)^2 + (-8 - 0)^2} = \\sqrt{1 + 64} = \\sqrt{65}$$" },
+        { "step": 3, "content": "**Calculating $OB$:**\n$$OB = \\sqrt{(-4 - 0)^2 + (7 - 0)^2} = \\sqrt{16 + 49} = \\sqrt{65}$$" },
+        { "step": 4, "content": "**Calculating $OC$:**\n$$OC = \\sqrt{(-7 - 0)^2 + (-4 - 0)^2} = \\sqrt{49 + 16} = \\sqrt{65}$$" },
+        { "step": 5, "content": "**Conclusion:** $OA = OB = OC = \\sqrt{65}$. Therefore, $A$, $B$, and $C$ all lie on the same circle $K$ with centre $O(0, 0)$ and radius $\\mathbf{\\sqrt{65}}$ units." },
+        { "step": 6, "content": "**(ii) Checking $D$ and $E$:**\n\n$D(-5, 6)$:\n$$OD = \\sqrt{(-5)^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$$\nSince $\\sqrt{61} < \\sqrt{65}$: $D$ lies **within** the circle." },
+        { "step": 7, "content": "$E(0, 9)$:\n$$OE = \\sqrt{0^2 + 9^2} = \\sqrt{81} = 9$$\nSince $9 > \\sqrt{65}$ (because $9^2 = 81 > 65$): $E$ lies **outside** the circle." }
+      ],
+      "answer": "**(i)** $OA = OB = OC = \\mathbf{\\sqrt{65}}$ — they all lie on circle $K$ with centre $O$ and radius $\\sqrt{65}$ units.\n**(ii)** $D(-5, 6)$: $OD = \\sqrt{61}$ → **within** the circle. $E(0, 9)$: $OE = 9$ → **outside** the circle.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Circle Centered at Origin",
+        "content": "$$\\text{A point } P(x, y) \\text{ lies on a circle of radius } r \\text{ centered at } O \\text{ if } \\sqrt{x^2 + y^2} = r$$\n$$\\text{Within: } \\sqrt{x^2 + y^2} < r \\quad \\text{Outside: } \\sqrt{x^2 + y^2} > r$$"
+      },
+      "notes": "**Why check against $\\sqrt{65}$?** $\\sqrt{65} \\approx 8.06$. Compare:\n- $\\sqrt{61} \\approx 7.81 < 8.06$ → within\n- $9 > 8.06$ → outside"
+    },
+    {
+      "id": "9-math-0-ec-q13",
+      "questionNumber": 13,
+      "question": "The midpoints of the sides of triangle $ABC$ are the points $D$, $E$, and $F$. Given that the coordinates of $D$, $E$, and $F$ are $(5, 1)$, $(6, 5)$, and $(0, 3)$, respectively, find the coordinates of $A$, $B$ and $C$.",
+      "solution": [
+        { "step": 1, "content": "**Understanding:** Let $A(a_1, a_2)$, $B(b_1, b_2)$, $C(c_1, c_2)$. The midpoints of the sides are:\n- $D$ is midpoint of $BC$: $D\\left(\\frac{b_1 + c_1}{2},\\; \\frac{b_2 + c_2}{2}\\right) = (5, 1)$\n- $E$ is midpoint of $CA$: $E\\left(\\frac{c_1 + a_1}{2},\\; \\frac{c_2 + a_2}{2}\\right) = (6, 5)$\n- $F$ is midpoint of $AB$: $F\\left(\\frac{a_1 + b_1}{2},\\; \\frac{a_2 + b_2}{2}\\right) = (0, 3)$" },
+        { "step": 2, "content": "**Setting up equations:**\n$$b_1 + c_1 = 10 \\quad\\text{(1)}$$\n$$c_1 + a_1 = 12 \\quad\\text{(2)}$$\n$$a_1 + b_1 = 0 \\quad\\text{(3)}$$\n\nSimilarly for $y$:\n$$b_2 + c_2 = 2 \\quad\\text{(4)}$$\n$$c_2 + a_2 = 10 \\quad\\text{(5)}$$\n$$a_2 + b_2 = 6 \\quad\\text{(6)}$$" },
+        { "step": 3, "content": "**Solving for $x$-coordinates:**\nAdd equations (1), (2), (3):\n$$(b_1 + c_1) + (c_1 + a_1) + (a_1 + b_1) = 10 + 12 + 0$$\n$$2(a_1 + b_1 + c_1) = 22$$\n$$a_1 + b_1 + c_1 = 11$$\n\nNow:\n- $a_1 = (a_1 + b_1 + c_1) - (b_1 + c_1) = 11 - 10 = 1$\n- $b_1 = (a_1 + b_1 + c_1) - (c_1 + a_1) = 11 - 12 = -1$\n- $c_1 = (a_1 + b_1 + c_1) - (a_1 + b_1) = 11 - 0 = 11$" },
+        { "step": 4, "content": "**Solving for $y$-coordinates:**\nAdd equations (4), (5), (6):\n$$(b_2 + c_2) + (c_2 + a_2) + (a_2 + b_2) = 2 + 10 + 6$$\n$$2(a_2 + b_2 + c_2) = 18$$\n$$a_2 + b_2 + c_2 = 9$$\n\nNow:\n- $a_2 = (a_2 + b_2 + c_2) - (b_2 + c_2) = 9 - 2 = 7$\n- $b_2 = (a_2 + b_2 + c_2) - (c_2 + a_2) = 9 - 10 = -1$\n- $c_2 = (a_2 + b_2 + c_2) - (a_2 + b_2) = 9 - 6 = 3$" },
+        { "step": 5, "content": "**Verification:**\n- $D$ = midpoint of $BC = \\left(\\frac{-1+11}{2},\\; \\frac{-1+3}{2}\\right) = (5, 1)$ $\\checkmark$\n- $E$ = midpoint of $CA = \\left(\\frac{11+1}{2},\\; \\frac{3+7}{2}\\right) = (6, 5)$ $\\checkmark$\n- $F$ = midpoint of $AB = \\left(\\frac{1+(-1)}{2},\\; \\frac{7+(-1)}{2}\\right) = (0, 3)$ $\\checkmark$" }
+      ],
+      "answer": "$A(1, 7)$, $B(-1, -1)$, $C(11, 3)$",
+      "verified": false,
+      "formulaBox": {
+        "title": "Midpoint of a Segment",
+        "content": "$$M_{AB} = \\left(\\frac{x_A + x_B}{2},\\; \\frac{y_A + y_B}{2}\\right)$$"
+      },
+      "notes": "**Exam Tip:** When solving problems with midpoints, always write equations for both $x$ and $y$ separately. The system of equations can be solved by summing all three equations first."
+    },
+    {
+      "id": "9-math-0-ec-q14",
+      "questionNumber": 14,
+      "question": "A city has two main roads which cross each other at the centre of the city. These two roads are along the North–South (N–S) direction and East–West (E–W) direction. All the other streets of the city run parallel to these roads and are $200$ m apart. There are $10$ streets in each direction.\n\n**(i)** Using $1$ cm $= 200$ m, draw a model of the city in your notebook. Represent the roads/streets by single lines.\n\n**(ii)** There are street intersections in the model. Each street intersection is formed by two streets — one running in the N–S direction and another in the E–W direction. Each street intersection is referred to in the following manner: If the second street running in the N–S direction and $5$th street in the E–W direction meet at some crossing, then we call this street intersection $(2, 5)$. Using this convention, find:\n\n**(a)** how many street intersections can be referred to as $(4, 3)$.\n**(b)** how many street intersections can be referred to as $(3, 4)$.",
+      "solution": [
+        { "step": 1, "content": "**(i) Drawing the city model:**\n- Draw two perpendicular lines intersecting at the centre — these are the main N–S and E–W roads\n- Draw 9 more lines parallel to the N–S road on each side, each $1$ cm apart (representing $200$ m)\n- Draw 9 more lines parallel to the E–W road on each side, each $1$ cm apart\n- Total: 10 streets in each direction (including the main roads), all $200$ m apart" },
+        { "step": 2, "content": "**Understanding the naming convention:**\n- The N–S streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from West to East)\n- The E–W streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from South to North)\n- An intersection $(a, b)$ means the $a$th N–S street meets the $b$th E–W street" },
+        { "step": 3, "content": "**(ii)(a) Street intersection $(4, 3)$:**\n- This refers to the intersection of the **4th N–S street** and the **3rd E–W street**\n- Since there is exactly one 4th N–S street and exactly one 3rd E–W street, they meet at exactly **one** point\n- Answer: **1** street intersection" },
+        { "step": 4, "content": "**(ii)(b) Street intersection $(3, 4)$:**\n- This refers to the intersection of the **3rd N–S street** and the **4th E–W street**\n- Again, there is exactly one 3rd N–S street and exactly one 4th E–W street\n- Answer: **1** street intersection" },
+        { "step": 5, "content": "**Key observation:** $(4, 3) \\neq (3, 4)$ — just like coordinates in the Cartesian plane, the order matters! The first number refers to the N–S street and the second to the E–W street. These are two different intersections." }
+      ],
+      "answer": "**(i)** Draw a grid of 10 $\\times$ 10 streets (each 1 cm apart).  \n**(ii)(a)** There is **1** intersection $(4, 3)$.  \n**(ii)(b)** There is **1** intersection $(3, 4)$.\n\nNote: $(4, 3)$ and $(3, 4)$ are different intersections (like coordinates in the Cartesian plane).",
+      "verified": false,
+      "notes": "**Real-life connection:** This is how coordinates work! The N–S and E–W streets form a coordinate grid, just like the $x$ and $y$ axes in the Cartesian plane. The intersection $(a, b)$ corresponds to coordinates in the city grid.\n\n**Total intersections in the city:** $10 \\times 10 = 100$ (including the central crossing)."
+    },
+    {
+      "id": "9-math-0-ec-q15",
+      "questionNumber": 15,
+      "question": "A computer graphics program displays images on a rectangular screen whose coordinate system has the origin at the bottom-left corner. The screen is $800$ pixels wide and $600$ pixels high. A circular icon of radius $80$ pixels is drawn with its centre at the point $A(100, 150)$. Another circular icon of radius $100$ pixels is drawn with its centre at the point $B(250, 230)$. Determine:\n\n**(i)** whether any part of either circle lies outside the screen.\n**(ii)** whether the two circles intersect each other.",
+      "solution": [
+        { "step": 1, "content": "**Understanding the screen boundaries:**\n- Screen dimensions: $800$ px wide ($x$: $0$ to $800$), $600$ px high ($y$: $0$ to $600$)\n- Origin $(0, 0)$ is at the bottom-left corner" },
+        { "step": 2, "content": "**(i) Checking Circle A** — centre $A(100, 150)$, radius $80$:\n- Left edge: $100 - 80 = 20 \\geq 0$ $\\checkmark$\n- Right edge: $100 + 80 = 180 \\leq 800$ $\\checkmark$\n- Bottom edge: $150 - 80 = 70 \\geq 0$ $\\checkmark$\n- Top edge: $150 + 80 = 230 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle A is **entirely within** the screen." },
+        { "step": 3, "content": "**Checking Circle B** — centre $B(250, 230)$, radius $100$:\n- Left edge: $250 - 100 = 150 \\geq 0$ $\\checkmark$\n- Right edge: $250 + 100 = 350 \\leq 800$ $\\checkmark$\n- Bottom edge: $230 - 100 = 130 \\geq 0$ $\\checkmark$\n- Top edge: $230 + 100 = 330 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle B is **entirely within** the screen." },
+        { "step": 4, "content": "**(ii) Checking if the two circles intersect:**\nTwo circles intersect if the distance between their centres is less than or equal to the sum of their radii, and greater than or equal to the absolute difference of their radii." },
+        { "step": 5, "content": "**Distance between centres $A$ and $B$:**\n$$AB = \\sqrt{(250 - 100)^2 + (230 - 150)^2} = \\sqrt{150^2 + 80^2} = \\sqrt{22500 + 6400} = \\sqrt{28900} = 170$$" },
+        { "step": 6, "content": "**Sum of radii:** $r_A + r_B = 80 + 100 = 180$\n**Difference of radii:** $|r_A - r_B| = |80 - 100| = 20$\n\n**Check:** $20 \\leq 170 \\leq 180$\n- $170 < 180$: The centres are closer than the sum of radii $\\checkmark$\n- $170 > 20$: The centres are farther than the difference of radii $\\checkmark$\n\nSince $|r_A - r_B| < AB < r_A + r_B$, the circles **intersect** (overlap)." }
+      ],
+      "answer": "**(i)** No — both circles lie **entirely within** the screen.  \n**(ii)** Yes — the circles **intersect** because the distance between centres $(170)$ is less than the sum of radii $(180)$ but greater than the absolute difference $(20)$.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Circle Intersection Condition",
+        "content": "Two circles with radii $r_1, r_2$ and distance $d$ between centres:\n- Intersect if $|r_1 - r_2| \\leq d \\leq r_1 + r_2$\n- Do not intersect if $d > r_1 + r_2$ (separate) or $d < |r_1 - r_2|$ (one inside the other)"
+      },
+      "notes": "**Exam Tip:** For \"part outside screen\" problems, check all four edges: left ($x - r \\geq 0$), right ($x + r \\leq \\text{width}$), bottom ($y - r \\geq 0$), top ($y + r \\leq \\text{height}$)."
+    },
+    {
+      "id": "9-math-0-ec-q16",
+      "questionNumber": 16,
+      "question": "Plot the points $A(2, 1)$, $B(-1, 2)$, $C(-2, -1)$, and $D(1, -2)$ in the coordinate plane. Is $ABCD$ a square? Can you explain why? What is the area of this square?",
+      "solution": [
+        { "step": 1, "content": "**To check if $ABCD$ is a square, we need to verify:**\n1. All four sides are equal in length\n2. All four angles are $90^\\circ$ (adjacent sides are perpendicular)\n3. The diagonals are equal (a square is a special rectangle)" },
+        { "step": 2, "content": "**Step 1: Calculate side lengths**\n$$AB = \\sqrt{(-1 - 2)^2 + (2 - 1)^2} = \\sqrt{(-3)^2 + 1^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$BC = \\sqrt{(-2 - (-1))^2 + (-1 - 2)^2} = \\sqrt{(-1)^2 + (-3)^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n$$CD = \\sqrt{(1 - (-2))^2 + (-2 - (-1))^2} = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$DA = \\sqrt{(2 - 1)^2 + (1 - (-2))^2} = \\sqrt{1^2 + 3^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n\nAll four sides equal $\\sqrt{10}$ units $\\checkmark$" },
+        { "step": 3, "content": "**Step 2: Check perpendicularity (adjacent sides)**\nCheck if $AB \\perp BC$ using dot product:\n$\\overrightarrow{AB} = (-1 - 2,\\; 2 - 1) = (-3, 1)$\n$\\overrightarrow{BC} = (-2 - (-1),\\; -1 - 2) = (-1, -3)$\n\nDot product: $(-3)(-1) + (1)(-3) = 3 - 3 = 0$ $\\checkmark$\n\nSince the dot product is $0$, $AB \\perp BC$. Similarly, we can verify the other adjacent pairs." },
+        { "step": 4, "content": "**Step 3: Check diagonals**\n$$AC = \\sqrt{(-2 - 2)^2 + (-1 - 1)^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$$\n$$BD = \\sqrt{(1 - (-1))^2 + (-2 - 2)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}$$\n\nDiagonals are equal $\\checkmark$" },
+        { "step": 5, "content": "**Step 4: Calculate the area**\nSince $ABCD$ is a square with side length $s = \\sqrt{10}$:\n$$\\text{Area} = s^2 = (\\sqrt{10})^2 = 10 \\text{ square units}$$" }
+      ],
+      "answer": "Yes, $ABCD$ is a square.\n- All sides equal $\\sqrt{10}$ units\n- Adjacent sides are perpendicular (dot product $= 0$)\n- Diagonals are equal ($2\\sqrt{5}$ units)\n\nArea $= \\mathbf{10}$ square units.",
+      "verified": false,
+      "formulaBox": {
+        "title": "Properties of a Square",
+        "content": "A quadrilateral is a square if:\n1. All sides equal: $AB = BC = CD = DA$\n2. All angles $90^\\circ$: $AB \\perp BC$ (dot product $= 0$)\n3. Diagonals equal: $AC = BD$\n$$\\text{Area} = (\\text{side})^2$$"
+      },
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#999\" stroke-width=\"1\"/><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#999\" stroke-width=\"1\"/><polygon points=\"210,130 115,110 95,180 190,200\" fill=\"rgba(46,204,113,0.2)\" stroke=\"#2ecc71\" stroke-width=\"2.5\"/><circle cx=\"210\" cy=\"130\" r=\"4\" fill=\"#e74c3c\"/><text x=\"215\" y=\"128\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">A(2,1)</text><circle cx=\"115\" cy=\"110\" r=\"4\" fill=\"#e74c3c\"/><text x=\"92\" y=\"105\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">B(-1,2)</text><circle cx=\"95\" cy=\"180\" r=\"4\" fill=\"#e74c3c\"/><text x=\"65\" y=\"195\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">C(-2,-1)</text><circle cx=\"190\" cy=\"200\" r=\"4\" fill=\"#e74c3c\"/><text x=\"172\" y=\"215\" font-size=\"11\" fill=\"#333\" font-weight=\"bold\">D(1,-2)</text></svg>",
+        "caption": "Square ABCD with vertices A(2,1), B(-1,2), C(-2,-1), D(1,-2). Each side = √10 units, area = 10 sq units."
+      },
+      "notes": "**Why is it a square?** The points alternate in a pattern where coordinates are permutations of $(\\pm2, \\pm1)$. This creates a square rotated $45^\\circ$ from the axes.\n\n**Alternate explanation:** The midpoint of both diagonals $AC$ and $BD$ is $(0, 0)$, confirming it's a parallelogram. Equal sides + right angle = square."
+    }
+  ]
+}
