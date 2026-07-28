@@ -9,8 +9,16 @@ import {
   Lightbulb,
   Ruler,
   ChartColumn,
-  Book,
+  ChevronLeft,
+  ChevronRight,
+  BookOpen,
+  Brain,
   AlertTriangle,
+  Target,
+  Zap,
+  ArrowLeft,
+  Maximize2,
+  X,
 } from "lucide-react";
 import {
   QuestionSolution,
@@ -27,35 +35,181 @@ interface SolutionViewerProps {
   currentQuestionId: string;
 }
 
+// ─── Content Rendering ───────────────────────────────────────────────────────
+
 function renderLatex(text: string): string {
-  // Convert $$...$$ to styled spans
-  let result = text
-    .replace(/\$\$(.+?)\$\$/g, '<span class="sol-latex-block">$1</span>')
-    .replace(/\$(.+?)\$/g, '<span class="sol-latex">$1</span>');
-  return result;
+  return text
+    .replace(/\$\$(.+?)\$\$/g, '<span class="sv-latex-block">$1</span>')
+    .replace(/\$(.+?)\$/g, '<span class="sv-latex">$1</span>');
 }
 
 function renderMarkdown(text: string): string {
-  let html = text
-    // Bold
+  return text
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    // Italic
     .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    // Code
     .replace(/`(.+?)`/g, "<code>$1</code>")
-    // Newlines to <br>
     .replace(/\n/g, "<br />");
-  return html;
 }
 
 function renderContent(text: string): string {
   return renderLatex(renderMarkdown(text));
 }
 
+// ─── Notes Parser ────────────────────────────────────────────────────────────
+
+interface ParsedNotes {
+  commonMistakes: string | null;
+  examTip: string | null;
+  remaining: string | null;
+}
+
+function parseNotes(notes: string): ParsedNotes {
+  let text = notes;
+  let commonMistakes: string | null = null;
+  let examTip: string | null = null;
+
+  // Extract Common Mistake section
+  const cmRegex = /\*\*Common Mistakes?\s*:\*\*([\s\S]*?)(?=\*\*(?:Exam Tip|Remember|Think|Key|Real-life|Alternative|Why|Historical|Reflection|Algebraic|Note)\s*:|$)/i;
+  const cmMatch = text.match(cmRegex);
+  if (cmMatch) {
+    commonMistakes = cmMatch[1].trim();
+    text = text.replace(cmMatch[0], "").trim();
+  } else {
+    // Try non-bold format
+    const cmRegex2 = /Common Mistakes?\s*:\s*([\s\S]*?)(?=\*\*(?:Exam Tip|Remember|Think|Key|Real-life|Alternative|Why|Historical|Reflection|Algebraic|Note)\s*:|$)/i;
+    const cmMatch2 = text.match(cmRegex2);
+    if (cmMatch2) {
+      commonMistakes = cmMatch2[1].trim();
+      text = text.replace(cmMatch2[0], "").trim();
+    }
+  }
+
+  // Extract Exam Tip section
+  const etRegex = /\*\*Exam Tip\s*:\*\*([\s\S]*?)(?=\*\*(?:Common Mistake|Remember|Think|Key|Real-life|Alternative|Why|Historical|Reflection|Algebraic|Note)\s*:|$)/i;
+  const etMatch = text.match(etRegex);
+  if (etMatch) {
+    examTip = etMatch[1].trim();
+    text = text.replace(etMatch[0], "").trim();
+  } else {
+    const etRegex2 = /Exam Tip\s*:\s*([\s\S]*?)(?=\*\*(?:Common Mistake|Remember|Think|Key|Real-life|Alternative|Why|Historical|Reflection|Algebraic|Note)\s*:|$)/i;
+    const etMatch2 = text.match(etRegex2);
+    if (etMatch2) {
+      examTip = etMatch2[1].trim();
+      text = text.replace(etMatch2[0], "").trim();
+    }
+  }
+
+  // Clean up remaining
+  let remaining: string | null = text.trim();
+  if (remaining && !/[\w\d]/.test(remaining.replace(/<br\s*\/?>/g, ""))) {
+    remaining = null;
+  }
+
+  // Remove leading/trailing <br /> separators
+  if (remaining) {
+    remaining = remaining.replace(/^(<br\s*\/?>\s*)+/, "").replace(/(<br\s*\/?>\s*)+$/, "").trim();
+    if (!remaining) remaining = null;
+  }
+
+  return { commonMistakes, examTip, remaining };
+}
+
+// ─── Quick Revision Generator ────────────────────────────────────────────────
+
+function generateQuickRevision(question: QuestionSolution): string[] {
+  const bullets: string[] = [];
+  const allText = question.solution.map(s => s.content).join(" ") + " " + (question.answer || "");
+  const notesText = question.notes || "";
+
+  // Extract key formula references
+  const formulaMatch = allText.match(/\$[^$]+\$/g);
+  if (formulaMatch && formulaMatch.length > 0) {
+    // Take first meaningful formula as a key point
+    bullets.push(`Key formula: ${formulaMatch[0].replace(/^\$|\$$/g, "")}`);
+  }
+
+  // Extract method/approach names
+  const methodMatches = allText.match(/\*\*Method[^:]*:?\*\*/g);
+  if (methodMatches) {
+    for (const m of methodMatches.slice(0, 2)) {
+      bullets.push(m.replace(/\*\*/g, ""));
+    }
+  }
+
+  // Extract "Remember" or key insight
+  const rememberMatch = allText.match(/\*\*Remember\s*:\*\*\s*([^.\n]+)/i);
+  if (rememberMatch) {
+    bullets.push(rememberMatch[1].trim());
+  }
+
+  // Extract exam tip as bullet
+  const examTipMatch = notesText.match(/\*\*Exam Tip\s*:\*\*\s*([^.\n]+)/i);
+  if (examTipMatch) {
+    bullets.push(examTipMatch[1].trim());
+  }
+
+  // Extract key concept from solution (bold phrases that are meaningful)
+  const keyMatches = allText.match(/\*\*([^:]{3,60}?)\*\*/g);
+  if (keyMatches) {
+    const filtered = keyMatches
+      .map(k => k.replace(/\*\*/g, ""))
+      .filter(k => k.length > 8 && !k.includes("Step") && !k.includes("Conclusion"))
+      .slice(0, 3);
+    for (const k of filtered) {
+      if (!bullets.includes(k)) bullets.push(k);
+    }
+  }
+
+  // Extract important bold headings from solution steps
+  if (bullets.length < 2) {
+    for (const step of question.solution) {
+      const headingMatch = step.content.match(/\*\*([^*]{5,60}?):\*\*/);
+      if (headingMatch) {
+        const clean = headingMatch[1].trim();
+        if (clean.length > 5 && !bullets.includes(clean)) {
+          bullets.push(clean);
+        }
+      }
+    }
+  }
+
+  // Ensure we have at least 3 bullets by extracting key phrases
+  if (bullets.length < 3) {
+    // Extract key terms from the solution
+    const keyTerms = [
+      "distance from y-axis = x-coordinate",
+      "distance from x-axis = y-coordinate",
+      "coordinates are written as (x, y)"
+    ];
+    for (const term of keyTerms) {
+      if (allText.toLowerCase().includes(term.substring(0, 10))) {
+        if (!bullets.includes(term)) bullets.push(term);
+      }
+    }
+    // If still not enough, derive from step content
+    if (bullets.length < 2) {
+      const firstLines = question.solution
+        .slice(0, 3)
+        .map(s => {
+          const match = s.content.match(/\*\*([^*]+)\*\*/);
+          return match ? match[1].replace(/:$/, "") : null;
+        })
+        .filter(Boolean);
+      for (const line of firstLines) {
+        if (line && !bullets.includes(line)) bullets.push(line);
+      }
+    }
+  }
+
+  return bullets.slice(0, 5);
+}
+
+// ─── Table View ──────────────────────────────────────────────────────────────
+
 function TableView({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="sol-table-wrapper">
-      <table className="sol-table">
+    <div className="sv-table-wrap">
+      <table className="sv-table">
         <thead>
           <tr>
             {headers.map((h, i) => (
@@ -77,30 +231,88 @@ function TableView({ headers, rows }: { headers: string[]; rows: string[][] }) {
   );
 }
 
+// ─── Diagram View (with click-to-zoom) ──────────────────────────────────────
+
 function DiagramView({ diagram }: { diagram: NonNullable<QuestionSolution["diagram"]> }) {
-  if (diagram.type === "svg") {
-    return (
-      <div className="sol-diagram">
-        <div className="sol-diagram-inner" dangerouslySetInnerHTML={{ __html: diagram.content }} />
-        {diagram.caption && <p className="sol-diagram-caption">{diagram.caption}</p>}
+  const [zoomed, setZoomed] = useState(false);
+
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === "Escape") setZoomed(false);
+  }, []);
+
+  const content = diagram.type === "svg" ? (
+    <div className="sv-diagram-svg" dangerouslySetInnerHTML={{ __html: diagram.content }} />
+  ) : (
+    <img
+      src={diagram.content}
+      alt={diagram.caption || "Diagram"}
+      className="sv-diagram-img"
+      loading="lazy"
+    />
+  );
+
+  return (
+    <>
+      <div className="sv-diagram">
+        <button
+          className="sv-diagram-zoom"
+          onClick={() => setZoomed(true)}
+          aria-label="Zoom diagram"
+          title="Click to zoom"
+        >
+          <Maximize2 size={14} />
+        </button>
+        <div className="sv-diagram-inner">{content}</div>
+        {diagram.caption && <p className="sv-diagram-cap">{diagram.caption}</p>}
       </div>
-    );
-  }
-  if (diagram.type === "image") {
-    return (
-      <div className="sol-diagram">
-        <img
-          src={diagram.content}
-          alt={diagram.caption || "Diagram"}
-          className="sol-diagram-img"
-          loading="lazy"
-        />
-        {diagram.caption && <p className="sol-diagram-caption">{diagram.caption}</p>}
-      </div>
-    );
-  }
-  return null;
+      {zoomed && (
+        <div
+          className="sv-diagram-overlay"
+          onClick={() => setZoomed(false)}
+          onKeyDown={handleKeyDown}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Diagram zoomed view"
+          tabIndex={-1}
+        >
+          <button className="sv-diagram-close" onClick={() => setZoomed(false)} aria-label="Close zoom">
+            <X size={20} />
+          </button>
+          <div className="sv-diagram-overlay-content" onClick={e => e.stopPropagation()}>
+            {content}
+            {diagram.caption && <p className="sv-diagram-cap">{diagram.caption}</p>}
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
+
+// ─── Info Box Component ─────────────────────────────────────────────────────
+
+interface InfoBoxProps {
+  icon: React.ReactNode;
+  label: string;
+  children: React.ReactNode;
+  variant?: "blue" | "green" | "orange" | "purple" | "teal" | "yellow" | "rose" | "indigo";
+  className?: string;
+}
+
+function InfoBox({ icon, label, children, variant = "blue", className = "" }: InfoBoxProps) {
+  return (
+    <div className={`sv-box sv-box-${variant} ${className}`}>
+      <div className="sv-box-header">
+        <span className={`sv-box-badge sv-box-badge-${variant}`}>
+          {icon}
+          {label}
+        </span>
+      </div>
+      <div className="sv-box-body">{children}</div>
+    </div>
+  );
+}
+
+// ─── Main SolutionViewer Component ──────────────────────────────────────────
 
 export default function SolutionViewer({
   classId,
@@ -112,6 +324,7 @@ export default function SolutionViewer({
   currentQuestionId,
 }: SolutionViewerProps) {
   const router = useRouter();
+  const [imageError, setImageError] = useState(false);
 
   // Find current exercise
   const exercise = useMemo(
@@ -119,7 +332,7 @@ export default function SolutionViewer({
     [exercises, currentExercise]
   );
 
-  // Find current question index within the exercise
+  // Find current question index
   const currentQIndex = useMemo(
     () => (exercise ? exercise.questions.findIndex((q) => q.id === currentQuestionId) : -1),
     [exercise, currentQuestionId]
@@ -130,9 +343,21 @@ export default function SolutionViewer({
     [exercise, currentQIndex]
   );
 
-  // Navigation
   const totalQuestions = exercise?.questions.length || 0;
 
+  // Parse notes
+  const parsedNotes = useMemo(
+    () => (question?.notes ? parseNotes(question.notes) : { commonMistakes: null, examTip: null, remaining: null }),
+    [question?.notes]
+  );
+
+  // Quick revision bullets
+  const revisionBullets = useMemo(
+    () => (question ? generateQuickRevision(question) : []),
+    [question]
+  );
+
+  // Navigation handlers
   const goToQuestion = useCallback(
     (qIdx: number) => {
       if (!exercise || qIdx < 0 || qIdx >= exercise.questions.length) return;
@@ -155,14 +380,27 @@ export default function SolutionViewer({
     [exercises, classId, subject, chapterIdx, router]
   );
 
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.key === "ArrowLeft" && currentQIndex > 0) goToQuestion(currentQIndex - 1);
+      if (e.key === "ArrowRight" && currentQIndex < totalQuestions - 1) goToQuestion(currentQIndex + 1);
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [currentQIndex, totalQuestions, goToQuestion]);
+
+  // ─── Empty State ─────────────────────────────────────────────────────────
+
   if (!exercise || !question) {
     return (
-      <div className="sol-empty">
-        <div className="sol-empty-icon"><FileEdit size={40} /></div>
-        <h3>No solutions available yet</h3>
-        <p>Solutions for this exercise are being prepared.</p>
-        <Link href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`} className="btn btn-p">
-          ← Back to Chapter
+      <div className="sv-empty">
+        <div className="sv-empty-ic"><FileEdit size={48} /></div>
+        <h3 className="sv-empty-h">No solutions available yet</h3>
+        <p className="sv-empty-p">Solutions for this exercise are being prepared by our academic team.</p>
+        <Link href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`} className="sv-btn sv-btn-primary">
+          <ArrowLeft size={16} /> Back to Chapter
         </Link>
       </div>
     );
@@ -170,27 +408,50 @@ export default function SolutionViewer({
 
   const progressPercent = totalQuestions > 0 ? ((currentQIndex + 1) / totalQuestions) * 100 : 0;
 
+  // ─── Render ──────────────────────────────────────────────────────────────
+
   return (
-    <div className="sol-viewer">
-      {/* Progress Header */}
-      <div className="sol-progress">
-        <div className="sol-progress-info">
-          <span className="sol-progress-label">
-            Question {currentQIndex + 1} of {totalQuestions}
-          </span>
-          <span className="sol-progress-pct">{Math.round(progressPercent)}%</span>
+    <div className="sv-wrap">
+      {/* ── Top Meta Bar ── */}
+      <div className="sv-meta">
+        <div className="sv-meta-left">
+          <Link
+            href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`}
+            className="sv-meta-back"
+            aria-label="Back to chapter"
+          >
+            <ArrowLeft size={16} />
+          </Link>
+          <div>
+            <div className="sv-meta-subject">{subject}</div>
+            <div className="sv-meta-chapter">Ch {chapterIdx + 1}: {chapterName}</div>
+          </div>
         </div>
-        <div className="sol-progress-bar">
-          <div className="sol-progress-fill" style={{ width: `${progressPercent}%` }} />
+        <div className="sv-meta-right">
+          <span className="sv-meta-exercise">{currentExercise}</span>
+          <span className="sv-meta-qnum">Q{question.questionNumber}</span>
         </div>
       </div>
 
-      {/* Exercise Tabs */}
-      <div className="sol-ex-tabs">
+      {/* ── Progress Bar ── */}
+      <div className="sv-progress">
+        <div className="sv-progress-info">
+          <span className="sv-progress-label">Question {currentQIndex + 1} of {totalQuestions}</span>
+          <span className="sv-progress-pct">{Math.round(progressPercent)}%</span>
+        </div>
+        <div className="sv-progress-track">
+          <div className="sv-progress-fill" style={{ width: `${progressPercent}%` }} />
+        </div>
+      </div>
+
+      {/* ── Exercise Tabs ── */}
+      <div className="sv-tabs" role="tablist" aria-label="Exercise selector">
         {exercises.map((ex) => (
           <button
             key={ex.name}
-            className={`sol-ex-tab ${ex.name === currentExercise ? "on" : ""}`}
+            role="tab"
+            aria-selected={ex.name === currentExercise}
+            className={`sv-tab ${ex.name === currentExercise ? "on" : ""}`}
             onClick={() => goToExercise(ex.name)}
           >
             {ex.name}
@@ -198,135 +459,229 @@ export default function SolutionViewer({
         ))}
       </div>
 
-      {/* Question Navigation */}
-      <div className="sol-q-nav">
+      {/* ── Question Number Nav ── */}
+      <div className="sv-qnav" role="navigation" aria-label="Question navigation">
         {exercise.questions.map((q, i) => (
           <button
             key={q.id}
-            className={`sol-q-dot ${q.id === currentQuestionId ? "on" : ""}`}
+            className={`sv-qdot ${q.id === currentQuestionId ? "on" : ""}`}
             onClick={() => goToQuestion(i)}
             title={`Question ${q.questionNumber}`}
+            aria-label={`Go to question ${q.questionNumber}`}
           >
             {q.questionNumber}
           </button>
         ))}
       </div>
 
-      {/* Question Card */}
-      <div className="sol-card">
-        <div className="sol-card-header">
-          <span className="sol-badge">{currentExercise} · Q{question.questionNumber}</span>
-          {question.verified && <span className="sol-badge sol-badge-verified"><CheckCircle size={14} style={{ marginRight: 4 }} /> Verified Solution</span>}
-        </div>
-        <div className="sol-question">
-          <div
-            className="sol-question-text"
-            dangerouslySetInnerHTML={{ __html: renderContent(question.question) }}
-          />
-        </div>
-      </div>
-
-      {/* Solution Steps */}
-      <div className="sol-card">
-        <div className="sol-card-header">
-          <span className="sol-badge sol-badge-green"><Lightbulb size={14} style={{ marginRight: 4 }} /> Step-by-Step Solution</span>
-        </div>
-        <div className="sol-steps">
-          {question.solution.map((step) => (
-            <div key={step.step} className="sol-step">
-              <div className="sol-step-num">{step.step}</div>
-              <div
-                className="sol-step-content"
-                dangerouslySetInnerHTML={{ __html: renderContent(step.content) }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Answer */}
-      {question.answer && (
-        <div className="sol-card sol-card-answer">
-          <div className="sol-card-header">
-            <span className="sol-badge sol-badge-purple"><CheckCircle size={14} style={{ marginRight: 4 }} /> Final Answer</span>
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* QUESTION CARD */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <section className="sv-section sv-fade-in" aria-labelledby="sv-question-heading">
+        <div className="sv-qcard">
+          <div className="sv-qcard-top">
+            <span className="sv-qcard-badge">
+              <BookOpen size={14} />
+              {currentExercise} · Q{question.questionNumber}
+            </span>
+            {question.verified && (
+              <span className="sv-qcard-verified">
+                <CheckCircle size={14} />
+                Verified
+              </span>
+            )}
           </div>
-          <div
-            className="sol-answer"
-            dangerouslySetInnerHTML={{ __html: renderContent(question.answer) }}
-          />
-        </div>
-      )}
-
-      {/* Formula Box */}
-      {question.formulaBox && (
-        <div className="sol-card sol-card-formula">
-          <div className="sol-card-header">
-            <span className="sol-badge sol-badge-orange"><Ruler size={14} style={{ marginRight: 4 }} /> Formula Box</span>
-          </div>
-          <div className="sol-formula-box">
-            <h4 className="sol-formula-title">{question.formulaBox.title}</h4>
+          <div className="sv-qcard-body">
             <div
-              className="sol-formula-content"
-              dangerouslySetInnerHTML={{ __html: renderContent(question.formulaBox.content) }}
+              className="sv-qcard-text"
+              dangerouslySetInnerHTML={{ __html: renderContent(question.question) }}
             />
           </div>
         </div>
-      )}
+      </section>
 
-      {/* Table */}
-      {question.tableData && (
-        <div className="sol-card">
-          <div className="sol-card-header">
-            <span className="sol-badge sol-badge-blue"><ChartColumn size={14} style={{ marginRight: 4 }} /> Table</span>
-          </div>
-          <TableView headers={question.tableData.headers} rows={question.tableData.rows} />
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* SOLUTION HEADER */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <div className="sv-sol-header sv-fade-in">
+        <div className="sv-sol-header-icon">
+          <Lightbulb size={22} />
         </div>
-      )}
+        <div>
+          <h2 className="sv-sol-header-h">Step-by-Step Solution</h2>
+          <p className="sv-sol-header-p">Understand every step with clear explanations.</p>
+        </div>
+        <div className="sv-sol-header-line" />
+      </div>
 
-      {/* Diagram */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* SOLUTION STEPS */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <section className="sv-section sv-fade-in" aria-label="Solution steps">
+        <div className="sv-steps">
+          {question.solution.map((step, idx) => (
+            <div key={step.step} className="sv-step" style={{ animationDelay: `${idx * 80}ms` }}>
+              <div className="sv-step-num">{step.step}</div>
+              <div className="sv-step-line" />
+              <div className="sv-step-body">
+                <div
+                  className="sv-step-content"
+                  dangerouslySetInnerHTML={{ __html: renderContent(step.content) }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* DIAGRAM */}
+      {/* ════════════════════════════════════════════════════════════ */}
       {question.diagram && (
-        <div className="sol-card">
-          <div className="sol-card-header">
-            <span className="sol-badge sol-badge-teal"><Ruler size={14} style={{ marginRight: 4 }} /> Diagram</span>
-          </div>
-          <DiagramView diagram={question.diagram} />
-        </div>
+        <section className="sv-section sv-fade-in" aria-label="Diagram">
+          <InfoBox icon={<Ruler size={16} />} label="Diagram" variant="teal">
+            <DiagramView diagram={question.diagram} />
+          </InfoBox>
+        </section>
       )}
 
-      {/* Notes */}
-      {question.notes && (
-        <div className="sol-card sol-card-notes">
-          <div className="sol-card-header">
-            <span className="sol-badge sol-badge-yellow"><FileEdit size={14} style={{ marginRight: 4 }} /> Note</span>
-          </div>
-          <div
-            className="sol-notes"
-            dangerouslySetInnerHTML={{ __html: renderContent(question.notes) }}
-          />
-        </div>
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* TABLE */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {question.tableData && (
+        <section className="sv-section sv-fade-in" aria-label="Data table">
+          <InfoBox icon={<ChartColumn size={16} />} label="Table" variant="indigo">
+            <TableView headers={question.tableData.headers} rows={question.tableData.rows} />
+          </InfoBox>
+        </section>
       )}
 
-      {/* Prev / Next Navigation */}
-      <div className="sol-nav-buttons">
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* FINAL ANSWER */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {question.answer && (
+        <section className="sv-section sv-fade-in" aria-label="Final answer">
+          <div className="sv-answer-box">
+            <div className="sv-answer-icon"><CheckCircle size={20} /></div>
+            <div className="sv-answer-h">Final Answer</div>
+            <div
+              className="sv-answer-content"
+              dangerouslySetInnerHTML={{ __html: renderContent(question.answer) }}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* KEY CONCEPT (from formulaBox) */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {question.formulaBox && (
+        <section className="sv-section sv-fade-in" aria-label="Key concept">
+          <InfoBox icon={<Brain size={16} />} label="Key Concept" variant="orange">
+            {question.formulaBox.title && (
+              <p className="sv-box-formula-title">{question.formulaBox.title}</p>
+            )}
+            <div
+              className="sv-box-formula-content"
+              dangerouslySetInnerHTML={{ __html: renderContent(question.formulaBox.content) }}
+            />
+          </InfoBox>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* COMMON MISTAKES */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {parsedNotes.commonMistakes && (
+        <section className="sv-section sv-fade-in" aria-label="Common mistakes">
+          <InfoBox icon={<AlertTriangle size={16} />} label="Common Mistakes" variant="rose">
+            <div
+              className="sv-box-text"
+              dangerouslySetInnerHTML={{ __html: renderContent(parsedNotes.commonMistakes) }}
+            />
+          </InfoBox>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* EXAM TIP */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {parsedNotes.examTip && (
+        <section className="sv-section sv-fade-in" aria-label="Exam tip">
+          <InfoBox icon={<Target size={16} />} label="CBSE Exam Tip" variant="yellow">
+            <div
+              className="sv-box-text"
+              dangerouslySetInnerHTML={{ __html: renderContent(parsedNotes.examTip) }}
+            />
+          </InfoBox>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* ADDITIONAL NOTES */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {parsedNotes.remaining && (
+        <section className="sv-section sv-fade-in" aria-label="Additional notes">
+          <InfoBox icon={<FileEdit size={16} />} label="Note" variant="blue">
+            <div
+              className="sv-box-text"
+              dangerouslySetInnerHTML={{ __html: renderContent(parsedNotes.remaining) }}
+            />
+          </InfoBox>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* QUICK REVISION */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      {revisionBullets.length > 0 && (
+        <section className="sv-section sv-fade-in" aria-label="Quick revision">
+          <InfoBox icon={<Zap size={16} />} label="Quick Revision" variant="purple">
+            <ul className="sv-revision-list">
+              {revisionBullets.map((bullet, i) => (
+                <li key={i} className="sv-revision-item">
+                  <span className="sv-revision-bullet" />
+                  <span
+                    dangerouslySetInnerHTML={{ __html: renderContent(bullet) }}
+                  />
+                </li>
+              ))}
+            </ul>
+          </InfoBox>
+        </section>
+      )}
+
+      {/* ════════════════════════════════════════════════════════════ */}
+      {/* NAVIGATION BUTTONS */}
+      {/* ════════════════════════════════════════════════════════════ */}
+      <div className="sv-nav">
         <button
-          className="btn btn-s"
+          className="sv-btn sv-btn-ghost"
           disabled={currentQIndex <= 0}
           onClick={() => goToQuestion(currentQIndex - 1)}
+          aria-label="Previous question"
         >
-          ← Previous Question
+          <ChevronLeft size={18} />
+          <span className="sv-btn-label">Previous</span>
         </button>
+
         <Link
           href={`/ncert/${classId}/${encodeURIComponent(subject)}/${chapterIdx}`}
-          className="btn btn-s"
+          className="sv-btn sv-btn-outline"
+          aria-label="Back to chapter"
         >
-          <Book size={16} style={{ marginRight: 6 }} /> Chapter
+          <BookOpen size={16} />
+          <span className="sv-btn-label">Chapter</span>
         </Link>
+
         <button
-          className="btn btn-p"
+          className="sv-btn sv-btn-primary"
           disabled={currentQIndex >= totalQuestions - 1}
           onClick={() => goToQuestion(currentQIndex + 1)}
+          aria-label="Next question"
         >
-          Next Question →
+          <span className="sv-btn-label">Next</span>
+          <ChevronRight size={18} />
         </button>
       </div>
     </div>
