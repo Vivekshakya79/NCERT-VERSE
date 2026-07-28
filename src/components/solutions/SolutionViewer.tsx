@@ -55,6 +55,140 @@ function renderContent(text: string): string {
   return renderLatex(renderMarkdown(text));
 }
 
+// ─── Point-wise Content Parser ──────────────────────────────────────────────
+
+/** Split text into individual bullet points by detecting sentence boundaries */
+function splitIntoPoints(text: string): string[] {
+  // Split on sentence-ending periods that are followed by a space and capital letter
+  // But protect things like "e.g.", "i.e.", "Fig.", numbers with decimals, etc.
+  const sentences: string[] = [];
+  
+  // First, protect protected abbreviations
+  let clean = text
+    .replace(/e\.g\./g, "⦿eg⦿")
+    .replace(/i\.e\./g, "⦿ie⦿")
+    .replace(/Fig\./g, "⦿Fig⦿")
+    .replace(/etc\./g, "⦿etc⦿");
+  
+  // Split on ". " or ".\n" or ".\r\n" patterns that indicate sentence boundaries
+  const parts = clean.split(/(?<=\.)\s+(?=[A-Z\$\\({\[„«])/);
+  
+  for (const part of parts) {
+    // Restore protected abbreviations
+    let restored = part
+      .replace(/⦿eg⦿/g, "e.g.")
+      .replace(/⦿ie⦿/g, "i.e.")
+      .replace(/⦿Fig⦿/g, "Fig.")
+      .replace(/⦿etc⦿/g, "etc.")
+      .trim();
+    if (restored) sentences.push(restored);
+  }
+  
+  // If splitting didn't work well, treat the whole thing as one point
+  if (sentences.length <= 1 && text.length > 60) {
+    // Try splitting on newlines instead
+    const byNewline = text.split(/\n/).map(s => s.trim()).filter(Boolean);
+    if (byNewline.length > 1) return byNewline;
+    return [text.trim()];
+  }
+  
+  return sentences;
+}
+
+/** Auto-bold coordinate patterns, key values, and mathematical expressions */
+function smartBold(text: string): string {
+  // Bold coordinate tuples like (8.5, 0) when preceded by a point name
+  // e.g., "D₁ = (8.5, 0)" → "D₁ = **(8.5, 0)**"
+  let result = text
+    // Bold final numeric results after equals
+    .replace(/(=\s*)(\d+(?:\.\d+)?)\s*(units?|feet?|ft|cm|m|inches?|in)/gi, '$1<strong>$2 $3</strong>')
+    // Bold comparison results
+    .replace(/(>\s*)(\d+(?:\.\d+)?)\s*(units?|feet?|ft|cm|m)/gi, '$1<strong>$2 $3</strong>')
+    // Bold point = coordinate patterns
+    .replace(/([A-Z][₁₂₃₄]?\s*=\s*)\((\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\)/g, '$1<strong>($2, $3)</strong>')
+    // Bold standalone coordinate tuples
+    .replace(/(\b|,\s*)\((\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\)/g, '$1<strong>($2, $3)</strong>')
+    // Bold width/distance/area results
+    .replace(/(Width|Length|Height|Area|Distance|Difference)\s*=\s*(\d+(?:\.\d+)?)/gi, '<strong>$1</strong> = <strong>$2</strong>')
+    // Bold key numeric relationships
+    .replace(/(\d+(?:\.\d+)?)\s*(ft|feet|units?|inches?|in|cm|m)\s*(>|<|≥|≤)\s*(\d+(?:\.\d+)?)\s*(ft|feet|units?|inches?|in|cm|m)/g, '<strong>$1 $2</strong> $3 <strong>$4 $5</strong>');
+  return result;
+}
+
+/** Render step content as structured point-wise HTML */
+function renderPointwiseContent(content: string): string {
+  // Extract the bold heading if present (e.g., "**Understanding the diagram:**")
+  const headingMatch = content.match(/^\*\*([^*]+?)\*\*:?\s*/);
+  let heading = "";
+  let body = content;
+  
+  if (headingMatch) {
+    heading = headingMatch[1].replace(/:$/, "").trim();
+    body = content.slice(headingMatch[0].length).trim();
+  }
+  
+  // Build HTML
+  let html = "";
+  
+  if (heading) {
+    const boldedHeading = heading
+      .replace(/\$([^$]+)\$/g, "<strong>$1</strong>");
+    html += `<div class="sv-pw-heading">${boldedHeading}</div>`;
+  }
+  
+  // Detect if content already has structured formatting (dash lists, tables)
+  const hasDashList = /^-\s/m.test(body);
+  const hasTable = /\|.+\|/.test(body) && /\|[- ]+\|/.test(body);
+  const hasOrderedList = /^\d+\.\s/m.test(body);
+  
+  if (hasDashList || hasTable || hasOrderedList) {
+    // Render as-is (preserve existing structure like dash lists, tables)
+    // Don't double-wrap in bullet points
+    html += `<div class="sv-pw-body">`;
+    if (hasDashList) {
+      // Convert dash lists into the same styling
+      const rendered = body
+        .replace(/^- (.+)$/gm, (_, line) => {
+          const smartBolded = smartBold(line.trim());
+          const rendered = renderContent(smartBolded);
+          return `<div class="sv-pw-item">${rendered}</div>`;
+        })
+        .replace(/\n\n+/g, '<div class="sv-pw-spacer"></div>');
+      html += rendered;
+    } else {
+      html += renderContent(smartBold(body));
+    }
+    html += `</div>`;
+  } else {
+    // Split remaining text into sentences/points for paragraph content
+    const rawPoints = splitIntoPoints(body);
+    
+    if (rawPoints.length > 0) {
+      html += `<ul class="sv-pw-list">`;
+      for (const point of rawPoints) {
+        const smartBolded = smartBold(point);
+        const rendered = renderContent(smartBolded);
+        html += `<li class="sv-pw-item">${rendered}</li>`;
+      }
+      html += `</ul>`;
+    }
+  }
+  
+  return html;
+}
+
+/** Render question text with sub-question badges highlighted */
+function renderQuestionContent(text: string): string {
+  // First standard render
+  let html = renderContent(text);
+  // Wrap sub-question markers (i), (ii), (iii), (iv), etc. in badges
+  html = html.replace(
+    /\(([ivx]+)\)/gi,
+    '<span class="sv-qpart">($1)</span>'
+  );
+  return html;
+}
+
 // ─── Notes Parser ────────────────────────────────────────────────────────────
 
 interface ParsedNotes {
@@ -494,7 +628,7 @@ export default function SolutionViewer({
           <div className="sv-qcard-body">
             <div
               className="sv-qcard-text"
-              dangerouslySetInnerHTML={{ __html: renderContent(question.question) }}
+              dangerouslySetInnerHTML={{ __html: renderQuestionContent(question.question) }}
             />
           </div>
         </div>
@@ -515,18 +649,18 @@ export default function SolutionViewer({
       </div>
 
       {/* ════════════════════════════════════════════════════════════ */}
-      {/* SOLUTION STEPS */}
+      {/* SOLUTION STEPS — Point-wise format */}
       {/* ════════════════════════════════════════════════════════════ */}
       <section className="sv-section sv-fade-in" aria-label="Solution steps">
-        <div className="sv-steps">
+        <div className="sv-steps sv-steps-pointwise">
           {question.solution.map((step, idx) => (
             <div key={step.step} className="sv-step" style={{ animationDelay: `${idx * 80}ms` }}>
               <div className="sv-step-num">{step.step}</div>
               <div className="sv-step-line" />
               <div className="sv-step-body">
                 <div
-                  className="sv-step-content"
-                  dangerouslySetInnerHTML={{ __html: renderContent(step.content) }}
+                  className="sv-step-content sv-step-pw"
+                  dangerouslySetInnerHTML={{ __html: renderPointwiseContent(step.content) }}
                 />
               </div>
             </div>

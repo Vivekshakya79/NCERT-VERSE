@@ -3864,6 +3864,191 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
+/* POINT-WISE STEP RENDERING */
+/* ═══════════════════════════════════════════════════════════════ */
+.sv-step-pw .sv-pw-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--pri);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(37,99,235,.1);
+  letter-spacing: -0.01em;
+}
+.sv-step-pw .sv-pw-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sv-step-pw .sv-pw-item {
+  position: relative;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--tx-2);
+  list-style: none;
+}
+.sv-step-pw .sv-pw-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pri-l);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+.sv-step-pw .sv-pw-item strong {
+  color: var(--tx);
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(37,99,235,.08), rgba(37,99,235,.02));
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.sv-step-pw .sv-pw-item .sv-latex {
+  font-weight: 600;
+  color: var(--pri);
+}
+.sv-step-pw .sv-pw-item .sv-latex-block {
+  display: block;
+  margin: 6px 0;
+  padding: 10px 14px;
+  background: rgba(37,99,235,.04);
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--pri);
+  text-align: center;
+}
+
+/* ── Sub-question Badge ── */
+.sv-qpart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--pri), var(--pri-h));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin: 0 2px;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
+/* ── Step spacing for point-wise mode ── */
+.sv-steps-pointwise .sv-step {
+  padding: 24px 28px;
+}
+.sv-steps-pointwise .sv-step-body {
+  padding-top: 2px;
+}
+
+/* ── Dark mode overrides ── */
+[data-theme="dark"] .sv-step-pw .sv-pw-heading {
+  color: var(--pri-l);
+  border-bottom-color: rgba(59,130,246,.15);
+}
+[data-theme="dark"] .sv-step-pw .sv-pw-item strong {
+  background: linear-gradient(135deg, rgba(59,130,246,.12), rgba(59,130,246,.04));
+  color: #e5e7eb;
+}
+[data-theme="dark"] .sv-step-pw .sv-pw-item::before {
+  background: var(--pri-l);
+  opacity: 0.6;
+}
+
+/* ── Structured body (dash lists, tables) ── */
+.sv-pw-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--tx-2);
+}
+.sv-pw-body .sv-pw-item {
+  position: relative;
+  padding-left: 20px;
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--tx-2);
+}
+.sv-pw-body .sv-pw-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pri-l);
+  opacity: 0.5;
+}
+.sv-pw-body .sv-pw-item strong {
+  color: var(--tx);
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(37,99,235,.08), rgba(37,99,235,.02));
+  padding: 0 4px;
+  border-radius: 4px;
+}
+.sv-pw-body .sv-pw-item .sv-latex {
+  font-weight: 600;
+  color: var(--pri);
+}
+.sv-pw-body .sv-pw-item .sv-latex-block {
+  display: block;
+  margin: 6px 0;
+  padding: 10px 14px;
+  background: rgba(37,99,235,.04);
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--pri);
+  text-align: center;
+}
+.sv-pw-spacer {
+  height: 8px;
+}
+.sv-pw-body table {
+  margin: 10px 0;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+.sv-pw-body th, .sv-pw-body td {
+  padding: 8px 14px;
+  border: 1px solid rgba(0,0,0,.08);
+  text-align: left;
+}
+.sv-pw-body th {
+  background: rgba(37,99,235,.06);
+  font-weight: 600;
+  color: var(--tx);
+}
+.sv-pw-body td {
+  color: var(--tx-2);
+}
+[data-theme="dark"] .sv-pw-body .sv-pw-item strong {
+  background: linear-gradient(135deg, rgba(59,130,246,.12), rgba(59,130,246,.04));
+  color: #e5e7eb;
+}
+[data-theme="dark"] .sv-pw-body .sv-pw-item::before {
+  background: var(--pri-l);
+  opacity: 0.6;
+}
+[data-theme="dark"] .sv-pw-body th {
+  background: rgba(59,130,246,.1);
+}
+[data-theme="dark"] .sv-pw-body th, 
+[data-theme="dark"] .sv-pw-body td {
+  border-color: rgba(255,255,255,.08);
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
 /* FINAL ANSWER BOX */
 /* ═══════════════════════════════════════════════════════════════ */
 .sv-answer-box {
