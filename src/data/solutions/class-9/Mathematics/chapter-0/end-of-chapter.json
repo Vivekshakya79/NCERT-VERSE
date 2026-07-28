@@ -6,9 +6,18 @@
       "questionNumber": 1,
       "question": "What are the $x$-coordinate and $y$-coordinate of the point of intersection of the two axes?",
       "solution": [
-        { "step": 1, "content": "The two axes are the $x$-axis (horizontal line) and the $y$-axis (vertical line). Their point of intersection is called the **origin**." },
-        { "step": 2, "content": "At the origin, the distance from the $x$-axis is $0$ and the distance from the $y$-axis is also $0$." },
-        { "step": 3, "content": "Therefore, the origin has coordinates $(0, 0)$." }
+        {
+          "step": 1,
+          "content": "The two axes are the $x$-axis (horizontal line) and the $y$-axis (vertical line). Their point of intersection is called the **origin**."
+        },
+        {
+          "step": 2,
+          "content": "At the origin, the distance from the $x$-axis is $0$ and the distance from the $y$-axis is also $0$."
+        },
+        {
+          "step": 3,
+          "content": "Therefore, the origin has coordinates $(0, 0)$."
+        }
       ],
       "answer": "The point of intersection (origin) has $x$-coordinate $= \\mathbf{0}$ and $y$-coordinate $= \\mathbf{0}$. It is denoted by $O(0, 0)$.",
       "verified": false,
@@ -19,10 +28,22 @@
       "questionNumber": 2,
       "question": "Point $W$ has $x$-coordinate equal to $-5$. Can you predict the coordinates of point $H$ which is on the line through $W$ parallel to the $y$-axis? Which quadrants can $H$ lie in?",
       "solution": [
-        { "step": 1, "content": "**Understanding the setup:** Point $W$ has an $x$-coordinate of $-5$. Its $y$-coordinate is not given, so we can write $W = (-5, y_W)$ for some value $y_W$." },
-        { "step": 2, "content": "**The line through $W$ parallel to the $y$-axis:** A line parallel to the $y$-axis is vertical. All points on this line share the same $x$-coordinate. Therefore, any point on this line has $x = -5$." },
-        { "step": 3, "content": "**Coordinates of $H$:** Since $H$ lies on this vertical line, its $x$-coordinate must also be $-5$. The $y$-coordinate can be any real number. So $H = (-5, y)$ for some real number $y$." },
-        { "step": 4, "content": "**Quadrants for $H$:** \n- If $y > 0$, then $H$ has $x < 0$ and $y > 0$, so it lies in **Quadrant II**\n- If $y < 0$, then $H$ has $x < 0$ and $y < 0$, so it lies in **Quadrant III**\n- If $y = 0$, then $H$ lies on the $x$-axis between Quadrants II and III" }
+        {
+          "step": 1,
+          "content": "**Understanding the setup:** Point $W$ has an $x$-coordinate of $-5$. Its $y$-coordinate is not given, so we can write $W = (-5, y_W)$ for some value $y_W$."
+        },
+        {
+          "step": 2,
+          "content": "**The line through $W$ parallel to the $y$-axis:** A line parallel to the $y$-axis is vertical. All points on this line share the same $x$-coordinate. Therefore, any point on this line has $x = -5$."
+        },
+        {
+          "step": 3,
+          "content": "**Coordinates of $H$:** Since $H$ lies on this vertical line, its $x$-coordinate must also be $-5$. The $y$-coordinate can be any real number. So $H = (-5, y)$ for some real number $y$."
+        },
+        {
+          "step": 4,
+          "content": "**Quadrants for $H$:** \n- If $y > 0$, then $H$ has $x < 0$ and $y > 0$, so it lies in **Quadrant II**\n- If $y < 0$, then $H$ has $x < 0$ and $y < 0$, so it lies in **Quadrant III**\n- If $y = 0$, then $H$ lies on the $x$-axis between Quadrants II and III"
+        }
       ],
       "answer": "$H = (-5, y)$, where $y$ is any real number. $H$ can lie in **Quadrant II** (if $y > 0$) or **Quadrant III** (if $y < 0$).",
       "verified": false,
@@ -37,12 +58,30 @@
       "questionNumber": 3,
       "question": "Consider the points $R(3, 0)$, $A(0, -2)$, $M(-5, -2)$ and $P(-5, 2)$. If they are joined in the same order, predict:\n\n**(i)** Two sides of $RAMP$ that are perpendicular to each other.\n**(ii)** One side of $RAMP$ that is parallel to one of the axes.\n**(iii)** Two points that are mirror images of each other in one axis. Which axis will this be?\n\nNow plot the points and verify your predictions.",
       "solution": [
-        { "step": 1, "content": "**Plot the points:** The vertices in order are $R(3, 0) \\to A(0, -2) \\to M(-5, -2) \\to P(-5, 2) \\to$ back to $R$." },
-        { "step": 2, "content": "**Identifying the sides:**\n- $RA$: from $(3, 0)$ to $(0, -2)$\n- $AM$: from $(0, -2)$ to $(-5, -2)$\n- $MP$: from $(-5, -2)$ to $(-5, 2)$\n- $PR$: from $(-5, 2)$ to $(3, 0)$" },
-        { "step": 3, "content": "**Analysing slopes:**\n- $AM$: $y$-coordinates are the same ($-2$) → **horizontal**, slope $= 0$\n- $MP$: $x$-coordinates are the same ($-5$) → **vertical**, slope is undefined\n- $AM$ $\\perp$ $MP$ because a horizontal line and a vertical line are always perpendicular" },
-        { "step": 4, "content": "**(i) Perpendicular sides:** $AM$ (horizontal) and $MP$ (vertical) are perpendicular to each other." },
-        { "step": 5, "content": "**(ii) Side parallel to an axis:** \n- $AM$ is parallel to the $x$-axis (horizontal)\n- $MP$ is parallel to the $y$-axis (vertical)" },
-        { "step": 6, "content": "**(iii) Mirror images:** $M(-5, -2)$ and $P(-5, 2)$ share the same $x$-coordinate ($-5$) and have opposite $y$-coordinates. This means $M$ is the reflection of $P$ (or vice versa) across the **$x$-axis**.\n\nVerification: Reflecting $(-5, 2)$ in the $x$-axis gives $(-5, -2) = M$, $\\checkmark$" }
+        {
+          "step": 1,
+          "content": "**Plot the points:** The vertices in order are $R(3, 0) \\to A(0, -2) \\to M(-5, -2) \\to P(-5, 2) \\to$ back to $R$."
+        },
+        {
+          "step": 2,
+          "content": "**Identifying the sides:**\n- $RA$: from $(3, 0)$ to $(0, -2)$\n- $AM$: from $(0, -2)$ to $(-5, -2)$\n- $MP$: from $(-5, -2)$ to $(-5, 2)$\n- $PR$: from $(-5, 2)$ to $(3, 0)$"
+        },
+        {
+          "step": 3,
+          "content": "**Analysing slopes:**\n- $AM$: $y$-coordinates are the same ($-2$) → **horizontal**, slope $= 0$\n- $MP$: $x$-coordinates are the same ($-5$) → **vertical**, slope is undefined\n- $AM$ $\\perp$ $MP$ because a horizontal line and a vertical line are always perpendicular"
+        },
+        {
+          "step": 4,
+          "content": "**(i) Perpendicular sides:** $AM$ (horizontal) and $MP$ (vertical) are perpendicular to each other."
+        },
+        {
+          "step": 5,
+          "content": "**(ii) Side parallel to an axis:** \n- $AM$ is parallel to the $x$-axis (horizontal)\n- $MP$ is parallel to the $y$-axis (vertical)"
+        },
+        {
+          "step": 6,
+          "content": "**(iii) Mirror images:** $M(-5, -2)$ and $P(-5, 2)$ share the same $x$-coordinate ($-5$) and have opposite $y$-coordinates. This means $M$ is the reflection of $P$ (or vice versa) across the **$x$-axis**.\n\nVerification: Reflecting $(-5, 2)$ in the $x$-axis gives $(-5, -2) = M$, $\\checkmark$"
+        }
       ],
       "answer": "**(i)** $AM \\perp MP$  \n**(ii)** $AM \\parallel x$-axis, $MP \\parallel y$-axis  \n**(iii)** $M(-5, -2)$ and $P(-5, 2)$ are mirror images in the $\\mathbf{x}$-axis",
       "verified": false,
@@ -58,12 +97,30 @@
       "questionNumber": 4,
       "question": "Plot point $Z(5, -6)$ on the Cartesian plane. Construct a right-angled triangle $IZN$ and find the lengths of the three sides. (Comment: Answers may differ from person to person.)",
       "solution": [
-        { "step": 1, "content": "**Plotting $Z$:** Point $Z$ has coordinates $(5, -6)$ — $5$ units to the right of the $y$-axis and $6$ units below the $x$-axis (Quadrant IV)." },
-        { "step": 2, "content": "**Constructing a right-angled triangle $IZN$:** We need to choose points $I$ and $N$ such that $\\triangle IZN$ is right-angled at $Z$ (or at another vertex). One simple way is to make $IZ$ vertical and $ZN$ horizontal." },
-        { "step": 3, "content": "**Choose $I$ directly above $Z$:** $I = (5, 0)$ — vertically above $Z$, on the $x$-axis." },
-        { "step": 4, "content": "**Choose $N$ directly to the left of $Z$:** $N = (0, -6)$ — horizontally left of $Z$, on the $y$-axis." },
-        { "step": 5, "content": "**Verifying the right angle:** \n- $IZ$ is vertical (from $(5,0)$ to $(5,-6)$)\n- $ZN$ is horizontal (from $(5,-6)$ to $(0,-6)$)\n- Vertical $\\perp$ horizontal, so $\\angle IZN = 90^\\circ$ $\\checkmark$" },
-        { "step": 6, "content": "**Finding the side lengths:**\n- $IZ$: vertical distance $= |0 - (-6)| = 6$ units\n- $ZN$: horizontal distance $= |0 - 5| = 5$ units\n- $IN$ (hypotenuse, using Baudhāyana–Pythagoras Theorem): \n$$IN = \\sqrt{IZ^2 + ZN^2} = \\sqrt{6^2 + 5^2} = \\sqrt{36 + 25} = \\sqrt{61} \\approx 7.81 \\text{ units}$$" }
+        {
+          "step": 1,
+          "content": "**Plotting $Z$:** Point $Z$ has coordinates $(5, -6)$ — $5$ units to the right of the $y$-axis and $6$ units below the $x$-axis (Quadrant IV)."
+        },
+        {
+          "step": 2,
+          "content": "**Constructing a right-angled triangle $IZN$:** We need to choose points $I$ and $N$ such that $\\triangle IZN$ is right-angled at $Z$ (or at another vertex). One simple way is to make $IZ$ vertical and $ZN$ horizontal."
+        },
+        {
+          "step": 3,
+          "content": "**Choose $I$ directly above $Z$:** $I = (5, 0)$ — vertically above $Z$, on the $x$-axis."
+        },
+        {
+          "step": 4,
+          "content": "**Choose $N$ directly to the left of $Z$:** $N = (0, -6)$ — horizontally left of $Z$, on the $y$-axis."
+        },
+        {
+          "step": 5,
+          "content": "**Verifying the right angle:** \n- $IZ$ is vertical (from $(5,0)$ to $(5,-6)$)\n- $ZN$ is horizontal (from $(5,-6)$ to $(0,-6)$)\n- Vertical $\\perp$ horizontal, so $\\angle IZN = 90^\\circ$ $\\checkmark$"
+        },
+        {
+          "step": 6,
+          "content": "**Finding the side lengths:**\n- $IZ$: vertical distance $= |0 - (-6)| = 6$ units\n- $ZN$: horizontal distance $= |0 - 5| = 5$ units\n- $IN$ (hypotenuse, using Baudhāyana–Pythagoras Theorem): \n$$IN = \\sqrt{IZ^2 + ZN^2} = \\sqrt{6^2 + 5^2} = \\sqrt{36 + 25} = \\sqrt{61} \\approx 7.81 \\text{ units}$$"
+        }
       ],
       "answer": "Sample triangle: $I(5, 0)$, $Z(5, -6)$, $N(0, -6)$.  \nSides: $IZ = \\mathbf{6}$ units, $ZN = \\mathbf{5}$ units, $IN = \\mathbf{\\sqrt{61}} \\approx 7.81$ units.  \n(Your answer may differ based on your choice of $I$ and $N$.)",
       "verified": false,
@@ -71,18 +128,38 @@
         "title": "Baudhāyana–Pythagoras Theorem",
         "content": "$$c^2 = a^2 + b^2 \\quad\\text{where } c \\text{ is the hypotenuse}$$"
       },
-      "notes": "**Why answers differ:** The problem is open-ended. As long as $\\triangle IZN$ has a right angle, any valid construction is acceptable. Always check that $IZ^2 + ZN^2 = IN^2$ (or whichever sides form the right angle)."
+      "notes": "**Why answers differ:** The problem is open-ended. As long as $\\triangle IZN$ has a right angle, any valid construction is acceptable. Always check that $IZ^2 + ZN^2 = IN^2$ (or whichever sides form the right angle).",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 540 420\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"540\" height=\"420\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"85\" y1=\"230\" x2=\"85\" y2=\"150\"/><line x1=\"118.33\" y1=\"230\" x2=\"118.33\" y2=\"150\"/><line x1=\"151.66\" y1=\"230\" x2=\"151.66\" y2=\"150\"/><line x1=\"184.99\" y1=\"230\" x2=\"184.99\" y2=\"150\"/><line x1=\"218.32\" y1=\"230\" x2=\"218.32\" y2=\"150\"/><line x1=\"251.64999999999998\" y1=\"230\" x2=\"251.64999999999998\" y2=\"150\"/><line x1=\"284.98\" y1=\"230\" x2=\"284.98\" y2=\"150\"/><line x1=\"85\" y1=\"470\" x2=\"284.98\" y2=\"470\"/><line x1=\"85\" y1=\"430\" x2=\"284.98\" y2=\"430\"/><line x1=\"85\" y1=\"390\" x2=\"284.98\" y2=\"390\"/><line x1=\"85\" y1=\"350\" x2=\"284.98\" y2=\"350\"/><line x1=\"85\" y1=\"310\" x2=\"284.98\" y2=\"310\"/><line x1=\"85\" y1=\"270\" x2=\"284.98\" y2=\"270\"/><line x1=\"85\" y1=\"230\" x2=\"284.98\" y2=\"230\"/><line x1=\"85\" y1=\"190\" x2=\"284.98\" y2=\"190\"/><line x1=\"85\" y1=\"150\" x2=\"284.98\" y2=\"150\"/></g><!-- Axes with arrows --><line x1=\"85\" y1=\"230\" x2=\"314.98\" y2=\"230\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"85\" y1=\"230\" x2=\"85\" y2=\"140\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"309.98\" y=\"245\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"70\" y=\"145\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><!-- Tick marks on x-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"85\" y=\"247\">0</text><text x=\"118\" y=\"247\">1</text><text x=\"152\" y=\"247\">2</text><text x=\"185\" y=\"247\">3</text><text x=\"218\" y=\"247\">4</text><text x=\"252\" y=\"247\">5</text><text x=\"285\" y=\"247\">6</text></g><!-- Tick marks on y-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"77\" y=\"474\">-6</text><text x=\"77\" y=\"434\">-5</text><text x=\"77\" y=\"394\">-4</text><text x=\"77\" y=\"354\">-3</text><text x=\"77\" y=\"314\">-2</text><text x=\"77\" y=\"274\">-1</text><text x=\"77\" y=\"194\">1</text><text x=\"77\" y=\"154\">2</text></g><text x=\"77\" y=\"247\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><polygon points=\"251.64999999999998,230 251.64999999999998,470 85,470\" stroke=\"#2563EB\" stroke-width=\"2.5\" fill=\"rgba(37,99,235,0.08)\"/><polyline points=\"239.64999999999998,470 239.64999999999998,458 251.64999999999998,458\" stroke=\"#2563EB\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"243.64999999999998\" y=\"224\" font-size=\"12\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">I(5,0)</text><text x=\"257.65\" y=\"474\" font-size=\"12\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">Z(5,-6)</text><text x=\"77\" y=\"474\" font-size=\"12\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">N(0,-6)</text><text x=\"261.65\" y=\"354\" font-size=\"11\" fill=\"#2563EB\" font-family=\"serif\" font-style=\"italic\">IZ = 6</text><text x=\"168.325\" y=\"488\" font-size=\"11\" fill=\"#2563EB\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">ZN = 5</text><text x=\"144.994\" y=\"342\" font-size=\"11\" fill=\"#8b5cf6\" font-family=\"serif\" font-style=\"italic\">IN = √61 ≈ 7.81</text><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"79\" y=\"394\">-2</text><text x=\"79\" y=\"554\">-4</text><text x=\"79\" y=\"714\">-6</text></g></svg>",
+        "caption": "Right-angled triangle IZN with I(5,0), Z(5,-6), N(0,-6). Right angle at Z. Side lengths: IZ = 6, ZN = 5, IN = √61 ≈ 7.81."
+      }
     },
     {
       "id": "9-math-0-ec-q5",
       "questionNumber": 5,
       "question": "What would a system of coordinates be like if we did not have negative numbers? Would this system allow us to locate all the points on a 2-D plane?",
       "solution": [
-        { "step": 1, "content": "**Understanding the role of negative numbers:** In the Cartesian coordinate system, negative numbers allow us to represent points to the left of the $y$-axis (negative $x$) and below the $x$-axis (negative $y$)." },
-        { "step": 2, "content": "**Without negative numbers:** If we only had non-negative numbers ($0$ and positive numbers), we could only describe points with $x \\geq 0$ and $y \\geq 0$." },
-        { "step": 3, "content": "**Region covered:** This would restrict us to **Quadrant I** only — the region where both $x$ and $y$ are non-negative." },
-        { "step": 4, "content": "**Points we could NOT locate:**\n- Points in Quadrant II (negative $x$, positive $y$) — e.g., $(-3, 4)$\n- Points in Quadrant III (both negative) — e.g., $(-2, -5)$\n- Points in Quadrant IV (positive $x$, negative $y$) — e.g., $(6, -3)$" },
-        { "step": 5, "content": "**Conclusion:** No, this system would **not** allow us to locate all points on a 2-D plane. It would only cover one-fourth of the plane (Quadrant I and the non-negative parts of the axes)." }
+        {
+          "step": 1,
+          "content": "**Understanding the role of negative numbers:** In the Cartesian coordinate system, negative numbers allow us to represent points to the left of the $y$-axis (negative $x$) and below the $x$-axis (negative $y$)."
+        },
+        {
+          "step": 2,
+          "content": "**Without negative numbers:** If we only had non-negative numbers ($0$ and positive numbers), we could only describe points with $x \\geq 0$ and $y \\geq 0$."
+        },
+        {
+          "step": 3,
+          "content": "**Region covered:** This would restrict us to **Quadrant I** only — the region where both $x$ and $y$ are non-negative."
+        },
+        {
+          "step": 4,
+          "content": "**Points we could NOT locate:**\n- Points in Quadrant II (negative $x$, positive $y$) — e.g., $(-3, 4)$\n- Points in Quadrant III (both negative) — e.g., $(-2, -5)$\n- Points in Quadrant IV (positive $x$, negative $y$) — e.g., $(6, -3)$"
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** No, this system would **not** allow us to locate all points on a 2-D plane. It would only cover one-fourth of the plane (Quadrant I and the non-negative parts of the axes)."
+        }
       ],
       "answer": "Without negative numbers, the coordinate system would only cover Quadrant I ($x \\geq 0, y \\geq 0$). It would **not** allow us to locate points in Quadrants II, III, or IV.",
       "verified": false,
@@ -93,9 +170,18 @@
       "questionNumber": 6,
       "question": "Are the points $M(-3, -4)$, $A(0, 0)$ and $G(6, 8)$ on the same straight line? Suggest a method to check this without plotting and joining the points.",
       "solution": [
-        { "step": 1, "content": "**Method:** Three points are collinear (lie on the same straight line) if the slope between any two pairs of points is equal. Equivalently, the area of the triangle formed by the three points is zero." },
-        { "step": 2, "content": "**Using slopes:** Check if slope $MA =$ slope $AG$.\n\nSlope $MA = \\dfrac{y_A - y_M}{x_A - x_M} = \\dfrac{0 - (-4)}{0 - (-3)} = \\dfrac{4}{3}$\n\nSlope $AG = \\dfrac{y_G - y_A}{x_G - x_A} = \\dfrac{8 - 0}{6 - 0} = \\dfrac{8}{6} = \\dfrac{4}{3}$" },
-        { "step": 3, "content": "**Comparison:** Slope $MA =$ slope $AG = \\dfrac{4}{3}$. Since the slopes are equal and point $A$ is common to both segments, the three points $M$, $A$, and $G$ lie on the **same straight line**." }
+        {
+          "step": 1,
+          "content": "**Method:** Three points are collinear (lie on the same straight line) if the slope between any two pairs of points is equal. Equivalently, the area of the triangle formed by the three points is zero."
+        },
+        {
+          "step": 2,
+          "content": "**Using slopes:** Check if slope $MA =$ slope $AG$.\n\nSlope $MA = \\dfrac{y_A - y_M}{x_A - x_M} = \\dfrac{0 - (-4)}{0 - (-3)} = \\dfrac{4}{3}$\n\nSlope $AG = \\dfrac{y_G - y_A}{x_G - x_A} = \\dfrac{8 - 0}{6 - 0} = \\dfrac{8}{6} = \\dfrac{4}{3}$"
+        },
+        {
+          "step": 3,
+          "content": "**Comparison:** Slope $MA =$ slope $AG = \\dfrac{4}{3}$. Since the slopes are equal and point $A$ is common to both segments, the three points $M$, $A$, and $G$ lie on the **same straight line**."
+        }
       ],
       "answer": "Yes, $M(-3, -4)$, $A(0, 0)$ and $G(6, 8)$ are **collinear**. Method: Since slope $MA$ $=$ slope $AG$ $= \\dfrac{4}{3}$, they lie on the same line.",
       "verified": false,
@@ -103,31 +189,65 @@
         "title": "Collinearity Test (Slope Method)",
         "content": "$$\\text{Points } P, Q, R \\text{ are collinear if } \\frac{y_Q - y_P}{x_Q - x_P} = \\frac{y_R - y_Q}{x_R - x_Q}$$"
       },
-      "notes": "**Alternative method:** Calculate the area of triangle $MAG$. If area $= 0$, the points are collinear.\n\n$$\\text{Area} = \\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$"
+      "notes": "**Alternative method:** Calculate the area of triangle $MAG$. If area $= 0$, the points are collinear.\n\n$$\\text{Area} = \\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$$",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 560 490\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"560\" height=\"490\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"-48.31999999999999\" y1=\"290\" x2=\"-48.31999999999999\" y2=\"-70\"/><line x1=\"-14.989999999999995\" y1=\"290\" x2=\"-14.989999999999995\" y2=\"-70\"/><line x1=\"18.340000000000003\" y1=\"290\" x2=\"18.340000000000003\" y2=\"-70\"/><line x1=\"51.67\" y1=\"290\" x2=\"51.67\" y2=\"-70\"/><line x1=\"85\" y1=\"290\" x2=\"85\" y2=\"-70\"/><line x1=\"118.33\" y1=\"290\" x2=\"118.33\" y2=\"-70\"/><line x1=\"151.66\" y1=\"290\" x2=\"151.66\" y2=\"-70\"/><line x1=\"184.99\" y1=\"290\" x2=\"184.99\" y2=\"-70\"/><line x1=\"218.32\" y1=\"290\" x2=\"218.32\" y2=\"-70\"/><line x1=\"251.64999999999998\" y1=\"290\" x2=\"251.64999999999998\" y2=\"-70\"/><line x1=\"284.98\" y1=\"290\" x2=\"284.98\" y2=\"-70\"/><line x1=\"318.31\" y1=\"290\" x2=\"318.31\" y2=\"-70\"/><line x1=\"-48.31999999999999\" y1=\"490\" x2=\"318.31\" y2=\"490\"/><line x1=\"-48.31999999999999\" y1=\"450\" x2=\"318.31\" y2=\"450\"/><line x1=\"-48.31999999999999\" y1=\"410\" x2=\"318.31\" y2=\"410\"/><line x1=\"-48.31999999999999\" y1=\"370\" x2=\"318.31\" y2=\"370\"/><line x1=\"-48.31999999999999\" y1=\"330\" x2=\"318.31\" y2=\"330\"/><line x1=\"-48.31999999999999\" y1=\"290\" x2=\"318.31\" y2=\"290\"/><line x1=\"-48.31999999999999\" y1=\"250\" x2=\"318.31\" y2=\"250\"/><line x1=\"-48.31999999999999\" y1=\"210\" x2=\"318.31\" y2=\"210\"/><line x1=\"-48.31999999999999\" y1=\"170\" x2=\"318.31\" y2=\"170\"/><line x1=\"-48.31999999999999\" y1=\"130\" x2=\"318.31\" y2=\"130\"/><line x1=\"-48.31999999999999\" y1=\"90\" x2=\"318.31\" y2=\"90\"/><line x1=\"-48.31999999999999\" y1=\"50\" x2=\"318.31\" y2=\"50\"/><line x1=\"-48.31999999999999\" y1=\"10\" x2=\"318.31\" y2=\"10\"/><line x1=\"-48.31999999999999\" y1=\"-30\" x2=\"318.31\" y2=\"-30\"/><line x1=\"-48.31999999999999\" y1=\"-70\" x2=\"318.31\" y2=\"-70\"/></g><!-- Axes with arrows --><line x1=\"85\" y1=\"290\" x2=\"348.31\" y2=\"290\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"85\" y1=\"290\" x2=\"85\" y2=\"-80\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"343.31\" y=\"305\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"70\" y=\"-75\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><!-- Tick marks on x-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"-48\" y=\"307\">-4</text><text x=\"-15\" y=\"307\">-3</text><text x=\"18\" y=\"307\">-2</text><text x=\"52\" y=\"307\">-1</text><text x=\"85\" y=\"307\">0</text><text x=\"118\" y=\"307\">1</text><text x=\"152\" y=\"307\">2</text><text x=\"185\" y=\"307\">3</text><text x=\"218\" y=\"307\">4</text><text x=\"252\" y=\"307\">5</text><text x=\"285\" y=\"307\">6</text><text x=\"318\" y=\"307\">7</text></g><!-- Tick marks on y-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"79\" y=\"494\">-5</text><text x=\"79\" y=\"454\">-4</text><text x=\"79\" y=\"414\">-3</text><text x=\"79\" y=\"374\">-2</text><text x=\"79\" y=\"334\">-1</text><text x=\"79\" y=\"254\">1</text><text x=\"79\" y=\"214\">2</text><text x=\"79\" y=\"174\">3</text><text x=\"79\" y=\"134\">4</text><text x=\"79\" y=\"94\">5</text><text x=\"79\" y=\"54\">6</text><text x=\"79\" y=\"14\">7</text><text x=\"79\" y=\"-26\">8</text><text x=\"79\" y=\"-66\">9</text></g><text x=\"77\" y=\"307\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><line x1=\"-14.989999999999995\" y1=\"450\" x2=\"284.98\" y2=\"-30\" stroke=\"#8b5cf6\" stroke-width=\"2\" stroke-dasharray=\"6,4\" opacity=\"0.6\"/><circle cx=\"-14.989999999999995\" cy=\"450\" r=\"5\" fill=\"#e74c3c\"/><text x=\"-24.989999999999995\" y=\"470\" font-size=\"11\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">M(-3,-4)</text><circle cx=\"85\" cy=\"290\" r=\"5\" fill=\"#2563EB\"/><text x=\"77\" y=\"310\" font-size=\"11\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">A(0,0)</text><circle cx=\"284.98\" cy=\"-30\" r=\"5\" fill=\"#e74c3c\"/><text x=\"292.98\" y=\"-24\" font-size=\"11\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">G(6,8)</text><text x=\"151.66\" y=\"170\" font-size=\"10\" fill=\"#8b5cf6\" font-family=\"serif\" font-style=\"italic\">y = (4/3)x</text><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"79\" y=\"454\">-2</text><text x=\"79\" y=\"614\">-4</text><text x=\"79\" y=\"134\">2</text><text x=\"79\" y=\"-26\">4</text><text x=\"79\" y=\"-186\">6</text><text x=\"79\" y=\"-346\">8</text></g><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"-48.31999999999999\" y=\"307\">-4</text><text x=\"-14.989999999999995\" y=\"307\">-3</text><text x=\"18.340000000000003\" y=\"307\">-2</text><text x=\"51.67\" y=\"307\">-1</text></g></svg>",
+        "caption": "Collinear points M(-3,-4), A(0,0), and G(6,8) all lie on the line y = (4/3)x."
+      }
     },
     {
       "id": "9-math-0-ec-q7",
       "questionNumber": 7,
       "question": "Use your method (from Problem 6) to check if the points $R(-5, -1)$, $B(-2, -5)$ and $C(4, -12)$ are on the same straight line. Now plot both sets of points and check your answers.",
       "solution": [
-        { "step": 1, "content": "**Using the slope method:** Check if slope $RB =$ slope $BC$.\n\nSlope $RB = \\dfrac{y_B - y_R}{x_B - x_R} = \\dfrac{-5 - (-1)}{-2 - (-5)} = \\dfrac{-4}{3}$\n\nSlope $BC = \\dfrac{y_C - y_B}{x_C - x_B} = \\dfrac{-12 - (-5)}{4 - (-2)} = \\dfrac{-7}{6}$" },
-        { "step": 2, "content": "**Comparison:** Slope $RB = -\\dfrac{4}{3}$ and slope $BC = -\\dfrac{7}{6}$.\n\n$-\\dfrac{4}{3} = -\\dfrac{8}{6} \\neq -\\dfrac{7}{6}$\n\nSince the slopes are **not equal**, the points $R$, $B$, and $C$ are **not collinear**." },
-        { "step": 3, "content": "**Verification by plotting (Problem 6):** \n- $M(-3, -4)$, $A(0, 0)$, $G(6, 8)$ — all lie on the line $y = \\frac{4}{3}x$, confirmed by slope check.\n\n**Plotting these points:**\n- $R(-5, -1)$, $B(-2, -5)$, $C(4, -12)$ — they form a triangle when plotted, confirming they are not on the same line." }
+        {
+          "step": 1,
+          "content": "**Using the slope method:** Check if slope $RB =$ slope $BC$.\n\nSlope $RB = \\dfrac{y_B - y_R}{x_B - x_R} = \\dfrac{-5 - (-1)}{-2 - (-5)} = \\dfrac{-4}{3}$\n\nSlope $BC = \\dfrac{y_C - y_B}{x_C - x_B} = \\dfrac{-12 - (-5)}{4 - (-2)} = \\dfrac{-7}{6}$"
+        },
+        {
+          "step": 2,
+          "content": "**Comparison:** Slope $RB = -\\dfrac{4}{3}$ and slope $BC = -\\dfrac{7}{6}$.\n\n$-\\dfrac{4}{3} = -\\dfrac{8}{6} \\neq -\\dfrac{7}{6}$\n\nSince the slopes are **not equal**, the points $R$, $B$, and $C$ are **not collinear**."
+        },
+        {
+          "step": 3,
+          "content": "**Verification by plotting (Problem 6):** \n- $M(-3, -4)$, $A(0, 0)$, $G(6, 8)$ — all lie on the line $y = \\frac{4}{3}x$, confirmed by slope check.\n\n**Plotting these points:**\n- $R(-5, -1)$, $B(-2, -5)$, $C(4, -12)$ — they form a triangle when plotted, confirming they are not on the same line."
+        }
       ],
       "answer": "No, $R(-5, -1)$, $B(-2, -5)$ and $C(4, -12)$ are **not collinear** because slope $RB = -\\dfrac{4}{3}$ but slope $BC = -\\dfrac{7}{6}$.",
       "verified": false,
-      "notes": "**Algebraic check using area formula:**\n$$\\text{Area} = \\frac{1}{2}|(-5)(-5-(-12)) + (-2)(-12-(-1)) + 4(-1-(-5))|$$\n$$= \\frac{1}{2}|(-5)(7) + (-2)(-11) + 4(4)| = \\frac{1}{2}|-35 + 22 + 16| = \\frac{3}{2} \\neq 0$$\n\nThe area is non-zero, confirming non-collinearity."
+      "notes": "**Algebraic check using area formula:**\n$$\\text{Area} = \\frac{1}{2}|(-5)(-5-(-12)) + (-2)(-12-(-1)) + 4(-1-(-5))|$$\n$$= \\frac{1}{2}|(-5)(7) + (-2)(-11) + 4(4)| = \\frac{1}{2}|-35 + 22 + 16| = \\frac{3}{2} \\neq 0$$\n\nThe area is non-zero, confirming non-collinearity.",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 600 570\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"600\" height=\"570\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"-59.97999999999999\" y1=\"340\" x2=\"-59.97999999999999\" y2=\"300\"/><line x1=\"-26.649999999999977\" y1=\"340\" x2=\"-26.649999999999977\" y2=\"300\"/><line x1=\"6.680000000000007\" y1=\"340\" x2=\"6.680000000000007\" y2=\"300\"/><line x1=\"40.010000000000005\" y1=\"340\" x2=\"40.010000000000005\" y2=\"300\"/><line x1=\"73.34\" y1=\"340\" x2=\"73.34\" y2=\"300\"/><line x1=\"106.67\" y1=\"340\" x2=\"106.67\" y2=\"300\"/><line x1=\"140\" y1=\"340\" x2=\"140\" y2=\"300\"/><line x1=\"173.32999999999998\" y1=\"340\" x2=\"173.32999999999998\" y2=\"300\"/><line x1=\"206.66\" y1=\"340\" x2=\"206.66\" y2=\"300\"/><line x1=\"239.99\" y1=\"340\" x2=\"239.99\" y2=\"300\"/><line x1=\"273.32\" y1=\"340\" x2=\"273.32\" y2=\"300\"/><line x1=\"306.65\" y1=\"340\" x2=\"306.65\" y2=\"300\"/><line x1=\"-59.97999999999999\" y1=\"860\" x2=\"306.65\" y2=\"860\"/><line x1=\"-59.97999999999999\" y1=\"820\" x2=\"306.65\" y2=\"820\"/><line x1=\"-59.97999999999999\" y1=\"780\" x2=\"306.65\" y2=\"780\"/><line x1=\"-59.97999999999999\" y1=\"740\" x2=\"306.65\" y2=\"740\"/><line x1=\"-59.97999999999999\" y1=\"700\" x2=\"306.65\" y2=\"700\"/><line x1=\"-59.97999999999999\" y1=\"660\" x2=\"306.65\" y2=\"660\"/><line x1=\"-59.97999999999999\" y1=\"620\" x2=\"306.65\" y2=\"620\"/><line x1=\"-59.97999999999999\" y1=\"580\" x2=\"306.65\" y2=\"580\"/><line x1=\"-59.97999999999999\" y1=\"540\" x2=\"306.65\" y2=\"540\"/><line x1=\"-59.97999999999999\" y1=\"500\" x2=\"306.65\" y2=\"500\"/><line x1=\"-59.97999999999999\" y1=\"460\" x2=\"306.65\" y2=\"460\"/><line x1=\"-59.97999999999999\" y1=\"420\" x2=\"306.65\" y2=\"420\"/><line x1=\"-59.97999999999999\" y1=\"380\" x2=\"306.65\" y2=\"380\"/><line x1=\"-59.97999999999999\" y1=\"340\" x2=\"306.65\" y2=\"340\"/><line x1=\"-59.97999999999999\" y1=\"300\" x2=\"306.65\" y2=\"300\"/></g><!-- Axes with arrows --><line x1=\"140\" y1=\"340\" x2=\"336.65\" y2=\"340\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"140\" y1=\"340\" x2=\"140\" y2=\"290\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"331.65\" y=\"355\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"125\" y=\"295\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><!-- Tick marks on x-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"-60\" y=\"357\">-6</text><text x=\"-27\" y=\"357\">-5</text><text x=\"7\" y=\"357\">-4</text><text x=\"40\" y=\"357\">-3</text><text x=\"73\" y=\"357\">-2</text><text x=\"107\" y=\"357\">-1</text><text x=\"140\" y=\"357\">0</text><text x=\"173\" y=\"357\">1</text><text x=\"207\" y=\"357\">2</text><text x=\"240\" y=\"357\">3</text><text x=\"273\" y=\"357\">4</text><text x=\"307\" y=\"357\">5</text></g><text x=\"132\" y=\"357\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"106.67\" y=\"357\">-1</text><text x=\"73.34\" y=\"357\">-2</text><text x=\"40.010000000000005\" y=\"357\">-3</text><text x=\"6.680000000000007\" y=\"357\">-4</text><text x=\"-26.649999999999977\" y=\"357\">-5</text><text x=\"-59.97999999999999\" y=\"357\">-6</text></g><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"134\" y=\"504\">-4</text><text x=\"134\" y=\"664\">-8</text><text x=\"134\" y=\"824\">-12</text></g><polygon points=\"-26.649999999999977,380 73.34,540 273.32,820\" stroke=\"#e74c3c\" stroke-width=\"2\" fill=\"rgba(231,76,60,0.06)\" stroke-dasharray=\"5,3\"/><circle cx=\"-26.649999999999977\" cy=\"380\" r=\"4\" fill=\"#2563EB\"/><text x=\"-36.64999999999998\" y=\"372\" font-size=\"11\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">R(-5,-1)</text><circle cx=\"73.34\" cy=\"540\" r=\"4\" fill=\"#2563EB\"/><text x=\"81.34\" y=\"544\" font-size=\"11\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">B(-2,-5)</text><circle cx=\"273.32\" cy=\"820\" r=\"4\" fill=\"#2563EB\"/><text x=\"281.32\" y=\"824\" font-size=\"11\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">C(4,-12)</text><text x=\"173.32999999999998\" y=\"140\" font-size=\"11\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">Not collinear (form a triangle)</text></svg>",
+        "caption": "Points R(-5,-1), B(-2,-5), and C(4,-12) are NOT collinear — they form a triangle."
+      }
     },
     {
       "id": "9-math-0-ec-q8",
       "questionNumber": 8,
       "question": "Using the origin as one vertex, plot the vertices of:\n\n**(i)** A right-angled isosceles triangle.\n**(ii)** An isosceles triangle with one vertex in Quadrant III and the other in Quadrant IV.",
       "solution": [
-        { "step": 1, "content": "**(i) Right-angled isosceles triangle with origin:**\nLet the origin $O(0, 0)$ be the vertex containing the right angle. We need two points $P$ and $Q$ such that $OP \\perp OQ$ and $OP = OQ$." },
-        { "step": 2, "content": "**Choosing the points:** Take $P(3, 0)$ on the $x$-axis and $Q(0, 3)$ on the $y$-axis.\n- $OP = 3$ units, $OQ = 3$ units $\\Rightarrow OP = OQ$ (isosceles)\n- $OP$ is along the $x$-axis, $OQ$ is along the $y$-axis $\\Rightarrow OP \\perp OQ$\n- Hypotenuse $PQ = \\sqrt{3^2 + 3^2} = \\sqrt{18} = 3\\sqrt{2}$ units" },
-        { "step": 3, "content": "**Alternative choices:** Any points of the form $(a, 0)$ and $(0, a)$, or $(a, a)$ and $(a, -a)$ with the origin, work as long as $a \\neq 0$." },
-        { "step": 4, "content": "**(ii) Isosceles triangle with vertices in Quadrant III and Quadrant IV:**\nPlace the origin $O(0, 0)$ at the apex. Choose one vertex in Quadrant III ($x < 0, y < 0$) and another in Quadrant IV ($x > 0, y < 0$) such that their distances from $O$ are equal." },
-        { "step": 5, "content": "**Choosing the points:**\n- Take $A(-3, -1)$ in Quadrant III\n- Take $B(3, -1)$ in Quadrant IV\n- $OA = \\sqrt{(-3)^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OB = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OA = OB$, so $\\triangle OAB$ is isosceles $\\checkmark$\n- $A$ is in QIII, $B$ is in QIV $\\checkmark$" }
+        {
+          "step": 1,
+          "content": "**(i) Right-angled isosceles triangle with origin:**\nLet the origin $O(0, 0)$ be the vertex containing the right angle. We need two points $P$ and $Q$ such that $OP \\perp OQ$ and $OP = OQ$."
+        },
+        {
+          "step": 2,
+          "content": "**Choosing the points:** Take $P(3, 0)$ on the $x$-axis and $Q(0, 3)$ on the $y$-axis.\n- $OP = 3$ units, $OQ = 3$ units $\\Rightarrow OP = OQ$ (isosceles)\n- $OP$ is along the $x$-axis, $OQ$ is along the $y$-axis $\\Rightarrow OP \\perp OQ$\n- Hypotenuse $PQ = \\sqrt{3^2 + 3^2} = \\sqrt{18} = 3\\sqrt{2}$ units"
+        },
+        {
+          "step": 3,
+          "content": "**Alternative choices:** Any points of the form $(a, 0)$ and $(0, a)$, or $(a, a)$ and $(a, -a)$ with the origin, work as long as $a \\neq 0$."
+        },
+        {
+          "step": 4,
+          "content": "**(ii) Isosceles triangle with vertices in Quadrant III and Quadrant IV:**\nPlace the origin $O(0, 0)$ at the apex. Choose one vertex in Quadrant III ($x < 0, y < 0$) and another in Quadrant IV ($x > 0, y < 0$) such that their distances from $O$ are equal."
+        },
+        {
+          "step": 5,
+          "content": "**Choosing the points:**\n- Take $A(-3, -1)$ in Quadrant III\n- Take $B(3, -1)$ in Quadrant IV\n- $OA = \\sqrt{(-3)^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OB = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$\n- $OA = OB$, so $\\triangle OAB$ is isosceles $\\checkmark$\n- $A$ is in QIII, $B$ is in QIV $\\checkmark$"
+        }
       ],
       "answer": "**(i)** $O(0, 0)$, $P(3, 0)$, $Q(0, 3)$ — right-angled isosceles with $OP \\perp OQ$ and $OP = OQ = 3$.\n**(ii)** $O(0, 0)$, $A(-3, -1)$ (QIII), $B(3, -1)$ (QIV) — isosceles with $OA = OB = \\sqrt{10}$.\n(Answers may vary.)",
       "verified": false,
@@ -135,19 +255,42 @@
         "title": "Distance Formula (Baudhāyana–Pythagoras)",
         "content": "$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$"
       },
-      "notes": "**Common Mistake:** For the right-angled isosceles triangle, make sure the **right angle** is actually where you intend it to be. Check using perpendicular slopes (product $= -1$) or the Pythagoras theorem."
+      "notes": "**Common Mistake:** For the right-angled isosceles triangle, make sure the **right angle** is actually where you intend it to be. Check using perpendicular slopes (product $= -1$) or the Pythagoras theorem.",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 560 410\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"560\" height=\"410\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"-13.319999999999993\" y1=\"250\" x2=\"-13.319999999999993\" y2=\"90\"/><line x1=\"20.010000000000005\" y1=\"250\" x2=\"20.010000000000005\" y2=\"90\"/><line x1=\"53.34\" y1=\"250\" x2=\"53.34\" y2=\"90\"/><line x1=\"86.67\" y1=\"250\" x2=\"86.67\" y2=\"90\"/><line x1=\"120\" y1=\"250\" x2=\"120\" y2=\"90\"/><line x1=\"153.32999999999998\" y1=\"250\" x2=\"153.32999999999998\" y2=\"90\"/><line x1=\"186.66\" y1=\"250\" x2=\"186.66\" y2=\"90\"/><line x1=\"219.99\" y1=\"250\" x2=\"219.99\" y2=\"90\"/><line x1=\"253.32\" y1=\"250\" x2=\"253.32\" y2=\"90\"/><line x1=\"-13.319999999999993\" y1=\"330\" x2=\"253.32\" y2=\"330\"/><line x1=\"-13.319999999999993\" y1=\"290\" x2=\"253.32\" y2=\"290\"/><line x1=\"-13.319999999999993\" y1=\"250\" x2=\"253.32\" y2=\"250\"/><line x1=\"-13.319999999999993\" y1=\"210\" x2=\"253.32\" y2=\"210\"/><line x1=\"-13.319999999999993\" y1=\"170\" x2=\"253.32\" y2=\"170\"/><line x1=\"-13.319999999999993\" y1=\"130\" x2=\"253.32\" y2=\"130\"/><line x1=\"-13.319999999999993\" y1=\"90\" x2=\"253.32\" y2=\"90\"/></g><!-- Axes with arrows --><line x1=\"120\" y1=\"250\" x2=\"283.32\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"120\" y1=\"250\" x2=\"120\" y2=\"80\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"278.32\" y=\"265\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"105\" y=\"85\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><!-- Tick marks on x-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"-13\" y=\"267\">-4</text><text x=\"20\" y=\"267\">-3</text><text x=\"53\" y=\"267\">-2</text><text x=\"87\" y=\"267\">-1</text><text x=\"120\" y=\"267\">0</text><text x=\"153\" y=\"267\">1</text><text x=\"187\" y=\"267\">2</text><text x=\"220\" y=\"267\">3</text><text x=\"253\" y=\"267\">4</text></g><!-- Tick marks on y-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"114\" y=\"334\">-2</text><text x=\"114\" y=\"294\">-1</text><text x=\"114\" y=\"214\">1</text><text x=\"114\" y=\"174\">2</text><text x=\"114\" y=\"134\">3</text><text x=\"114\" y=\"94\">4</text></g><text x=\"112\" y=\"267\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"86.67\" y=\"267\">-1</text><text x=\"53.34\" y=\"267\">-2</text><text x=\"20.010000000000005\" y=\"267\">-3</text><text x=\"-13.319999999999993\" y=\"267\">-4</text></g><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"114\" y=\"414\">-2</text></g><polygon points=\"120,250 219.99,250 120,130\" stroke=\"#2563EB\" stroke-width=\"2\" fill=\"rgba(37,99,235,0.08)\"/><text x=\"153.32999999999998\" y=\"216.67000000000002\" font-size=\"10\" fill=\"#2563EB\" font-family=\"serif\" font-style=\"italic\">△OPQ</text><text x=\"153.32999999999998\" y=\"267\" font-size=\"9\" fill=\"#2563EB\" font-family=\"Arial\">P(3,0)</text><circle cx=\"219.99\" cy=\"250\" r=\"4\" fill=\"#2563EB\"/><text x=\"112\" y=\"134\" font-size=\"9\" fill=\"#2563EB\" font-family=\"Arial\">Q(0,3)</text><circle cx=\"120\" cy=\"130\" r=\"4\" fill=\"#2563EB\"/><polyline points=\"132,250 132,238 120,238\" stroke=\"#2563EB\" stroke-width=\"1.5\" fill=\"none\"/><polygon points=\"120,250 20.010000000000005,290 219.99,290\" stroke=\"#f59e0b\" stroke-width=\"2\" fill=\"rgba(245,158,11,0.06)\"/><text x=\"120\" y=\"334\" font-size=\"10\" fill=\"#f59e0b\" font-family=\"serif\" font-style=\"italic\" text-anchor=\"middle\">△OAB (isosceles)</text><text x=\"12.010000000000005\" y=\"294\" font-size=\"9\" fill=\"#f59e0b\" font-family=\"Arial\">A(-3,-1)</text><circle cx=\"20.010000000000005\" cy=\"290\" r=\"4\" fill=\"#f59e0b\"/><text x=\"223.99\" y=\"294\" font-size=\"9\" fill=\"#f59e0b\" font-family=\"Arial\">B(3,-1)</text><circle cx=\"219.99\" cy=\"290\" r=\"4\" fill=\"#f59e0b\"/><text x=\"110\" y=\"268\" font-size=\"11\" fill=\"#666\" font-weight=\"bold\" font-family=\"serif\">O</text></svg>",
+        "caption": "Two triangles with the origin: Right-angled isosceles △OPQ (blue) with P(3,0), Q(0,3) and isosceles △OAB (amber) with A(-3,-1), B(3,-1)."
+      }
     },
     {
       "id": "9-math-0-ec-q9",
       "questionNumber": 9,
       "question": "The following table shows the coordinates of points $S$, $M$ and $T$. In each case, state whether $M$ is the midpoint of segment $ST$. Justify your answer.\n\n| $S$ | $M$ | $T$ | Is $M$ the midpoint of $ST$? | Reason |\n|-----|-----|-----|------------------------------|--------|\n| $(-3, 0)$ | $(0, 0)$ | $(3, 0)$ | | |\n| $(2, 3)$ | $(3, 4)$ | $(4, 5)$ | | |\n| $(0, 0)$ | $(0, 5)$ | $(0, -10)$ | | |\n| $(-8, 7)$ | $(0, -2)$ | $(6, -3)$ | | |\n\nWhen $M$ is the midpoint of $ST$, can you find any connection between the coordinates of $M$, $S$ and $T$?",
       "solution": [
-        { "step": 1, "content": "**Midpoint formula:** The midpoint $M$ of segment $ST$ where $S(x_1, y_1)$ and $T(x_2, y_2)$ is:\n$$M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)$$" },
-        { "step": 2, "content": "**Row 1:** $S(-3,0)$, $M(0,0)$, $T(3,0)$\nMidpoint $= \\left(\\frac{-3 + 3}{2},\\; \\frac{0 + 0}{2}\\right) = (0, 0) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint." },
-        { "step": 3, "content": "**Row 2:** $S(2,3)$, $M(3,4)$, $T(4,5)$\nMidpoint $= \\left(\\frac{2 + 4}{2},\\; \\frac{3 + 5}{2}\\right) = (3, 4) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint." },
-        { "step": 4, "content": "**Row 3:** $S(0,0)$, $M(0,5)$, $T(0,-10)$\nMidpoint $= \\left(\\frac{0 + 0}{2},\\; \\frac{0 + (-10)}{2}\\right) = (0, -5) \\neq (0, 5)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint." },
-        { "step": 5, "content": "**Row 4:** $S(-8,7)$, $M(0,-2)$, $T(6,-3)$\nMidpoint $= \\left(\\frac{-8 + 6}{2},\\; \\frac{7 + (-3)}{2}\\right) = (-1, 2) \\neq (0, -2)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint." },
-        { "step": 6, "content": "**The connection:** When $M$ is the midpoint of $ST$, the coordinates of $M$ are the averages of the coordinates of $S$ and $T$:\n$$M = \\left(\\frac{x_S + x_T}{2},\\; \\frac{y_S + y_T}{2}\\right)$$" }
+        {
+          "step": 1,
+          "content": "**Midpoint formula:** The midpoint $M$ of segment $ST$ where $S(x_1, y_1)$ and $T(x_2, y_2)$ is:\n$$M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Row 1:** $S(-3,0)$, $M(0,0)$, $T(3,0)$\nMidpoint $= \\left(\\frac{-3 + 3}{2},\\; \\frac{0 + 0}{2}\\right) = (0, 0) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint."
+        },
+        {
+          "step": 3,
+          "content": "**Row 2:** $S(2,3)$, $M(3,4)$, $T(4,5)$\nMidpoint $= \\left(\\frac{2 + 4}{2},\\; \\frac{3 + 5}{2}\\right) = (3, 4) = M$  \n$\\Rightarrow$ **Yes**, $M$ is the midpoint."
+        },
+        {
+          "step": 4,
+          "content": "**Row 3:** $S(0,0)$, $M(0,5)$, $T(0,-10)$\nMidpoint $= \\left(\\frac{0 + 0}{2},\\; \\frac{0 + (-10)}{2}\\right) = (0, -5) \\neq (0, 5)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint."
+        },
+        {
+          "step": 5,
+          "content": "**Row 4:** $S(-8,7)$, $M(0,-2)$, $T(6,-3)$\nMidpoint $= \\left(\\frac{-8 + 6}{2},\\; \\frac{7 + (-3)}{2}\\right) = (-1, 2) \\neq (0, -2)$  \n$\\Rightarrow$ **No**, $M$ is not the midpoint."
+        },
+        {
+          "step": 6,
+          "content": "**The connection:** When $M$ is the midpoint of $ST$, the coordinates of $M$ are the averages of the coordinates of $S$ and $T$:\n$$M = \\left(\\frac{x_S + x_T}{2},\\; \\frac{y_S + y_T}{2}\\right)$$"
+        }
       ],
       "answer": "| $S$ | $M$ | $T$ | Is $M$ the midpoint? | Reason |\n|-----|-----|-----|----------------------|--------|\n| $(-3,0)$ | $(0,0)$ | $(3,0)$ | **Yes** | $(\\frac{-3+3}{2},\\frac{0+0}{2}) = (0,0)$ |\n| $(2,3)$ | $(3,4)$ | $(4,5)$ | **Yes** | $(\\frac{2+4}{2},\\frac{3+5}{2}) = (3,4)$ |\n| $(0,0)$ | $(0,5)$ | $(0,-10)$ | **No** | Midpoint is $(0,-5)$, not $(0,5)$ |\n| $(-8,7)$ | $(0,-2)$ | $(6,-3)$ | **No** | Midpoint is $(-1,2)$, not $(0,-2)$ |\n\n**Connection:** When $M$ is the midpoint, $M = \\left(\\frac{x_S + x_T}{2},\\; \\frac{y_S + y_T}{2}\\right)$.",
       "verified": false,
@@ -156,12 +299,42 @@
         "content": "$$M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)$$"
       },
       "tableData": {
-        "headers": ["S", "M", "T", "Is M the midpoint?", "Reason"],
+        "headers": [
+          "S",
+          "M",
+          "T",
+          "Is M the midpoint?",
+          "Reason"
+        ],
         "rows": [
-          ["(-3, 0)", "(0, 0)", "(3, 0)", "Yes", "((−3+3)/2, (0+0)/2) = (0, 0)"],
-          ["(2, 3)", "(3, 4)", "(4, 5)", "Yes", "((2+4)/2, (3+5)/2) = (3, 4)"],
-          ["(0, 0)", "(0, 5)", "(0, −10)", "No", "((0+0)/2, (0+(−10))/2) = (0, −5) ≠ (0, 5)"],
-          ["(−8, 7)", "(0, −2)", "(6, −3)", "No", "((−8+6)/2, (7+(−3))/2) = (−1, 2) ≠ (0, −2)"]
+          [
+            "(-3, 0)",
+            "(0, 0)",
+            "(3, 0)",
+            "Yes",
+            "((−3+3)/2, (0+0)/2) = (0, 0)"
+          ],
+          [
+            "(2, 3)",
+            "(3, 4)",
+            "(4, 5)",
+            "Yes",
+            "((2+4)/2, (3+5)/2) = (3, 4)"
+          ],
+          [
+            "(0, 0)",
+            "(0, 5)",
+            "(0, −10)",
+            "No",
+            "((0+0)/2, (0+(−10))/2) = (0, −5) ≠ (0, 5)"
+          ],
+          [
+            "(−8, 7)",
+            "(0, −2)",
+            "(6, −3)",
+            "No",
+            "((−8+6)/2, (7+(−3))/2) = (−1, 2) ≠ (0, −2)"
+          ]
         ]
       }
     },
@@ -170,16 +343,33 @@
       "questionNumber": 10,
       "question": "Use the connection you found to find the coordinates of $B$ given that $M(-7, 1)$ is the midpoint of $A(3, -4)$ and $B(x, y)$.",
       "solution": [
-        { "step": 1, "content": "**Using the midpoint formula:** If $M$ is the midpoint of $A(x_A, y_A)$ and $B(x_B, y_B)$, then:\n$$M = \\left(\\frac{x_A + x_B}{2},\\; \\frac{y_A + y_B}{2}\\right)$$" },
-        { "step": 2, "content": "**Substituting the known values:**\n$A(3, -4)$, $M(-7, 1)$, $B(x, y)$\n\n$$(-7, 1) = \\left(\\frac{3 + x}{2},\\; \\frac{-4 + y}{2}\\right)$$" },
-        { "step": 3, "content": "**Finding $x$:** \n$$-7 = \\frac{3 + x}{2}$$\n$$-14 = 3 + x$$\n$$x = -14 - 3 = -17$$" },
-        { "step": 4, "content": "**Finding $y$:**\n$$1 = \\frac{-4 + y}{2}$$\n$$2 = -4 + y$$\n$$y = 2 + 4 = 6$$" }
+        {
+          "step": 1,
+          "content": "**Using the midpoint formula:** If $M$ is the midpoint of $A(x_A, y_A)$ and $B(x_B, y_B)$, then:\n$$M = \\left(\\frac{x_A + x_B}{2},\\; \\frac{y_A + y_B}{2}\\right)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Substituting the known values:**\n$A(3, -4)$, $M(-7, 1)$, $B(x, y)$\n\n$$(-7, 1) = \\left(\\frac{3 + x}{2},\\; \\frac{-4 + y}{2}\\right)$$"
+        },
+        {
+          "step": 3,
+          "content": "**Finding $x$:** \n$$-7 = \\frac{3 + x}{2}$$\n$$-14 = 3 + x$$\n$$x = -14 - 3 = -17$$"
+        },
+        {
+          "step": 4,
+          "content": "**Finding $y$:**\n$$1 = \\frac{-4 + y}{2}$$\n$$2 = -4 + y$$\n$$y = 2 + 4 = 6$$"
+        }
       ],
       "answer": "$B(-17, 6)$",
       "verified": false,
       "formulaBox": {
         "title": "Midpoint Formula (rearranged)",
         "content": "If $M(x_M, y_M)$ is the midpoint of $A(x_A, y_A)$ and $B(x_B, y_B)$:\n$$x_B = 2x_M - x_A,\\quad y_B = 2y_M - y_A$$"
+      },
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 770 470\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"770\" height=\"470\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"-299.93999999999994\" y1=\"200\" x2=\"-299.93999999999994\" y2=\"-80\"/><line x1=\"-266.61\" y1=\"200\" x2=\"-266.61\" y2=\"-80\"/><line x1=\"-233.27999999999997\" y1=\"200\" x2=\"-233.27999999999997\" y2=\"-80\"/><line x1=\"-199.95\" y1=\"200\" x2=\"-199.95\" y2=\"-80\"/><line x1=\"-166.62\" y1=\"200\" x2=\"-166.62\" y2=\"-80\"/><line x1=\"-133.28999999999996\" y1=\"200\" x2=\"-133.28999999999996\" y2=\"-80\"/><line x1=\"-99.95999999999998\" y1=\"200\" x2=\"-99.95999999999998\" y2=\"-80\"/><line x1=\"-66.63\" y1=\"200\" x2=\"-66.63\" y2=\"-80\"/><line x1=\"-33.299999999999955\" y1=\"200\" x2=\"-33.299999999999955\" y2=\"-80\"/><line x1=\"0.03000000000002956\" y1=\"200\" x2=\"0.03000000000002956\" y2=\"-80\"/><line x1=\"33.360000000000014\" y1=\"200\" x2=\"33.360000000000014\" y2=\"-80\"/><line x1=\"66.69\" y1=\"200\" x2=\"66.69\" y2=\"-80\"/><line x1=\"100.02000000000001\" y1=\"200\" x2=\"100.02000000000001\" y2=\"-80\"/><line x1=\"133.35000000000002\" y1=\"200\" x2=\"133.35000000000002\" y2=\"-80\"/><line x1=\"166.68\" y1=\"200\" x2=\"166.68\" y2=\"-80\"/><line x1=\"200.01\" y1=\"200\" x2=\"200.01\" y2=\"-80\"/><line x1=\"233.34\" y1=\"200\" x2=\"233.34\" y2=\"-80\"/><line x1=\"266.67\" y1=\"200\" x2=\"266.67\" y2=\"-80\"/><line x1=\"300\" y1=\"200\" x2=\"300\" y2=\"-80\"/><line x1=\"333.33\" y1=\"200\" x2=\"333.33\" y2=\"-80\"/><line x1=\"366.65999999999997\" y1=\"200\" x2=\"366.65999999999997\" y2=\"-80\"/><line x1=\"399.99\" y1=\"200\" x2=\"399.99\" y2=\"-80\"/><line x1=\"433.32\" y1=\"200\" x2=\"433.32\" y2=\"-80\"/><line x1=\"-299.93999999999994\" y1=\"400\" x2=\"433.32\" y2=\"400\"/><line x1=\"-299.93999999999994\" y1=\"360\" x2=\"433.32\" y2=\"360\"/><line x1=\"-299.93999999999994\" y1=\"320\" x2=\"433.32\" y2=\"320\"/><line x1=\"-299.93999999999994\" y1=\"280\" x2=\"433.32\" y2=\"280\"/><line x1=\"-299.93999999999994\" y1=\"240\" x2=\"433.32\" y2=\"240\"/><line x1=\"-299.93999999999994\" y1=\"200\" x2=\"433.32\" y2=\"200\"/><line x1=\"-299.93999999999994\" y1=\"160\" x2=\"433.32\" y2=\"160\"/><line x1=\"-299.93999999999994\" y1=\"120\" x2=\"433.32\" y2=\"120\"/><line x1=\"-299.93999999999994\" y1=\"80\" x2=\"433.32\" y2=\"80\"/><line x1=\"-299.93999999999994\" y1=\"40\" x2=\"433.32\" y2=\"40\"/><line x1=\"-299.93999999999994\" y1=\"0\" x2=\"433.32\" y2=\"0\"/><line x1=\"-299.93999999999994\" y1=\"-40\" x2=\"433.32\" y2=\"-40\"/><line x1=\"-299.93999999999994\" y1=\"-80\" x2=\"433.32\" y2=\"-80\"/></g><!-- Axes with arrows --><line x1=\"300\" y1=\"200\" x2=\"463.32\" y2=\"200\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"300\" y1=\"200\" x2=\"300\" y2=\"-90\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"458.32\" y=\"215\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"285\" y=\"-85\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><text x=\"292\" y=\"217\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><g font-size=\"9\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"266.67\" y=\"215\">-1</text><text x=\"233.34\" y=\"215\">-2</text><text x=\"200.01\" y=\"215\">-3</text><text x=\"166.68\" y=\"215\">-4</text><text x=\"133.35000000000002\" y=\"215\">-5</text><text x=\"100.02000000000001\" y=\"215\">-6</text><text x=\"66.69\" y=\"215\">-7</text><text x=\"33.360000000000014\" y=\"215\">-8</text><text x=\"0.03000000000002956\" y=\"215\">-9</text><text x=\"-33.299999999999955\" y=\"215\">-10</text><text x=\"-66.63\" y=\"215\">-11</text><text x=\"-99.95999999999998\" y=\"215\">-12</text><text x=\"-133.28999999999996\" y=\"215\">-13</text><text x=\"-166.62\" y=\"215\">-14</text><text x=\"-199.95\" y=\"215\">-15</text><text x=\"-233.27999999999997\" y=\"215\">-16</text><text x=\"-266.61\" y=\"215\">-17</text></g><g font-size=\"9\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"295\" y=\"44\">4</text><text x=\"295\" y=\"-116\">6</text><text x=\"295\" y=\"364\">-2</text><text x=\"295\" y=\"524\">-4</text></g><line x1=\"399.99\" y1=\"360\" x2=\"-266.61\" y2=\"-40\" stroke=\"#8b5cf6\" stroke-width=\"2\" stroke-dasharray=\"6,4\" opacity=\"0.5\"/><circle cx=\"399.99\" cy=\"360\" r=\"4\" fill=\"#2563EB\"/><text x=\"405.99\" y=\"364\" font-size=\"10\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">A(3,-4)</text><circle cx=\"66.69\" cy=\"160\" r=\"5\" fill=\"#e74c3c\"/><text x=\"58.69\" y=\"152\" font-size=\"10\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">M(-7,1)</text><circle cx=\"-266.61\" cy=\"-40\" r=\"4\" fill=\"#2563EB\"/><text x=\"-276.61\" y=\"-48\" font-size=\"10\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">B(-17,6)</text><rect x=\"60.69\" y=\"154\" width=\"12\" height=\"12\" stroke=\"#e74c3c\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"66.69\" y=\"184\" font-size=\"9\" fill=\"#e74c3c\" font-family=\"Arial\" text-anchor=\"middle\">Midpoint</text></svg>",
+        "caption": "Midpoint M(-7,1) of segment AB where A(3,-4) and B(-17,6). Verified: ((-17+3)/2, (6+(-4))/2) = (-7, 1)."
       }
     },
     {
@@ -187,11 +377,26 @@
       "questionNumber": 11,
       "question": "Let $P$, $Q$ be points of trisection of $AB$, with $P$ closer to $A$, and $Q$ closer to $B$. Using your knowledge of how to find the coordinates of the midpoint of a segment, how would you find the coordinates of $P$ and $Q$? Do this for the case when the points are $A(4, 7)$ and $B(16, -2)$.",
       "solution": [
-        { "step": 1, "content": "**Understanding trisection:** Trisection means dividing into three equal parts. If $P$ and $Q$ trisect $AB$ with $P$ closer to $A$:\n$$AP = PQ = QB$$\n$$AP : PB = 1 : 2 \\quad\\text{and}\\quad AQ : QB = 2 : 1$$" },
-        { "step": 2, "content": "**Method 1 — Using section formula:** For a point dividing $AB$ in the ratio $m : n$:\n$$\\text{Point} = \\left(\\frac{mx_B + nx_A}{m + n},\\; \\frac{my_B + ny_A}{m + n}\\right)$$\n\n$P$ divides $AB$ in ratio $AP : PB = 1 : 2$:\n$$P = \\left(\\frac{1 \\times 16 + 2 \\times 4}{1 + 2},\\; \\frac{1 \\times (-2) + 2 \\times 7}{1 + 2}\\right) = \\left(\\frac{16 + 8}{3},\\; \\frac{-2 + 14}{3}\\right) = \\left(\\frac{24}{3},\\; \\frac{12}{3}\\right) = (8, 4)$$" },
-        { "step": 3, "content": "$Q$ divides $AB$ in ratio $AQ : QB = 2 : 1$:\n$$Q = \\left(\\frac{2 \\times 16 + 1 \\times 4}{2 + 1},\\; \\frac{2 \\times (-2) + 1 \\times 7}{2 + 1}\\right) = \\left(\\frac{32 + 4}{3},\\; \\frac{-4 + 7}{3}\\right) = \\left(\\frac{36}{3},\\; \\frac{3}{3}\\right) = (12, 1)$$" },
-        { "step": 4, "content": "**Method 2 — Using the midpoint concept iteratively:** \n- Find the midpoint $M$ of $AB$: $M = \\left(\\frac{4+16}{2},\\; \\frac{7+(-2)}{2}\\right) = (10, 2.5)$\n- Find midpoint $P$ of $AM$: $P = \\left(\\frac{4+10}{2},\\; \\frac{7+2.5}{2}\\right) = (7, 4.75)$ ❌ — This gives equal segments but NOT trisection.\n\nNote: The iterative midpoint method does NOT directly give trisection points. The section formula is needed." },
-        { "step": 5, "content": "**Verification:**\n- $AP = \\sqrt{(8-4)^2 + (4-7)^2} = \\sqrt{16 + 9} = 5$\n- $PQ = \\sqrt{(12-8)^2 + (1-4)^2} = \\sqrt{16 + 9} = 5$\n- $QB = \\sqrt{(16-12)^2 + (-2-1)^2} = \\sqrt{16 + 9} = 5$\n- $AP = PQ = QB = 5$ units $\\checkmark$" }
+        {
+          "step": 1,
+          "content": "**Understanding trisection:** Trisection means dividing into three equal parts. If $P$ and $Q$ trisect $AB$ with $P$ closer to $A$:\n$$AP = PQ = QB$$\n$$AP : PB = 1 : 2 \\quad\\text{and}\\quad AQ : QB = 2 : 1$$"
+        },
+        {
+          "step": 2,
+          "content": "**Method 1 — Using section formula:** For a point dividing $AB$ in the ratio $m : n$:\n$$\\text{Point} = \\left(\\frac{mx_B + nx_A}{m + n},\\; \\frac{my_B + ny_A}{m + n}\\right)$$\n\n$P$ divides $AB$ in ratio $AP : PB = 1 : 2$:\n$$P = \\left(\\frac{1 \\times 16 + 2 \\times 4}{1 + 2},\\; \\frac{1 \\times (-2) + 2 \\times 7}{1 + 2}\\right) = \\left(\\frac{16 + 8}{3},\\; \\frac{-2 + 14}{3}\\right) = \\left(\\frac{24}{3},\\; \\frac{12}{3}\\right) = (8, 4)$$"
+        },
+        {
+          "step": 3,
+          "content": "$Q$ divides $AB$ in ratio $AQ : QB = 2 : 1$:\n$$Q = \\left(\\frac{2 \\times 16 + 1 \\times 4}{2 + 1},\\; \\frac{2 \\times (-2) + 1 \\times 7}{2 + 1}\\right) = \\left(\\frac{32 + 4}{3},\\; \\frac{-4 + 7}{3}\\right) = \\left(\\frac{36}{3},\\; \\frac{3}{3}\\right) = (12, 1)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Method 2 — Using the midpoint concept iteratively:** \n- Find the midpoint $M$ of $AB$: $M = \\left(\\frac{4+16}{2},\\; \\frac{7+(-2)}{2}\\right) = (10, 2.5)$\n- Find midpoint $P$ of $AM$: $P = \\left(\\frac{4+10}{2},\\; \\frac{7+2.5}{2}\\right) = (7, 4.75)$ ❌ — This gives equal segments but NOT trisection.\n\nNote: The iterative midpoint method does NOT directly give trisection points. The section formula is needed."
+        },
+        {
+          "step": 5,
+          "content": "**Verification:**\n- $AP = \\sqrt{(8-4)^2 + (4-7)^2} = \\sqrt{16 + 9} = 5$\n- $PQ = \\sqrt{(12-8)^2 + (1-4)^2} = \\sqrt{16 + 9} = 5$\n- $QB = \\sqrt{(16-12)^2 + (-2-1)^2} = \\sqrt{16 + 9} = 5$\n- $AP = PQ = QB = 5$ units $\\checkmark$"
+        }
       ],
       "answer": "$P(8, 4)$ and $Q(12, 1)$.  \nMethod: Use the section formula with $AP : PB = 1 : 2$ for $P$ and $AQ : QB = 2 : 1$ for $Q$.",
       "verified": false,
@@ -199,20 +404,46 @@
         "title": "Section Formula",
         "content": "$$\\text{Point dividing } AB \\text{ in ratio } m:n = \\left(\\frac{mx_2 + nx_1}{m+n},\\; \\frac{my_2 + ny_1}{m+n}\\right)$$"
       },
-      "notes": "**Key insight:** For trisection, the two division ratios are $1:2$ and $2:1$. The sum $(m+n)$ is always $3$ (three equal parts)."
+      "notes": "**Key insight:** For trisection, the two division ratios are $1:2$ and $2:1$. The sum $(m+n)$ is always $3$ (three equal parts).",
+      "diagram": {
+        "type": "svg",
+        "content": "<svg viewBox=\"0 0 550 400\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arr\" markerWidth=\"10\" markerHeight=\"10\" refX=\"10\" refY=\"5\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 Z\" fill=\"#555\"/></marker></defs><!-- Background --><rect width=\"550\" height=\"400\" fill=\"#fafbfc\" rx=\"8\"/><!-- Grid lines --><g stroke=\"#e8ecf0\" stroke-width=\"0.5\"><line x1=\"193.32\" y1=\"200\" x2=\"193.32\" y2=\"-120\"/><line x1=\"226.64999999999998\" y1=\"200\" x2=\"226.64999999999998\" y2=\"-120\"/><line x1=\"259.98\" y1=\"200\" x2=\"259.98\" y2=\"-120\"/><line x1=\"293.31\" y1=\"200\" x2=\"293.31\" y2=\"-120\"/><line x1=\"326.64\" y1=\"200\" x2=\"326.64\" y2=\"-120\"/><line x1=\"359.96999999999997\" y1=\"200\" x2=\"359.96999999999997\" y2=\"-120\"/><line x1=\"393.29999999999995\" y1=\"200\" x2=\"393.29999999999995\" y2=\"-120\"/><line x1=\"426.63\" y1=\"200\" x2=\"426.63\" y2=\"-120\"/><line x1=\"459.96\" y1=\"200\" x2=\"459.96\" y2=\"-120\"/><line x1=\"493.28999999999996\" y1=\"200\" x2=\"493.28999999999996\" y2=\"-120\"/><line x1=\"526.62\" y1=\"200\" x2=\"526.62\" y2=\"-120\"/><line x1=\"559.95\" y1=\"200\" x2=\"559.95\" y2=\"-120\"/><line x1=\"593.28\" y1=\"200\" x2=\"593.28\" y2=\"-120\"/><line x1=\"626.61\" y1=\"200\" x2=\"626.61\" y2=\"-120\"/><line x1=\"193.32\" y1=\"320\" x2=\"626.61\" y2=\"320\"/><line x1=\"193.32\" y1=\"280\" x2=\"626.61\" y2=\"280\"/><line x1=\"193.32\" y1=\"240\" x2=\"626.61\" y2=\"240\"/><line x1=\"193.32\" y1=\"200\" x2=\"626.61\" y2=\"200\"/><line x1=\"193.32\" y1=\"160\" x2=\"626.61\" y2=\"160\"/><line x1=\"193.32\" y1=\"120\" x2=\"626.61\" y2=\"120\"/><line x1=\"193.32\" y1=\"80\" x2=\"626.61\" y2=\"80\"/><line x1=\"193.32\" y1=\"40\" x2=\"626.61\" y2=\"40\"/><line x1=\"193.32\" y1=\"0\" x2=\"626.61\" y2=\"0\"/><line x1=\"193.32\" y1=\"-40\" x2=\"626.61\" y2=\"-40\"/><line x1=\"193.32\" y1=\"-80\" x2=\"626.61\" y2=\"-80\"/><line x1=\"193.32\" y1=\"-120\" x2=\"626.61\" y2=\"-120\"/></g><!-- Axes with arrows --><line x1=\"60\" y1=\"200\" x2=\"656.61\" y2=\"200\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><line x1=\"60\" y1=\"200\" x2=\"60\" y2=\"-130\" stroke=\"#333\" stroke-width=\"2\" marker-end=\"url(#arr)\"/><!-- Axis labels --><text x=\"651.61\" y=\"215\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">x</text><text x=\"45\" y=\"-125\" font-size=\"14\" fill=\"#333\" font-weight=\"bold\" font-family=\"serif\">y</text><!-- Tick marks on x-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"middle\" font-family=\"Arial\"><text x=\"193\" y=\"217\">4</text><text x=\"227\" y=\"217\">5</text><text x=\"260\" y=\"217\">6</text><text x=\"293\" y=\"217\">7</text><text x=\"327\" y=\"217\">8</text><text x=\"360\" y=\"217\">9</text><text x=\"393\" y=\"217\">10</text><text x=\"427\" y=\"217\">11</text><text x=\"460\" y=\"217\">12</text><text x=\"493\" y=\"217\">13</text><text x=\"527\" y=\"217\">14</text><text x=\"560\" y=\"217\">15</text><text x=\"593\" y=\"217\">16</text><text x=\"627\" y=\"217\">17</text></g><!-- Tick marks on y-axis --><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"54\" y=\"324\">-3</text><text x=\"54\" y=\"284\">-2</text><text x=\"54\" y=\"244\">-1</text><text x=\"54\" y=\"164\">1</text><text x=\"54\" y=\"124\">2</text><text x=\"54\" y=\"84\">3</text><text x=\"54\" y=\"44\">4</text><text x=\"54\" y=\"4\">5</text><text x=\"54\" y=\"-36\">6</text><text x=\"54\" y=\"-76\">7</text><text x=\"54\" y=\"-116\">8</text></g><text x=\"52\" y=\"217\" font-size=\"10\" fill=\"#666\" font-family=\"Arial\">0</text><g font-size=\"10\" fill=\"#666\" text-anchor=\"end\" font-family=\"Arial\"><text x=\"54\" y=\"364\">-2</text><text x=\"54\" y=\"524\">-3</text></g><line x1=\"193.32\" y1=\"-80\" x2=\"593.28\" y2=\"280\" stroke=\"#2563EB\" stroke-width=\"2.5\"/><circle cx=\"193.32\" cy=\"-80\" r=\"4\" fill=\"#e74c3c\"/><text x=\"185.32\" y=\"-88\" font-size=\"10\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">A(4,7)</text><circle cx=\"326.64\" cy=\"40\" r=\"4\" fill=\"#2563EB\"/><text x=\"332.64\" y=\"44\" font-size=\"10\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">P(8,4)</text><circle cx=\"459.96\" cy=\"160\" r=\"4\" fill=\"#2563EB\"/><text x=\"465.96\" y=\"164\" font-size=\"10\" fill=\"#2563EB\" font-weight=\"bold\" font-family=\"serif\">Q(12,1)</text><circle cx=\"593.28\" cy=\"280\" r=\"4\" fill=\"#e74c3c\"/><text x=\"599.28\" y=\"284\" font-size=\"10\" fill=\"#e74c3c\" font-weight=\"bold\" font-family=\"serif\">B(16,-2)</text><line x1=\"243.315\" y1=\"-26\" x2=\"249.315\" y2=\"-20\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><line x1=\"245.315\" y1=\"-26\" x2=\"251.315\" y2=\"-20\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><line x1=\"393.29999999999995\" y1=\"94\" x2=\"399.29999999999995\" y2=\"100\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><line x1=\"395.29999999999995\" y1=\"94\" x2=\"401.29999999999995\" y2=\"100\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><line x1=\"526.62\" y1=\"214\" x2=\"532.62\" y2=\"220\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><line x1=\"528.62\" y1=\"214\" x2=\"534.62\" y2=\"220\" stroke=\"#2563EB\" stroke-width=\"1.5\"/><text x=\"259.98\" y=\"-30\" font-size=\"9\" fill=\"#2563EB\" font-family=\"Arial\">AP=5</text><text x=\"393.29999999999995\" y=\"90\" font-size=\"9\" fill=\"#2563EB\" font-family=\"Arial\">PQ=5</text><text x=\"526.62\" y=\"210\" font-size=\"9\" fill=\"#2563EB\" font-family=\"Arial\">QB=5</text></svg>",
+        "caption": "Trisection of AB: A(4,7), P(8,4), Q(12,1), B(16,-2) with AP = PQ = QB = 5 units. P and Q divide AB into three equal parts."
+      }
     },
     {
       "id": "9-math-0-ec-q12",
       "questionNumber": 12,
       "question": "**(i)** Given the points $A(1, -8)$, $B(-4, 7)$ and $C(-7, -4)$, show that they lie on a circle $K$ whose centre is the origin $O(0, 0)$. What is the radius of circle $K$?\n\n**(ii)** Given the points $D(-5, 6)$ and $E(0, 9)$, check whether $D$ and $E$ lie within the circle, on the circle, or outside the circle $K$.",
       "solution": [
-        { "step": 1, "content": "**(i) Points on a circle centered at origin:** A point lies on a circle centred at $O(0, 0)$ with radius $r$ if its distance from $O$ equals $r$. We need to check if $OA = OB = OC$." },
-        { "step": 2, "content": "**Calculating $OA$:** Using the distance formula:\n$$OA = \\sqrt{(1 - 0)^2 + (-8 - 0)^2} = \\sqrt{1 + 64} = \\sqrt{65}$$" },
-        { "step": 3, "content": "**Calculating $OB$:**\n$$OB = \\sqrt{(-4 - 0)^2 + (7 - 0)^2} = \\sqrt{16 + 49} = \\sqrt{65}$$" },
-        { "step": 4, "content": "**Calculating $OC$:**\n$$OC = \\sqrt{(-7 - 0)^2 + (-4 - 0)^2} = \\sqrt{49 + 16} = \\sqrt{65}$$" },
-        { "step": 5, "content": "**Conclusion:** $OA = OB = OC = \\sqrt{65}$. Therefore, $A$, $B$, and $C$ all lie on the same circle $K$ with centre $O(0, 0)$ and radius $\\mathbf{\\sqrt{65}}$ units." },
-        { "step": 6, "content": "**(ii) Checking $D$ and $E$:**\n\n$D(-5, 6)$:\n$$OD = \\sqrt{(-5)^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$$\nSince $\\sqrt{61} < \\sqrt{65}$: $D$ lies **within** the circle." },
-        { "step": 7, "content": "$E(0, 9)$:\n$$OE = \\sqrt{0^2 + 9^2} = \\sqrt{81} = 9$$\nSince $9 > \\sqrt{65}$ (because $9^2 = 81 > 65$): $E$ lies **outside** the circle." }
+        {
+          "step": 1,
+          "content": "**(i) Points on a circle centered at origin:** A point lies on a circle centred at $O(0, 0)$ with radius $r$ if its distance from $O$ equals $r$. We need to check if $OA = OB = OC$."
+        },
+        {
+          "step": 2,
+          "content": "**Calculating $OA$:** Using the distance formula:\n$$OA = \\sqrt{(1 - 0)^2 + (-8 - 0)^2} = \\sqrt{1 + 64} = \\sqrt{65}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Calculating $OB$:**\n$$OB = \\sqrt{(-4 - 0)^2 + (7 - 0)^2} = \\sqrt{16 + 49} = \\sqrt{65}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Calculating $OC$:**\n$$OC = \\sqrt{(-7 - 0)^2 + (-4 - 0)^2} = \\sqrt{49 + 16} = \\sqrt{65}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** $OA = OB = OC = \\sqrt{65}$. Therefore, $A$, $B$, and $C$ all lie on the same circle $K$ with centre $O(0, 0)$ and radius $\\mathbf{\\sqrt{65}}$ units."
+        },
+        {
+          "step": 6,
+          "content": "**(ii) Checking $D$ and $E$:**\n\n$D(-5, 6)$:\n$$OD = \\sqrt{(-5)^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$$\nSince $\\sqrt{61} < \\sqrt{65}$: $D$ lies **within** the circle."
+        },
+        {
+          "step": 7,
+          "content": "$E(0, 9)$:\n$$OE = \\sqrt{0^2 + 9^2} = \\sqrt{81} = 9$$\nSince $9 > \\sqrt{65}$ (because $9^2 = 81 > 65$): $E$ lies **outside** the circle."
+        }
       ],
       "answer": "**(i)** $OA = OB = OC = \\mathbf{\\sqrt{65}}$ — they all lie on circle $K$ with centre $O$ and radius $\\sqrt{65}$ units.\n**(ii)** $D(-5, 6)$: $OD = \\sqrt{61}$ → **within** the circle. $E(0, 9)$: $OE = 9$ → **outside** the circle.",
       "verified": false,
@@ -227,11 +458,26 @@
       "questionNumber": 13,
       "question": "The midpoints of the sides of triangle $ABC$ are the points $D$, $E$, and $F$. Given that the coordinates of $D$, $E$, and $F$ are $(5, 1)$, $(6, 5)$, and $(0, 3)$, respectively, find the coordinates of $A$, $B$ and $C$.",
       "solution": [
-        { "step": 1, "content": "**Understanding:** Let $A(a_1, a_2)$, $B(b_1, b_2)$, $C(c_1, c_2)$. The midpoints of the sides are:\n- $D$ is midpoint of $BC$: $D\\left(\\frac{b_1 + c_1}{2},\\; \\frac{b_2 + c_2}{2}\\right) = (5, 1)$\n- $E$ is midpoint of $CA$: $E\\left(\\frac{c_1 + a_1}{2},\\; \\frac{c_2 + a_2}{2}\\right) = (6, 5)$\n- $F$ is midpoint of $AB$: $F\\left(\\frac{a_1 + b_1}{2},\\; \\frac{a_2 + b_2}{2}\\right) = (0, 3)$" },
-        { "step": 2, "content": "**Setting up equations:**\n$$b_1 + c_1 = 10 \\quad\\text{(1)}$$\n$$c_1 + a_1 = 12 \\quad\\text{(2)}$$\n$$a_1 + b_1 = 0 \\quad\\text{(3)}$$\n\nSimilarly for $y$:\n$$b_2 + c_2 = 2 \\quad\\text{(4)}$$\n$$c_2 + a_2 = 10 \\quad\\text{(5)}$$\n$$a_2 + b_2 = 6 \\quad\\text{(6)}$$" },
-        { "step": 3, "content": "**Solving for $x$-coordinates:**\nAdd equations (1), (2), (3):\n$$(b_1 + c_1) + (c_1 + a_1) + (a_1 + b_1) = 10 + 12 + 0$$\n$$2(a_1 + b_1 + c_1) = 22$$\n$$a_1 + b_1 + c_1 = 11$$\n\nNow:\n- $a_1 = (a_1 + b_1 + c_1) - (b_1 + c_1) = 11 - 10 = 1$\n- $b_1 = (a_1 + b_1 + c_1) - (c_1 + a_1) = 11 - 12 = -1$\n- $c_1 = (a_1 + b_1 + c_1) - (a_1 + b_1) = 11 - 0 = 11$" },
-        { "step": 4, "content": "**Solving for $y$-coordinates:**\nAdd equations (4), (5), (6):\n$$(b_2 + c_2) + (c_2 + a_2) + (a_2 + b_2) = 2 + 10 + 6$$\n$$2(a_2 + b_2 + c_2) = 18$$\n$$a_2 + b_2 + c_2 = 9$$\n\nNow:\n- $a_2 = (a_2 + b_2 + c_2) - (b_2 + c_2) = 9 - 2 = 7$\n- $b_2 = (a_2 + b_2 + c_2) - (c_2 + a_2) = 9 - 10 = -1$\n- $c_2 = (a_2 + b_2 + c_2) - (a_2 + b_2) = 9 - 6 = 3$" },
-        { "step": 5, "content": "**Verification:**\n- $D$ = midpoint of $BC = \\left(\\frac{-1+11}{2},\\; \\frac{-1+3}{2}\\right) = (5, 1)$ $\\checkmark$\n- $E$ = midpoint of $CA = \\left(\\frac{11+1}{2},\\; \\frac{3+7}{2}\\right) = (6, 5)$ $\\checkmark$\n- $F$ = midpoint of $AB = \\left(\\frac{1+(-1)}{2},\\; \\frac{7+(-1)}{2}\\right) = (0, 3)$ $\\checkmark$" }
+        {
+          "step": 1,
+          "content": "**Understanding:** Let $A(a_1, a_2)$, $B(b_1, b_2)$, $C(c_1, c_2)$. The midpoints of the sides are:\n- $D$ is midpoint of $BC$: $D\\left(\\frac{b_1 + c_1}{2},\\; \\frac{b_2 + c_2}{2}\\right) = (5, 1)$\n- $E$ is midpoint of $CA$: $E\\left(\\frac{c_1 + a_1}{2},\\; \\frac{c_2 + a_2}{2}\\right) = (6, 5)$\n- $F$ is midpoint of $AB$: $F\\left(\\frac{a_1 + b_1}{2},\\; \\frac{a_2 + b_2}{2}\\right) = (0, 3)$"
+        },
+        {
+          "step": 2,
+          "content": "**Setting up equations:**\n$$b_1 + c_1 = 10 \\quad\\text{(1)}$$\n$$c_1 + a_1 = 12 \\quad\\text{(2)}$$\n$$a_1 + b_1 = 0 \\quad\\text{(3)}$$\n\nSimilarly for $y$:\n$$b_2 + c_2 = 2 \\quad\\text{(4)}$$\n$$c_2 + a_2 = 10 \\quad\\text{(5)}$$\n$$a_2 + b_2 = 6 \\quad\\text{(6)}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solving for $x$-coordinates:**\nAdd equations (1), (2), (3):\n$$(b_1 + c_1) + (c_1 + a_1) + (a_1 + b_1) = 10 + 12 + 0$$\n$$2(a_1 + b_1 + c_1) = 22$$\n$$a_1 + b_1 + c_1 = 11$$\n\nNow:\n- $a_1 = (a_1 + b_1 + c_1) - (b_1 + c_1) = 11 - 10 = 1$\n- $b_1 = (a_1 + b_1 + c_1) - (c_1 + a_1) = 11 - 12 = -1$\n- $c_1 = (a_1 + b_1 + c_1) - (a_1 + b_1) = 11 - 0 = 11$"
+        },
+        {
+          "step": 4,
+          "content": "**Solving for $y$-coordinates:**\nAdd equations (4), (5), (6):\n$$(b_2 + c_2) + (c_2 + a_2) + (a_2 + b_2) = 2 + 10 + 6$$\n$$2(a_2 + b_2 + c_2) = 18$$\n$$a_2 + b_2 + c_2 = 9$$\n\nNow:\n- $a_2 = (a_2 + b_2 + c_2) - (b_2 + c_2) = 9 - 2 = 7$\n- $b_2 = (a_2 + b_2 + c_2) - (c_2 + a_2) = 9 - 10 = -1$\n- $c_2 = (a_2 + b_2 + c_2) - (a_2 + b_2) = 9 - 6 = 3$"
+        },
+        {
+          "step": 5,
+          "content": "**Verification:**\n- $D$ = midpoint of $BC = \\left(\\frac{-1+11}{2},\\; \\frac{-1+3}{2}\\right) = (5, 1)$ $\\checkmark$\n- $E$ = midpoint of $CA = \\left(\\frac{11+1}{2},\\; \\frac{3+7}{2}\\right) = (6, 5)$ $\\checkmark$\n- $F$ = midpoint of $AB = \\left(\\frac{1+(-1)}{2},\\; \\frac{7+(-1)}{2}\\right) = (0, 3)$ $\\checkmark$"
+        }
       ],
       "answer": "$A(1, 7)$, $B(-1, -1)$, $C(11, 3)$",
       "verified": false,
@@ -246,11 +492,26 @@
       "questionNumber": 14,
       "question": "A city has two main roads which cross each other at the centre of the city. These two roads are along the North–South (N–S) direction and East–West (E–W) direction. All the other streets of the city run parallel to these roads and are $200$ m apart. There are $10$ streets in each direction.\n\n**(i)** Using $1$ cm $= 200$ m, draw a model of the city in your notebook. Represent the roads/streets by single lines.\n\n**(ii)** There are street intersections in the model. Each street intersection is formed by two streets — one running in the N–S direction and another in the E–W direction. Each street intersection is referred to in the following manner: If the second street running in the N–S direction and $5$th street in the E–W direction meet at some crossing, then we call this street intersection $(2, 5)$. Using this convention, find:\n\n**(a)** how many street intersections can be referred to as $(4, 3)$.\n**(b)** how many street intersections can be referred to as $(3, 4)$.",
       "solution": [
-        { "step": 1, "content": "**(i) Drawing the city model:**\n- Draw two perpendicular lines intersecting at the centre — these are the main N–S and E–W roads\n- Draw 9 more lines parallel to the N–S road on each side, each $1$ cm apart (representing $200$ m)\n- Draw 9 more lines parallel to the E–W road on each side, each $1$ cm apart\n- Total: 10 streets in each direction (including the main roads), all $200$ m apart" },
-        { "step": 2, "content": "**Understanding the naming convention:**\n- The N–S streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from West to East)\n- The E–W streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from South to North)\n- An intersection $(a, b)$ means the $a$th N–S street meets the $b$th E–W street" },
-        { "step": 3, "content": "**(ii)(a) Street intersection $(4, 3)$:**\n- This refers to the intersection of the **4th N–S street** and the **3rd E–W street**\n- Since there is exactly one 4th N–S street and exactly one 3rd E–W street, they meet at exactly **one** point\n- Answer: **1** street intersection" },
-        { "step": 4, "content": "**(ii)(b) Street intersection $(3, 4)$:**\n- This refers to the intersection of the **3rd N–S street** and the **4th E–W street**\n- Again, there is exactly one 3rd N–S street and exactly one 4th E–W street\n- Answer: **1** street intersection" },
-        { "step": 5, "content": "**Key observation:** $(4, 3) \\neq (3, 4)$ — just like coordinates in the Cartesian plane, the order matters! The first number refers to the N–S street and the second to the E–W street. These are two different intersections." }
+        {
+          "step": 1,
+          "content": "**(i) Drawing the city model:**\n- Draw two perpendicular lines intersecting at the centre — these are the main N–S and E–W roads\n- Draw 9 more lines parallel to the N–S road on each side, each $1$ cm apart (representing $200$ m)\n- Draw 9 more lines parallel to the E–W road on each side, each $1$ cm apart\n- Total: 10 streets in each direction (including the main roads), all $200$ m apart"
+        },
+        {
+          "step": 2,
+          "content": "**Understanding the naming convention:**\n- The N–S streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from West to East)\n- The E–W streets are numbered: $1, 2, 3, \\dots, 10$ (e.g., from South to North)\n- An intersection $(a, b)$ means the $a$th N–S street meets the $b$th E–W street"
+        },
+        {
+          "step": 3,
+          "content": "**(ii)(a) Street intersection $(4, 3)$:**\n- This refers to the intersection of the **4th N–S street** and the **3rd E–W street**\n- Since there is exactly one 4th N–S street and exactly one 3rd E–W street, they meet at exactly **one** point\n- Answer: **1** street intersection"
+        },
+        {
+          "step": 4,
+          "content": "**(ii)(b) Street intersection $(3, 4)$:**\n- This refers to the intersection of the **3rd N–S street** and the **4th E–W street**\n- Again, there is exactly one 3rd N–S street and exactly one 4th E–W street\n- Answer: **1** street intersection"
+        },
+        {
+          "step": 5,
+          "content": "**Key observation:** $(4, 3) \\neq (3, 4)$ — just like coordinates in the Cartesian plane, the order matters! The first number refers to the N–S street and the second to the E–W street. These are two different intersections."
+        }
       ],
       "answer": "**(i)** Draw a grid of 10 $\\times$ 10 streets (each 1 cm apart).  \n**(ii)(a)** There is **1** intersection $(4, 3)$.  \n**(ii)(b)** There is **1** intersection $(3, 4)$.\n\nNote: $(4, 3)$ and $(3, 4)$ are different intersections (like coordinates in the Cartesian plane).",
       "verified": false,
@@ -261,12 +522,30 @@
       "questionNumber": 15,
       "question": "A computer graphics program displays images on a rectangular screen whose coordinate system has the origin at the bottom-left corner. The screen is $800$ pixels wide and $600$ pixels high. A circular icon of radius $80$ pixels is drawn with its centre at the point $A(100, 150)$. Another circular icon of radius $100$ pixels is drawn with its centre at the point $B(250, 230)$. Determine:\n\n**(i)** whether any part of either circle lies outside the screen.\n**(ii)** whether the two circles intersect each other.",
       "solution": [
-        { "step": 1, "content": "**Understanding the screen boundaries:**\n- Screen dimensions: $800$ px wide ($x$: $0$ to $800$), $600$ px high ($y$: $0$ to $600$)\n- Origin $(0, 0)$ is at the bottom-left corner" },
-        { "step": 2, "content": "**(i) Checking Circle A** — centre $A(100, 150)$, radius $80$:\n- Left edge: $100 - 80 = 20 \\geq 0$ $\\checkmark$\n- Right edge: $100 + 80 = 180 \\leq 800$ $\\checkmark$\n- Bottom edge: $150 - 80 = 70 \\geq 0$ $\\checkmark$\n- Top edge: $150 + 80 = 230 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle A is **entirely within** the screen." },
-        { "step": 3, "content": "**Checking Circle B** — centre $B(250, 230)$, radius $100$:\n- Left edge: $250 - 100 = 150 \\geq 0$ $\\checkmark$\n- Right edge: $250 + 100 = 350 \\leq 800$ $\\checkmark$\n- Bottom edge: $230 - 100 = 130 \\geq 0$ $\\checkmark$\n- Top edge: $230 + 100 = 330 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle B is **entirely within** the screen." },
-        { "step": 4, "content": "**(ii) Checking if the two circles intersect:**\nTwo circles intersect if the distance between their centres is less than or equal to the sum of their radii, and greater than or equal to the absolute difference of their radii." },
-        { "step": 5, "content": "**Distance between centres $A$ and $B$:**\n$$AB = \\sqrt{(250 - 100)^2 + (230 - 150)^2} = \\sqrt{150^2 + 80^2} = \\sqrt{22500 + 6400} = \\sqrt{28900} = 170$$" },
-        { "step": 6, "content": "**Sum of radii:** $r_A + r_B = 80 + 100 = 180$\n**Difference of radii:** $|r_A - r_B| = |80 - 100| = 20$\n\n**Check:** $20 \\leq 170 \\leq 180$\n- $170 < 180$: The centres are closer than the sum of radii $\\checkmark$\n- $170 > 20$: The centres are farther than the difference of radii $\\checkmark$\n\nSince $|r_A - r_B| < AB < r_A + r_B$, the circles **intersect** (overlap)." }
+        {
+          "step": 1,
+          "content": "**Understanding the screen boundaries:**\n- Screen dimensions: $800$ px wide ($x$: $0$ to $800$), $600$ px high ($y$: $0$ to $600$)\n- Origin $(0, 0)$ is at the bottom-left corner"
+        },
+        {
+          "step": 2,
+          "content": "**(i) Checking Circle A** — centre $A(100, 150)$, radius $80$:\n- Left edge: $100 - 80 = 20 \\geq 0$ $\\checkmark$\n- Right edge: $100 + 80 = 180 \\leq 800$ $\\checkmark$\n- Bottom edge: $150 - 80 = 70 \\geq 0$ $\\checkmark$\n- Top edge: $150 + 80 = 230 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle A is **entirely within** the screen."
+        },
+        {
+          "step": 3,
+          "content": "**Checking Circle B** — centre $B(250, 230)$, radius $100$:\n- Left edge: $250 - 100 = 150 \\geq 0$ $\\checkmark$\n- Right edge: $250 + 100 = 350 \\leq 800$ $\\checkmark$\n- Bottom edge: $230 - 100 = 130 \\geq 0$ $\\checkmark$\n- Top edge: $230 + 100 = 330 \\leq 600$ $\\checkmark$\n\nAll edges are within the screen bounds. Circle B is **entirely within** the screen."
+        },
+        {
+          "step": 4,
+          "content": "**(ii) Checking if the two circles intersect:**\nTwo circles intersect if the distance between their centres is less than or equal to the sum of their radii, and greater than or equal to the absolute difference of their radii."
+        },
+        {
+          "step": 5,
+          "content": "**Distance between centres $A$ and $B$:**\n$$AB = \\sqrt{(250 - 100)^2 + (230 - 150)^2} = \\sqrt{150^2 + 80^2} = \\sqrt{22500 + 6400} = \\sqrt{28900} = 170$$"
+        },
+        {
+          "step": 6,
+          "content": "**Sum of radii:** $r_A + r_B = 80 + 100 = 180$\n**Difference of radii:** $|r_A - r_B| = |80 - 100| = 20$\n\n**Check:** $20 \\leq 170 \\leq 180$\n- $170 < 180$: The centres are closer than the sum of radii $\\checkmark$\n- $170 > 20$: The centres are farther than the difference of radii $\\checkmark$\n\nSince $|r_A - r_B| < AB < r_A + r_B$, the circles **intersect** (overlap)."
+        }
       ],
       "answer": "**(i)** No — both circles lie **entirely within** the screen.  \n**(ii)** Yes — the circles **intersect** because the distance between centres $(170)$ is less than the sum of radii $(180)$ but greater than the absolute difference $(20)$.",
       "verified": false,
@@ -281,11 +560,26 @@
       "questionNumber": 16,
       "question": "Plot the points $A(2, 1)$, $B(-1, 2)$, $C(-2, -1)$, and $D(1, -2)$ in the coordinate plane. Is $ABCD$ a square? Can you explain why? What is the area of this square?",
       "solution": [
-        { "step": 1, "content": "**To check if $ABCD$ is a square, we need to verify:**\n1. All four sides are equal in length\n2. All four angles are $90^\\circ$ (adjacent sides are perpendicular)\n3. The diagonals are equal (a square is a special rectangle)" },
-        { "step": 2, "content": "**Step 1: Calculate side lengths**\n$$AB = \\sqrt{(-1 - 2)^2 + (2 - 1)^2} = \\sqrt{(-3)^2 + 1^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$BC = \\sqrt{(-2 - (-1))^2 + (-1 - 2)^2} = \\sqrt{(-1)^2 + (-3)^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n$$CD = \\sqrt{(1 - (-2))^2 + (-2 - (-1))^2} = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$DA = \\sqrt{(2 - 1)^2 + (1 - (-2))^2} = \\sqrt{1^2 + 3^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n\nAll four sides equal $\\sqrt{10}$ units $\\checkmark$" },
-        { "step": 3, "content": "**Step 2: Check perpendicularity (adjacent sides)**\nCheck if $AB \\perp BC$ using dot product:\n$\\overrightarrow{AB} = (-1 - 2,\\; 2 - 1) = (-3, 1)$\n$\\overrightarrow{BC} = (-2 - (-1),\\; -1 - 2) = (-1, -3)$\n\nDot product: $(-3)(-1) + (1)(-3) = 3 - 3 = 0$ $\\checkmark$\n\nSince the dot product is $0$, $AB \\perp BC$. Similarly, we can verify the other adjacent pairs." },
-        { "step": 4, "content": "**Step 3: Check diagonals**\n$$AC = \\sqrt{(-2 - 2)^2 + (-1 - 1)^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$$\n$$BD = \\sqrt{(1 - (-1))^2 + (-2 - 2)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}$$\n\nDiagonals are equal $\\checkmark$" },
-        { "step": 5, "content": "**Step 4: Calculate the area**\nSince $ABCD$ is a square with side length $s = \\sqrt{10}$:\n$$\\text{Area} = s^2 = (\\sqrt{10})^2 = 10 \\text{ square units}$$" }
+        {
+          "step": 1,
+          "content": "**To check if $ABCD$ is a square, we need to verify:**\n1. All four sides are equal in length\n2. All four angles are $90^\\circ$ (adjacent sides are perpendicular)\n3. The diagonals are equal (a square is a special rectangle)"
+        },
+        {
+          "step": 2,
+          "content": "**Step 1: Calculate side lengths**\n$$AB = \\sqrt{(-1 - 2)^2 + (2 - 1)^2} = \\sqrt{(-3)^2 + 1^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$BC = \\sqrt{(-2 - (-1))^2 + (-1 - 2)^2} = \\sqrt{(-1)^2 + (-3)^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n$$CD = \\sqrt{(1 - (-2))^2 + (-2 - (-1))^2} = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\sqrt{10}$$\n$$DA = \\sqrt{(2 - 1)^2 + (1 - (-2))^2} = \\sqrt{1^2 + 3^2} = \\sqrt{1 + 9} = \\sqrt{10}$$\n\nAll four sides equal $\\sqrt{10}$ units $\\checkmark$"
+        },
+        {
+          "step": 3,
+          "content": "**Step 2: Check perpendicularity (adjacent sides)**\nCheck if $AB \\perp BC$ using dot product:\n$\\overrightarrow{AB} = (-1 - 2,\\; 2 - 1) = (-3, 1)$\n$\\overrightarrow{BC} = (-2 - (-1),\\; -1 - 2) = (-1, -3)$\n\nDot product: $(-3)(-1) + (1)(-3) = 3 - 3 = 0$ $\\checkmark$\n\nSince the dot product is $0$, $AB \\perp BC$. Similarly, we can verify the other adjacent pairs."
+        },
+        {
+          "step": 4,
+          "content": "**Step 3: Check diagonals**\n$$AC = \\sqrt{(-2 - 2)^2 + (-1 - 1)^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$$\n$$BD = \\sqrt{(1 - (-1))^2 + (-2 - 2)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}$$\n\nDiagonals are equal $\\checkmark$"
+        },
+        {
+          "step": 5,
+          "content": "**Step 4: Calculate the area**\nSince $ABCD$ is a square with side length $s = \\sqrt{10}$:\n$$\\text{Area} = s^2 = (\\sqrt{10})^2 = 10 \\text{ square units}$$"
+        }
       ],
       "answer": "Yes, $ABCD$ is a square.\n- All sides equal $\\sqrt{10}$ units\n- Adjacent sides are perpendicular (dot product $= 0$)\n- Diagonals are equal ($2\\sqrt{5}$ units)\n\nArea $= \\mathbf{10}$ square units.",
       "verified": false,
