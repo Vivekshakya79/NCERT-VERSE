@@ -4217,10 +4217,13 @@
   padding: 16px;
 }
 .sv-diagram-svg {
+  width: 100%;
   max-width: 100%;
   overflow-x: auto;
 }
 .sv-diagram-svg svg {
+  display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -4279,6 +4282,7 @@
   align-items: center;
 }
 .sv-diagram-overlay-content svg {
+  width: auto;
   max-width: 90vw;
   max-height: 75vh;
   background: #fff;
