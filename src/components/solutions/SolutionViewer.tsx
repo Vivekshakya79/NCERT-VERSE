@@ -24,6 +24,7 @@ import {
   QuestionSolution,
   Exercise,
 } from "@/types";
+import { toUnicodeSubscripts } from "@/lib/subscripts";
 
 interface SolutionViewerProps {
   classId: number;
@@ -39,8 +40,10 @@ interface SolutionViewerProps {
 
 function renderLatex(text: string): string {
   return text
-    .replace(/\$\$(.+?)\$\$/g, '<span class="sv-latex-block">$1</span>')
-    .replace(/\$(.+?)\$/g, '<span class="sv-latex">$1</span>');
+    .replace(/\$\$(.+?)\$\$/g, (_m, content) =>
+      `<span class="sv-latex-block">${toUnicodeSubscripts(content)}</span>`)
+    .replace(/\$(.+?)\$/g, (_m, content) =>
+      `<span class="sv-latex">${toUnicodeSubscripts(content)}</span>`);
 }
 
 function renderMarkdown(text: string): string {
@@ -52,7 +55,10 @@ function renderMarkdown(text: string): string {
 }
 
 function renderContent(text: string): string {
-  return renderLatex(renderMarkdown(text));
+  // Convert any remaining underscore subscripts (including ones that arrive
+  // via content where the `$` delimiters were already stripped, e.g. quick
+  // revision / key-formula bullets) into proper Unicode subscripts.
+  return toUnicodeSubscripts(renderLatex(renderMarkdown(text)));
 }
 
 // ─── Point-wise Content Parser ──────────────────────────────────────────────
@@ -131,8 +137,9 @@ function renderPointwiseContent(content: string): string {
   let html = "";
   
   if (heading) {
-    const boldedHeading = heading
-      .replace(/\$([^$]+)\$/g, "<strong>$1</strong>");
+    const boldedHeading = toUnicodeSubscripts(
+      heading.replace(/\$([^$]+)\$/g, "<strong>$1</strong>")
+    );
     html += `<div class="sv-pw-heading">${boldedHeading}</div>`;
   }
   
