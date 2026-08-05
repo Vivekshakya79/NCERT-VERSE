@@ -1,4 +1,5 @@
 import { memo } from "react";
+import Link from "next/link";
 import {
   BookOpen,
   PenTool,
@@ -15,6 +16,7 @@ import {
   House,
   RefreshCw,
   Sparkles,
+  ArrowUpRight,
   type LucideIcon,
 } from "lucide-react";
 
@@ -40,15 +42,35 @@ interface FeatureCardProps {
   icon: string;
   title: string;
   description: string;
+  href?: string;
 }
 
-const FeatureCard = memo(function FeatureCard({ icon, title, description }: FeatureCardProps) {
+const FeatureCard = memo(function FeatureCard({ icon, title, description, href }: FeatureCardProps) {
   const Icon = iconMap[icon] || BookOpen;
-  return (
-    <div className="feat-card" tabIndex={0}>
+  const inner = (
+    <>
       <div className="feat-ico" aria-hidden="true"><Icon size={24} /></div>
       <h4>{title}</h4>
       <p>{description}</p>
+      {href && (
+        <span className="feat-cta" aria-hidden="true">
+          Open <ArrowUpRight size={15} />
+        </span>
+      )}
+    </>
+  );
+
+  if (href) {
+    return (
+      <Link href={href} className="feat-card feat-card-link" tabIndex={0}>
+        {inner}
+      </Link>
+    );
+  }
+
+  return (
+    <div className="feat-card" tabIndex={0}>
+      {inner}
     </div>
   );
 });

@@ -32,7 +32,7 @@ export const features = [
 ];
 
 export const aiTools = [
-  { icon: "Bot", title: "AI Doubt Solver", description: "Instant step-by-step solutions." },
+  { icon: "Bot", title: "AI Doubt Solver", description: "Instant step-by-step solutions.", href: "/ai/doubt-solver" },
   { icon: "FileEdit", title: "AI Notes Generator", description: "Generate exam-ready notes." },
   { icon: "Puzzle", title: "AI Quiz Generator", description: "Personalized quizzes." },
   { icon: "FolderKanban", title: "AI Flashcard Maker", description: "Spaced-repetition flashcards." },

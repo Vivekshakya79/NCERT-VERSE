@@ -46,6 +46,25 @@ export interface AITool {
   description: string;
 }
 
+// ─── AI Doubt Solver ─────────────────────────────────────────────────────────
+export type AIMessageRole = "user" | "assistant";
+
+export interface AIMessage {
+  id: string;
+  role: AIMessageRole;
+  content: string;
+  image?: string | null; // base64 data URL for user-uploaded images
+  createdAt: number;
+}
+
+export interface AIConversation {
+  id: string;
+  title: string;
+  messages: AIMessage[];
+  createdAt: number;
+  updatedAt: number;
+}
+
 export interface DashboardStat {
   label: string;
   value: string;
