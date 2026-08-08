@@ -1,0 +1,43 @@
+{
+  "name": "Exercise sEt 4.5",
+  "questions": [
+    {
+      "id": "9-math-3-ex4.5-q1",
+      "questionNumber": 1,
+      "question": "Simplify the following rational expressions assuming that the expressions in the denominators are not equal to zero: **(i)** $\\frac{3p^2 - 3pq - 18q^2}{p^2 + 3pq - 10q^2}$ **(ii)** $\\frac{n^3 - 3n^2m + 3nm^2 - m^3}{5m^2 - 10mn + 5n^2}$ **(iii)** $\\frac{w^3 - v^3 + x^3 + 3wvx}{w^2 + v^2 + x^2 - 2wv - 2vx + 2wx}$ **(iv)** $\\frac{4y^2 - 20yz + 25z^2}{25z^2 - 4y^2}$ **(v)** $\\frac{(x^2 + x - 6)(x^2 - 7x + 12)}{(x^2 - 6x + 8)(x^2 - 9)}$ **(vi)** $\\frac{p^4 - 16}{p^2 - 4p + 4}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $\\frac{3p^2 - 3pq - 18q^2}{p^2 + 3pq - 10q^2}$:** Factor the numerator: $3p^2 - 3pq - 18q^2 = 3(p^2 - pq - 6q^2) = 3(p - 3q)(p + 2q)$. Factor the denominator: $p^2 + 3pq - 10q^2 = (p + 5q)(p - 2q)$. So: $$\\frac{3(p - 3q)(p + 2q)}{(p + 5q)(p - 2q)}$$ No common factor cancels."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $\\frac{n^3 - 3n^2m + 3nm^2 - m^3}{5m^2 - 10mn + 5n^2}$:** Numerator $= (n - m)^3$ (using $(a - b)^3$). Denominator $= 5(m^2 - 2mn + n^2) = 5(m - n)^2$. Since $(n - m)^3 = -(m - n)^3$: $$\\frac{-(m - n)^3}{5(m - n)^2} = -\\frac{m - n}{5}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $\\frac{w^3 - v^3 + x^3 + 3wvx}{w^2 + v^2 + x^2 - 2wv - 2vx + 2wx}$:** Numerator $= w^3 + (-v)^3 + x^3 - 3w(-v)x = (w - v + x)(w^2 + v^2 + x^2 + wv + vx - wx)$. Denominator $= (w - v + x)^2$. So: $$\\frac{(w - v + x)(w^2 + v^2 + x^2 + wv + vx - wx)}{(w - v + x)^2} = \\frac{w^2 + v^2 + x^2 + wv + vx - wx}{w - v + x}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $\\frac{4y^2 - 20yz + 25z^2}{25z^2 - 4y^2}$:** Numerator $= (2y - 5z)^2 = (5z - 2y)^2$. Denominator $= (5z - 2y)(5z + 2y)$. So: $$\\frac{(5z - 2y)^2}{(5z - 2y)(5z + 2y)} = \\frac{5z - 2y}{5z + 2y}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $\\frac{(x^2 + x - 6)(x^2 - 7x + 12)}{(x^2 - 6x + 8)(x^2 - 9)}$:** Factor each: $x^2 + x - 6 = (x + 3)(x - 2)$; $x^2 - 7x + 12 = (x - 3)(x - 4)$; $x^2 - 6x + 8 = (x - 4)(x - 2)$; $x^2 - 9 = (x - 3)(x + 3)$. So: $$\\frac{(x + 3)(x - 2)(x - 3)(x - 4)}{(x - 4)(x - 2)(x - 3)(x + 3)} = 1$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $\\frac{p^4 - 16}{p^2 - 4p + 4}$:** Numerator $= (p^2 - 4)(p^2 + 4) = (p - 2)(p + 2)(p^2 + 4)$. Denominator $= (p - 2)^2$. So: $$\\frac{(p - 2)(p + 2)(p^2 + 4)}{(p - 2)^2} = \\frac{(p + 2)(p^2 + 4)}{p - 2}$$"
+        }
+      ],
+      "answer": "(i) 3(p − 3q)(p + 2q)/[(p + 5q)(p − 2q)]  (ii) −(m − n)/5  (iii) (w² + v² + x² + wv + vx − wx)/(w − v + x)  (iv) (5z − 2y)/(5z + 2y)  (v) 1  (vi) (p + 2)(p² + 4)/(p − 2)",
+      "verified": true,
+      "formulaBox": {
+        "title": "Simplifying Rational Expressions",
+        "content": "$$\\text{Factor numerator and denominator, then cancel common factors.}$$"
+      },
+      "notes": "**Exam Tip:** Always factor completely using identities before cancelling. Watch for sign changes like $(n - m)^3 = -(m - n)^3$."
+    }
+  ]
+}

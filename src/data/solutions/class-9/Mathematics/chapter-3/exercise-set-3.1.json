@@ -1,0 +1,97 @@
+{
+  "name": "Exercise sEt 3.1",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.1-q1",
+      "questionNumber": 1,
+      "question": "A merchant in the port city of Lothal is exchanging bags of spices for copper ingots. He receives 15 ingots for every 2 bags of spices. If he brings 12 bags of spices to the market, how many copper ingots will he leave with?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the exchange rate:** 2 bags of spices $=$ 15 copper ingots. So 1 bag of spices $= \\frac{15}{2}$ ingots."
+        },
+        {
+          "step": 2,
+          "content": "**Calculate for 12 bags:** $$12 \\times \\frac{15}{2} = 6 \\times 15 = 90$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The merchant will leave with **90 copper ingots**."
+        }
+      ],
+      "answer": "The merchant will leave with **90 copper ingots**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Unitary Method",
+        "content": "$$\\text{Value for } n \\text{ items} = n \\times \\frac{\\text{value for given items}}{\\text{number of given items}}$$"
+      },
+      "notes": "**Exam Tip:** First find the value of one unit, then multiply by the required number of units."
+    },
+    {
+      "id": "9-math-2-ex3.1-q2",
+      "questionNumber": 2,
+      "question": "Look at the sequence of numbers on one column of the Ishango bone: 11, 13, 17, 19. What do these numbers have in common? List the next three numbers that fit this pattern.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Identify the common property:** The numbers 11, 13, 17 and 19 are all **prime numbers** — numbers that have exactly two factors: 1 and the number itself."
+        },
+        {
+          "step": 2,
+          "content": "**Check each number:** 11 (factors 1, 11), 13 (factors 1, 13), 17 (factors 1, 17), 19 (factors 1, 19). None of them is divisible by any number other than 1 and itself."
+        },
+        {
+          "step": 3,
+          "content": "**Find the next three primes after 19:** The next three prime numbers are **23, 29, 31**."
+        }
+      ],
+      "answer": "They are all **prime numbers**. The next three numbers are **23, 29, 31**.",
+      "verified": true,
+      "notes": "**Historical note:** The Ishango bone (c. 20,000 BCE) contains tallies grouped as 11, 13, 17, 19 — the prime numbers between 10 and 20 — showing that the concept of numbers is tens of thousands of years old."
+    },
+    {
+      "id": "9-math-2-ex3.1-q3",
+      "questionNumber": 3,
+      "question": "We know that Natural Numbers are closed under addition (the sum of any two natural numbers is always a natural number). Are they closed under subtraction? Provide a couple of examples to justify your answer.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the definition of closure:** A set is closed under an operation if performing that operation on any two members of the set always gives a result that is also in the set."
+        },
+        {
+          "step": 2,
+          "content": "**Test subtraction with examples:** $5 - 3 = 2$ (a natural number ✓). But $3 - 5 = -2$ (a negative number, **not** a natural number ✗)."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Since subtracting a larger natural number from a smaller one gives a negative number (or zero), the result is not always a natural number. Therefore, **natural numbers are NOT closed under subtraction**."
+        }
+      ],
+      "answer": "No, natural numbers are **not closed under subtraction**. Example: $3 - 5 = -2$, which is not a natural number.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students think closure means 'the operation works sometimes'. Closure requires the result to be in the set for ALL pairs. One counter-example is enough to disprove closure."
+    },
+    {
+      "id": "9-math-2-ex3.1-q4",
+      "questionNumber": 4,
+      "question": "Ancient Indians used the joints of their fingers to count, a practice still seen today. Each finger has 3 joints, and the thumb is used to count them. How many can you count on one hand? How does this relate to the ancient base-12 counting systems?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Count the joints:** Each finger (except the thumb) has 3 joints. The number of fingers used for counting is 4 (index, middle, ring, little)."
+        },
+        {
+          "step": 2,
+          "content": "**Total count on one hand:** $$4 \\times 3 = 12$$ So one can count up to **12** on one hand using the thumb to point at each joint."
+        },
+        {
+          "step": 3,
+          "content": "**Relation to base-12:** Since counting reaches 12 on one hand, this naturally leads to a **base-12 (duodecimal)** counting system. Ancient civilisations used base-12 for time (12 months, 12 hours), and it survives today in dozens (12 items) and inches (12 inches in a foot)."
+        }
+      ],
+      "answer": "You can count up to **12** on one hand (4 fingers × 3 joints). This relates to the ancient **base-12 counting system**.",
+      "verified": true,
+      "notes": "**Real-life connection:** Base-12 survives today in our language and units: a dozen = 12, 12 inches = 1 foot, 12 months = 1 year, and the clock uses 12 hours."
+    }
+  ]
+}

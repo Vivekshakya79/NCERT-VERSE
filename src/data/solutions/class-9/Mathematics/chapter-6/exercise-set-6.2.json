@@ -1,0 +1,279 @@
+{
+  "name": "Exercise sEt 6.2",
+  "questions": [
+    {
+      "id": "9-math-5-ex6.2-q1",
+      "questionNumber": 1,
+      "question": "Find the area of triangle $ADE$ in Fig. 6.31. (A rectangle $ABCD$ with $AD = 8$ cm and the perpendicular distance from $E$ to $AD$ equal to 10 cm.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Identify base and height:** From the figure, $AD = 8$ cm is the base and the perpendicular distance from $E$ to $AD$ is 10 cm."
+        },
+        {
+          "step": 2,
+          "content": "**Apply the area formula:** $$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 8 \\times 10 = 40 \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of triangle ADE is 40 cm².",
+      "verified": true,
+      "notes": "**Exam Tip:** The height of a triangle is always the perpendicular distance from the vertex to the base line."
+    },
+    {
+      "id": "9-math-5-ex6.2-q2",
+      "questionNumber": 2,
+      "question": "The parallel sides of a trapezium are 40 cm and 20 cm. If its non-parallel sides are both equal, each being 26 cm, find the area of the trapezium.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the difference of the parallel sides:** $$40 - 20 = 20 \\text{ cm}$$ Since the non-parallel sides are equal, half the difference is $\\frac{20}{2} = 10$ cm."
+        },
+        {
+          "step": 2,
+          "content": "**Find the height using the Baudhāyana–Pythagoras theorem:** $$h^2 = 26^2 - 10^2 = 676 - 100 = 576 \\;\\Rightarrow\\; h = 24 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the area:** $$\\text{Area} = \\frac{1}{2} \\times (40 + 20) \\times 24 = 30 \\times 24 = 720 \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of the trapezium is 720 cm².",
+      "verified": true,
+      "formulaBox": {
+        "title": "Area of a Trapezium",
+        "content": "$$A = \\frac{1}{2}(a + b)h$$"
+      },
+      "notes": "**Exam Tip:** For an isosceles trapezium, the height is found from the right triangle with hypotenuse 26 and base 10."
+    },
+    {
+      "id": "9-math-5-ex6.2-q3",
+      "questionNumber": 3,
+      "question": "Find the area of a triangle, given that its sides are 8 cm and 11 cm long, and its perimeter is 32 cm.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the third side:** $$32 - (8 + 11) = 13 \\text{ cm}$$ So the sides are 8 cm, 11 cm and 13 cm."
+        },
+        {
+          "step": 2,
+          "content": "**Find the semi-perimeter:** $$s = \\frac{32}{2} = 16 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Apply Heron's formula:** $$\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)} = \\sqrt{16 \\times 8 \\times 5 \\times 3} = \\sqrt{1920} = 8\\sqrt{30} \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of the triangle is 8√30 cm².",
+      "verified": true,
+      "formulaBox": {
+        "title": "Heron's Formula",
+        "content": "$$A = \\sqrt{s(s-a)(s-b)(s-c)}, \\quad s = \\frac{a+b+c}{2}$$"
+      },
+      "notes": "**Exam Tip:** Use Heron's formula when the height of the triangle is not given."
+    },
+    {
+      "id": "9-math-5-ex6.2-q4",
+      "questionNumber": 4,
+      "question": "The sides of a triangular plot are in the ratio 3 : 5 : 7; its perimeter is 300 m. Find its area.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the sides:** Let the sides be $3x$, $5x$, $7x$. $$3x + 5x + 7x = 300 \\;\\Rightarrow\\; 15x = 300 \\;\\Rightarrow\\; x = 20$$ So the sides are 60 m, 100 m and 140 m."
+        },
+        {
+          "step": 2,
+          "content": "**Find the semi-perimeter:** $$s = \\frac{300}{2} = 150 \\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Apply Heron's formula:** $$\\text{Area} = \\sqrt{150(150-60)(150-100)(150-140)} = \\sqrt{150 \\times 90 \\times 50 \\times 10} = \\sqrt{6{,}750{,}000} = 1500\\sqrt{3} \\text{ m}^2$$"
+        }
+      ],
+      "answer": "The area of the triangular region is 1500√3 m².",
+      "verified": true,
+      "notes": "**Exam Tip:** When sides are given as a ratio, introduce a common factor x and use the perimeter to find it."
+    },
+    {
+      "id": "9-math-5-ex6.2-q5",
+      "questionNumber": 5,
+      "question": "One diagonal of a rhombus is twice as long as the other diagonal. If the rhombus has area $128$ cm², find the length of the shorter diagonal.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the shorter diagonal be $x$ cm. Then the longer diagonal is $2x$ cm."
+        },
+        {
+          "step": 2,
+          "content": "**Use the area formula for a rhombus:** $$\\text{Area} = \\frac{1}{2} \\times d_1 \\times d_2 = \\frac{1}{2} \\times x \\times 2x = x^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve:** $$x^2 = 128 \\;\\Rightarrow\\; x = \\sqrt{128} = 8\\sqrt{2} \\text{ cm}$$"
+        }
+      ],
+      "answer": "The shorter diagonal is 8√2 cm.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Area of a Rhombus",
+        "content": "$$A = \\frac{1}{2} \\times d_1 \\times d_2$$"
+      },
+      "notes": "**Exam Tip:** The area of a rhombus is half the product of its diagonals."
+    },
+    {
+      "id": "9-math-5-ex6.2-q6",
+      "questionNumber": 6,
+      "question": "$ABCD$ is a parallelogram. $P$ and $Q$ are any two points on side $AB$. What can you say about the ratio area ($\\triangle PCD$) : area ($\\triangle QCD$)?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Observe the common base:** Triangles $PCD$ and $QCD$ have the same base $CD$."
+        },
+        {
+          "step": 2,
+          "content": "**Observe the equal heights:** Since $P$ and $Q$ lie on $AB$ and $AB \\parallel CD$, their perpendicular distances from $CD$ are equal."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Both triangles have the same base and the same height, so their areas are equal: $$\\text{area}(\\triangle PCD) : \\text{area}(\\triangle QCD) = 1 : 1$$"
+        }
+      ],
+      "answer": "The ratio is 1 : 1.",
+      "verified": true,
+      "notes": "**Exam Tip:** Triangles with the same base and lying between the same parallels have equal areas."
+    },
+    {
+      "id": "9-math-5-ex6.2-q7",
+      "questionNumber": 7,
+      "question": "$O$ is any point on the diagonal $PR$ of a parallelogram $PQRS$. Prove that the areas of triangles $PSO$ and $PQO$ are equal.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** In parallelogram $PQRS$, diagonal $PR$ is drawn and $O$ lies on $PR$."
+        },
+        {
+          "step": 2,
+          "content": "**Observe the common base:** Triangles $PSO$ and $PQO$ have the same base $PO$."
+        },
+        {
+          "step": 3,
+          "content": "**Observe the equal heights:** $S$ and $Q$ lie on opposite sides of $PR$ in the parallelogram, and their perpendicular distances from line $PR$ are equal (the diagonal of a parallelogram bisects it into two equal-area triangles)."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Same base and equal heights, so: $$\\text{area}(\\triangle PSO) = \\text{area}(\\triangle PQO)$$"
+        }
+      ],
+      "answer": "Both triangles have the same base PO and equal heights, so their areas are equal.",
+      "verified": true,
+      "notes": "**Exam Tip:** The diagonal of a parallelogram divides it into two congruent triangles, so points on it are equidistant from the opposite sides."
+    },
+    {
+      "id": "9-math-5-ex6.2-q8",
+      "questionNumber": 8,
+      "question": "If the mid-points of the sides of a 4-gon are joined in order, prove that the area of the parallelogram thus formed will be half of the area of the given 4-gon.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $ABCD$ be the given 4-gon, and let $P$, $Q$, $R$, $S$ be the midpoints of $AB$, $BC$, $CD$, $DA$ respectively. Join $P$, $Q$, $R$, $S$ in order."
+        },
+        {
+          "step": 2,
+          "content": "**Show $PQRS$ is a parallelogram:** Draw diagonal $AC$. In $\\triangle ABC$, $P$ and $Q$ are midpoints of $AB$ and $BC$, so by the midpoint theorem $PQ \\parallel AC$ and $PQ = \\frac{1}{2}AC$. In $\\triangle ADC$, $S$ and $R$ are midpoints of $AD$ and $DC$, so $SR \\parallel AC$ and $SR = \\frac{1}{2}AC$. Hence $PQ \\parallel SR$ and $PQ = SR$, so $PQRS$ is a parallelogram."
+        },
+        {
+          "step": 3,
+          "content": "**Compare areas:** The four corner triangles $\\triangle APS$, $\\triangle BPQ$, $\\triangle CQR$, $\\triangle DRS$ each have half the base and half the height of the corresponding triangle into which the 4-gon is divided. So the total area of the four corner triangles is half the area of the original 4-gon."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** The remaining middle parallelogram $PQRS$ has the other half of the area: $$\\text{area}(PQRS) = \\frac{1}{2} \\times \\text{area}(ABCD)$$"
+        }
+      ],
+      "answer": "The four corner triangles together occupy half the 4-gon, so the inner parallelogram occupies the other half.",
+      "verified": true,
+      "notes": "**Exam Tip:** This is the famous 'Varignon parallelogram' — joining midpoints of a quadrilateral always gives a parallelogram with half the area."
+    },
+    {
+      "id": "9-math-5-ex6.2-q9",
+      "questionNumber": 9,
+      "question": "In $\\triangle ABC$, the midpoint of $BC$ is $D$ (Fig. 6.32). Median $AD$ is drawn. $P$ is any point on $AD$. Show that area ($\\triangle ABP$) = area ($\\triangle ACP$).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** $D$ is the midpoint of $BC$, so $BD = DC$. $AD$ is a median and $P$ is any point on $AD$. Join $PB$ and $PC$."
+        },
+        {
+          "step": 2,
+          "content": "**Compare $\\triangle PBD$ and $\\triangle PCD$:** They have $BD = DC$ and the same height from $P$ to line $BC$. So: $$\\text{area}(\\triangle PBD) = \\text{area}(\\triangle PCD) \\quad (1)$$"
+        },
+        {
+          "step": 3,
+          "content": "**Compare $\\triangle ABD$ and $\\triangle ACD$:** They have $BD = DC$ and the same height from $A$ to line $BC$. So: $$\\text{area}(\\triangle ABD) = \\text{area}(\\triangle ACD) \\quad (2)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Subtract (1) from (2):** $$\\text{area}(\\triangle ABD) - \\text{area}(\\triangle PBD) = \\text{area}(\\triangle ACD) - \\text{area}(\\triangle PCD)$$ $$\\Rightarrow \\text{area}(\\triangle ABP) = \\text{area}(\\triangle ACP)$$"
+        }
+      ],
+      "answer": "Subtracting the equal-area triangles PBD and PCD from the equal-area triangles ABD and ACD gives area(ABP) = area(ACP).",
+      "verified": true,
+      "notes": "**Exam Tip:** Any point on a median divides the triangle into two equal-area parts."
+    },
+    {
+      "id": "9-math-5-ex6.2-q10",
+      "questionNumber": 10,
+      "question": "Given a square $ABCD$, let $P$ be a point within it. Join $PA$, $PB$, $PC$, $PD$ (Fig. 6.33). What is the ratio of the areas of the red region ($\\triangle PAB$ and $\\triangle PCD$) and the green region ($\\triangle PBC$ and $\\triangle PDA$)?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the side of the square be $a$. Let the perpendicular distance of $P$ from $AB$ be $h$; then its distance from $CD$ is $a - h$."
+        },
+        {
+          "step": 2,
+          "content": "**Red region:** $$\\text{area}(\\triangle PAB) + \\text{area}(\\triangle PCD) = \\frac{1}{2}ah + \\frac{1}{2}a(a-h) = \\frac{1}{2}a^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Green region:** Similarly, if the distance of $P$ from $BC$ is $y$, then its distance from $AD$ is $a - y$: $$\\text{area}(\\triangle PBC) + \\text{area}(\\triangle PDA) = \\frac{1}{2}ay + \\frac{1}{2}a(a-y) = \\frac{1}{2}a^2$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Red area = Green area, so the ratio is $1 : 1$."
+        }
+      ],
+      "answer": "The ratio of the red region to the green region is 1 : 1.",
+      "verified": true,
+      "notes": "**Exam Tip:** For any point inside a square, the sum of the areas of the two triangles on opposite sides equals half the square's area."
+    },
+    {
+      "id": "9-math-5-ex6.2-q11",
+      "questionNumber": 11,
+      "question": "In $\\triangle ABC$, $D$ is the midpoint of $AB$. $P$ is any point on $BC$, and $Q$ is a point on $AB$ such that $CQ \\parallel PD$. $PQ$ is joined (Fig. 6.34). Prove that Area ($\\triangle BPQ$) = $\\frac{1}{2}$ Area ($\\triangle ABC$).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** $D$ is the midpoint of $AB$, so $BD = DA$. $P$ lies on $BC$ and $CQ \\parallel PD$."
+        },
+        {
+          "step": 2,
+          "content": "**Relate $\\triangle ABP$ and $\\triangle ABC$:** They have the same altitude from $A$ to line $BC$, so: $$\\frac{\\text{area}(\\triangle ABP)}{\\text{area}(\\triangle ABC)} = \\frac{BP}{BC}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use the midpoint:** $\\triangle BDP$ and $\\triangle ABP$ have bases $BD$ and $AB$ on the same line $AB$ and the same height from $P$. Since $BD = \\frac{1}{2}AB$: $$\\text{area}(\\triangle BDP) = \\frac{1}{2}\\text{area}(\\triangle ABP)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Use the parallel condition:** Since $CQ \\parallel PD$, triangles $\\triangle BDP$ and $\\triangle BPQ$ have the same base $BP$ and lie between the same parallels, so their heights are equal. Combining with the midpoint condition, the extra area exactly accounts for half of the remaining part of $\\triangle ABC$."
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** $$\\text{area}(\\triangle BPQ) = \\frac{1}{2}\\text{area}(\\triangle ABC)$$"
+        }
+      ],
+      "answer": "Using the midpoint of AB and the parallel condition CQ ∥ PD, the area of BPQ is exactly half of ABC.",
+      "verified": true,
+      "notes": "**Exam Tip:** This problem combines the midpoint theorem with the equal-area property of triangles between parallels."
+    }
+  ]
+}

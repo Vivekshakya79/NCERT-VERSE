@@ -1,0 +1,139 @@
+{
+  "name": "Exercise sEt 2.1",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.1-q1",
+      "questionNumber": 1,
+      "question": "Find the degrees of the following polynomials: **(i)** $2x^2 - 5x + 3$ **(ii)** $y^3 + 2y - 1$ **(iii)** $-9$ **(iv)** $4z - 3$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the definition:** The degree of a polynomial is the highest power of the variable present in the polynomial. For a constant (a number with no variable), the degree is 0."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $2x^2 - 5x + 3$:** The powers of $x$ in the terms are 2, 1 and 0 (the constant 3 has power 0). The highest power is 2. Therefore, the degree is **2**."
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $y^3 + 2y - 1$:** The powers of $y$ in the terms are 3, 1 and 0. The highest power is 3. Therefore, the degree is **3**."
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-9$:** This is a constant term. It can be written as $-9x^0$, where the power of the variable $x$ is 0. Therefore, the degree is **0**."
+        },
+        {
+          "step": 5,
+          "content": "**(iv) $4z - 3$:** The powers of $z$ in the terms are 1 and 0. The highest power is 1. Therefore, the degree is **1**."
+        }
+      ],
+      "answer": "(i) Degree = **2** (quadratic)  (ii) Degree = **3** (cubic)  (iii) Degree = **0** (constant)  (iv) Degree = **1** (linear)",
+      "verified": true,
+      "formulaBox": {
+        "title": "Degree of a Polynomial",
+        "content": "$$\\text{Degree} = \\text{highest power of the variable in the polynomial}$$"
+      },
+      "notes": "**Common Mistake:** Students often think the degree of a constant like $-9$ is 1 or undefined. Remember: a constant is a polynomial of degree 0 because it can be written as $-9x^0$."
+    },
+    {
+      "id": "9-math-1-ex2.1-q2",
+      "questionNumber": 2,
+      "question": "Write polynomials of degrees 1, 2 and 3.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Degree 1 (linear polynomial):** The highest power of the variable must be 1. For example, $3x + 7$ is a linear polynomial in $x$."
+        },
+        {
+          "step": 2,
+          "content": "**Degree 2 (quadratic polynomial):** The highest power of the variable must be 2. For example, $x^2 + 5x + 1$ is a quadratic polynomial in $x$."
+        },
+        {
+          "step": 3,
+          "content": "**Degree 3 (cubic polynomial):** The highest power of the variable must be 3. For example, $5y^3 + y^2 + 2y - 1$ is a cubic polynomial in $y$."
+        },
+        {
+          "step": 4,
+          "content": "**Note:** There are infinitely many correct answers. Any polynomial whose highest power is 1, 2 or 3 respectively will work."
+        }
+      ],
+      "answer": "Degree 1: $2x + 3$  |  Degree 2: $x^2 + 5x + 1$  |  Degree 3: $5y^3 + y^2 + 2y - 1$",
+      "verified": true,
+      "notes": "**Exam Tip:** When asked to write a polynomial of a given degree, make sure the term with that highest power has a non-zero coefficient. For example, $0x^3 + x^2 + 1$ is actually of degree 2, not 3."
+    },
+    {
+      "id": "9-math-1-ex2.1-q3",
+      "questionNumber": 3,
+      "question": "What are the coefficients of $x^2$ and $x^3$ in the polynomial $x^4 - 3x^3 + 6x^2 - 2x + 7$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the definition:** The coefficient of a term is the number (including its sign) that multiplies the variable part of the term."
+        },
+        {
+          "step": 2,
+          "content": "**Write the polynomial with all terms:** $$x^4 - 3x^3 + 6x^2 - 2x + 7$$ The terms are: $x^4$, $-3x^3$, $6x^2$, $-2x$ and $7$."
+        },
+        {
+          "step": 3,
+          "content": "**Coefficient of $x^2$:** The term containing $x^2$ is $6x^2$. Its coefficient is **6**."
+        },
+        {
+          "step": 4,
+          "content": "**Coefficient of $x^3$:** The term containing $x^3$ is $-3x^3$. Its coefficient is **-3** (remember to include the negative sign)."
+        }
+      ],
+      "answer": "Coefficient of $x^2$ = **6**, coefficient of $x^3$ = **-3**.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students often forget the negative sign and write 3 instead of -3. Always carry the sign of the term along with its coefficient."
+    },
+    {
+      "id": "9-math-1-ex2.1-q4",
+      "questionNumber": 4,
+      "question": "What is the coefficient of $z$ in the polynomial $4z^3 + 5z^2 - 11$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Look for the term containing $z$:** The polynomial is $4z^3 + 5z^2 - 11$. The terms are $4z^3$, $5z^2$ and $-11$."
+        },
+        {
+          "step": 2,
+          "content": "**Check each term:** The term $4z^3$ contains $z^3$, the term $5z^2$ contains $z^2$, and $-11$ is a constant. **None of the terms contains $z$ (i.e., $z^1$).**"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Since there is no term with $z$, the coefficient of $z$ is **0**."
+        }
+      ],
+      "answer": "The coefficient of $z$ is **0** (there is no $z$ term in the polynomial).",
+      "verified": true,
+      "notes": "**Common Mistake:** Students often say the coefficient is 'not present' or skip the question. In algebra, a missing term always has coefficient 0. We can write the polynomial as $4z^3 + 5z^2 + 0z - 11$."
+    },
+    {
+      "id": "9-math-1-ex2.1-q5",
+      "questionNumber": 5,
+      "question": "What is the constant term of the polynomial $9x^3 + 5x^2 - 8x - 10$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the definition:** The constant term of a polynomial is the term that does not contain any variable (it is a fixed number)."
+        },
+        {
+          "step": 2,
+          "content": "**Identify the terms:** The polynomial is $9x^3 + 5x^2 - 8x - 10$. The terms are $9x^3$, $5x^2$, $-8x$ and $-10$."
+        },
+        {
+          "step": 3,
+          "content": "**Find the term without a variable:** The terms $9x^3$, $5x^2$ and $-8x$ all contain the variable $x$. Only $-10$ has no variable."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** The constant term is **-10** (including its negative sign)."
+        }
+      ],
+      "answer": "The constant term is **-10**.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students often write 10 instead of -10. The constant term includes its sign, so it is $-10$."
+    }
+  ]
+}

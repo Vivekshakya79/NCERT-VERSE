@@ -1,0 +1,141 @@
+{
+  "name": "Exercise sEt 7.2",
+  "questions": [
+    {
+      "id": "9-math-6-ex7.2-q1",
+      "questionNumber": 1,
+      "question": "A teacher mixes a large bag of sweets of different colours and randomly selects a sample of 30 sweets. She counts the number of sweets of each colour: 10 red, 8 green, 7 yellow, 5 blue. **(i)** Calculate the probability that a randomly picked sweet from the sample is green. **(ii)** If there are 600 sweets in total in the large bag, estimate how many are likely to be yellow, based on the sample results.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Probability of green:** Number of green sweets = 8, total sweets in sample = 30. $$P(\\text{green}) = \\frac{8}{30} = \\frac{4}{15} \\approx 0.267$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Estimate yellow sweets in 600:** Number of yellow sweets = 7, so $P(\\text{yellow}) = \\frac{7}{30}$. $$\\text{Estimated yellow} = \\frac{7}{30} \\times 600 = 7 \\times 20 = 140$$"
+        }
+      ],
+      "answer": "(i) 4/15 ≈ 0.267  (ii) Approximately 140 yellow sweets",
+      "verified": true,
+      "formulaBox": {
+        "title": "Experimental Probability",
+        "content": "$$P = \\frac{\\text{Number of times the event occurred}}{\\text{Total number of trials}}$$"
+      },
+      "notes": "**Exam Tip:** To estimate a whole population from a sample, multiply the sample probability by the population size."
+    },
+    {
+      "id": "9-math-6-ex7.2-q2",
+      "questionNumber": 2,
+      "question": "A survey is conducted at a school where a random sample of 40 students is asked about their favourite club. The responses are: 14 Science Club, 11 Arts Club, 9 Sports Club, 6 Debate Club. Assume there are 800 students in the whole school. **(i)** What is the probability that a randomly chosen student from the sample prefers the Arts Club? **(ii)** Using the sample results, estimate how many students in the whole school are likely to prefer the Sports Club.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Probability of Arts Club:** Number of students who prefer Arts Club = 11, total in sample = 40. $$P(\\text{Arts}) = \\frac{11}{40} = 0.275$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Estimate Sports Club in 800:** Number who prefer Sports Club = 9, so $P(\\text{Sports}) = \\frac{9}{40}$. $$\\text{Estimated} = \\frac{9}{40} \\times 800 = 9 \\times 20 = 180$$"
+        }
+      ],
+      "answer": "(i) 11/40 = 0.275  (ii) Approximately 180 students",
+      "verified": true,
+      "notes": "**Exam Tip:** A larger, more representative sample gives a more reliable estimate of the whole population."
+    },
+    {
+      "id": "9-math-6-ex7.2-q3",
+      "questionNumber": 3,
+      "question": "Toss a coin 20 times and record the result each time (heads or tails). **(i)** How many times did you get heads? **(ii)** How many times did you get tails? **(iii)** Calculate the experimental probability of getting heads. **(iv)** If you toss the coin once more, what is the probability of getting tails?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) and (ii) Sample results:** Suppose the coin lands heads 11 times and tails 9 times out of 20 tosses."
+        },
+        {
+          "step": 2,
+          "content": "**(iii) Experimental probability of heads:** $$P(\\text{heads}) = \\frac{11}{20} = 0.55$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iv) Probability of tails on the next toss:** This is a new independent toss. The theoretical probability of tails on any single fair coin toss is always: $$P(\\text{tails}) = \\frac{1}{2}$$"
+        }
+      ],
+      "answer": "(i) 11  (ii) 9  (iii) 11/20 = 0.55  (iv) 1/2",
+      "verified": true,
+      "notes": "**Exam Tip:** The coin has no memory — past tosses do not change the probability of the next toss (avoid the Gambler's Fallacy)."
+    },
+    {
+      "id": "9-math-6-ex7.2-q4",
+      "questionNumber": 4,
+      "question": "Toss a paper cup into the air 100 times. After each toss record whether the cup lands on its bottom, upside down on its top, or on its side (See Fig. 7.5). Assign probabilities to the outcomes by using experimental probability.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Record the observations:** This is a hands-on activity. One possible set of results from 100 tosses is: bottom = 35, top = 15, side = 50."
+        },
+        {
+          "step": 2,
+          "content": "**Assign the experimental probabilities:** $$P(\\text{bottom}) = \\frac{35}{100}, \\quad P(\\text{top}) = \\frac{15}{100}, \\quad P(\\text{side}) = \\frac{50}{100}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Check:** The probabilities add up to $\\frac{35 + 15 + 50}{100} = 1$, as they must."
+        }
+      ],
+      "answer": "P(bottom) = 35/100, P(top) = 15/100, P(side) = 50/100 (results will vary with your own experiment).",
+      "verified": true,
+      "notes": "**Exam Tip:** Your own results may differ — that is the nature of experimental probability. The probabilities should always add up to 1."
+    },
+    {
+      "id": "9-math-6-ex7.2-q5",
+      "questionNumber": 5,
+      "question": "What is the probability of getting an even number when rolling a fair 6-sided die?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the sample space:** $$S = \\{1, 2, 3, 4, 5, 6\\}, \\quad n(S) = 6$$"
+        },
+        {
+          "step": 2,
+          "content": "**Count the favourable outcomes:** Even numbers $= \\{2, 4, 6\\}$, so $n(E) = 3$."
+        },
+        {
+          "step": 3,
+          "content": "**Calculate the probability:** $$P(\\text{even}) = \\frac{3}{6} = \\frac{1}{2}$$"
+        }
+      ],
+      "answer": "P(even number) = 1/2.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Theoretical Probability",
+        "content": "$$P(E) = \\frac{\\text{Number of favourable outcomes}}{\\text{Number of possible outcomes}}$$"
+      },
+      "notes": "**Exam Tip:** Always write n(E) and n(S) before computing the probability."
+    },
+    {
+      "id": "9-math-6-ex7.2-q6",
+      "questionNumber": 6,
+      "question": "Suppose you roll a 6-sided die 12 times and get a '3' three times. **(i)** What is the experimental probability of rolling a '3'? **(ii)** What is the theoretical probability of rolling a '3'? **(iii)** Why might these probabilities be different? What would you expect to happen if you roll the die 60, 600, or 6000 times?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Experimental probability:** $$P(3) = \\frac{3}{12} = \\frac{1}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Theoretical probability:** $$P(3) = \\frac{1}{6}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Why they differ:** Experimental probability is based on actual results from a limited number of trials, which can vary a lot by chance. The theoretical probability assumes a perfectly fair die with all outcomes equally likely."
+        },
+        {
+          "step": 4,
+          "content": "**What happens with more trials (Law of Large Numbers):** At 60 rolls the experimental probability comes closer to $\\frac{1}{6}$ but may still vary; at 600 rolls it will be very close to $\\frac{1}{6}$; at 6000 rolls it will be almost exactly $\\frac{1}{6}$."
+        }
+      ],
+      "answer": "(i) 1/4  (ii) 1/6  (iii) As the number of trials increases, the experimental probability approaches the theoretical probability (Law of Large Numbers).",
+      "verified": true,
+      "notes": "**Exam Tip:** The Law of Large Numbers says experimental probability tends to the theoretical probability as trials increase."
+    }
+  ]
+}

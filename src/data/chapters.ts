@@ -1109,7 +1109,7 @@ export const chapters: Record<string, string[]> = {
     "I'm Up and Down, and Round and Round",
     "Measuring Space: Perimeter and Area",
     "The Mathematics of Maybe: Introduction to Probability",
-    "Predicting What Comes Next?: Exploring Sequences and Progressions"
+    "Predicting What Comes Next: Exploring Sequences and Progressions"
   ],
   "9-Physical Education and Well Being": ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5", "Chapter 6"],
   "9-Sanskrit": ["Shemushi - Bhag 1", "Abhyasvan Bhav"],

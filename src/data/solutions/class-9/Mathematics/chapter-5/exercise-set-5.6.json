@@ -1,0 +1,79 @@
+{
+  "name": "Exercise sEt 5.6",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.6-q1",
+      "questionNumber": 1,
+      "question": "In a circle with centre $O$, the central angle $AOB$ is $60°$. If the radius of the circle is 12 cm, what is the length of the chord $AB$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Observe the triangle $\\triangle AOB$:** $OA = OB = 12$ cm (both radii), and $\\angle AOB = 60°$."
+        },
+        {
+          "step": 2,
+          "content": "**Recognise an equilateral triangle:** If two sides are equal and the included angle is $60°$, the third angle is also $60°$ (since $180° - 60° = 120°$ split equally). So $\\triangle AOB$ is equilateral."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** All sides are equal, so $AB = OA = OB = 12$ cm."
+        }
+      ],
+      "answer": "AB = 12 cm (the triangle AOB is equilateral).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Chord for a Central Angle θ",
+        "content": "$$\\text{Chord} = 2r\\sin\\left(\\frac{\\theta}{2}\\right)$$"
+      },
+      "notes": "**Exam Tip:** When the central angle is 60°, the chord equals the radius. When it is 90°, the chord is r√2."
+    },
+    {
+      "id": "9-math-4-ex5.6-q2",
+      "questionNumber": 2,
+      "question": "Let $A$ and $B$ be two points on a circle with centre $O$. **(i)** Are there points $X$, $Y$ on the circle, on the same side of $AB$, such that $\\angle AXB$ is different from $\\angle AYB$? **(ii)** Is it true that if $\\angle AXB = \\angle AYB$, then $X$ and $Y$ lie on the same side of the circle? **(iii)** If $\\angle AXB = \\angle AYB$, and $X$ and $Y$ do not lie on the circle, does the circle through $A$, $B$ and $X$ also pass through $Y$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) No.** For points $X$ and $Y$ on the same side of the chord $AB$, the angles $\\angle AXB$ and $\\angle AYB$ subtend the same arc $AB$. By the corollary of Theorem 9, all angles subtended by the same arc at points on the circle are equal. So $\\angle AXB = \\angle AYB$ always."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Yes.** If $X$ and $Y$ are on opposite sides of $AB$, they subtend complementary arcs, and the angles are supplementary (they add to $180°$), not equal (unless both are $90°$). So equal angles imply $X$ and $Y$ are on the same side of $AB$."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Yes.** By Theorem 10 (concyclicity), if the segment $AB$ subtends equal angles at two points $X$ and $Y$ on the same side of $AB$, then $A$, $B$, $X$, $Y$ all lie on the same circle. So the circle through $A$, $B$ and $X$ also passes through $Y$."
+        }
+      ],
+      "answer": "(i) No — angles in the same segment are equal. (ii) Yes. (iii) Yes — by the concyclicity theorem.",
+      "verified": true,
+      "notes": "**Exam Tip:** Angles subtended by the same chord in the same segment are equal; in opposite segments they are supplementary."
+    },
+    {
+      "id": "9-math-4-ex5.6-q3",
+      "questionNumber": 3,
+      "question": "Find $x$ in Fig. 5.26. (A cyclic quadrilateral $ABCD$ is shown with $\\angle B = 100°$ and $\\angle D = x$.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Identify the quadrilateral:** $A$, $B$, $C$, $D$ lie on a circle, so $ABCD$ is a cyclic quadrilateral."
+        },
+        {
+          "step": 2,
+          "content": "**Use the cyclic quadrilateral property:** Opposite angles of a cyclic quadrilateral sum to $180°$: $$\\angle B + \\angle D = 180°$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve for $x$:** $$100° + x = 180° \\;\\Rightarrow\\; x = 80°$$"
+        }
+      ],
+      "answer": "x = 80°.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Cyclic Quadrilateral",
+        "content": "$$\\angle A + \\angle C = 180°, \\qquad \\angle B + \\angle D = 180°$$"
+      },
+      "notes": "**Exam Tip:** In any cyclic quadrilateral, opposite angles are supplementary."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Exercise sEt 7.1",
+  "questions": [
+    {
+      "id": "9-math-6-ex7.1-q1",
+      "questionNumber": 1,
+      "question": "Rank the following events on a scale from 0 (Impossible) to 1 (Certain). Label each event: Impossible, less likely, equally likely (even chance), more likely, certain. Give reasons why you gave each event its ranking. **(i)** The next Monday will come after Sunday. **(ii)** It will snow in Mumbai in July. **(iii)** An elephant will walk through your classroom today. **(iv)** You will greet at least one friend at school tomorrow.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) The next Monday will come after Sunday — Certain (Probability = 1).** Days of the week always follow a fixed order; Sunday is always followed by Monday. This will definitely happen."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) It will snow in Mumbai in July — Impossible (Probability = 0).** Mumbai has a tropical climate and experiences the monsoon in July with hot, humid weather. Snowfall is not possible there."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) An elephant will walk through your classroom today — Impossible (Probability = 0).** Under normal circumstances this practically cannot happen, so its probability is 0 (or extremely close to 0)."
+        },
+        {
+          "step": 4,
+          "content": "**(iv) You will greet at least one friend at school tomorrow — More likely (Probability close to 1, but not exactly 1).** There are many friends around you at school, so it is very likely. It is not certain because rare situations (like being absent or school being closed) could prevent it."
+        }
+      ],
+      "answer": "(i) Certain (1)  (ii) Impossible (0)  (iii) Impossible (0)  (iv) More likely (close to 1)",
+      "verified": true,
+      "formulaBox": {
+        "title": "The Probability Scale",
+        "content": "$$0 \\le P(E) \\le 1$$"
+      },
+      "notes": "**Exam Tip:** Probability 0 means impossible, 1 means certain, and most real events lie strictly between 0 and 1."
+    }
+  ]
+}

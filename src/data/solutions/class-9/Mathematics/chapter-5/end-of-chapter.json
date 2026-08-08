@@ -1,0 +1,617 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-4-ec-q1",
+      "questionNumber": 1,
+      "question": "In a circle, a chord is 5 cm away from the centre. If the radius of the circle is 13 cm, what is the length of the chord?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the chord formula:** $$\\text{Chord} = 2\\sqrt{r^2 - d^2} = 2\\sqrt{13^2 - 5^2}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Compute:** $$2\\sqrt{169 - 25} = 2\\sqrt{144} = 2 \\times 12 = 24 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The length of the chord is 24 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** Remember the 5–12–13 right triangle: here the radius is the hypotenuse."
+    },
+    {
+      "id": "9-math-4-ec-q2",
+      "questionNumber": 2,
+      "question": "An arc of a circle subtends an angle of $70°$ at the centre. What is the measure of the angle subtended by the arc at a point on the circle?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall Theorem 9:** The angle subtended by an arc at the centre is double the angle subtended by the arc at any point on the remaining part of the circle."
+        },
+        {
+          "step": 2,
+          "content": "**Apply it:** $$\\text{Angle at a point on the circle} = \\frac{70°}{2} = 35°$$"
+        }
+      ],
+      "answer": "The angle subtended at a point on the circle is 35°.",
+      "verified": true,
+      "notes": "**Exam Tip:** Angle at centre = 2 × angle at the circumference (subtending the same arc)."
+    },
+    {
+      "id": "9-math-4-ec-q3",
+      "questionNumber": 3,
+      "question": "The diameter of a circle is 26 cm. A chord of length 24 cm is drawn in the circle. Find the distance from the centre of the circle to the chord.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the radius:** $$r = \\frac{26}{2} = 13 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Half the chord:** $$\\frac{24}{2} = 12 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use the right-triangle relation:** $$d = \\sqrt{r^2 - \\left(\\frac{\\text{chord}}{2}\\right)^2} = \\sqrt{13^2 - 12^2} = \\sqrt{169 - 144} = \\sqrt{25} = 5 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The distance from the centre to the chord is 5 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** Again the 5–12–13 triangle appears — radius 13, half-chord 12, distance 5."
+    },
+    {
+      "id": "9-math-4-ec-q4",
+      "questionNumber": 4,
+      "question": "A circle has a radius of 15 cm. A chord is drawn. The distance from the centre of the circle to the chord is 9 cm. What is the length of the chord?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the chord formula:** $$\\text{Chord} = 2\\sqrt{r^2 - d^2} = 2\\sqrt{15^2 - 9^2}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Compute:** $$2\\sqrt{225 - 81} = 2\\sqrt{144} = 2 \\times 12 = 24 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The length of the chord is 24 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** The 9–12–15 triangle is a scaled 3–4–5 triangle."
+    },
+    {
+      "id": "9-math-4-ec-q5",
+      "questionNumber": 5,
+      "question": "Prove that the perpendicular bisector of a chord passes through the centre of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $AB$ be a chord of a circle with centre $O$. Let $M$ be the midpoint of $AB$."
+        },
+        {
+          "step": 2,
+          "content": "**Join $O$ to $M$:** By Theorem 4, the line joining the centre to the midpoint of a chord is perpendicular to the chord. So $OM \\perp AB$."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The line through $M$ perpendicular to $AB$ is unique. Since $OM$ is perpendicular to $AB$ and passes through $M$, it is the perpendicular bisector of $AB$. Hence the perpendicular bisector of $AB$ passes through the centre $O$."
+        }
+      ],
+      "answer": "OM is perpendicular to AB and passes through the midpoint M, so it is the perpendicular bisector — hence it passes through the centre O.",
+      "verified": true,
+      "notes": "**Exam Tip:** The perpendicular bisector of any chord always passes through the centre — this is how the centre of a circle is located."
+    },
+    {
+      "id": "9-math-4-ec-q6",
+      "questionNumber": 6,
+      "question": "The diameter of a circle is $AB$. Point $C$ is on the circumference. What is the measure of the $\\angle ACB$? Explain your reasoning.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Identify the arc:** $AB$ is a diameter, so the arc $AB$ not containing $C$ is a semicircle."
+        },
+        {
+          "step": 2,
+          "content": "**Angle at the centre:** The angle subtended by this arc at the centre is a straight angle, $180°$."
+        },
+        {
+          "step": 3,
+          "content": "**Apply Theorem 9:** The angle at the centre is double the angle at the circumference: $$\\angle ACB = \\frac{180°}{2} = 90°$$"
+        }
+      ],
+      "answer": "∠ACB = 90° (angle in a semicircle).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Angle in a Semicircle",
+        "content": "The angle subtended by a diameter at any point on the circle is 90°."
+      },
+      "notes": "**Exam Tip:** This is the famous 'angle in a semicircle is a right angle' result."
+    },
+    {
+      "id": "9-math-4-ec-q7",
+      "questionNumber": 7,
+      "question": "$ABCD$ is a cyclic quadrilateral inscribed in a circle. If $\\angle A$ measures $75°$, what is the measure of $\\angle C$? If $\\angle B$ measures $110°$, what is the measure of $\\angle D$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the cyclic quadrilateral property:** Opposite angles sum to $180°$."
+        },
+        {
+          "step": 2,
+          "content": "**Find $\\angle C$:** $$\\angle C = 180° - \\angle A = 180° - 75° = 105°$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find $\\angle D$:** $$\\angle D = 180° - \\angle B = 180° - 110° = 70°$$"
+        }
+      ],
+      "answer": "∠C = 105°, ∠D = 70°.",
+      "verified": true,
+      "notes": "**Exam Tip:** In a cyclic quadrilateral, each angle is supplementary to its opposite angle."
+    },
+    {
+      "id": "9-math-4-ec-q8",
+      "questionNumber": 8,
+      "question": "Quadrilateral $PQRS$ is inscribed in a circle. If $\\angle P = (2x + 10)°$ and $\\angle R = (3x - 20)°$, find the value of $x$ and the measures of $\\angle P$ and $\\angle R$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the cyclic quadrilateral property:** $\\angle P$ and $\\angle R$ are opposite angles, so they sum to $180°$: $$(2x + 10) + (3x - 20) = 180$$"
+        },
+        {
+          "step": 2,
+          "content": "**Solve for $x$:** $$5x - 10 = 180 \\;\\Rightarrow\\; 5x = 190 \\;\\Rightarrow\\; x = 38$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the angles:** $$\\angle P = 2(38) + 10 = 86°, \\qquad \\angle R = 3(38) - 20 = 94°$$"
+        }
+      ],
+      "answer": "x = 38, ∠P = 86°, ∠R = 94°.",
+      "verified": true,
+      "notes": "**Exam Tip:** Check your answer — 86° + 94° = 180°. ✓"
+    },
+    {
+      "id": "9-math-4-ec-q9",
+      "questionNumber": 9,
+      "question": "The distance of a chord of length 16 cm from the centre of a circle is 6 cm. Find the radius of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Half the chord:** $$\\frac{16}{2} = 8 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Use the right-triangle relation:** $$r = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The radius of the circle is 10 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** The 6–8–10 triangle is a scaled 3–4–5 triangle."
+    },
+    {
+      "id": "9-math-4-ec-q10",
+      "questionNumber": 10,
+      "question": "A cyclic quadrilateral has sides 5, 5, 12, 12 units. Find its area.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use Brahmagupta's formula:** For a cyclic quadrilateral with sides $a$, $b$, $c$, $d$ and semi-perimeter $s$: $$\\text{Area} = \\sqrt{(s-a)(s-b)(s-c)(s-d)}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find the semi-perimeter:** $$s = \\frac{5 + 5 + 12 + 12}{2} = 17$$"
+        },
+        {
+          "step": 3,
+          "content": "**Compute the area:** $$\\sqrt{(17-5)(17-5)(17-12)(17-12)} = \\sqrt{12 \\times 12 \\times 5 \\times 5} = \\sqrt{3600} = 60 \\text{ square units}$$"
+        }
+      ],
+      "answer": "The area is 60 square units.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Brahmagupta's Formula",
+        "content": "$$\\text{Area} = \\sqrt{(s-a)(s-b)(s-c)(s-d)}$$"
+      },
+      "notes": "**Exam Tip:** Brahmagupta's formula works for any cyclic quadrilateral — it generalises Heron's formula."
+    },
+    {
+      "id": "9-math-4-ec-q11",
+      "questionNumber": 11,
+      "question": "Consider a cyclic quadrilateral. Without drawing its circumcircle, how can we find out whether the centre of the circumcircle lies inside the quadrilateral or outside? What is the best way of finding out?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the angles:** The circumcentre lies inside the quadrilateral exactly when all four angles of the quadrilateral are less than $90°$ (i.e., the quadrilateral is acute)."
+        },
+        {
+          "step": 2,
+          "content": "**Reason:** For a cyclic quadrilateral, the centre lies inside if and only if the quadrilateral is acute-angled. If one angle is obtuse, the centre lies outside, on the side of that obtuse angle."
+        },
+        {
+          "step": 3,
+          "content": "**Best method:** Measure (or compute) the four angles. If all are acute, the centre is inside; if any angle is obtuse, the centre is outside. Alternatively, check whether the perpendicular bisectors of two adjacent sides meet inside the quadrilateral."
+        }
+      ],
+      "answer": "Check the angles: if all four are acute the centre is inside; if any is obtuse the centre is outside.",
+      "verified": true,
+      "notes": "**Exam Tip:** The circumcentre of a triangle is inside iff the triangle is acute — the same idea extends to cyclic quadrilaterals."
+    },
+    {
+      "id": "9-math-4-ec-q12",
+      "questionNumber": 12,
+      "question": "When two chords intersect, each of them is divided into two line segments. Show that if the intersecting chords are of equal length, then the line segments of one chord are equal to the corresponding line segments of the other chord.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the equal chords $AB$ and $CD$ intersect at $P$, with $AB = CD$. We must show $AP = CP$ and $PB = PD$ (or the corresponding pairing)."
+        },
+        {
+          "step": 2,
+          "content": "**Use the intersecting chords theorem:** For intersecting chords, $AP \\times PB = CP \\times PD$."
+        },
+        {
+          "step": 3,
+          "content": "**Combine with equal lengths:** $AB = CD$ means $AP + PB = CP + PD$. Let $AP = x$, $PB = y$, $CP = u$, $PD = v$. Then $xy = uv$ and $x + y = u + v$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclude:** Two numbers with the same sum and the same product are equal as a pair. So $\\{x, y\\} = \\{u, v\\}$ — the segments of one chord equal the corresponding segments of the other."
+        }
+      ],
+      "answer": "From AP·PB = CP·PD and AP + PB = CP + PD, the segment pairs are equal.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Intersecting Chords Theorem",
+        "content": "$$AP \\times PB = CP \\times PD$$"
+      },
+      "notes": "**Exam Tip:** If two numbers have equal sum and equal product, they are the same pair of numbers."
+    },
+    {
+      "id": "9-math-4-ec-q13",
+      "questionNumber": 13,
+      "question": "Draw a circle in which a chord of 6 cm length stands at a distance of 3 cm from the centre. (Hint: Is it a circumcircle of a suitable triangle?)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the radius:** Half the chord is $3$ cm and the distance is $3$ cm, so: $$r = \\sqrt{3^2 + 3^2} = \\sqrt{18} = 3\\sqrt{2} \\approx 4.24 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Draw the circle:** Draw a circle of radius $3\\sqrt{2}$ cm with centre $O$."
+        },
+        {
+          "step": 3,
+          "content": "**Draw the chord:** From $O$, draw a perpendicular line and mark a point $M$ at distance 3 cm from $O$. Through $M$, draw a line perpendicular to $OM$; it cuts the circle at $A$ and $B$. Then $AB$ is a chord of length 6 cm at distance 3 cm from the centre."
+        },
+        {
+          "step": 4,
+          "content": "**Hint connection:** The chord $AB$ with the centre forms an isosceles right triangle $\\triangle AOB$ with $OA = OB = 3\\sqrt{2}$ and $AB = 6$. This is the circumcircle of $\\triangle AOB$."
+        }
+      ],
+      "answer": "Draw a circle of radius 3√2 cm; the chord at distance 3 cm from the centre has length 6 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** The hint works because the triangle formed by the chord and the centre is isosceles right-angled."
+    },
+    {
+      "id": "9-math-4-ec-q14",
+      "questionNumber": 14,
+      "question": "Show that rectangle is the only parallelogram that can be inscribed in a circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $ABCD$ be a parallelogram inscribed in a circle (a cyclic parallelogram)."
+        },
+        {
+          "step": 2,
+          "content": "**Use the cyclic property:** Opposite angles of a cyclic quadrilateral sum to $180°$: $$\\angle A + \\angle C = 180°$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use the parallelogram property:** Opposite angles of a parallelogram are equal: $$\\angle A = \\angle C$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclude:** $\\angle A + \\angle A = 180°$, so $\\angle A = 90°$. Hence every angle of the parallelogram is $90°$, so it is a rectangle."
+        }
+      ],
+      "answer": "A cyclic parallelogram has opposite angles both equal and supplementary, so each is 90° — hence it is a rectangle.",
+      "verified": true,
+      "notes": "**Exam Tip:** A parallelogram is cyclic if and only if it is a rectangle."
+    },
+    {
+      "id": "9-math-4-ec-q15",
+      "questionNumber": 15,
+      "question": "Show that if a rectangle is inscribed in a circle, then the point of intersection of its diagonals must lie at the centre of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $ABCD$ be a rectangle inscribed in a circle. Its diagonals $AC$ and $BD$ bisect each other at their intersection $O$."
+        },
+        {
+          "step": 2,
+          "content": "**Use the rectangle property:** The diagonals of a rectangle are equal, so $AC = BD$, and $O$ is the midpoint of both."
+        },
+        {
+          "step": 3,
+          "content": "**Observe the angles:** $\\angle ABC = 90°$, and $\\angle ABC$ subtends the chord $AC$. Since the angle in a semicircle is $90°$, $AC$ must be a diameter."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** $AC$ is a diameter, so its midpoint $O$ is the centre of the circle. Hence the diagonals intersect at the centre."
+        }
+      ],
+      "answer": "Each diagonal subtends a right angle, so each is a diameter; their common midpoint is the centre.",
+      "verified": true,
+      "notes": "**Exam Tip:** In a cyclic rectangle, both diagonals are diameters of the circle."
+    },
+    {
+      "id": "9-math-4-ec-q16",
+      "questionNumber": 16,
+      "question": "Consider all chords of a circle of a fixed length. What is the shape formed by the midpoints of all these chords?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the circle have centre $O$ and radius $r$. Consider a chord of fixed length $l$."
+        },
+        {
+          "step": 2,
+          "content": "**Find the distance of the midpoint:** The distance of the chord from the centre is fixed: $$d = \\sqrt{r^2 - \\left(\\frac{l}{2}\\right)^2}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Every such chord has its midpoint at distance $d$ from $O$. So the midpoints of all chords of length $l$ lie on a circle of radius $d$ centred at $O$."
+        }
+      ],
+      "answer": "The midpoints form a circle concentric with the given circle, of radius √(r² − (l/2)²).",
+      "verified": true,
+      "notes": "**Exam Tip:** All chords of a fixed length are tangent to a smaller concentric circle at their midpoints."
+    },
+    {
+      "id": "9-math-4-ec-q17",
+      "questionNumber": 17,
+      "question": "In a circle with centre $O$, chords $AB$ and $AC$ are congruent. Explain why this statement is true: \"The centre of the circle lies on the angle bisector of $\\angle BAC$\".",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** $AB = AC$ are equal chords of the circle with centre $O$."
+        },
+        {
+          "step": 2,
+          "content": "**Equal chords subtend equal angles at the centre:** $$\\angle AOB = \\angle AOC$$"
+        },
+        {
+          "step": 3,
+          "content": "**Compare the triangles $\\triangle AOB$ and $\\triangle AOC$:** $OA$ is common, $OB = OC$ (radii), and $AB = AC$ (given). By SSS congruence, $\\triangle AOB \\cong \\triangle AOC$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Corresponding angles are equal, so $\\angle BAO = \\angle CAO$. Hence $AO$ bisects $\\angle BAC$, i.e., the centre $O$ lies on the angle bisector of $\\angle BAC$."
+        }
+      ],
+      "answer": "By SSS congruence of △AOB and △AOC, ∠BAO = ∠CAO, so AO bisects ∠BAC.",
+      "verified": true,
+      "notes": "**Exam Tip:** Equal chords from the same point subtend equal angles at the centre."
+    },
+    {
+      "id": "9-math-4-ec-q18",
+      "questionNumber": 18,
+      "question": "Two parallel chords of lengths 10 cm and 24 cm are on the same side of the centre of a circle. The distance between the chords is 7 cm. Find the radius of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the radius be $r$. For the 10 cm chord, half-length is 5 cm; for the 24 cm chord, half-length is 12 cm."
+        },
+        {
+          "step": 2,
+          "content": "**Distances from the centre:** $$d_{10} = \\sqrt{r^2 - 5^2}, \\qquad d_{24} = \\sqrt{r^2 - 12^2}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Same side, so subtract:** The longer chord is closer to the centre, so: $$d_{10} - d_{24} = 7 \\;\\Rightarrow\\; \\sqrt{r^2 - 25} - \\sqrt{r^2 - 144} = 7$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve:** $\\sqrt{r^2 - 25} = 7 + \\sqrt{r^2 - 144}$. Squaring: $r^2 - 25 = 49 + 14\\sqrt{r^2 - 144} + r^2 - 144$, so $70 = 14\\sqrt{r^2 - 144}$, giving $\\sqrt{r^2 - 144} = 5$. Hence $r^2 = 169$ and $r = 13$ cm."
+        }
+      ],
+      "answer": "The radius of the circle is 13 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** For chords on the same side of the centre, subtract the distances; on opposite sides, add them."
+    },
+    {
+      "id": "9-math-4-ec-q19",
+      "questionNumber": 19,
+      "question": "A regular hexagon is inscribed in a circle of radius $r$. Find the length of the sides of the hexagon and the distance of each side from the centre of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Side length:** A regular hexagon divides the circle into 6 equal arcs, each subtending $60°$ at the centre. The triangle formed by the centre and a side is equilateral (two radii and $60°$ included angle). So each side equals the radius: $$\\text{side} = r$$"
+        },
+        {
+          "step": 2,
+          "content": "**Distance of a side from the centre:** The perpendicular from the centre to a side bisects the side, forming a $30°$–$60°$–$90°$ triangle. The distance is: $$d = r\\cos 30° = \\frac{r\\sqrt{3}}{2}$$"
+        }
+      ],
+      "answer": "Side length = r; distance of each side from the centre = r√3/2.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Regular Hexagon in a Circle",
+        "content": "$$\\text{side} = r, \\qquad d = \\frac{r\\sqrt{3}}{2}$$"
+      },
+      "notes": "**Exam Tip:** A regular hexagon is made of 6 equilateral triangles, so its side equals the circumradius."
+    },
+    {
+      "id": "9-math-4-ec-q20",
+      "questionNumber": 20,
+      "question": "A quadrilateral $MNOP$ is inscribed in a circle. If $MN$ is a diameter, what can you say about $\\angle MOP$ and $\\angle MNP$? Explain your reasoning.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find $\\angle MNP$:** $MN$ is a diameter, so the angle subtended by $MN$ at $P$ is a right angle: $$\\angle MNP = 90°$$"
+        },
+        {
+          "step": 2,
+          "content": "**Relate the central angle:** $\\angle MOP$ is the central angle subtending the same arc $MP$ as $\\angle MNP$. By Theorem 9: $$\\angle MOP = 2 \\times \\angle MNP = 2 \\times 90° = 180°$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** $\\angle MOP = 180°$, so $M$, $O$, $P$ are collinear — $MP$ is also a diameter. And $\\angle MNP = 90°$."
+        }
+      ],
+      "answer": "∠MNP = 90° (angle in a semicircle) and ∠MOP = 180° (so MP is also a diameter).",
+      "verified": true,
+      "notes": "**Exam Tip:** If one side of a cyclic quadrilateral is a diameter, the opposite vertex subtends a right angle."
+    },
+    {
+      "id": "9-math-4-ec-q21",
+      "questionNumber": 21,
+      "question": "Let $ABCD$ be a cyclic quadrilateral. Explain why the exterior angle at any vertex is equal to the interior opposite angle (e.g., $\\angle CDE = \\angle ABC$, where $E$ is a point on the extension of side $CD$).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** $ABCD$ is cyclic, and $E$ lies on the extension of $CD$ beyond $D$, so $\\angle CDE$ is the exterior angle at $D$."
+        },
+        {
+          "step": 2,
+          "content": "**Write the linear pair:** $\\angle CDE + \\angle ADC = 180°$ (angles on a straight line)."
+        },
+        {
+          "step": 3,
+          "content": "**Use the cyclic property:** $\\angle ABC + \\angle ADC = 180°$ (opposite angles of a cyclic quadrilateral)."
+        },
+        {
+          "step": 4,
+          "content": "**Conclude:** Both $\\angle CDE$ and $\\angle ABC$ are supplementary to $\\angle ADC$, so they are equal: $$\\angle CDE = \\angle ABC$$"
+        }
+      ],
+      "answer": "Both the exterior angle and the interior opposite angle are supplementary to the same angle, so they are equal.",
+      "verified": true,
+      "notes": "**Exam Tip:** The exterior angle of a cyclic quadrilateral equals the interior opposite angle — a very useful shortcut."
+    },
+    {
+      "id": "9-math-4-ec-q22",
+      "questionNumber": 22,
+      "question": "\"There is no chord of a circle that is longer than its diameter.\" How do you justify this statement?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the chord formula:** For a chord at distance $d$ from the centre of a circle of radius $r$: $$\\text{Chord} = 2\\sqrt{r^2 - d^2}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Maximise the chord:** The chord is largest when $d$ is smallest. The smallest possible value of $d$ is $0$, which happens when the chord passes through the centre — that is exactly a diameter."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The maximum chord length is $2\\sqrt{r^2 - 0} = 2r$, the diameter. Hence no chord is longer than the diameter."
+        }
+      ],
+      "answer": "Chord = 2√(r² − d²) ≤ 2r, with equality only when d = 0, i.e., for the diameter.",
+      "verified": true,
+      "notes": "**Exam Tip:** The diameter is the longest chord; the closer a chord is to the centre, the longer it is."
+    },
+    {
+      "id": "9-math-4-ec-q23",
+      "questionNumber": 23,
+      "question": "Let $A$ be any point within a given circle with centre $O$. Show that the shortest chord of the circle that passes through point $A$ is the one that is perpendicular to $OA$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Consider any chord through $A$. Let its distance from the centre $O$ be $d$. Its length is $2\\sqrt{r^2 - d^2}$."
+        },
+        {
+          "step": 2,
+          "content": "**Relate $d$ to $OA$:** For any chord through $A$, the perpendicular distance from $O$ to the chord is at most $OA$ (the perpendicular is the shortest distance from a point to a line). So $d \\le OA$."
+        },
+        {
+          "step": 3,
+          "content": "**Minimise the chord:** The chord is shortest when $d$ is largest, i.e., when $d = OA$. This happens exactly when the chord is perpendicular to $OA$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** The shortest chord through $A$ is the one perpendicular to $OA$."
+        }
+      ],
+      "answer": "Chord length = 2√(r² − d²) is minimised when d is maximised, i.e. d = OA, which occurs when the chord ⊥ OA.",
+      "verified": true,
+      "notes": "**Exam Tip:** The perpendicular from a point to a line is the shortest distance, so the chord perpendicular to OA is closest to the centre and hence shortest."
+    },
+    {
+      "id": "9-math-4-ec-q24",
+      "questionNumber": 24,
+      "question": "How would you use the following figure to justify the statement that the angle in a semicircle is $90°$? (Fig. 5.30 shows a semicircle with centre $O$, and a triangle $ABC$ with $AB$ as diameter and $C$ on the circle, with base angles $a$ and $b$.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** In the figure, $AB$ is a diameter and $C$ is a point on the circle. $OA = OB = OC$ (all radii)."
+        },
+        {
+          "step": 2,
+          "content": "**Use the isosceles triangles:** In $\\triangle OAC$, $OA = OC$, so $\\angle OAC = \\angle OCA = a$. In $\\triangle OBC$, $OB = OC$, so $\\angle OBC = \\angle OCB = b$."
+        },
+        {
+          "step": 3,
+          "content": "**Sum the angles of $\\triangle ABC$:** $$\\angle A + \\angle B + \\angle C = 180° \\;\\Rightarrow\\; a + b + (a + b) = 180° \\;\\Rightarrow\\; 2(a + b) = 180°$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** $a + b = 90°$, and $\\angle ACB = a + b = 90°$. Hence the angle in a semicircle is a right angle."
+        }
+      ],
+      "answer": "Using OA = OB = OC, the base angles give 2(a + b) = 180°, so ∠ACB = a + b = 90°.",
+      "verified": true,
+      "notes": "**Exam Tip:** This is a neat proof of the angle-in-a-semicircle result using only isosceles triangles."
+    },
+    {
+      "id": "9-math-4-ec-q25",
+      "questionNumber": 25,
+      "question": "In a circle, two chords $CC'$ and $DD'$ are drawn perpendicular to a diameter $AB$. Prove that the segment $MM'$ joining the midpoints of the chords $CC'$ and $DD'$ is perpendicular to $AB$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $M$ and $M'$ be the midpoints of chords $CC'$ and $DD'$ respectively. Let $O$ be the centre of the circle."
+        },
+        {
+          "step": 2,
+          "content": "**Use Theorem 4:** The line joining the centre to the midpoint of a chord is perpendicular to the chord. So $OM \\perp CC'$ and $OM' \\perp DD'$."
+        },
+        {
+          "step": 3,
+          "content": "**Use the given:** $CC' \\perp AB$ and $DD' \\perp AB$. Since $OM \\perp CC'$ and $CC' \\perp AB$, we get $OM \\parallel AB$. Similarly $OM' \\parallel AB$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Both $OM$ and $OM'$ are parallel to $AB$, so $M$, $O$, $M'$ are collinear and $MM'$ is parallel to $AB$. Hence $MM'$ is perpendicular to $AB$ (since it is parallel to $AB$ and both chords are perpendicular to $AB$)."
+        }
+      ],
+      "answer": "OM and OM' are both parallel to AB, so MM' is parallel to AB, hence perpendicular to the chords and to AB.",
+      "verified": true,
+      "notes": "**Exam Tip:** The line from the centre to the midpoint of a chord is perpendicular to the chord — use it twice here."
+    },
+    {
+      "id": "9-math-4-ec-q26",
+      "questionNumber": 26,
+      "question": "How would you use the following figure to justify the statement that the sum of the opposite angles of a cyclic quadrilateral is $180°$? (In Fig. 5.31, a cyclic quadrilateral $ABCD$ with centre $O$ has angles $p$, $q$, $u$, $v$ at the vertices.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** In the figure, $ABCD$ is cyclic with centre $O$. The angles at the vertices are $p = \\angle DAB$, $q = \\angle ABC$, $u = \\angle BCD$, $v = \\angle CDA$."
+        },
+        {
+          "step": 2,
+          "content": "**Relate each angle to the central angles:** By Theorem 9, each inscribed angle is half the central angle subtending the same arc. So $p + q + u + v$ equals half the sum of the four central angles subtending the four arcs."
+        },
+        {
+          "step": 3,
+          "content": "**Sum the central angles:** The four arcs $AB$, $BC$, $CD$, $DA$ together make the whole circle, so their central angles sum to $360°$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** $$p + q + u + v = \\frac{1}{2} \\times 360° = 180°$$ Hence the sum of the opposite angles (e.g., $p + u = \\angle DAB + \\angle BCD$) is $180°$."
+        }
+      ],
+      "answer": "Each inscribed angle is half its central angle, and the central angles sum to 360°, so the opposite angles sum to 180°.",
+      "verified": true,
+      "notes": "**Exam Tip:** The sum of all four angles of a cyclic quadrilateral is 360°, and each pair of opposite angles is 180°."
+    }
+  ]
+}

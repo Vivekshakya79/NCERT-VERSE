@@ -1,0 +1,121 @@
+{
+  "name": "Exercise sEt 4.3",
+  "questions": [
+    {
+      "id": "9-math-3-ex4.3-q1",
+      "questionNumber": 1,
+      "question": "Find the following squares using one of the above identities. Determine which of these identities will make these calculations easier: **(i)** $117^2$ **(ii)** $78^2$ **(iii)** $198^2$ **(iv)** $214^2$ **(v)** $1104^2$ **(vi)** $1120^2$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $117^2$:** Write $117 = 110 + 7$. Using $(a + b)^2$: $$(110 + 7)^2 = 110^2 + 2(110)(7) + 7^2 = 12100 + 1540 + 49 = 13689$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $78^2$:** Write $78 = 80 - 2$. Using $(a - b)^2$: $$(80 - 2)^2 = 80^2 - 2(80)(2) + 2^2 = 6400 - 320 + 4 = 6084$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $198^2$:** Write $198 = 200 - 2$. Using $(a - b)^2$: $$(200 - 2)^2 = 200^2 - 2(200)(2) + 2^2 = 40000 - 800 + 4 = 39204$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $214^2$:** Write $214 = 200 + 14$. Using $(a + b)^2$: $$(200 + 14)^2 = 200^2 + 2(200)(14) + 14^2 = 40000 + 5600 + 196 = 45796$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $1104^2$:** Write $1104 = 1100 + 4$. Using $(a + b)^2$: $$(1100 + 4)^2 = 1100^2 + 2(1100)(4) + 4^2 = 1210000 + 8800 + 16 = 1218816$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $1120^2$:** Write $1120 = 1100 + 20$. Using $(a + b)^2$: $$(1100 + 20)^2 = 1100^2 + 2(1100)(20) + 20^2 = 1210000 + 44000 + 400 = 1254400$$"
+        }
+      ],
+      "answer": "(i) 13689  (ii) 6084  (iii) 39204  (iv) 45796  (v) 1218816  (vi) 1254400",
+      "verified": true,
+      "notes": "**Exam Tip:** Choose (a + b)² when the number is just above a round number, and (a − b)² when it is just below one."
+    },
+    {
+      "id": "9-math-3-ex4.3-q2",
+      "questionNumber": 2,
+      "question": "Factor using suitable identities: **(i)** $16y^2 - 24y + 9$ **(ii)** $\\frac{9}{4}s^2 + 6st + 4t^2$ **(iii)** $\\frac{m^2}{9} + \\frac{mk}{3} + \\frac{k^2}{4} + 3nk + 2mn + 9n^2$ **(iv)** $\\frac{p^2}{16} - 2 + \\frac{16}{p^2}$ **(v)** $9a^2 + 4b^2 + c^2 - 12ab + 6ac - 4bc$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $16y^2 - 24y + 9$:** $16y^2 = (4y)^2$, $9 = 3^2$, and $-24y = -2(4y)(3)$. So: $$16y^2 - 24y + 9 = (4y - 3)^2$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $\\frac{9}{4}s^2 + 6st + 4t^2$:** $\\frac{9}{4}s^2 = \\left(\\frac{3s}{2}\\right)^2$, $4t^2 = (2t)^2$, and $6st = 2\\left(\\frac{3s}{2}\\right)(2t)$. So: $$\\frac{9}{4}s^2 + 6st + 4t^2 = \\left(\\frac{3s}{2} + 2t\\right)^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $\\frac{m^2}{9} + \\frac{mk}{3} + \\frac{k^2}{4} + 3nk + 2mn + 9n^2$:** Group as $\\frac{m^2}{9} + \\frac{mk}{3} + \\frac{k^2}{4} + 2mn + 3nk + 9n^2$. Here $\\frac{m^2}{9} = \\left(\\frac{m}{3}\\right)^2$, $\\frac{k^2}{4} = \\left(\\frac{k}{2}\\right)^2$, $9n^2 = (3n)^2$, and the cross terms match $2\\left(\\frac{m}{3}\\right)\\left(\\frac{k}{2}\\right) = \\frac{mk}{3}$, $2\\left(\\frac{m}{3}\\right)(3n) = 2mn$, $2\\left(\\frac{k}{2}\\right)(3n) = 3nk$. So: $$= \\left(\\frac{m}{3} + \\frac{k}{2} + 3n\\right)^2$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $\\frac{p^2}{16} - 2 + \\frac{16}{p^2}$:** Write $-2 = -2\\left(\\frac{p}{4}\\right)\\left(\\frac{4}{p}\\right)$. Here $\\frac{p^2}{16} = \\left(\\frac{p}{4}\\right)^2$ and $\\frac{16}{p^2} = \\left(\\frac{4}{p}\\right)^2$. So: $$\\frac{p^2}{16} - 2 + \\frac{16}{p^2} = \\left(\\frac{p}{4} - \\frac{4}{p}\\right)^2$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $9a^2 + 4b^2 + c^2 - 12ab + 6ac - 4bc$:** Write $9a^2 = (3a)^2$, $4b^2 = (-2b)^2$, $c^2 = c^2$. The cross terms match: $2(3a)(-2b) = -12ab$, $2(3a)(c) = 6ac$, $2(-2b)(c) = -4bc$. So: $$9a^2 + 4b^2 + c^2 - 12ab + 6ac - 4bc = (3a - 2b + c)^2$$"
+        }
+      ],
+      "answer": "(i) (4y − 3)²  (ii) (3s/2 + 2t)²  (iii) (m/3 + k/2 + 3n)²  (iv) (p/4 − 4/p)²  (v) (3a − 2b + c)²",
+      "verified": true,
+      "formulaBox": {
+        "title": "Square of a Trinomial",
+        "content": "$$a^2 + b^2 + c^2 + 2ab + 2bc + 2ca = (a + b + c)^2$$"
+      },
+      "notes": "**Exam Tip:** For three-variable expressions, check that all three cross terms match the identity before writing the square."
+    },
+    {
+      "id": "9-math-3-ex4.3-q3",
+      "questionNumber": 3,
+      "question": "Expand the following using the identity $(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$: **(i)** $(p + 3q + 7r)^2$ **(ii)** $(3x - 2y + 4z)^2$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $(p + 3q + 7r)^2$:** Here $a = p$, $b = 3q$, $c = 7r$. $$p^2 + (3q)^2 + (7r)^2 + 2(p)(3q) + 2(3q)(7r) + 2(p)(7r) = p^2 + 9q^2 + 49r^2 + 6pq + 42qr + 14pr$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $(3x - 2y + 4z)^2$:** Write as $[3x + (-2y) + 4z]^2$. Here $a = 3x$, $b = -2y$, $c = 4z$. $$(3x)^2 + (-2y)^2 + (4z)^2 + 2(3x)(-2y) + 2(-2y)(4z) + 2(3x)(4z) = 9x^2 + 4y^2 + 16z^2 - 12xy - 16yz + 24xz$$"
+        }
+      ],
+      "answer": "(i) p² + 9q² + 49r² + 6pq + 42qr + 14pr  (ii) 9x² + 4y² + 16z² − 12xy − 16yz + 24xz",
+      "verified": true,
+      "notes": "**Exam Tip:** When a term is negative, treat it as adding a negative number — this keeps the signs correct."
+    },
+    {
+      "id": "9-math-3-ex4.3-q4",
+      "questionNumber": 4,
+      "question": "Is this an identity? $(a + b - c)^2 + (a - b + c)^2 + (a - b - c)^2 = 2a^2 + 2b^2 + 2c^2$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Expand the first term:** $$(a + b - c)^2 = a^2 + b^2 + c^2 + 2ab - 2ac - 2bc$$"
+        },
+        {
+          "step": 2,
+          "content": "**Expand the second term:** $$(a - b + c)^2 = a^2 + b^2 + c^2 - 2ab + 2ac - 2bc$$"
+        },
+        {
+          "step": 3,
+          "content": "**Expand the third term:** $$(a - b - c)^2 = a^2 + b^2 + c^2 - 2ab - 2ac + 2bc$$"
+        },
+        {
+          "step": 4,
+          "content": "**Add all three:** $$\\text{LHS} = 3a^2 + 3b^2 + 3c^2 - 2ab - 2ac - 2bc$$"
+        },
+        {
+          "step": 5,
+          "content": "**Compare with RHS:** The RHS is $2a^2 + 2b^2 + 2c^2$. These are not equal for all values. For example, with $a = b = c = 1$: LHS $= 3 + 3 + 3 - 2 - 2 - 2 = 3$, but RHS $= 2 + 2 + 2 = 6$. So the statement is **NOT an identity**."
+        }
+      ],
+      "answer": "No. LHS = 3a² + 3b² + 3c² − 2ab − 2ac − 2bc, which is not equal to 2a² + 2b² + 2c² for all values. So it is not an identity.",
+      "verified": true,
+      "notes": "**Exam Tip:** To check whether an equation is an identity, expand both sides and compare. If they differ for even one set of values, it is not an identity."
+    }
+  ]
+}

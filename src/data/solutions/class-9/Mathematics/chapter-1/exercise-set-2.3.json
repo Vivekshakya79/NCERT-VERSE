@@ -1,0 +1,159 @@
+{
+  "name": "Exercise sEt 2.3",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.3-q1",
+      "questionNumber": 1,
+      "question": "A student has ₹500 in her savings bank account. She gets ₹150 every month as pocket money. How much money will she have at the end of every month from the second month onwards? Find a linear expression to represent the amount she will have in the nth month.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The student starts with ₹500. Every month she adds ₹150 to her account."
+        },
+        {
+          "step": 2,
+          "content": "**Amount at the end of each month:** At the end of month 1: $500 + 150 = 650$. At the end of month 2: $500 + 2 \\times 150 = 800$. At the end of month 3: $500 + 3 \\times 150 = 950$, and so on."
+        },
+        {
+          "step": 3,
+          "content": "**Find the pattern:** The amount at the end of the $n$th month is: $$500 + 150n$$"
+        },
+        {
+          "step": 4,
+          "content": "**Check that it is linear:** The expression $500 + 150n$ is a linear polynomial in $n$ (degree 1). Each month the amount increases by the constant ₹150."
+        }
+      ],
+      "answer": "Amount at the end of the $n$th month $= 500 + 150n$ rupees. (Month 1: ₹650, Month 2: ₹800, Month 3: ₹950, ...)",
+      "verified": true,
+      "formulaBox": {
+        "title": "Linear Pattern",
+        "content": "$$\\text{Amount after } n \\text{ months} = \\text{starting amount} + (\\text{monthly addition}) \\times n$$"
+      },
+      "notes": "**Exam Tip:** In a linear pattern, the coefficient of $n$ is the constant amount added each time, and the constant term is the starting value."
+    },
+    {
+      "id": "9-math-1-ex2.3-q2",
+      "questionNumber": 2,
+      "question": "A rally starts with 120 members. Each hour, 9 members drop out of the group. How many members will remain after 1, 2, 3, ... hours? Find a linear expression to represent the number of members at the end of the nth hour.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The rally starts with 120 members and loses 9 members every hour."
+        },
+        {
+          "step": 2,
+          "content": "**Members remaining after each hour:** After 1 hour: $120 - 9 = 111$. After 2 hours: $120 - 2 \\times 9 = 102$. After 3 hours: $120 - 3 \\times 9 = 93$, and so on."
+        },
+        {
+          "step": 3,
+          "content": "**Find the pattern:** The number of members at the end of the $n$th hour is: $$120 - 9n$$"
+        },
+        {
+          "step": 4,
+          "content": "**Check that it is linear:** The expression $120 - 9n$ is a linear polynomial in $n$ (degree 1). Each hour the number decreases by the constant 9."
+        }
+      ],
+      "answer": "Members remaining after $n$ hours $= 120 - 9n$. (After 1 h: 111, after 2 h: 102, after 3 h: 93, ...)",
+      "verified": true,
+      "notes": "**Common Mistake:** Students sometimes write $9n - 120$. The order matters: we start with 120 and subtract 9 each hour, so it is $120 - 9n$."
+    },
+    {
+      "id": "9-math-1-ex2.3-q3",
+      "questionNumber": 3,
+      "question": "Suppose the length of a rectangle is 13 cm. Find the area if the breadth is **(i)** 12 cm, **(ii)** 10 cm, **(iii)** 8 cm. Find the linear pattern representing the area of the rectangle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the area formula:** $$\\text{Area of a rectangle} = \\text{length} \\times \\text{breadth}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(i) Breadth = 12 cm:** $$\\text{Area} = 13 \\times 12 = 156 \\text{ cm}^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Breadth = 10 cm:** $$\\text{Area} = 13 \\times 10 = 130 \\text{ cm}^2$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Breadth = 8 cm:** $$\\text{Area} = 13 \\times 8 = 104 \\text{ cm}^2$$"
+        },
+        {
+          "step": 5,
+          "content": "**Find the linear pattern:** If the breadth is $b$ cm, then the area is $A = 13b$. This is a linear polynomial in $b$ (degree 1). As the breadth decreases by 2 cm, the area decreases by $13 \\times 2 = 26$ cm², a constant amount."
+        }
+      ],
+      "answer": "(i) $156$ cm²  (ii) $130$ cm²  (iii) $104$ cm². Linear pattern: $A = 13b$.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Area of a Rectangle",
+        "content": "$$A = l \\times b$$"
+      },
+      "notes": "**Exam Tip:** When the length is fixed, the area varies linearly with the breadth. The slope of the pattern is the fixed length (13)."
+    },
+    {
+      "id": "9-math-1-ex2.3-q4",
+      "questionNumber": 4,
+      "question": "Suppose the length of a rectangular box is 7 cm and breadth is 11 cm. Find the volume if the height is **(i)** 5 cm, **(ii)** 9 cm, **(iii)** 13 cm. Find the linear pattern representing the volume of the rectangular box.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the volume formula:** $$\\text{Volume of a cuboid} = \\text{length} \\times \\text{breadth} \\times \\text{height}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Base area:** The base area is $7 \\times 11 = 77$ cm². So the volume is $77 \\times \\text{height}$."
+        },
+        {
+          "step": 3,
+          "content": "**(i) Height = 5 cm:** $$\\text{Volume} = 77 \\times 5 = 385 \\text{ cm}^3$$"
+        },
+        {
+          "step": 4,
+          "content": "**(ii) Height = 9 cm:** $$\\text{Volume} = 77 \\times 9 = 693 \\text{ cm}^3$$"
+        },
+        {
+          "step": 5,
+          "content": "**(iii) Height = 13 cm:** $$\\text{Volume} = 77 \\times 13 = 1001 \\text{ cm}^3$$"
+        },
+        {
+          "step": 6,
+          "content": "**Find the linear pattern:** If the height is $h$ cm, then the volume is $V = 77h$. This is a linear polynomial in $h$ (degree 1). As the height increases by 4 cm, the volume increases by $77 \\times 4 = 308$ cm³, a constant amount."
+        }
+      ],
+      "answer": "(i) 385 cm³  (ii) 693 cm³  (iii) 1001 cm³. Linear pattern: $V = 77h$.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Volume of a Cuboid",
+        "content": "$$V = l \\times b \\times h$$"
+      },
+      "notes": "**Exam Tip:** When length and breadth are fixed, the volume varies linearly with the height. The slope of the volume pattern is the base area (77)."
+    },
+    {
+      "id": "9-math-1-ex2.3-q5",
+      "questionNumber": 5,
+      "question": "Sarita is reading a book of 500 pages. She reads 20 pages every day. How many pages will be left after 15 days? Express this as a linear pattern.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The book has 500 pages. Sarita reads 20 pages each day, so after $d$ days she has read $20d$ pages."
+        },
+        {
+          "step": 2,
+          "content": "**Pages left after $d$ days:** $$\\text{Pages left} = 500 - 20d$$"
+        },
+        {
+          "step": 3,
+          "content": "**Pages left after 15 days:** $$500 - 20 \\times 15 = 500 - 300 = 200$$"
+        },
+        {
+          "step": 4,
+          "content": "**Express as a linear pattern:** The expression $500 - 20d$ is a linear polynomial in $d$ (degree 1). Each day the number of pages left decreases by the constant 20."
+        }
+      ],
+      "answer": "After 15 days, **200 pages** will be left. Linear pattern: pages left $= 500 - 20d$.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students sometimes compute $500 - 20 = 480$ and then multiply. Remember: read pages after 15 days is $20 \\times 15 = 300$, so pages left is $500 - 300 = 200$."
+    }
+  ]
+}

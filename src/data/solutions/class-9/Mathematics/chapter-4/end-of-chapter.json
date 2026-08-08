@@ -1,0 +1,395 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-3-ec-q1",
+      "questionNumber": 1,
+      "question": "Use suitable identities to find the following products: **(i)** $(-3x + 4)^2$ **(ii)** $(2s + 7)(2s - 7)$ **(iii)** $\\left(p^2 + \\frac{1}{2}\\right)\\left(p^2 - \\frac{1}{2}\\right)$ **(iv)** $(2n + 7)(2n - 7)$ **(v)** $(s - 2t)(s^2 + 2st + 4t^2)$ **(vi)** $\\left(\\frac{1}{2r} - 4r\\right)^2$ **(vii)** $(-3m + 4k - l)^2$ **(viii)** $\\left(x - \\frac{1}{3}y\\right)^3$ **(ix)** $\\left(\\frac{7}{2}k - \\frac{2}{3}m\\right)^3$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $(-3x + 4)^2$:** Using $(a + b)^2$ with $a = -3x$, $b = 4$: $$(-3x)^2 + 2(-3x)(4) + 4^2 = 9x^2 - 24x + 16$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $(2s + 7)(2s - 7)$:** Using $(a + b)(a - b) = a^2 - b^2$: $$(2s)^2 - 7^2 = 4s^2 - 49$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $\\left(p^2 + \\frac{1}{2}\\right)\\left(p^2 - \\frac{1}{2}\\right)$:** Using $(a + b)(a - b) = a^2 - b^2$: $$(p^2)^2 - \\left(\\frac{1}{2}\\right)^2 = p^4 - \\frac{1}{4}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $(2n + 7)(2n - 7)$:** Using $(a + b)(a - b) = a^2 - b^2$: $$(2n)^2 - 7^2 = 4n^2 - 49$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $(s - 2t)(s^2 + 2st + 4t^2)$:** Using $(a - b)(a^2 + ab + b^2) = a^3 - b^3$ with $a = s$, $b = 2t$: $$s^3 - (2t)^3 = s^3 - 8t^3$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $\\left(\\frac{1}{2r} - 4r\\right)^2$:** Using $(a - b)^2 = a^2 - 2ab + b^2$: $$\\left(\\frac{1}{2r}\\right)^2 - 2\\left(\\frac{1}{2r}\\right)(4r) + (4r)^2 = \\frac{1}{4r^2} - 4 + 16r^2$$"
+        },
+        {
+          "step": 7,
+          "content": "**(vii) $(-3m + 4k - l)^2$:** Using $(a + b + c)^2$ with $a = -3m$, $b = 4k$, $c = -l$: $$(-3m)^2 + (4k)^2 + (-l)^2 + 2(-3m)(4k) + 2(4k)(-l) + 2(-3m)(-l) = 9m^2 + 16k^2 + l^2 - 24mk - 8kl + 6ml$$"
+        },
+        {
+          "step": 8,
+          "content": "**(viii) $\\left(x - \\frac{1}{3}y\\right)^3$:** Using $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$ with $a = x$, $b = \\frac{1}{3}y$: $$x^3 - 3x^2\\left(\\frac{y}{3}\\right) + 3x\\left(\\frac{y}{3}\\right)^2 - \\left(\\frac{y}{3}\\right)^3 = x^3 - x^2y + \\frac{1}{3}xy^2 - \\frac{y^3}{27}$$"
+        },
+        {
+          "step": 9,
+          "content": "**(ix) $\\left(\\frac{7}{2}k - \\frac{2}{3}m\\right)^3$:** Using $(a - b)^3$ with $a = \\frac{7k}{2}$, $b = \\frac{2m}{3}$: $$\\left(\\frac{7k}{2}\\right)^3 - 3\\left(\\frac{7k}{2}\\right)^2\\left(\\frac{2m}{3}\\right) + 3\\left(\\frac{7k}{2}\\right)\\left(\\frac{2m}{3}\\right)^2 - \\left(\\frac{2m}{3}\\right)^3 = \\frac{343k^3}{8} - \\frac{49k^2m}{2} + \\frac{14km^2}{3} - \\frac{8m^3}{27}$$"
+        }
+      ],
+      "answer": "(i) 9x² − 24x + 16  (ii) 4s² − 49  (iii) p⁴ − 1/4  (iv) 4n² − 49  (v) s³ − 8t³  (vi) 1/(4r²) − 4 + 16r²  (vii) 9m² + 16k² + l² − 24mk − 8kl + 6ml  (viii) x³ − x²y + (1/3)xy² − y³/27  (ix) 343k³/8 − 49k²m/2 + 14km²/3 − 8m³/27",
+      "verified": true,
+      "notes": "**Exam Tip:** Choose the identity that matches the structure of the expression — difference of squares for (a+b)(a−b), cube identities for (a±b)³."
+    },
+    {
+      "id": "9-math-3-ec-q2",
+      "questionNumber": 2,
+      "question": "Find the values using suitable identities: **(i)** $17 \\times 21$ **(ii)** $104 \\times 96$ **(iii)** $24 \\times 16$ **(iv)** $147^3$ **(v)** $199^3$ **(vi)** $127^3$ **(vii)** $(-107)^3$ **(viii)** $(-299)^3$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $17 \\times 21$:** Write as $(19 - 2)(19 + 2)$. Using $(a - b)(a + b) = a^2 - b^2$: $$19^2 - 2^2 = 361 - 4 = 357$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $104 \\times 96$:** Write as $(100 + 4)(100 - 4)$: $$100^2 - 4^2 = 10000 - 16 = 9984$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $24 \\times 16$:** Write as $(20 + 4)(20 - 4)$: $$20^2 - 4^2 = 400 - 16 = 384$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $147^3$:** $147 = 150 - 3$. Using $(a - b)^3$: $$150^3 - 3 \\times 150^2 \\times 3 + 3 \\times 150 \\times 3^2 - 3^3 = 3375000 - 202500 + 4050 - 27 = 3176523$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $199^3$:** $199 = 200 - 1$. Using $(a - b)^3$: $$200^3 - 3 \\times 200^2 \\times 1 + 3 \\times 200 \\times 1^2 - 1^3 = 8000000 - 120000 + 600 - 1 = 7880599$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $127^3$:** $127 = 130 - 3$. Using $(a - b)^3$: $$130^3 - 3 \\times 130^2 \\times 3 + 3 \\times 130 \\times 3^2 - 3^3 = 2197000 - 152100 + 3510 - 27 = 2048383$$"
+        },
+        {
+          "step": 7,
+          "content": "**(vii) $(-107)^3$:** $(-107)^3 = -(107^3)$. Now $107 = 100 + 7$. Using $(a + b)^3$: $$100^3 + 3 \\times 100^2 \\times 7 + 3 \\times 100 \\times 7^2 + 7^3 = 1000000 + 210000 + 14700 + 343 = 1225043$$ So $(-107)^3 = -1225043$."
+        },
+        {
+          "step": 8,
+          "content": "**(viii) $(-299)^3$:** $(-299)^3 = -(299^3)$. Now $299 = 300 - 1$. Using $(a - b)^3$: $$300^3 - 3 \\times 300^2 \\times 1 + 3 \\times 300 \\times 1^2 - 1^3 = 27000000 - 270000 + 900 - 1 = 26730899$$ So $(-299)^3 = -26730899$."
+        }
+      ],
+      "answer": "(i) 357  (ii) 9984  (iii) 384  (iv) 3176523  (v) 7880599  (vi) 2048383  (vii) −1225043  (viii) −26730899",
+      "verified": true,
+      "notes": "**Exam Tip:** For a negative number cubed, first compute the cube of the positive number, then attach the negative sign."
+    },
+    {
+      "id": "9-math-3-ec-q3",
+      "questionNumber": 3,
+      "question": "Factor the following algebraic expressions: **(i)** $4y^2 + 1 + \\frac{1}{16y^2}$ **(ii)** $9m^2 - \\frac{1}{25n^2}$ **(iii)** $27b^3 - \\frac{1}{64b^3}$ **(iv)** $x^2 + \\frac{5x}{6} + \\frac{1}{6}$ **(v)** $27u^3 - \\frac{1}{125} - \\frac{27u^2}{5} + \\frac{9u}{25}$ **(vi)** $64y^3 + \\frac{1}{125}z^3$ **(vii)** $p^3 + 27q^3 + r^3 - 9pqr$ **(viii)** $9m^2 - 12m + 4$ **(ix)** $9x^3 - \\frac{8}{3}y^3 + \\frac{z^3}{3} + 6xyz$ **(x)** $4x^2 + 9y^2 + 36z^2 + 12xz + 36yz + 24xy$ **(xi)** $27u^3 - \\frac{1}{216} - \\frac{9u^2}{2} + \\frac{u}{4}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $4y^2 + 1 + \\frac{1}{16y^2}$:** $4y^2 = (2y)^2$, $\\frac{1}{16y^2} = \\left(\\frac{1}{4y}\\right)^2$, and $2(2y)\\left(\\frac{1}{4y}\\right) = 1$. So: $$= \\left(2y + \\frac{1}{4y}\\right)^2$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $9m^2 - \\frac{1}{25n^2}$:** Using $a^2 - b^2 = (a + b)(a - b)$: $$(3m)^2 - \\left(\\frac{1}{5n}\\right)^2 = \\left(3m + \\frac{1}{5n}\\right)\\left(3m - \\frac{1}{5n}\\right)$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $27b^3 - \\frac{1}{64b^3}$:** Using $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ with $a = 3b$, $b = \\frac{1}{4b}$: $$\\left(3b - \\frac{1}{4b}\\right)\\left(9b^2 + \\frac{3}{4} + \\frac{1}{16b^2}\\right)$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $x^2 + \\frac{5x}{6} + \\frac{1}{6}$:** We need two numbers whose sum is $\\frac{5}{6}$ and product is $\\frac{1}{6}$. These are $\\frac{1}{2}$ and $\\frac{1}{3}$. $$x^2 + \\frac{x}{2} + \\frac{x}{3} + \\frac{1}{6} = x\\left(x + \\frac{1}{2}\\right) + \\frac{1}{3}\\left(x + \\frac{1}{2}\\right) = \\left(x + \\frac{1}{3}\\right)\\left(x + \\frac{1}{2}\\right)$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $27u^3 - \\frac{1}{125} - \\frac{27u^2}{5} + \\frac{9u}{25}$:** Rearrange: $27u^3 - \\frac{27u^2}{5} + \\frac{9u}{25} - \\frac{1}{125}$. This matches $(3u)^3 - 3(3u)^2\\left(\\frac{1}{5}\\right) + 3(3u)\\left(\\frac{1}{5}\\right)^2 - \\left(\\frac{1}{5}\\right)^3$. So: $$= \\left(3u - \\frac{1}{5}\\right)^3$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $64y^3 + \\frac{1}{125}z^3$:** Using $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$ with $a = 4y$, $b = \\frac{z}{5}$: $$\\left(4y + \\frac{z}{5}\\right)\\left(16y^2 - \\frac{4yz}{5} + \\frac{z^2}{25}\\right)$$"
+        },
+        {
+          "step": 7,
+          "content": "**(vii) $p^3 + 27q^3 + r^3 - 9pqr$:** Using $a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$ with $a = p$, $b = 3q$, $c = r$: $$(p + 3q + r)(p^2 + 9q^2 + r^2 - 3pq - 3qr - pr)$$"
+        },
+        {
+          "step": 8,
+          "content": "**(viii) $9m^2 - 12m + 4$:** $9m^2 = (3m)^2$, $4 = 2^2$, $-12m = -2(3m)(2)$. So: $$= (3m - 2)^2$$"
+        },
+        {
+          "step": 9,
+          "content": "**(ix) $9x^3 - \\frac{8}{3}y^3 + \\frac{z^3}{3} + 6xyz$:** Take out $\\frac{1}{3}$: $\\frac{1}{3}(27x^3 - 8y^3 + z^3 + 18xyz) = \\frac{1}{3}[(3x)^3 + (-2y)^3 + z^3 - 3(3x)(-2y)z]$. Using the three-cube identity: $$\\frac{1}{3}(3x - 2y + z)(9x^2 + 4y^2 + z^2 + 6xy + 2yz - 3xz)$$"
+        },
+        {
+          "step": 10,
+          "content": "**(x) $4x^2 + 9y^2 + 36z^2 + 12xz + 36yz + 24xy$:** Rearrange: $4x^2 + 9y^2 + 36z^2 + 24xy + 36yz + 12xz$. $4x^2 = (2x)^2$, $9y^2 = (3y)^2$, $36z^2 = (6z)^2$, and cross terms match $2(2x)(3y) = 24xy$, $2(3y)(6z) = 36yz$, $2(2x)(6z) = 12xz$. So: $$= (2x + 3y + 6z)^2$$"
+        },
+        {
+          "step": 11,
+          "content": "**(xi) $27u^3 - \\frac{1}{216} - \\frac{9u^2}{2} + \\frac{u}{4}$:** Rearrange: $27u^3 - \\frac{9u^2}{2} + \\frac{u}{4} - \\frac{1}{216}$. This matches $(3u)^3 - 3(3u)^2\\left(\\frac{1}{6}\\right) + 3(3u)\\left(\\frac{1}{6}\\right)^2 - \\left(\\frac{1}{6}\\right)^3$. So: $$= \\left(3u - \\frac{1}{6}\\right)^3$$"
+        }
+      ],
+      "answer": "(i) (2y + 1/4y)²  (ii) (3m + 1/5n)(3m − 1/5n)  (iii) (3b − 1/4b)(9b² + 3/4 + 1/16b²)  (iv) (x + 1/3)(x + 1/2)  (v) (3u − 1/5)³  (vi) (4y + z/5)(16y² − 4yz/5 + z²/25)  (vii) (p + 3q + r)(p² + 9q² + r² − 3pq − 3qr − pr)  (viii) (3m − 2)²  (ix) (1/3)(3x − 2y + z)(9x² + 4y² + z² + 6xy + 2yz − 3xz)  (x) (2x + 3y + 6z)²  (xi) (3u − 1/6)³",
+      "verified": true,
+      "notes": "**Exam Tip:** For expressions with fractions, first take out a common factor so the remaining terms match a known identity."
+    },
+    {
+      "id": "9-math-3-ec-q4",
+      "questionNumber": 4,
+      "question": "Simplify the following (assume that the denominators are not equal to 0): **(i)** $\\frac{4x^2 + 4x + 1}{4x^2 - 1}$ **(ii)** $\\frac{9(3a^3 - 24b^3)}{9a^2 - 36b^2}$ **(iii)** $\\frac{s^3 + 125t^3}{s^2 - 2st - 35t^2}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $\\frac{4x^2 + 4x + 1}{4x^2 - 1}$:** Numerator $= (2x + 1)^2$. Denominator $= (2x + 1)(2x - 1)$. So: $$\\frac{(2x + 1)^2}{(2x + 1)(2x - 1)} = \\frac{2x + 1}{2x - 1}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $\\frac{9(3a^3 - 24b^3)}{9a^2 - 36b^2}$:** Simplify: $9(3a^3 - 24b^3) = 27(a^3 - 8b^3)$ and $9a^2 - 36b^2 = 9(a^2 - 4b^2)$. So the expression $= \\frac{3(a^3 - 8b^3)}{a^2 - 4b^2}$. Now $a^3 - 8b^3 = (a - 2b)(a^2 + 2ab + 4b^2)$ and $a^2 - 4b^2 = (a - 2b)(a + 2b)$. So: $$\\frac{3(a - 2b)(a^2 + 2ab + 4b^2)}{(a - 2b)(a + 2b)} = \\frac{3(a^2 + 2ab + 4b^2)}{a + 2b}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $\\frac{s^3 + 125t^3}{s^2 - 2st - 35t^2}$:** Numerator $= s^3 + (5t)^3 = (s + 5t)(s^2 - 5st + 25t^2)$. Denominator $= s^2 - 7st + 5st - 35t^2 = (s + 5t)(s - 7t)$. So: $$\\frac{(s + 5t)(s^2 - 5st + 25t^2)}{(s + 5t)(s - 7t)} = \\frac{s^2 - 5st + 25t^2}{s - 7t}$$"
+        }
+      ],
+      "answer": "(i) (2x + 1)/(2x − 1)  (ii) 3(a² + 2ab + 4b²)/(a + 2b)  (iii) (s² − 5st + 25t²)/(s − 7t)",
+      "verified": true,
+      "notes": "**Exam Tip:** Factor both numerator and denominator completely, then cancel the common factors."
+    },
+    {
+      "id": "9-math-3-ec-q5",
+      "questionNumber": 5,
+      "question": "Find possible expressions for the length and breadth of each of the following rectangles whose areas are given by the following expressions in square units: **(i)** $25a^2 - 30ab + 9b^2$ **(ii)** $36s^2 - 49t^2$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $25a^2 - 30ab + 9b^2$:** This is a perfect square: $25a^2 = (5a)^2$, $9b^2 = (3b)^2$, $-30ab = -2(5a)(3b)$. So: $$25a^2 - 30ab + 9b^2 = (5a - 3b)^2$$ Possible length and breadth are both $(5a - 3b)$."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $36s^2 - 49t^2$:** Using $a^2 - b^2 = (a + b)(a - b)$: $$36s^2 - 49t^2 = (6s)^2 - (7t)^2 = (6s + 7t)(6s - 7t)$$ Possible length and breadth are $(6s + 7t)$ and $(6s - 7t)$."
+        }
+      ],
+      "answer": "(i) length = breadth = (5a − 3b)  (ii) length = (6s + 7t), breadth = (6s − 7t)",
+      "verified": true,
+      "notes": "**Exam Tip:** Since area = length × breadth, factor the area expression — the factors give possible dimensions."
+    },
+    {
+      "id": "9-math-3-ec-q6",
+      "questionNumber": 6,
+      "question": "Find possible expressions for the length, breadth, and heights of each of the following cuboids whose volumes are given by the following expressions in cubic units: **(i)** $6a^2 - 24b^2$ **(ii)** $3ps^2 - 15ps + 12p$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $6a^2 - 24b^2$:** Take out the common factor 6: $$6a^2 - 24b^2 = 6(a^2 - 4b^2) = 6(a + 2b)(a - 2b)$$ Possible dimensions are $6$, $(a + 2b)$ and $(a - 2b)$."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $3ps^2 - 15ps + 12p$:** Take out the common factor $3p$: $$3ps^2 - 15ps + 12p = 3p(s^2 - 5s + 4) = 3p(s^2 - 4s - s + 4) = 3p(s - 1)(s - 4)$$ Possible dimensions are $3p$, $(s - 1)$ and $(s - 4)$."
+        }
+      ],
+      "answer": "(i) 6, (a + 2b), (a − 2b)  (ii) 3p, (s − 1), (s − 4)",
+      "verified": true,
+      "notes": "**Exam Tip:** Since volume = length × breadth × height, factor the volume expression into three factors."
+    },
+    {
+      "id": "9-math-3-ec-q7",
+      "questionNumber": 7,
+      "question": "The village playground is shaped as a square of side 40 metres. A path of width $s$ metres is created around the playground for people to walk. Find an expression for the area of the path in terms of $s$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the side of the outer square:** Since a path of width $s$ metres is made all around the outside, the side of the outer square becomes $40 + 2s$."
+        },
+        {
+          "step": 2,
+          "content": "**Find the areas:** Area of outer square $= (40 + 2s)^2$. Area of playground $= 40^2 = 1600$."
+        },
+        {
+          "step": 3,
+          "content": "**Area of the path:** $$(40 + 2s)^2 - 1600 = (1600 + 160s + 4s^2) - 1600 = 4s^2 + 160s$$"
+        }
+      ],
+      "answer": "Area of the path $= 4s^2 + 160s$ square metres.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Area of Path Around a Square",
+        "content": "$$\\text{Area} = (40 + 2s)^2 - 40^2 = 4s^2 + 160s$$"
+      },
+      "notes": "**Exam Tip:** The path adds width s on all four sides, so the outer side is 40 + 2s, not 40 + s."
+    },
+    {
+      "id": "9-math-3-ec-q8",
+      "questionNumber": 8,
+      "question": "If a number plus its reciprocal equals $\\frac{10}{3}$, find the number.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Let the number be $x$:** Then $x + \\frac{1}{x} = \\frac{10}{3}$."
+        },
+        {
+          "step": 2,
+          "content": "**Multiply both sides by $3x$:** $$3x^2 + 3 = 10x \\;\\Rightarrow\\; 3x^2 - 10x + 3 = 0$$"
+        },
+        {
+          "step": 3,
+          "content": "**Factor:** $$3x^2 - 10x + 3 = 3x^2 - 9x - x + 3 = 3x(x - 3) - 1(x - 3) = (3x - 1)(x - 3) = 0$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve:** $3x - 1 = 0$ gives $x = \\frac{1}{3}$, and $x - 3 = 0$ gives $x = 3$."
+        }
+      ],
+      "answer": "The number is $3$ or $\\frac{1}{3}$.",
+      "verified": true,
+      "notes": "**Exam Tip:** A number and its reciprocal always multiply to 1, so the equation $x + 1/x = 10/3$ has two solutions that are reciprocals of each other."
+    },
+    {
+      "id": "9-math-3-ec-q9",
+      "questionNumber": 9,
+      "question": "A rectangular pool has area $2x^2 + 7x + 3$ square hastas. If its width is $2x + 1$ hastas, find its length. Hasta was a unit used to measure length.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use length = area ÷ width:** $$\\text{Length} = \\frac{2x^2 + 7x + 3}{2x + 1}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Factor the numerator:** $$2x^2 + 7x + 3 = 2x^2 + 6x + x + 3 = 2x(x + 3) + 1(x + 3) = (2x + 1)(x + 3)$$"
+        },
+        {
+          "step": 3,
+          "content": "**Divide:** $$\\frac{(2x + 1)(x + 3)}{2x + 1} = x + 3$$"
+        }
+      ],
+      "answer": "The length of the pool is $x + 3$ hastas.",
+      "verified": true,
+      "notes": "**Exam Tip:** When one factor of the area is given as the width, the other factor is the length."
+    },
+    {
+      "id": "9-math-3-ec-q10",
+      "questionNumber": 10,
+      "question": "If both $x - 2$ and $x - \\frac{1}{2}$ are factors of $px^2 + 5x + r$, show that $p = r$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the quadratic in factored form:** Since $x - 2$ and $x - \\frac{1}{2}$ are factors: $$px^2 + 5x + r = k\\left(x - 2\\right)\\left(x - \\frac{1}{2}\\right)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Expand the product:** $$\\left(x - 2\\right)\\left(x - \\frac{1}{2}\\right) = x^2 - \\frac{1}{2}x - 2x + 1 = x^2 - \\frac{5}{2}x + 1$$"
+        },
+        {
+          "step": 3,
+          "content": "**So:** $$px^2 + 5x + r = k\\left(x^2 - \\frac{5}{2}x + 1\\right)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Compare coefficients:** Coefficient of $x^2$: $p = k$. Coefficient of $x$: $5 = -\\frac{5}{2}k$, so $k = -2$. Constant: $r = k = -2$."
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** $p = k = -2$ and $r = k = -2$, so $p = r$. ✓"
+        }
+      ],
+      "answer": "p = k = −2 and r = k = −2, hence p = r.",
+      "verified": true,
+      "notes": "**Exam Tip:** When both linear factors are given, expand their product and compare coefficients with the given quadratic."
+    },
+    {
+      "id": "9-math-3-ec-q11",
+      "questionNumber": 11,
+      "question": "If $a + b + c = 5$ and $ab + bc + ca = 10$, then prove that $a^3 + b^3 + c^3 - 3abc = -25$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find $a^2 + b^2 + c^2$:** Using $(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$: $$5^2 = a^2 + b^2 + c^2 + 2(10) \\;\\Rightarrow\\; 25 = a^2 + b^2 + c^2 + 20 \\;\\Rightarrow\\; a^2 + b^2 + c^2 = 5$$"
+        },
+        {
+          "step": 2,
+          "content": "**Compute $a^2 + b^2 + c^2 - ab - bc - ca$:** $$5 - 10 = -5$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use the identity:** $a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$. Substituting: $$= (5)(-5) = -25$$"
+        }
+      ],
+      "answer": "a³ + b³ + c³ − 3abc = (5)(−5) = −25. Hence proved.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Sum of Cubes Identity",
+        "content": "$$a^3 + b^3 + c^3 - 3abc = (a+b+c)(a^2 + b^2 + c^2 - ab - bc - ca)$$"
+      },
+      "notes": "**Exam Tip:** First find a² + b² + c² using the square-of-sum identity, then substitute into the three-cube identity."
+    },
+    {
+      "id": "9-math-3-ec-q12",
+      "questionNumber": 12,
+      "question": "By factoring the expression, check that $n^3 - n$ is always divisible by 6 for all natural numbers $n$. Give reasons.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Factor the expression:** $$n^3 - n = n(n^2 - 1) = n(n - 1)(n + 1)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Observe:** $n^3 - n$ is the product of three consecutive natural numbers: $(n - 1)$, $n$, $(n + 1)$."
+        },
+        {
+          "step": 3,
+          "content": "**Divisibility by 3:** Among any three consecutive numbers, exactly one is divisible by 3."
+        },
+        {
+          "step": 4,
+          "content": "**Divisibility by 2:** Among any three consecutive numbers, at least one is even, so the product is divisible by 2."
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** Since the product is divisible by both 2 and 3 (which are co-prime), it is divisible by $2 \\times 3 = 6$. Hence $n^3 - n$ is always divisible by 6 for all natural numbers $n$."
+        }
+      ],
+      "answer": "n³ − n = n(n − 1)(n + 1), the product of three consecutive numbers, which is always divisible by 2 and 3, hence by 6.",
+      "verified": true,
+      "notes": "**Exam Tip:** The product of k consecutive integers is always divisible by k!. Here 3 consecutive integers give divisibility by 3! = 6."
+    },
+    {
+      "id": "9-math-3-ec-q13",
+      "questionNumber": 13,
+      "question": "Find the value of: **(i)** $x^3 + y^3 - 12xy + 64$, when $x + y = -4$ **(ii)** $x^3 - 8y^3 - 36xy - 216$, when $x = 2y + 6$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Given $x + y = -4$:** Then $(x + y)^3 = (-4)^3 = -64$. Using $(x + y)^3 = x^3 + y^3 + 3xy(x + y)$: $$-64 = x^3 + y^3 + 3xy(-4) \\;\\Rightarrow\\; -64 = x^3 + y^3 - 12xy$$"
+        },
+        {
+          "step": 2,
+          "content": "**Therefore:** $$x^3 + y^3 - 12xy + 64 = -64 + 64 = 0$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Given $x = 2y + 6$:** Then $x - 2y = 6$, so $x + (-2y) + (-6) = 0$. Using $a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$ with $a = x$, $b = -2y$, $c = -6$: since $a + b + c = 0$, we get $a^3 + b^3 + c^3 = 3abc$."
+        },
+        {
+          "step": 4,
+          "content": "**So:** $$x^3 + (-2y)^3 + (-6)^3 = 3(x)(-2y)(-6)$$ $$x^3 - 8y^3 - 216 = 36xy$$ $$x^3 - 8y^3 - 36xy - 216 = 0$$"
+        }
+      ],
+      "answer": "(i) 0  (ii) 0",
+      "verified": true,
+      "formulaBox": {
+        "title": "If a + b + c = 0",
+        "content": "$$a^3 + b^3 + c^3 = 3abc$$"
+      },
+      "notes": "**Exam Tip:** When a + b + c = 0, the identity a³ + b³ + c³ − 3abc = 0 gives a³ + b³ + c³ = 3abc — a very useful shortcut."
+    }
+  ]
+}

@@ -37,3 +37,10 @@ next-env.d.ts
 # prisma
 prisma/migrations/
 .opencode
+
+# textbook source PDFs (large, not part of the app)
+*.pdf
+
+# temp extraction / preview files
+ncert_*.html
+fig*.txt

@@ -1,0 +1,87 @@
+{
+  "name": "Exercise sEt 5.3",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.3-q1",
+      "questionNumber": 1,
+      "question": "Can you explain why the converse to Theorem 4 is true, i.e., why does the perpendicular from the centre of a circle to a chord of the circle bisect the chord? (Hint: Use Fig. 5.12. You are told that $\\angle CMA = \\angle CMB = 90°$. You need to show that $AM = BM$.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $AB$ be a chord of a circle with centre $C$. Let $CM$ be the perpendicular from $C$ to $AB$, meeting $AB$ at $M$. We are given $\\angle CMA = \\angle CMB = 90°$."
+        },
+        {
+          "step": 2,
+          "content": "**Compare the triangles $\\triangle CMA$ and $\\triangle CMB$:** $CA = CB$ (both radii), $CM$ is common, and $\\angle CMA = \\angle CMB = 90°$."
+        },
+        {
+          "step": 3,
+          "content": "**Apply RHS congruence:** By the RHS congruence rule, $\\triangle CMA \\cong \\triangle CMB$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Corresponding sides are equal, so $AM = BM$. Hence the perpendicular from the centre to a chord bisects the chord."
+        }
+      ],
+      "answer": "By RHS congruence, ΔCMA ≅ ΔCMB, so AM = BM.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Theorem 5",
+        "content": "The perpendicular from the centre of a circle to a chord bisects the chord."
+      },
+      "notes": "**Exam Tip:** This is Theorem 5. The perpendicular from the centre to a chord bisects the chord, and the line from the centre to the midpoint of a chord is perpendicular to it."
+    },
+    {
+      "id": "9-math-4-ex5.3-q2",
+      "questionNumber": 2,
+      "question": "An isosceles triangle $ABC$ is inscribed in a circle, with $AB = AC$. Show that the altitude from $A$ to $BC$ passes through the centre of the circle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $O$ be the centre of the circle. Since $AB = AC$, the chords $AB$ and $AC$ are equal."
+        },
+        {
+          "step": 2,
+          "content": "**Equal chords are equidistant from the centre:** By Theorem 6, equal chords are at the same distance from the centre. So $O$ is equidistant from the chords $AB$ and $AC$."
+        },
+        {
+          "step": 3,
+          "content": "**Locate $O$:** The point equidistant from the lines $AB$ and $AC$ lies on the angle bisector of $\\angle BAC$. So $O$ lies on the angle bisector of $\\angle BAC$."
+        },
+        {
+          "step": 4,
+          "content": "**Use the isosceles property:** In an isosceles triangle with $AB = AC$, the angle bisector of $\\angle A$ is also the altitude from $A$ to $BC$. Hence the altitude from $A$ to $BC$ passes through $O$, the centre of the circle."
+        }
+      ],
+      "answer": "O lies on the angle bisector of ∠BAC, which is also the altitude in an isosceles triangle, so the altitude passes through the centre.",
+      "verified": true,
+      "notes": "**Exam Tip:** In an isosceles triangle, the angle bisector, median and altitude from the apex all coincide."
+    },
+    {
+      "id": "9-math-4-ex5.3-q3",
+      "questionNumber": 3,
+      "question": "Two parallel chords of lengths 6 cm and 8 cm are on opposite sides of the centre of a circle. If the radius of the circle is 5 cm, find the distance between the midpoints of the chords.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Chord of length 6 cm:** Its half-length is $3$ cm. Distance of this chord from the centre: $$d_1 = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Chord of length 8 cm:** Its half-length is $4$ cm. Distance of this chord from the centre: $$d_2 = \\sqrt{5^2 - 4^2} = \\sqrt{25 - 16} = \\sqrt{9} = 3 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Add the distances:** The chords are on opposite sides of the centre, so the distance between their midpoints is the sum: $$d_1 + d_2 = 4 + 3 = 7 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The distance between the midpoints of the chords is 7 cm.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Distance of a Chord from the Centre",
+        "content": "$$d = \\sqrt{r^2 - \\left(\\frac{\\text{chord}}{2}\\right)^2}$$"
+      },
+      "notes": "**Exam Tip:** For chords on opposite sides of the centre, add the distances; for chords on the same side, subtract them."
+    }
+  ]
+}

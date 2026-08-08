@@ -1,0 +1,105 @@
+{
+  "name": "Exercise sEt 5.1",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.1-q1",
+      "questionNumber": 1,
+      "question": "Draw $\\triangle ABC$ with $AB = 5$ cm, $\\angle A = 70°$ and $\\angle B = 60°$. Draw the circumcircle of $\\triangle ABC$. Is the centre inside or outside the triangle?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the third angle:** $$\\angle C = 180° - 70° - 60° = 50°$$"
+        },
+        {
+          "step": 2,
+          "content": "**Draw the triangle:** Draw $AB = 5$ cm. At $A$ draw a ray making $70°$ with $AB$, and at $B$ draw a ray making $60°$ with $AB$. The two rays meet at $C$."
+        },
+        {
+          "step": 3,
+          "content": "**Draw the circumcircle:** Draw the perpendicular bisectors of any two sides (say $AB$ and $BC$). Their point of intersection is the circumcentre $O$. With $O$ as centre and radius $OA$, draw the circle — it passes through $A$, $B$ and $C$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** All three angles ($70°$, $60°$, $50°$) are less than $90°$, so $\\triangle ABC$ is an acute-angled triangle. **The circumcentre lies inside the triangle.**"
+        }
+      ],
+      "answer": "The circumcentre lies inside the triangle (all angles are acute).",
+      "verified": true,
+      "notes": "**Exam Tip:** For an acute-angled triangle the circumcentre is inside; for an obtuse-angled triangle it is outside; for a right-angled triangle it lies at the midpoint of the hypotenuse."
+    },
+    {
+      "id": "9-math-4-ex5.1-q2",
+      "questionNumber": 2,
+      "question": "Draw $\\triangle ABC$ with $AB = 5$ cm, $\\angle A = 100°$, $AC = 4$ cm. Draw the circumcircle of $\\triangle ABC$. Is the centre inside or outside the triangle?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Draw the triangle:** Draw $AB = 5$ cm. At $A$, draw a ray making $100°$ with $AB$. Mark point $C$ on this ray such that $AC = 4$ cm. Join $B$ and $C$."
+        },
+        {
+          "step": 2,
+          "content": "**Draw the circumcircle:** Draw the perpendicular bisectors of $AB$ and $AC$. Their point of intersection is the circumcentre $O$. With $O$ as centre and radius $OA$, draw the circle."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Since $\\angle A = 100° > 90°$, $\\triangle ABC$ is an obtuse-angled triangle. **The circumcentre lies outside the triangle.**"
+        }
+      ],
+      "answer": "The circumcentre lies outside the triangle (the triangle is obtuse-angled at A).",
+      "verified": true,
+      "notes": "**Exam Tip:** The circumcentre of an obtuse-angled triangle always lies outside the triangle, on the side of the obtuse angle."
+    },
+    {
+      "id": "9-math-4-ex5.1-q3",
+      "questionNumber": 3,
+      "question": "Draw $\\triangle ABC$, with $AB = 6$ cm, $BC = 7$ cm and $CA = 7$ cm. Draw the circumcircle of $\\triangle ABC$. Let the circumcentre be $O$. Measure $OA$, $OB$, $OC$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Draw the triangle:** Draw $AB = 6$ cm. With $A$ as centre draw an arc of radius $7$ cm, and with $B$ as centre draw an arc of radius $7$ cm. The arcs meet at $C$. Join $AC$ and $BC$."
+        },
+        {
+          "step": 2,
+          "content": "**Draw the circumcircle:** Draw the perpendicular bisectors of $AB$ and $BC$. Their intersection is the circumcentre $O$. With $O$ as centre and radius $OA$, draw the circle."
+        },
+        {
+          "step": 3,
+          "content": "**Measure the distances:** Since $O$ is the circumcentre, $OA = OB = OC = R$, the circumradius. For this triangle, $R \\approx 3.87$ cm."
+        },
+        {
+          "step": 4,
+          "content": "**Verify with the formula:** $R = \\frac{abc}{4\\Delta}$. Here $a = 7$, $b = 7$, $c = 6$. The height to base $AB$ is $h = \\sqrt{7^2 - 3^2} = \\sqrt{40} = 2\\sqrt{10}$, so $\\Delta = \\frac{1}{2} \\times 6 \\times 2\\sqrt{10} = 6\\sqrt{10}$. $$R = \\frac{7 \\times 7 \\times 6}{4 \\times 6\\sqrt{10}} = \\frac{294}{24\\sqrt{10}} = \\frac{49}{4\\sqrt{10}} \\approx 3.87 \\text{ cm}$$"
+        }
+      ],
+      "answer": "OA = OB = OC ≈ 3.87 cm (the circumradius).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Circumradius of a Triangle",
+        "content": "$$R = \\frac{abc}{4\\Delta}$$"
+      },
+      "notes": "**Exam Tip:** The circumcentre is equidistant from all three vertices, so OA = OB = OC always."
+    },
+    {
+      "id": "9-math-4-ex5.1-q4",
+      "questionNumber": 4,
+      "question": "What is the least possible radius of a circle through two points $A$ and $B$?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall:** The centre of any circle through $A$ and $B$ lies on the perpendicular bisector of $AB$."
+        },
+        {
+          "step": 2,
+          "content": "**Minimise the radius:** The radius is the distance from the centre to $A$ (or $B$). This distance is smallest when the centre is the midpoint of $AB$."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The smallest circle has $AB$ as its diameter, so its radius is $\\frac{AB}{2}$."
+        }
+      ],
+      "answer": "The least possible radius is AB/2 (the circle with AB as diameter).",
+      "verified": true,
+      "notes": "**Exam Tip:** The smallest circle through two points has the segment joining them as its diameter."
+    }
+  ]
+}

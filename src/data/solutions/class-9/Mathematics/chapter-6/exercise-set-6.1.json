@@ -1,0 +1,201 @@
+{
+  "name": "Exercise sEt 6.1",
+  "questions": [
+    {
+      "id": "9-math-5-ex6.1-q1",
+      "questionNumber": 1,
+      "question": "The perimeter of a circle is 44 cm. What is its radius?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the circumference formula:** $C = 2\\pi r$. Given $C = 44$ cm and $\\pi = \\frac{22}{7}$: $$44 = 2 \\times \\frac{22}{7} \\times r = \\frac{44r}{7}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Solve for $r$:** $$r = \\frac{44 \\times 7}{44} = 7 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The radius of the circle is 7 cm.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Circumference",
+        "content": "$$C = 2\\pi r$$"
+      },
+      "notes": "**Exam Tip:** When the circumference is a multiple of 44, the radius is often a whole number using π = 22/7."
+    },
+    {
+      "id": "9-math-5-ex6.1-q2",
+      "questionNumber": 2,
+      "question": "Calculate, correct to 3 significant figures, the circumference of a circle with: **(i)** radius 7 cm **(ii)** radius 10 cm **(iii)** radius 12 cm.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Radius 7 cm:** $$C = 2 \\times \\frac{22}{7} \\times 7 = 44 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Radius 10 cm:** $$C = 2 \\times \\frac{22}{7} \\times 10 = \\frac{440}{7} = 62.857\\ldots \\approx 62.9 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Radius 12 cm:** $$C = 2 \\times \\frac{22}{7} \\times 12 = \\frac{528}{7} = 75.428\\ldots \\approx 75.4 \\text{ cm}$$"
+        }
+      ],
+      "answer": "(i) 44.0 cm  (ii) 62.9 cm  (iii) 75.4 cm",
+      "verified": true,
+      "notes": "**Exam Tip:** To 3 significant figures, 62.857… becomes 62.9 and 75.428… becomes 75.4."
+    },
+    {
+      "id": "9-math-5-ex6.1-q3",
+      "questionNumber": 3,
+      "question": "Calculate the length of the arc of a circle if: **(i)** the radius is 3.5 cm and the angle at the centre is $60°$, and **(ii)** the radius is 6.3 m and the angle at the centre is $120°$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the arc length formula:** $L = \\frac{\\theta}{360} \\times 2\\pi r$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $r = 3.5$ cm, $\\theta = 60°$:** $$L = \\frac{60}{360} \\times 2 \\times \\frac{22}{7} \\times 3.5 = \\frac{1}{6} \\times 22 = \\frac{11}{3} \\approx 3.67 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $r = 6.3$ m, $\\theta = 120°$:** $$L = \\frac{120}{360} \\times 2 \\times \\frac{22}{7} \\times 6.3 = \\frac{1}{3} \\times 39.6 = 13.2 \\text{ m}$$"
+        }
+      ],
+      "answer": "(i) 11/3 cm ≈ 3.67 cm  (ii) 13.2 m",
+      "verified": true,
+      "formulaBox": {
+        "title": "Arc Length",
+        "content": "$$L = 2\\pi r \\times \\frac{\\theta}{360}$$"
+      },
+      "notes": "**Exam Tip:** The arc length is the fraction θ/360 of the full circumference."
+    },
+    {
+      "id": "9-math-5-ex6.1-q4",
+      "questionNumber": 4,
+      "question": "Find the perimeter of a sector (i.e., the curved portion as well as the two straight portions) of a circle of radius 14 cm and sector angle $75°$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the arc length:** $$L = \\frac{75}{360} \\times 2 \\times \\frac{22}{7} \\times 14 = \\frac{75}{360} \\times 88 = \\frac{5}{24} \\times 88 = \\frac{55}{3} \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Add the two radii:** $$\\text{Perimeter} = L + 2r = \\frac{55}{3} + 2 \\times 14 = \\frac{55}{3} + 28 = \\frac{55 + 84}{3} = \\frac{139}{3} \\approx 46.33 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The perimeter of the sector is 139/3 cm ≈ 46.33 cm.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Perimeter of a Sector",
+        "content": "$$P = \\frac{\\theta}{360} \\times 2\\pi r + 2r$$"
+      },
+      "notes": "**Exam Tip:** A sector's perimeter includes the arc plus the two straight radii."
+    },
+    {
+      "id": "9-math-5-ex6.1-q5",
+      "questionNumber": 5,
+      "question": "Find the perimeters of the following shapes (taking the arcs to be quarter or half or three-quarters of a circle, as appropriate) (Fig. 6.14i to 6.14ix): **(i)** 60 m, 80 m **(ii)** 8 cm, 12 cm **(iii)** 10 cm **(iv)** 12 cm **(v)** 14 cm **(vi)** 28 cm **(vii)** 8 cm, 6 cm **(viii)** 4 cm, 4 cm, 4 cm **(ix)** 10 cm, 10 cm",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Rectangle with semicircular ends (60 m diameter, 80 m straight):** Two straight parts of 80 m each plus two semicircles of diameter 60 m (together one full circle): $$80 + 80 + \\pi \\times 60 = 160 + \\frac{22}{7} \\times 60 = 160 + \\frac{1320}{7} = 348.57 \\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Outer semicircle diameter 12 cm, inner semicircle diameter 8 cm, straight parts 2 cm + 2 cm:** $$\\pi(6) + \\pi(4) + 4 = 10\\pi + 4 = \\frac{220}{7} + 4 = 35.43 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Four semicircles, each with diameter 10 cm (radius 5 cm):** $$4 \\times \\pi \\times 5 = 20\\pi = \\frac{440}{7} = 62.86 \\text{ cm}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) Three semicircles, each with diameter 12 cm (radius 6 cm):** $$3 \\times \\pi \\times 6 = 18\\pi = \\frac{396}{7} = 56.57 \\text{ cm}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) Four semicircles (diameter 14 cm, radius 7 cm) and four quarter circles (radius 14 cm):** $$4 \\times \\pi \\times 7 + 4 \\times \\frac{1}{2}\\pi \\times 14 = 28\\pi + 28\\pi = 56\\pi = 176 \\text{ cm}$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) Large semicircle (diameter 28 cm, radius 14 cm) and four small semicircles (diameter 7 cm, radius 3.5 cm):** $$\\pi(14) + 4 \\times \\pi(3.5) = 14\\pi + 14\\pi = 28\\pi = 88 \\text{ cm}$$"
+        },
+        {
+          "step": 7,
+          "content": "**(vii) Semicircles on the sides of a right triangle (perpendicular sides 8 cm and 6 cm):** Hypotenuse $= \\sqrt{6^2 + 8^2} = 10$ cm. Perimeter $= \\pi(3) + \\pi(4) + \\pi(5) = 12\\pi = \\frac{264}{7} = 37.71$ cm."
+        },
+        {
+          "step": 8,
+          "content": "**(viii) Large semicircle (diameter 12 cm, radius 6 cm) and three small semicircles (diameter 4 cm, radius 2 cm):** $$\\pi(6) + 3 \\times \\pi(2) = 6\\pi + 6\\pi = 12\\pi = \\frac{264}{7} = 37.71 \\text{ cm}$$"
+        },
+        {
+          "step": 9,
+          "content": "**(ix) Large semicircle (diameter 20 cm, radius 10 cm) and two small semicircles (diameter 10 cm, radius 5 cm):** $$\\pi(10) + 2 \\times \\pi(5) = 10\\pi + 10\\pi = 20\\pi = \\frac{440}{7} = 62.86 \\text{ cm}$$"
+        }
+      ],
+      "answer": "(i) 348.57 m  (ii) 35.43 cm  (iii) 62.86 cm  (iv) 56.57 cm  (v) 176 cm  (vi) 88 cm  (vii) 37.71 cm  (viii) 37.71 cm  (ix) 62.86 cm",
+      "verified": true,
+      "notes": "**Exam Tip:** Two semicircles with the same diameter make one full circle, so combine them before multiplying by π."
+    },
+    {
+      "id": "9-math-5-ex6.1-q6",
+      "questionNumber": 6,
+      "question": "If the diameter of a car tyre is 56 cm, then: **(i)** How far does the car need to travel for the tyre to complete one revolution? **(ii)** How many revolutions does the tyre make if the car travels 10 km?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Distance in one revolution = circumference:** $$C = 2\\pi r = 2 \\times \\frac{22}{7} \\times 28 = 176 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Convert 10 km to cm:** $$10 \\text{ km} = 10 \\times 1000 \\times 100 = 1{,}000{,}000 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the number of revolutions:** $$\\frac{1{,}000{,}000}{176} = 5681.82 \\approx 5682 \\text{ revolutions}$$"
+        }
+      ],
+      "answer": "(i) 176 cm  (ii) ≈ 5682 revolutions",
+      "verified": true,
+      "notes": "**Exam Tip:** Distance travelled = number of revolutions × circumference."
+    },
+    {
+      "id": "9-math-5-ex6.1-q7",
+      "questionNumber": 7,
+      "question": "Find the total perimeter of all the petals in each of the given flowers. **(i)** A square of side 14 cm with arcs centred at the midpoints of the sides. **(ii)** A regular hexagon of side 42 cm with arcs centred at the vertices.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Square of side 14 cm:** Each petal is formed by two quarter circles whose centres are the midpoints of the sides. Radius $= \\frac{14}{2} = 7$ cm. Each petal consists of 2 quarter circles = 1 semicircle. With 4 petals, total arcs = 4 semicircles = 2 full circles: $$\\text{Perimeter} = 2 \\times 2\\pi r = 4\\pi r = 4 \\times \\frac{22}{7} \\times 7 = 88 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Regular hexagon of side 42 cm:** Each petal is formed by arcs of circles with radius 42 cm. There are 6 petals, each with 2 arcs of $60°$ (total angle per petal $= 120°$). Total angle for all petals $= 6 \\times 120° = 720° = 2$ full circles: $$\\text{Perimeter} = 2 \\times 2\\pi r = 4\\pi r = 4 \\times \\frac{22}{7} \\times 42 = 528 \\text{ cm}$$"
+        }
+      ],
+      "answer": "(i) 88 cm  (ii) 528 cm",
+      "verified": true,
+      "notes": "**Exam Tip:** Count the total angle swept by all the arcs — if it equals 720°, that is exactly two full circles."
+    },
+    {
+      "id": "9-math-5-ex6.1-q8",
+      "questionNumber": 8,
+      "question": "The ratio of the perimeters of two circles is 5 : 4. What is the ratio of their radii?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the ratio of perimeters:** Let the radii be $R$ and $r$. $$2\\pi R : 2\\pi r = 5 : 4$$"
+        },
+        {
+          "step": 2,
+          "content": "**Cancel $2\\pi$:** $$R : r = 5 : 4$$"
+        }
+      ],
+      "answer": "The ratio of their radii is 5 : 4.",
+      "verified": true,
+      "notes": "**Exam Tip:** Since C = 2πr, the circumference is proportional to the radius, so the ratio of circumferences equals the ratio of radii."
+    }
+  ]
+}

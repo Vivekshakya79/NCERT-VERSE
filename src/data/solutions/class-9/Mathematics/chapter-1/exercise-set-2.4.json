@@ -1,0 +1,117 @@
+{
+  "name": "Exercise sEt 2.4",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.4-q1",
+      "questionNumber": 1,
+      "question": "Suppose a plant has height 1.75 feet and it grows by 0.5 feet each month. **(i)** Find the height after 7 months. **(ii)** Make a table of values for $t$ varying from 0 to 10 months and show how the height, $h$, increases every month. **(iii)** Find an expression that relates $h$ and $t$, and explain why it represents linear growth.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The plant starts at 1.75 feet and grows by 0.5 feet every month. After $t$ months, the height is: $$h = 1.75 + 0.5t$$"
+        },
+        {
+          "step": 2,
+          "content": "**(i) Height after 7 months:** $$h = 1.75 + 0.5 \\times 7 = 1.75 + 3.5 = 5.25 \\text{ feet}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Table of values for $t = 0$ to $10$:** $$\\begin{array}{c|ccccccccccc} t & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\\\ \\hline h & 1.75 & 2.25 & 2.75 & 3.25 & 3.75 & 4.25 & 4.75 & 5.25 & 5.75 & 6.25 & 6.75 \\end{array}$$ Each month the height increases by the constant 0.5 feet."
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Expression and reason:** The expression is $h = 1.75 + 0.5t$. It represents **linear growth** because as $t$ increases by 1 month, $h$ increases by the constant amount 0.5 feet over equal intervals."
+        }
+      ],
+      "answer": "(i) Height after 7 months = **5.25 feet**. (iii) $h = 1.75 + 0.5t$ — linear growth because the height increases by a constant 0.5 ft each month.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Linear Growth",
+        "content": "$$h = h_0 + rt \\quad \\text{where } h_0 = \\text{initial height},\\; r = \\text{constant growth rate}$$"
+      },
+      "notes": "**Exam Tip:** A quantity shows linear growth when it increases by a fixed amount over equal time intervals. The coefficient of $t$ is that fixed amount."
+    },
+    {
+      "id": "9-math-1-ex2.4-q2",
+      "questionNumber": 2,
+      "question": "A mobile phone is bought for ₹10,000. Its value decreases by ₹800 every year. **(i)** Find the value of the phone after 3 years. **(ii)** Make a table of values for $t$ varying from 0 to 8 years and show how the value of the phone, $v$, depreciates with time. **(iii)** Find an expression that relates $v$ and $t$, and explain why it represents linear decay.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The phone starts at ₹10,000 and loses ₹800 of value every year. After $t$ years, the value is: $$v = 10000 - 800t$$"
+        },
+        {
+          "step": 2,
+          "content": "**(i) Value after 3 years:** $$v = 10000 - 800 \\times 3 = 10000 - 2400 = 7600$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Table of values for $t = 0$ to $8$:** | $t$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | $v$ | 10000 | 9200 | 8400 | 7600 | 6800 | 6000 | 5200 | 4400 | 3600 | Each year the value decreases by the constant ₹800."
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Expression and reason:** The expression is $v = 10000 - 800t$. This represents **linear decay** because as $t$ increases by 1 year, $v$ decreases by the constant amount ₹800 over equal intervals."
+        }
+      ],
+      "answer": "(i) Value after 3 years = **₹7,600**. (iii) $v = 10000 - 800t$ — linear decay because the value decreases by a constant ₹800 each year.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Linear Decay",
+        "content": "$$v = A_0 - rt \\quad \\text{where } A_0 \\text{ is the initial value},\\; r \\text{ the constant decay rate}$$"
+      },
+      "notes": "**Exam Tip:** A quantity shows linear decay when it decreases by a fixed amount each equal interval. The coefficient of $t$ is negative in the expression."
+    },
+    {
+      "id": "9-math-1-ex2.4-q3",
+      "questionNumber": 3,
+      "question": "The initial population of a village is 750. Every year, 50 people move from a nearby city to the village. **(i)** Find the population of the village after 6 years. **(ii)** Make a table of values for $t$ varying from 0 to 10 years and show how the population, $P$, increases every year. **(iii)** Find an expression that relates $P$ and $t$, and explain why it represents linear growth.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The village starts with 750 people and gains 50 people every year. After $t$ years, the population is: $$P = 750 + 50t$$"
+        },
+        {
+          "step": 2,
+          "content": "**(i) Population after 6 years:** $$P = 750 + 50 \\times 6 = 750 + 300 = 1050$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Table of values for $t = 0$ to $10$:** | $t$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | $P$ | 750 | 800 | 850 | 900 | 950 | 1000 | 1050 | 1100 | 1150 | 1200 | 1250 | Each year the population increases by the constant 50."
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Expression and reason:** The expression is $P = 750 + 50t$. This represents **linear growth** because as $t$ increases by 1 year, $P$ increases by the constant amount 50 over equal intervals."
+        }
+      ],
+      "answer": "(i) Population after 6 years = **1050**. (iii) $P = 750 + 50t$ — linear growth because the population increases by a constant 50 each year.",
+      "verified": true,
+      "notes": "**Exam Tip:** Compare this with the plant growth question — both are linear growth with different starting values and growth rates. The structure of the expression is identical."
+    },
+    {
+      "id": "9-math-1-ex2.4-q4",
+      "questionNumber": 4,
+      "question": "A telecom company charges ₹600 for a certain recharge scheme. This prepaid balance is reduced by ₹15 each day after the recharge. **(i)** Write an equation that models the remaining balance $b(x)$ after using the scheme for $x$ days. Explain why it represents linear decay. **(ii)** After how many days will the balance run out? **(iii)** Make a table of values for $x$ varying from 1 to 10 days and show how the balance $b(x)$, reduces with time.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Model the balance:** The balance starts at ₹600 and reduces by ₹15 each day. After $x$ days: $$b(x) = 600 - 15x$$ This represents **linear decay** because as $x$ increases by 1 day, the balance decreases by the constant ₹15 over equal intervals."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) When the balance runs out:** The balance runs out when $b(x) = 0$: $$600 - 15x = 0 \\implies 15x = 600 \\implies x = 40$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Table of values for $x = 1$ to $10$:** | $x$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | $b(x)$ | 585 | 570 | 555 | 540 | 525 | 510 | 495 | 480 | 465 | 450 | Each day the balance reduces by the constant ₹15."
+        }
+      ],
+      "answer": "(i) $b(x) = 600 - 15x$ — linear decay. (ii) The balance runs out after **40 days**. (iii) Table: $b(1)=585$, $b(2)=570$, ..., $b(10)=450$.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Balance Running Out",
+        "content": "$$b(x) = 0 \\;\\Rightarrow\\; x = \\frac{\\text{initial balance}}{\\text{daily deduction}} = \\frac{600}{15} = 40$$"
+      },
+      "notes": "**Exam Tip:** To find when a decaying quantity reaches zero, set the expression equal to 0 and solve for the variable."
+    }
+  ]
+}

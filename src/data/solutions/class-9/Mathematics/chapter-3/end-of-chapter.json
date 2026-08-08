@@ -1,0 +1,417 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-2-ec-q1",
+      "questionNumber": 1,
+      "question": "Convert the following rational numbers in the form of a terminating decimal or non-terminating and repeating decimal, whichever the case may be, by the process of long division: **(i)** $\\frac{3}{50}$ **(ii)** $\\frac{2}{9}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $\\frac{3}{50}$:** Divide 3 by 50. Since 3 < 50, we get 0.3 with remainder 30, then 0.30 with remainder 0. So: $$\\frac{3}{50} = 0.06$$ This is a **terminating** decimal."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $\\frac{2}{9}$:** Divide 2 by 9. We get 0.2 with remainder 2, and the remainder 2 keeps repeating forever: $$\\frac{2}{9} = 0.2222\\ldots = 0.\\overline{2}$$ This is a **non-terminating repeating** decimal."
+        }
+      ],
+      "answer": "(i) $\\frac{3}{50} = 0.06$ (terminating)  (ii) $\\frac{2}{9} = 0.\\overline{2}$ (repeating)",
+      "verified": true,
+      "notes": "**Exam Tip:** In long division, when a remainder repeats, the decimal becomes repeating. Here 2/9 gives the repeating digit 2."
+    },
+    {
+      "id": "9-math-2-ec-q2",
+      "questionNumber": 2,
+      "question": "Prove that $\\sqrt{5}$ is an irrational number.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Assume the opposite:** Suppose $\\sqrt{5}$ is rational. Then it can be written as $\\frac{p}{q}$ in simplest form, where $p$ and $q$ are co-prime integers and $q \\neq 0$: $$\\sqrt{5} = \\frac{p}{q}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Square both sides:** $$5 = \\frac{p^2}{q^2} \\;\\Rightarrow\\; 5q^2 = p^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Deduce that $p$ is divisible by 5:** Since $p^2 = 5q^2$, $p^2$ is divisible by 5. If the square of a number is divisible by 5, the number itself is divisible by 5. So $p = 5k$ for some integer $k$."
+        },
+        {
+          "step": 4,
+          "content": "**Substitute $p = 5k$:** $$5q^2 = (5k)^2 = 25k^2 \\;\\Rightarrow\\; q^2 = 5k^2$$ So $q^2$ is divisible by 5, which means $q$ is also divisible by 5."
+        },
+        {
+          "step": 5,
+          "content": "**The contradiction:** We have shown that both $p$ and $q$ are divisible by 5, so they share a common factor of 5. But we assumed $\\frac{p}{q}$ was in simplest form with $p$ and $q$ co-prime. This is a contradiction."
+        },
+        {
+          "step": 6,
+          "content": "**Conclusion:** Our assumption was wrong. Therefore, $\\sqrt{5}$ cannot be written as a fraction and is **irrational**."
+        }
+      ],
+      "answer": "$\\sqrt{5}$ is irrational (proved by contradiction).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Proof by Contradiction",
+        "content": "Assume $\\sqrt{5} = \\frac{p}{q}$ (co-prime) $\\Rightarrow 5q^2 = p^2 \\Rightarrow p, q$ both divisible by 5 $\\Rightarrow$ contradiction."
+      },
+      "notes": "**Exam Tip:** This is the standard proof-by-contradiction pattern for irrationality. The same method works for $\\sqrt{2}$, $\\sqrt{3}$, $\\sqrt{7}$, etc."
+    },
+    {
+      "id": "9-math-2-ec-q3",
+      "questionNumber": 3,
+      "question": "Convert the following decimal numbers in the form of $\\frac{p}{q}$: **(i)** $12.6$ **(ii)** $0.0120$ **(iii)** $3.0\\overline{52}$ **(iv)** $1.2\\overline{35}$ **(v)** $0.\\overline{23}$ **(vi)** $2.0\\overline{5}$ **(vii)** $2.1\\overline{25}$ **(viii)** $3.1\\overline{25}$ **(ix)** $2.\\overline{1625}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $12.6$:** Terminating decimal. $$12.6 = \\frac{126}{10} = \\frac{63}{5}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $0.0120$:** Terminating decimal. $$0.0120 = \\frac{120}{10000} = \\frac{3}{250}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $3.0\\overline{52} = 3.0525252\\ldots$:** Let $x = 3.05252\\ldots$. One digit (0) is non-repeating, two digits (52) repeat. Multiply by 10: $10x = 30.5252\\ldots$. Multiply by 1000: $1000x = 3052.5252\\ldots$. Subtract: $$990x = 3022 \\;\\Rightarrow\\; x = \\frac{3022}{990} = \\frac{1511}{495}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $1.2\\overline{35} = 1.23535\\ldots$:** Let $x = 1.23535\\ldots$. One digit (2) is non-repeating, two digits (35) repeat. Multiply by 10: $10x = 12.3535\\ldots$. Multiply by 1000: $1000x = 1235.3535\\ldots$. Subtract: $$990x = 1223 \\;\\Rightarrow\\; x = \\frac{1223}{990}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) $0.\\overline{23} = 0.2323\\ldots$:** Pure repeating, two digits repeat. Let $x = 0.2323\\ldots$. Multiply by 100: $100x = 23.2323\\ldots$. Subtract: $$99x = 23 \\;\\Rightarrow\\; x = \\frac{23}{99}$$"
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $2.0\\overline{5} = 2.0555\\ldots$:** Let $x = 2.0555\\ldots$. One digit (0) is non-repeating, one digit (5) repeats. Multiply by 10: $10x = 20.555\\ldots$. Multiply by 100: $100x = 205.555\\ldots$. Subtract: $$90x = 185 \\;\\Rightarrow\\; x = \\frac{185}{90} = \\frac{37}{18}$$"
+        },
+        {
+          "step": 7,
+          "content": "**(vii) $2.1\\overline{25} = 2.12525\\ldots$:** Let $x = 2.12525\\ldots$. One digit (1) is non-repeating, two digits (25) repeat. Multiply by 10: $10x = 21.2525\\ldots$. Multiply by 1000: $1000x = 2125.2525\\ldots$. Subtract: $$990x = 2104 \\;\\Rightarrow\\; x = \\frac{2104}{990} = \\frac{1052}{495}$$"
+        },
+        {
+          "step": 8,
+          "content": "**(viii) $3.1\\overline{25} = 3.12525\\ldots$:** Let $x = 3.12525\\ldots$. One digit (1) is non-repeating, two digits (25) repeat. Multiply by 10: $10x = 31.2525\\ldots$. Multiply by 1000: $1000x = 3125.2525\\ldots$. Subtract: $$900x = 3094 \\;\\Rightarrow\\; x = \\frac{3094}{900} = \\frac{1547}{450}$$"
+        },
+        {
+          "step": 9,
+          "content": "**(ix) $2.\\overline{1625} = 2.16251625\\ldots$:** Pure repeating, four digits repeat. Let $x = 2.16251625\\ldots$. Multiply by 10000: $10000x = 21625.1625\\ldots$. Subtract: $$9999x = 21623 \\;\\Rightarrow\\; x = \\frac{21623}{9999}$$"
+        }
+      ],
+      "answer": "(i) 63/5  (ii) 3/250  (iii) 1511/495  (iv) 1223/990  (v) 23/99  (vi) 37/18  (vii) 1052/495  (viii) 1547/450  (ix) 21623/9999",
+      "verified": true,
+      "formulaBox": {
+        "title": "Converting Repeating Decimals",
+        "content": "$$x = \\text{decimal} \\;\\Rightarrow\\; 10^m x \\text{ and } 10^{m+n} x \\;\\Rightarrow\\; \\text{subtract and solve}$$"
+      },
+      "notes": "**Exam Tip:** For a general repeating decimal, first multiply by $10^m$ (m = non-repeating digits) and then by $10^{m+n}$ (n = repeating digits), then subtract. Always reduce the final fraction."
+    },
+    {
+      "id": "9-math-2-ec-q4",
+      "questionNumber": 4,
+      "question": "Locate the following rational numbers on the number line: **(i)** $0.532$ **(ii)** $1.1\\overline{5}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $0.532$:** This lies between 0 and 1. Divide the interval [0, 1] into 1000 equal parts; 0.532 is 532 parts to the right of 0. It is slightly more than halfway between 0.5 and 0.6."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $1.1\\overline{5} = 1.15555\\ldots$:** This lies between 1 and 2, just after 1.15. It is slightly more than 1.15 and less than 1.16. Mark it just to the right of 1.15 on the number line."
+        }
+      ],
+      "answer": "(i) 0.532 lies between 0 and 1 (just past 0.5). (ii) 1.1555... lies between 1 and 2 (just past 1.15).",
+      "verified": true,
+      "notes": "**Exam Tip:** For locating decimals, first identify the two integers it lies between, then subdivide that unit interval according to the decimal places."
+    },
+    {
+      "id": "9-math-2-ec-q5",
+      "questionNumber": 5,
+      "question": "Find 6 rational numbers between 3 and 4.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write 3 and 4 with a common denominator:** $$3 = \\frac{21}{7} \\quad \\text{and} \\quad 4 = \\frac{28}{7}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Pick six fractions between them:** $$\\frac{22}{7}, \\; \\frac{23}{7}, \\; \\frac{24}{7}, \\; \\frac{25}{7}, \\; \\frac{26}{7}, \\; \\frac{27}{7}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** $\\frac{21}{7} < \\frac{22}{7} < \\frac{23}{7} < \\frac{24}{7} < \\frac{25}{7} < \\frac{26}{7} < \\frac{27}{7} < \\frac{28}{7}$. ✓"
+        }
+      ],
+      "answer": "Six rational numbers between 3 and 4: 22/7, 23/7, 24/7, 25/7, 26/7, 27/7.",
+      "verified": true,
+      "notes": "**Exam Tip:** There are infinitely many correct answers. Any six distinct rational numbers strictly between 3 and 4 are acceptable."
+    },
+    {
+      "id": "9-math-2-ec-q6",
+      "questionNumber": 6,
+      "question": "Find 5 rational numbers between $\\frac{2}{5}$ and $\\frac{3}{5}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write both with denominator 50:** $$\\frac{2}{5} = \\frac{20}{50} \\quad \\text{and} \\quad \\frac{3}{5} = \\frac{30}{50}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Pick five fractions between them:** $$\\frac{21}{50}, \\; \\frac{22}{50}, \\; \\frac{23}{50}, \\; \\frac{24}{50}, \\; \\frac{25}{50}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** $\\frac{20}{50} < \\frac{21}{50} < \\frac{22}{50} < \\frac{23}{50} < \\frac{24}{50} < \\frac{25}{50} < \\frac{30}{50}$. ✓"
+        }
+      ],
+      "answer": "Five rational numbers between 2/5 and 3/5: 21/50, 22/50, 23/50, 24/50, 25/50.",
+      "verified": true,
+      "notes": "**Exam Tip:** To find n rational numbers between two fractions, make the gap between numerators larger than n by choosing a suitable common denominator."
+    },
+    {
+      "id": "9-math-2-ec-q7",
+      "questionNumber": 7,
+      "question": "Find 5 rational numbers between $\\frac{1}{6}$ and $\\frac{2}{5}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write both with a common denominator:** LCM of 6 and 5 is 30. $$\\frac{1}{6} = \\frac{5}{30} \\quad \\text{and} \\quad \\frac{2}{5} = \\frac{12}{30}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Pick five fractions between them:** $$\\frac{6}{30}, \\; \\frac{7}{30}, \\; \\frac{8}{30}, \\; \\frac{9}{30}, \\; \\frac{10}{30}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** $\\frac{5}{30} < \\frac{6}{30} < \\frac{7}{30} < \\frac{8}{30} < \\frac{9}{30} < \\frac{10}{30} < \\frac{12}{30}$. ✓"
+        }
+      ],
+      "answer": "Five rational numbers between 1/6 and 2/5: 6/30, 7/30, 8/30, 9/30, 10/30.",
+      "verified": true,
+      "notes": "**Exam Tip:** Note that 11/30 is also between them, so there are actually six choices here — any five are correct."
+    },
+    {
+      "id": "9-math-2-ec-q8",
+      "questionNumber": 8,
+      "question": "If $\\frac{x}{3} + \\frac{x}{5} = \\frac{16}{15}$, find the rational number $x$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Combine the fractions on the left:** LCM of 3 and 5 is 15. $$\\frac{x}{3} + \\frac{x}{5} = \\frac{5x}{15} + \\frac{3x}{15} = \\frac{8x}{15}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Set equal to the right-hand side:** $$\\frac{8x}{15} = \\frac{16}{15}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve for $x$:** Multiply both sides by 15: $8x = 16$, so $x = 2$."
+        }
+      ],
+      "answer": "$$x = 2$$",
+      "verified": true,
+      "notes": "**Exam Tip:** Always combine like terms with a common denominator before solving. Here 8x/15 = 16/15 gives x = 2 directly."
+    },
+    {
+      "id": "9-math-2-ec-q9",
+      "questionNumber": 9,
+      "question": "Let $a$ and $b$ be two non-zero rational numbers such that $a + \\frac{1}{b} = 0$. Without assigning any numerical values, determine whether $ab$ is positive or negative. Justify your answer.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Rearrange the equation:** $$a + \\frac{1}{b} = 0 \\;\\Rightarrow\\; \\frac{1}{b} = -a$$"
+        },
+        {
+          "step": 2,
+          "content": "**Multiply both sides by $b$:** $$1 = -ab \\;\\Rightarrow\\; ab = -1$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Since $ab = -1$, the product $ab$ is **negative**."
+        }
+      ],
+      "answer": "$ab = -1$, so $ab$ is **negative**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "From a + 1/b = 0",
+        "content": "$$a + \\frac{1}{b} = 0 \\;\\Rightarrow\\; ab = -1 < 0$$"
+      },
+      "notes": "**Exam Tip:** This shows that $a$ and $b$ must have opposite signs — one positive and one negative — for the equation to hold."
+    },
+    {
+      "id": "9-math-2-ec-q10",
+      "questionNumber": 10,
+      "question": "A rational number has a terminating decimal expansion whose last non-zero digit occurs in the 4th decimal place. Show that such a number can be written in the form $\\frac{p}{10^4}$, where $p$ is an integer not divisible by 10. Is it necessary that the denominator of this rational number, when written in the lowest form, is divisible by $2^4$ or $5^4$? Give reasons.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the number in the form $\\frac{p}{10^4}$:** If the last non-zero digit is in the 4th decimal place, the number looks like $0.abc d$ (with $d \\neq 0$). Multiplying by $10^4$ gives an integer $p$: $$0.abcd = \\frac{abcd}{10^4} = \\frac{p}{10^4}$$ Since $d \\neq 0$, $p$ is not divisible by 10."
+        },
+        {
+          "step": 2,
+          "content": "**Is it necessary that the lowest-form denominator is divisible by $2^4$ or $5^4$?** No. Consider $0.1250 = \\frac{1250}{10000} = \\frac{1}{8}$. The lowest form is $\\frac{1}{8}$, whose denominator is $8 = 2^3$, which is NOT divisible by $2^4 = 16$ or $5^4 = 625$."
+        },
+        {
+          "step": 3,
+          "content": "**Reason:** After cancelling common factors, the denominator may lose some factors of 2 and 5. The denominator in lowest form only needs to have prime factors 2 and/or 5 (so the decimal terminates), but not necessarily four of each."
+        }
+      ],
+      "answer": "Yes, the number can be written as p/10⁴ with p not divisible by 10. It is NOT necessary that the lowest-form denominator is divisible by 2⁴ or 5⁴ — e.g., 0.1250 = 1/8.",
+      "verified": true,
+      "notes": "**Exam Tip:** The counter-example 0.1250 = 1/8 shows that cancellation can remove factors of 2 and 5 from the denominator."
+    },
+    {
+      "id": "9-math-2-ec-q11",
+      "questionNumber": 11,
+      "question": "Without performing division, determine whether the decimal expansion of $\\frac{18}{125}$ is terminating or non-terminating. If it terminates, state the number of decimal places.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Factorise the denominator:** $$125 = 5^3$$ The only prime factor is 5, so the decimal expansion is **terminating**."
+        },
+        {
+          "step": 2,
+          "content": "**Find the number of decimal places:** The highest power of 2 or 5 in the denominator is $5^3$, so the decimal has **3 decimal places**."
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** $$\\frac{18}{125} = \\frac{18 \\times 8}{125 \\times 8} = \\frac{144}{1000} = 0.144$$ ✓"
+        }
+      ],
+      "answer": "$\\frac{18}{125} = 0.144$ — terminating with 3 decimal places.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Number of Decimal Places",
+        "content": "$$\\frac{p}{2^m 5^n} \\text{ terminates with } \\max(m, n) \\text{ decimal places}$$"
+      },
+      "notes": "**Exam Tip:** The number of decimal places equals the larger of the exponents of 2 and 5 in the denominator."
+    },
+    {
+      "id": "9-math-2-ec-q12",
+      "questionNumber": 12,
+      "question": "A rational number in its lowest form has denominator $2^3 \\times 5$. How many decimal places will its decimal expansion have? Explain your answer.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Identify the exponents:** The denominator is $2^3 \\times 5 = 8 \\times 5 = 40$. The exponent of 2 is 3 and the exponent of 5 is 1."
+        },
+        {
+          "step": 2,
+          "content": "**Number of decimal places:** The decimal terminates with $\\max(3, 1) = 3$ decimal places."
+        },
+        {
+          "step": 3,
+          "content": "**Verify with an example:** $\\frac{1}{40} = 0.025$ — exactly 3 decimal places. ✓"
+        }
+      ],
+      "answer": "The decimal expansion has **3 decimal places** (max of exponents 3 and 1).",
+      "verified": true,
+      "notes": "**Exam Tip:** To make the denominator a power of 10, multiply by $2^{3-1} = 4$: $\\frac{1}{40} = \\frac{1 \\times 25}{40 \\times 25} = \\frac{25}{1000} = 0.025$."
+    },
+    {
+      "id": "9-math-2-ec-q13",
+      "questionNumber": 13,
+      "question": "Let $a = \\frac{7}{12}$ and $b = \\frac{5}{6}$. Express both $a$ and $b$ in the form $\\frac{k_1}{m}$ and $\\frac{k_2}{m}$ where $k_1$, $k_2$ and $m$ are integers and $k_2 - k_1 > 6$. Using the same denominator $m$, write exactly five distinct rational numbers lying between $a$ and $b$ keeping an integer numerator. Explain why the condition $k_2 - k_1 > n + 1$ is necessary to find $n$ such rational numbers between the two rational numbers $a$ and $b$ using this method.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Express $a$ and $b$ with a common denominator:** $$a = \\frac{7}{12} \\quad \\text{and} \\quad b = \\frac{5}{6} = \\frac{10}{12}$$ Here $k_1 = 7$, $k_2 = 10$, $m = 12$, and $k_2 - k_1 = 3$, which is NOT greater than 6."
+        },
+        {
+          "step": 2,
+          "content": "**Multiply both by 3 to enlarge the gap:** $$a = \\frac{7 \\times 3}{12 \\times 3} = \\frac{21}{36} \\quad \\text{and} \\quad b = \\frac{10 \\times 3}{12 \\times 3} = \\frac{30}{36}$$ Now $k_1 = 21$, $k_2 = 30$, $m = 36$, and $k_2 - k_1 = 9 > 6$. ✓"
+        },
+        {
+          "step": 3,
+          "content": "**Write five rational numbers between them:** $$\\frac{22}{36}, \\; \\frac{23}{36}, \\; \\frac{24}{36}, \\; \\frac{25}{36}, \\; \\frac{26}{36}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Explain the condition $k_2 - k_1 > n + 1$:** To find $n$ distinct rational numbers with integer numerators between $\\frac{k_1}{m}$ and $\\frac{k_2}{m}$, we need at least $n$ integers strictly between $k_1$ and $k_2$. The number of integers strictly between $k_1$ and $k_2$ is $k_2 - k_1 - 1$. So we need $k_2 - k_1 - 1 \\geq n$, i.e., $k_2 - k_1 > n$ (or $k_2 - k_1 \\geq n + 1$). For $n = 5$, we need $k_2 - k_1 \\geq 6$, and indeed $9 \\geq 6$. ✓"
+        }
+      ],
+      "answer": "a = 21/36, b = 30/36 (k₂ − k₁ = 9 > 6). Five numbers: 22/36, 23/36, 24/36, 25/36, 26/36. The condition k₂ − k₁ > n + 1 guarantees at least n integers strictly between k₁ and k₂.",
+      "verified": true,
+      "notes": "**Conceptual Insight:** The gap $k_2 - k_1$ must exceed $n + 1$ so that there are at least $n$ integer numerators strictly between $k_1$ and $k_2$ to choose from."
+    },
+    {
+      "id": "9-math-2-ec-q14",
+      "questionNumber": 14,
+      "question": "Three rational numbers $x$, $y$, $z$ satisfy $x + y + z = 0$ and $xy + yz + zx = 0$. Show that all the rational numbers $x$, $y$, $z$ must be simultaneously zero.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the identity for the square of a sum:** $$(x + y + z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Substitute the given values:** Since $x + y + z = 0$ and $xy + yz + zx = 0$: $$0^2 = x^2 + y^2 + z^2 + 2(0)$$ $$x^2 + y^2 + z^2 = 0$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclude:** The squares $x^2$, $y^2$, $z^2$ are all non-negative. Their sum is 0 only if each is 0. Therefore: $$x = 0, \\; y = 0, \\; z = 0$$"
+        }
+      ],
+      "answer": "x² + y² + z² = 0, so x = y = z = 0.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Key Identity",
+        "content": "$$(x+y+z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)$$"
+      },
+      "notes": "**Exam Tip:** This elegant proof uses the fact that a sum of squares is zero only when every square is zero."
+    },
+    {
+      "id": "9-math-2-ec-q15",
+      "questionNumber": 15,
+      "question": "Show that the rational number $\\frac{a + b}{2}$ lies between the rational numbers $a$ and $b$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Assume $a < b$ (the case $b < a$ is symmetric):** We must show $a < \\frac{a+b}{2} < b$."
+        },
+        {
+          "step": 2,
+          "content": "**Show $a < \\frac{a+b}{2}$:** $$\\frac{a+b}{2} - a = \\frac{a+b - 2a}{2} = \\frac{b - a}{2} > 0$$ since $b > a$. So $\\frac{a+b}{2} > a$. ✓"
+        },
+        {
+          "step": 3,
+          "content": "**Show $\\frac{a+b}{2} < b$:** $$b - \\frac{a+b}{2} = \\frac{2b - a - b}{2} = \\frac{b - a}{2} > 0$$ since $b > a$. So $\\frac{a+b}{2} < b$. ✓"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** $a < \\frac{a+b}{2} < b$, so the average of two rational numbers always lies strictly between them."
+        }
+      ],
+      "answer": "Since (a+b)/2 − a = (b−a)/2 > 0 and b − (a+b)/2 = (b−a)/2 > 0, the average lies strictly between a and b.",
+      "verified": true,
+      "notes": "**Exam Tip:** This proves the 'density' of rational numbers — you can always find a rational number between any two rational numbers by averaging."
+    },
+    {
+      "id": "9-math-2-ec-q16",
+      "questionNumber": 16,
+      "question": "Find the lengths of the hypotenuses of all the right triangles in Fig. 3.14 which is referred to as the square root spiral.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the square root spiral:** Start with a right triangle with legs 1 and 1. Its hypotenuse is $\\sqrt{2}$. Then build the next right triangle using this hypotenuse as one leg and 1 as the other leg."
+        },
+        {
+          "step": 2,
+          "content": "**Apply the Baudhāyana–Pythagoras Theorem repeatedly:** $$\\text{1st: } \\sqrt{1^2 + 1^2} = \\sqrt{2}$$ $$\\text{2nd: } \\sqrt{(\\sqrt{2})^2 + 1^2} = \\sqrt{3}$$ $$\\text{3rd: } \\sqrt{(\\sqrt{3})^2 + 1^2} = \\sqrt{4}$$ and so on."
+        },
+        {
+          "step": 3,
+          "content": "**List the hypotenuses:** $$\\sqrt{2}, \\; \\sqrt{3}, \\; \\sqrt{4}, \\; \\sqrt{5}, \\; \\sqrt{6}, \\; \\sqrt{7}, \\; \\sqrt{8}, \\; \\sqrt{9}, \\; \\sqrt{10}, \\; \\sqrt{11}, \\; \\ldots$$"
+        }
+      ],
+      "answer": "The hypotenuses are √2, √3, √4, √5, √6, √7, √8, √9, √10, √11, ... (each new hypotenuse is √n).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Square Root Spiral",
+        "content": "$$\\text{hypotenuse}_n = \\sqrt{n} \\quad (n = 2, 3, 4, \\ldots)$$"
+      },
+      "notes": "**Real-life connection:** The square root spiral beautifully shows how irrational lengths like √2, √3, √5 can be constructed geometrically and located on the number line."
+    }
+  ]
+}

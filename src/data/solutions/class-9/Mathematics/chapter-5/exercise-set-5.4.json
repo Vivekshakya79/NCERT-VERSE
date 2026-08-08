@@ -1,0 +1,95 @@
+{
+  "name": "Exercise sEt 5.4",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.4-q1",
+      "questionNumber": 1,
+      "question": "Use the Baudhāyana–Pythagoras theorem to show why Theorem 6 must be true. (Theorem 6: Chords of a circle having the same length are all at the same distance from the centre of the circle.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $AB$ and $FG$ be two equal chords of a circle with centre $C$. Let $E$ and $H$ be the midpoints of $AB$ and $FG$ respectively. By Theorem 5, $CE \\perp AB$ and $CH \\perp FG$."
+        },
+        {
+          "step": 2,
+          "content": "**Apply the Baudhāyana–Pythagoras theorem in $\\triangle CEA$:** $$CA^2 = CE^2 + AE^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Apply it in $\\triangle CHF$:** $$CH^2 = CH^2 + FH^2 \\;\\Rightarrow\\; CF^2 = CH^2 + FH^2$$"
+        },
+        {
+          "step": 4,
+          "content": "**Compare:** $CA = CF$ (both are radii), so $CE^2 + AE^2 = CH^2 + FH^2$. Since $AB = CD$ and $E$, $H$ are midpoints, $AE = FH$. Hence $CE^2 = CH^2$, so $CE = CH$."
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** The equal chords $AB$ and $CD$ are at the same distance from the centre. Hence equal chords are equidistant from the centre."
+        }
+      ],
+      "answer": "Using r² = d² + (chord/2)² for both chords and equating radii and half-chords gives equal distances.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Baudhāyana–Pythagoras Theorem",
+        "content": "$$r^2 = d^2 + \\left(\\frac{\\text{chord}}{2}\\right)^2$$"
+      },
+      "notes": "**Exam Tip:** The radius, the distance of the chord from the centre, and half the chord always form a right triangle."
+    },
+    {
+      "id": "9-math-4-ex5.4-q2",
+      "questionNumber": 2,
+      "question": "Consider Fig. 5.15. If $CE$ is perpendicular to $AB$, $CH$ is perpendicular to $GH$, and $CE = CH$, show that $AB = GF$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** $CE \\perp AB$ and $CH \\perp GH$, with $E$ and $H$ the points where the perpendiculars meet the chords. By Theorem 5, $E$ and $H$ are the midpoints of $AB$ and $GF$ respectively."
+        },
+        {
+          "step": 2,
+          "content": "**Compare the right triangles $\\triangle CEA$ and $\\triangle CHF$:** $CA = CF$ (both radii), $CE = CH$ (given), and $\\angle CEA = \\angle CHF = 90°$."
+        },
+        {
+          "step": 3,
+          "content": "**Apply RHS congruence:** By the RHS congruence rule, $\\triangle CEA \\cong \\triangle CHF$. Hence $AE = HF$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Since $E$ and $H$ are midpoints, $AB = 2 \\times AE$ and $GF = 2 \\times HF$. As $AE = HF$, we get $AB = GF$."
+        }
+      ],
+      "answer": "By RHS congruence, AE = HF, and since E, H are midpoints, AB = 2AE = 2HF = GF.",
+      "verified": true,
+      "notes": "**Exam Tip:** This proves Theorem 7 — chords equidistant from the centre have equal length."
+    },
+    {
+      "id": "9-math-4-ex5.4-q3",
+      "questionNumber": 3,
+      "question": "Solve the previous question using the Baudhāyana–Pythagoras theorem.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** With the same figure, $CE \\perp AB$ and $CH \\perp GF$, and $CE = CH$. Let $E$ and $H$ be the midpoints of $AB$ and $GF$."
+        },
+        {
+          "step": 2,
+          "content": "**Apply the Baudhāyana–Pythagoras theorem in $\\triangle CEA$:** $$CA^2 = CE^2 + AE^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Apply it in $\\triangle CHF$:** $$CF^2 = CH^2 + HF^2$$"
+        },
+        {
+          "step": 4,
+          "content": "**Compare:** $CA = CF$ (radii) and $CE = CH$ (given). So $CE^2 + AE^2 = CH^2 + HF^2$ gives $AE^2 = HF^2$, hence $AE = HF$."
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** Since $E$ and $H$ are midpoints, $AB = 2AE = 2HF = GF$."
+        }
+      ],
+      "answer": "From r² = d² + (half-chord)² with equal radii and equal distances, the half-chords are equal, so AB = GF.",
+      "verified": true,
+      "notes": "**Exam Tip:** The Baudhāyana–Pythagoras theorem gives a direct algebraic proof without needing congruence."
+    }
+  ]
+}

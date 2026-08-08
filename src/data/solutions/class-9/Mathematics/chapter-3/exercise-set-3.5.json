@@ -1,0 +1,155 @@
+{
+  "name": "Exercise sEt 3.5",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.5-q1",
+      "questionNumber": 1,
+      "question": "Without performing long division, determine which of the following rational numbers will have terminating decimals and which will be repeating: $\\frac{7}{20}$, $\\frac{4}{15}$ and $\\frac{13}{250}$. Then check your answers by explicitly performing the long divisions and expressing these rational numbers as decimals.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the rule:** A rational number $\\frac{p}{q}$ in lowest form has a terminating decimal if the prime factors of $q$ are only 2 and/or 5. If $q$ has any other prime factor, the decimal repeats."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{7}{20}$:** $20 = 2^2 \\times 5$. Only primes 2 and 5, so the decimal **terminates**. Long division: $\\frac{7}{20} = 0.35$. ✓"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{4}{15}$:** $15 = 3 \\times 5$. The prime 3 is neither 2 nor 5, so the decimal **repeats**. Long division: $\\frac{4}{15} = 0.2666\\ldots = 0.2\\overline{6}$. ✓"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $\\frac{13}{250}$:** $250 = 2 \\times 5^3$. Only primes 2 and 5, so the decimal **terminates**. Long division: $\\frac{13}{250} = 0.052$. ✓"
+        }
+      ],
+      "answer": "$\\frac{7}{20} = 0.35$ (terminating), $\\frac{4}{15} = 0.2\\overline{6}$ (repeating), $\\frac{13}{250} = 0.052$ (terminating).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Terminating or Repeating?",
+        "content": "$$\\frac{p}{q} \\text{ terminates } \\iff \\text{prime factors of } q \\text{ are only } 2 \\text{ and/or } 5$$"
+      },
+      "notes": "**Exam Tip:** Always reduce the fraction to lowest terms before checking the denominator's prime factors."
+    },
+    {
+      "id": "9-math-2-ex3.5-q2",
+      "questionNumber": 2,
+      "question": "Perform the long division for $\\frac{1}{13}$. Identify the repeating block of digits. Does it show cyclic properties if you evaluate $\\frac{2}{13}$? Now compute $\\frac{3}{13}$, $\\frac{4}{13}$, etc. What do you notice?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the decimal of $\\frac{1}{13}$:** $$\\frac{1}{13} = 0.076923076923\\ldots = 0.\\overline{076923}$$ The repeating block is **076923**."
+        },
+        {
+          "step": 2,
+          "content": "**Compute the multiples:** $$\\frac{2}{13} = 0.\\overline{153846}, \\quad \\frac{3}{13} = 0.\\overline{230769}, \\quad \\frac{4}{13} = 0.\\overline{307692}, \\quad \\frac{5}{13} = 0.\\overline{384615}, \\quad \\frac{6}{13} = 0.\\overline{461538}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Observe the pattern:** Each decimal is repeating, and the repeating blocks are **cyclic shifts** of one another (the same digits rotated). For example, 076923, 230769 and 307692 are rotations of the same block."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Yes, $\\frac{1}{13}$ shows cyclic properties — its multiples produce decimals whose repeating blocks are cyclic permutations of each other."
+        }
+      ],
+      "answer": "$\\frac{1}{13} = 0.\\overline{076923}$. The multiples 2/13, 3/13, ..., 6/13 give cyclic shifts of the same repeating block.",
+      "verified": true,
+      "notes": "**Real-life connection:** Just like $\\frac{1}{7} = 0.\\overline{142857}$, the number 13 produces a cyclic number. This is a beautiful hidden structure in rational numbers."
+    },
+    {
+      "id": "9-math-2-ex3.5-q3",
+      "questionNumber": 3,
+      "question": "Classify the following numbers as rational or irrational: **(i)** $\\sqrt{81}$ **(ii)** $\\sqrt{12}$ **(iii)** $0.33333\\ldots$ **(iv)** $0.123451234512345\\ldots$ **(v)** $1.01001000100001\\ldots$ **(vi)** $23.560185612239874790120$ Find the explicit fractions in case they are rational.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $\\sqrt{81}$:** $\\sqrt{81} = 9 = \\frac{9}{1}$, so it is **rational**."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $\\sqrt{12}$:** $\\sqrt{12} = 2\\sqrt{3}$. Since $\\sqrt{3}$ is irrational, $\\sqrt{12}$ is **irrational**."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $0.33333\\ldots$:** This is a repeating decimal $= \\frac{1}{3}$, so it is **rational**."
+        },
+        {
+          "step": 4,
+          "content": "**(iv) $0.123451234512345\\ldots$:** The block 12345 repeats, so it is **rational**. Let $x = 0.\\overline{12345}$. Then $100000x = 12345.\\overline{12345}$. Subtracting: $99999x = 12345$, so $x = \\frac{12345}{99999} = \\frac{4115}{33333}$."
+        },
+        {
+          "step": 5,
+          "content": "**(v) $1.01001000100001\\ldots$:** The number of zeros between the 1s keeps changing (1, 2, 3, ...), so no fixed block repeats. It is non-terminating and non-repeating, hence **irrational**."
+        },
+        {
+          "step": 6,
+          "content": "**(vi) $23.560016612239612345120$:** This is a terminating decimal, so it is **rational**. As a fraction: $\\frac{23560016612239612345120}{1000000000000000000000}$."
+        }
+      ],
+      "answer": "(i) rational (9)  (ii) irrational  (iii) rational (1/3)  (iv) rational (4115/33333)  (v) irrational  (vi) rational.",
+      "verified": true,
+      "notes": "**Exam Tip:** A decimal is rational if it terminates or repeats. It is irrational if it is non-terminating AND non-repeating. A square root is rational only if it is a perfect square."
+    },
+    {
+      "id": "9-math-2-ex3.5-q4",
+      "questionNumber": 4,
+      "question": "The number $0.\\overline{9}$ (which means 0.99999...) is a rational number. Using algebra (let $x = 0.\\overline{9}$, multiply by 10, and subtract), explain why $0.\\overline{9}$ is exactly equal to 1.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Let $x = 0.99999\\ldots$**"
+        },
+        {
+          "step": 2,
+          "content": "**Multiply both sides by 10:** $$10x = 9.99999\\ldots$$"
+        },
+        {
+          "step": 3,
+          "content": "**Subtract the first equation from the second:** $$10x - x = 9.99999\\ldots - 0.99999\\ldots$$ $$9x = 9$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $x$:** $$x = 1$$"
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** Since $x = 0.\\overline{9}$ and $x = 1$, we have $0.\\overline{9} = 1$ exactly."
+        }
+      ],
+      "answer": "$0.\\overline{9} = 1$ exactly (proved by the algebra: 9x = 9, so x = 1).",
+      "verified": true,
+      "formulaBox": {
+        "title": "0.999... = 1",
+        "content": "$$x = 0.\\overline{9} \\;\\Rightarrow\\; 10x = 9.\\overline{9} \\;\\Rightarrow\\; 9x = 9 \\;\\Rightarrow\\; x = 1$$"
+      },
+      "notes": "**Surprising fact:** Many people think 0.999... is slightly less than 1, but it is exactly equal to 1. This is because the 9s never stop — there is no gap between 0.999... and 1."
+    },
+    {
+      "id": "9-math-2-ex3.5-q5",
+      "questionNumber": 5,
+      "question": "We have seen that the repeating block of $\\frac{1}{7}$ is a cyclic number. Try to find more numbers ($n$) whose reciprocals ($\\frac{1}{n}$) produce decimals with repeating blocks that are cyclic.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the example:** $\\frac{1}{7} = 0.\\overline{142857}$, and multiplying 142857 by 1 through 6 gives cyclic shifts of the same digits."
+        },
+        {
+          "step": 2,
+          "content": "**Try $n = 17$:** $$\\frac{1}{17} = 0.\\overline{0588235294117647}$$ This 16-digit block is cyclic."
+        },
+        {
+          "step": 3,
+          "content": "**Try $n = 19$:** $$\\frac{1}{19} = 0.\\overline{052631578947368421}$$ — an 18-digit cyclic block."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Numbers like 7, 17, 19, ... (whose reciprocals have full-length repeating blocks) produce cyclic decimals. In general, $\\frac{1}{n}$ is cyclic when the repeating block has the maximum possible length ($n - 1$ digits)."
+        }
+      ],
+      "answer": "Examples: $n = 7, 17, 19, \\ldots$ (numbers whose reciprocals give full-length cyclic repeating blocks).",
+      "verified": true,
+      "notes": "**Exploration:** Try $\\frac{1}{13} = 0.\\overline{076923}$ (6 digits) and $\\frac{1}{23}$, $\\frac{1}{29}$, $\\frac{1}{47}$ — many primes produce cyclic decimals."
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-5-ec-q1",
+      "questionNumber": 1,
+      "question": "Identities in algebra can sometimes be shown as area relationships. For example, draw figures corresponding to the identities: **(i)** $(a+b)(a-b) = a^2 - b^2$ and **(ii)** $(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) For $(a+b)(a-b) = a^2 - b^2$:** Draw a square of side $a$; its area is $a^2$. Remove a square of side $b$ from one corner; the removed area is $b^2$. The remaining region has area $a^2 - b^2$, and it can be rearranged into a rectangle whose sides are $(a+b)$ and $(a-b)$."
+        },
+        {
+          "step": 2,
+          "content": "**Conclusion for (i):** $$(a+b)(a-b) = a^2 - b^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) For $(a+b+c)^2$:** Draw a large square of side $(a+b+c)$ and divide each side into three parts $a$, $b$, $c$. The square is divided into one square of area $a^2$, one square of area $b^2$, one square of area $c^2$, two rectangles of area $ab$, two rectangles of area $bc$, and two rectangles of area $ca$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion for (ii):** $$(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$$"
+        }
+      ],
+      "answer": "Both identities are verified by cutting and rearranging areas in the drawn figures.",
+      "verified": true,
+      "notes": "**Exam Tip:** Area models are a visual way to prove algebraic identities."
+    },
+    {
+      "id": "9-math-5-ec-q2",
+      "questionNumber": 2,
+      "question": "An isosceles triangle has perimeter 40 cm; the equal sides are 15 cm each. Find the area of the triangle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the base:** $$\\text{Base} = 40 - 15 - 15 = 10 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find the height:** The altitude of an isosceles triangle bisects the base, so half the base is 5 cm. $$h^2 = 15^2 - 5^2 = 225 - 25 = 200 \\;\\Rightarrow\\; h = 10\\sqrt{2} \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the area:** $$\\frac{1}{2} \\times 10 \\times 10\\sqrt{2} = 50\\sqrt{2} \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of the triangle is 50√2 cm².",
+      "verified": true,
+      "notes": "**Exam Tip:** The altitude of an isosceles triangle bisects the base."
+    },
+    {
+      "id": "9-math-5-ec-q3",
+      "questionNumber": 3,
+      "question": "An isosceles triangle has base 10 cm, and its area is $60$ cm². What are the lengths of the equal sides?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the height from the area:** $$60 = \\frac{1}{2} \\times 10 \\times h \\;\\Rightarrow\\; h = 12 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find the equal sides:** Half the base is 5 cm. Let each equal side be $x$: $$x^2 = 12^2 + 5^2 = 144 + 25 = 169 \\;\\Rightarrow\\; x = 13 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The equal sides are 13 cm each.",
+      "verified": true,
+      "notes": "**Exam Tip:** Work backwards from the area to find the height, then use Pythagoras."
+    },
+    {
+      "id": "9-math-5-ec-q4",
+      "questionNumber": 4,
+      "question": "The area of a right-angled triangle is 54 sq. cm. One of its legs has length 12 cm. Find its perimeter.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the other leg:** Let it be $x$: $$54 = \\frac{1}{2} \\times 12 \\times x \\;\\Rightarrow\\; x = 9 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find the hypotenuse:** $$\\sqrt{12^2 + 9^2} = \\sqrt{144 + 81} = \\sqrt{225} = 15 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the perimeter:** $$12 + 9 + 15 = 36 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The perimeter is 36 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** The 9-12-15 triangle is a scaled 3-4-5 right triangle."
+    },
+    {
+      "id": "9-math-5-ec-q5",
+      "questionNumber": 5,
+      "question": "The sides of a triangle are in the ratio 2 : 3 : 4, and its perimeter is 45 cm. Find its area.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the sides:** Let them be $2x$, $3x$, $4x$: $$2x + 3x + 4x = 45 \\;\\Rightarrow\\; 9x = 45 \\;\\Rightarrow\\; x = 5$$ So the sides are 10 cm, 15 cm and 20 cm."
+        },
+        {
+          "step": 2,
+          "content": "**Find the semi-perimeter:** $$s = \\frac{45}{2} = 22.5 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Apply Heron's formula:** $$\\text{Area} = \\sqrt{22.5(22.5-10)(22.5-15)(22.5-20)} = \\sqrt{22.5 \\times 12.5 \\times 7.5 \\times 2.5} = \\sqrt{5273.4375} \\approx 72.62 \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of the triangle is approximately 72.62 cm².",
+      "verified": true,
+      "notes": "**Exam Tip:** When the height is unknown, Heron's formula is the reliable method."
+    },
+    {
+      "id": "9-math-5-ec-q6",
+      "questionNumber": 6,
+      "question": "The sides of a triangle have lengths 7 cm, 24 cm, 25 cm. Find the area of the triangle in two different ways.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Method 1 — Using the right-angle property:** Since $7^2 + 24^2 = 49 + 576 = 625 = 25^2$, the triangle is right-angled with hypotenuse 25 cm: $$\\text{Area} = \\frac{1}{2} \\times 7 \\times 24 = 84 \\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "content": "**Method 2 — Using Heron's formula:** Semi-perimeter $s = \\frac{7+24+25}{2} = 28$: $$\\text{Area} = \\sqrt{28(28-7)(28-24)(28-25)} = \\sqrt{28 \\times 21 \\times 4 \\times 3} = \\sqrt{7056} = 84 \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area is 84 cm² by both methods.",
+      "verified": true,
+      "notes": "**Exam Tip:** A 7-24-25 triangle is a Pythagorean triple, so it is right-angled."
+    },
+    {
+      "id": "9-math-5-ec-q7",
+      "questionNumber": 7,
+      "question": "If the wheel of a bicycle has a diameter of 60 cm, find how far a cyclist will have travelled after the wheel has rotated 100 times.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Distance in one rotation = circumference:** $$\\pi \\times 60 = \\frac{22}{7} \\times 60 = \\frac{1320}{7} \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Distance in 100 rotations:** $$100 \\times \\frac{1320}{7} = \\frac{132000}{7} \\approx 18857.14 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Convert to metres:** $$\\frac{18857.14}{100} \\approx 188.57 \\text{ m}$$"
+        }
+      ],
+      "answer": "The cyclist travels approximately 188.57 metres.",
+      "verified": true,
+      "notes": "**Exam Tip:** Distance = number of rotations × circumference."
+    },
+    {
+      "id": "9-math-5-ec-q8",
+      "questionNumber": 8,
+      "question": "Find the area of a quadrant of a circle whose circumference is 66 cm.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find the radius:** $$2\\pi r = 66 \\;\\Rightarrow\\; 2 \\times \\frac{22}{7} \\times r = 66 \\;\\Rightarrow\\; r = \\frac{66 \\times 7}{44} = 10.5 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find the quadrant area:** $$\\frac{1}{4} \\times \\pi r^2 = \\frac{1}{4} \\times \\frac{22}{7} \\times (10.5)^2 = \\frac{1}{4} \\times \\frac{22}{7} \\times 110.25 = 86.625 \\text{ cm}^2$$"
+        }
+      ],
+      "answer": "The area of the quadrant is 86.625 cm².",
+      "verified": true,
+      "notes": "**Exam Tip:** A quadrant is one quarter of the circle (90°)."
+    },
+    {
+      "id": "9-math-5-ec-q9",
+      "questionNumber": 9,
+      "question": "The wheel of a car has an outer radius of 28 cm. Calculate how far the car travels after one complete turn of the wheel, and how many times the wheel turns during a journey of 1 km.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Distance in one complete turn:** $$C = 2\\pi r = 2 \\times \\frac{22}{7} \\times 28 = 176 \\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Convert 1 km to cm:** $$1 \\text{ km} = 1000 \\text{ m} = 100000 \\text{ cm}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the number of turns:** $$\\frac{100000}{176} \\approx 568.18 \\approx 568 \\text{ turns}$$"
+        }
+      ],
+      "answer": "The car travels 176 cm in one turn, and the wheel turns about 568 times in 1 km.",
+      "verified": true,
+      "notes": "**Exam Tip:** Round the number of turns down to a whole number of complete turns."
+    },
+    {
+      "id": "9-math-5-ec-q10",
+      "questionNumber": 10,
+      "question": "Two rectangles have the same area and the same perimeter. Does this mean that they are congruent to each other?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the sides of the first rectangle be $a$ and $b$, and of the second be $x$ and $y$. Given $ab = xy$ and $2(a+b) = 2(x+y)$, so $a + b = x + y$."
+        },
+        {
+          "step": 2,
+          "content": "**Reason:** Two numbers are determined by their sum and product. Since $a$, $b$ and $x$, $y$ have the same sum and the same product, the side lengths must be the same pair of numbers."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Either $a = x$ and $b = y$, or $a = y$ and $b = x$. The rectangles have equal corresponding sides, so they are congruent."
+        }
+      ],
+      "answer": "Yes — two rectangles with the same area and the same perimeter are congruent.",
+      "verified": true,
+      "notes": "**Exam Tip:** For rectangles, the pair of sides is uniquely determined by the sum and product (area and semi-perimeter)."
+    },
+    {
+      "id": "9-math-5-ec-q11",
+      "questionNumber": 11,
+      "question": "You know that the area of a parallelogram is base × height. Using this and the figure, show that the area of a trapezium is half the sum of the parallel sides × height, i.e., $\\frac{1}{2}(a+b)h$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Consider a trapezium with parallel sides $a$ (top) and $b$ (bottom) and height $h$. Draw a diagonal from the top vertex to the opposite bottom vertex, splitting the trapezium into two triangles."
+        },
+        {
+          "step": 2,
+          "content": "**Areas of the two triangles:** Both triangles have height $h$ (the parallel sides are at constant distance $h$): $$\\text{Area}_1 = \\frac{1}{2}ah, \\quad \\text{Area}_2 = \\frac{1}{2}bh$$"
+        },
+        {
+          "step": 3,
+          "content": "**Add the areas:** $$\\text{Area of trapezium} = \\frac{1}{2}ah + \\frac{1}{2}bh = \\frac{1}{2}(a+b)h$$"
+        }
+      ],
+      "answer": "The trapezium is split into two triangles of areas ½ah and ½bh, giving ½(a+b)h.",
+      "verified": true,
+      "notes": "**Exam Tip:** A diagonal of a trapezium divides it into two triangles with the same height."
+    },
+    {
+      "id": "9-math-5-ec-q12",
+      "questionNumber": 12,
+      "question": "By dividing a trapezium into two triangles show that its area is half the sum of the parallel sides multiplied by the height (the same formula as the one given above).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the parallel sides of trapezium $ABCD$ be $a$ and $b$, and the height be $h$. Draw diagonal $BD$, dividing the trapezium into triangles $ABD$ and $BCD$."
+        },
+        {
+          "step": 2,
+          "content": "**Areas of the two triangles:** Triangle $ABD$ has base $a$ and height $h$; triangle $BCD$ has base $b$ and height $h$: $$\\text{Area} = \\frac{1}{2}ah + \\frac{1}{2}bh$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** $$\\text{Area of trapezium} = \\frac{1}{2}(a+b)h$$"
+        }
+      ],
+      "answer": "Dividing by a diagonal gives two triangles with areas ½ah and ½bh, so the trapezium area is ½(a+b)h.",
+      "verified": true,
+      "notes": "**Exam Tip:** This is the same result as Question 11, obtained by a different diagonal."
+    },
+    {
+      "id": "9-math-5-ec-q13",
+      "questionNumber": 13,
+      "question": "Show how we can use two identical copies of a trapezium to make a parallelogram. How will this give us the formula for the area of a trapezium?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Take two identical copies of a trapezium with parallel sides $a$ and $b$ and height $h$."
+        },
+        {
+          "step": 2,
+          "content": "**Form the parallelogram:** Rotate one copy and place it beside the other so that the non-parallel sides match. The two trapeziums together form a parallelogram with base $a + b$ and height $h$."
+        },
+        {
+          "step": 3,
+          "content": "**Area of the parallelogram:** $$\\text{Area} = (a+b)h$$"
+        },
+        {
+          "step": 4,
+          "content": "**Area of one trapezium:** Since the parallelogram is made of two identical trapeziums: $$\\text{Area of trapezium} = \\frac{1}{2}(a+b)h$$"
+        }
+      ],
+      "answer": "Two identical trapeziums form a parallelogram of base (a+b) and height h, so one trapezium has area ½(a+b)h.",
+      "verified": true,
+      "notes": "**Exam Tip:** This mirrors how two congruent triangles form a parallelogram."
+    },
+    {
+      "id": "9-math-5-ec-q14",
+      "questionNumber": 14,
+      "question": "Show that the area of a kite is half the product of its diagonals. Show this: **(i)** using algebra, and **(ii)** using geometry.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $ABCD$ be a kite whose diagonals $AC$ and $BD$ intersect at $O$. Since it is a kite, $AC \\perp BD$ and $AC$ bisects $BD$, so $BO = OD$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) Using algebra:** Place $O$ at the origin with $AC$ along the y-axis: $A = (0, p)$, $C = (0, -q)$, $B = (-r, 0)$, $D = (r, 0)$. Then $AC = p + q$ and $BD = 2r$. For a quadrilateral whose diagonals are perpendicular, the area is half the product of the diagonals: $$\\text{Area} = \\frac{1}{2} \\times AC \\times BD$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Using geometry:** The diagonals divide the kite into four right triangles $\\triangle AOB$, $\\triangle AOD$, $\\triangle COB$, $\\triangle COD$: $$\\text{Area} = \\frac{1}{2}(AO \\times BO) + \\frac{1}{2}(AO \\times OD) + \\frac{1}{2}(CO \\times BO) + \\frac{1}{2}(CO \\times OD)$$ $$= \\frac{1}{2}AO(BO + OD) + \\frac{1}{2}CO(BO + OD) = \\frac{1}{2}(AO + CO)(BO + OD) = \\frac{1}{2} \\times AC \\times BD$$"
+        }
+      ],
+      "answer": "Both methods give Area = ½ × d₁ × d₂, where d₁ and d₂ are the diagonals of the kite.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Area of a Kite",
+        "content": "$$A = \\frac{1}{2} \\times d_1 \\times d_2$$"
+      },
+      "notes": "**Exam Tip:** The diagonals of a kite are perpendicular, and one bisects the other."
+    },
+    {
+      "id": "9-math-5-ec-q15",
+      "questionNumber": 15,
+      "question": "Three problems about fitting congruent shapes together: **(i)** Rectangle $ABCD$ has sides $a$, $b$, and rectangle $PQRS$ has sides $2a$, $2b$. Show that $PQRS$ has 4 times the area of $ABCD$. Does this mean that 4 copies of rectangle $ABCD$ will fit into rectangle $PQRS$? **(ii)** $\\triangle ABC$ has sides $a$, $b$, $c$, and $\\triangle PQR$ has sides $2a$, $2b$, $2c$. Show that $\\triangle PQR$ has 4 times the area of $\\triangle ABC$. Does 4 copies fit? **(iii)** $\\triangle ABC$ has sides $a$, $b$, $c$, and $\\triangle PQR$ has sides $3a$, $3b$, $3c$. Show that $\\triangle PQR$ has 9 times the area. Does 9 copies fit?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Rectangles:** Area of $ABCD = ab$; area of $PQRS = 2a \\times 2b = 4ab$. So $PQRS$ has 4 times the area. Yes — arrange 2 copies along the length and 2 along the breadth: $2 \\times 2 = 4$ copies fit exactly."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Doubled triangle:** For $\\triangle ABC$, $s = \\frac{a+b+c}{2}$ and area $= \\sqrt{s(s-a)(s-b)(s-c)}$. For $\\triangle PQR$, $s' = 2s$: $$\\text{Area}(PQR) = \\sqrt{2s(2s-2a)(2s-2b)(2s-2c)} = \\sqrt{16 \\times s(s-a)(s-b)(s-c)} = 4 \\times \\text{Area}(ABC)$$ The larger triangle can be divided into 4 congruent smaller triangles, so 4 copies fit."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Tripled sides:** For $\\triangle PQR$ with sides $3a$, $3b$, $3c$, $s' = 3s$: $$\\text{Area}(PQR) = \\sqrt{3s(3s-3a)(3s-3b)(3s-3c)} = \\sqrt{81 \\times s(s-a)(s-b)(s-c)} = 9 \\times \\text{Area}(ABC)$$ The larger triangle can be divided into 9 congruent smaller triangles, so 9 copies fit."
+        }
+      ],
+      "answer": "(i) 4× area, 4 copies fit; (ii) 4× area, 4 copies fit; (iii) 9× area, 9 copies fit.",
+      "verified": true,
+      "notes": "**Exam Tip:** When all linear dimensions are scaled by k, the area scales by k²."
+    },
+    {
+      "id": "9-math-5-ec-q16",
+      "questionNumber": 16,
+      "question": "Find the shaded fraction in Fig. 6.43 and Fig. 6.44.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Fig. 6.43:** In $\\triangle ABD$, $D$ is the midpoint of $AB$, so $\\text{ar}(ADE) = \\text{ar}(BDE)$ (a median divides a triangle into two equal parts). Similarly, in $\\triangle BCE$, $F$ is the midpoint of $EC$, so $\\text{ar}(BEF) = \\text{ar}(BCF)$."
+        },
+        {
+          "step": 2,
+          "content": "**Fig. 6.43 continued:** $$\\text{ar}(ABC) = \\text{ar}(ADE) + \\text{ar}(BDE) + \\text{ar}(BEF) + \\text{ar}(BCF) = 2[\\text{ar}(BDE) + \\text{ar}(BEF)] = 2\\,\\text{ar}(BDEF)$$ So $\\text{ar}(BDEF) = \\frac{1}{2}\\text{ar}(ABC)$. The shaded fraction is $\\frac{1}{2}$."
+        },
+        {
+          "step": 3,
+          "content": "**Fig. 6.44:** Take the side of the square as 1 unit. The four corner triangles each have base $\\frac{1}{2}$ and height 1, so each has area $\\frac{1}{2} \\times \\frac{1}{2} \\times 1 = \\frac{1}{4}$. The four triangles overlap near the middle, and the overlap area exactly equals the shaded square in the middle. Each small overlap triangle is similar to the large corner triangle with hypotenuse ratio $\\frac{1/2}{\\sqrt{5}/2} = \\frac{1}{\\sqrt{5}}$, so its area is $\\frac{1}{5} \\times \\frac{1}{4} = \\frac{1}{20}$."
+        },
+        {
+          "step": 4,
+          "content": "**Fig. 6.44 continued:** The shaded square is made of 4 such overlap triangles: $$4 \\times \\frac{1}{20} = \\frac{1}{5}$$ So the shaded fraction is $\\frac{1}{5}$."
+        }
+      ],
+      "answer": "Fig. 6.43: 1/2  Fig. 6.44: 1/5",
+      "verified": true,
+      "notes": "**Exam Tip:** In Fig. 6.44, the overlapping corner triangles exactly balance the unshaded middle square."
+    },
+    {
+      "id": "9-math-5-ec-q17",
+      "questionNumber": 17,
+      "question": "What fraction of the rectangle is covered by the circles in Fig. 6.45 and Fig. 6.46?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** In both figures, equal circles are fitted side by side in a rectangle. Let the radius of each circle be $r$, so the diameter is $2r$."
+        },
+        {
+          "step": 2,
+          "content": "**For $n$ circles:** Length of rectangle $= n \\times 2r$, breadth $= 2r$. Area of rectangle $= 4nr^2$. Area of $n$ circles $= n\\pi r^2$."
+        },
+        {
+          "step": 3,
+          "content": "**Fraction covered:** $$\\frac{n\\pi r^2}{4nr^2} = \\frac{\\pi}{4} = \\frac{22}{28} = \\frac{11}{14}$$"
+        }
+      ],
+      "answer": "In both figures, the fraction covered by the circles is 11/14.",
+      "verified": true,
+      "notes": "**Exam Tip:** The fraction is independent of the number of circles and their size."
+    },
+    {
+      "id": "9-math-5-ec-q18",
+      "questionNumber": 18,
+      "question": "Use the above to make a conjecture about the area occupied by circles fitted into a rectangle in the manner shown. Test your conjecture for particular cases: 10 circles; 20 circles; 50 circles. Then prove your conjecture.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Conjecture:** No matter how many equal circles are fitted side by side in the rectangle, the fraction of the rectangle covered by the circles is always $\\frac{\\pi}{4} = \\frac{11}{14}$."
+        },
+        {
+          "step": 2,
+          "content": "**Test for 10, 20 and 50 circles:** In every case the fraction covered is $\\frac{11}{14}$."
+        },
+        {
+          "step": 3,
+          "content": "**Proof:** Let there be $n$ circles, each of radius $r$. Length of rectangle $= 2nr$, breadth $= 2r$, so area of rectangle $= 4nr^2$. Total area of circles $= n\\pi r^2$. Therefore: $$\\text{Fraction} = \\frac{n\\pi r^2}{4nr^2} = \\frac{\\pi}{4}$$ independent of $n$."
+        }
+      ],
+      "answer": "The fraction is always π/4 = 11/14, for 10, 20 or 50 circles.",
+      "verified": true,
+      "notes": "**Exam Tip:** The number of circles cancels out in the fraction, so the answer is always the same."
+    },
+    {
+      "id": "9-math-5-ec-q19",
+      "questionNumber": 19,
+      "question": "The figure shows nine identical rectangles fitted together to make a large rectangle whose area is $72$ cm². Find the perimeter of each small rectangle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the length of each small rectangle be $l$ cm and the breadth be $b$ cm. From the figure, the top row has 4 rectangles placed lengthwise and the bottom row has 5 rectangles placed breadth-wise, so the total widths are equal: $$4l = 5b \\;\\Rightarrow\\; b = \\frac{4l}{5}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Use the area of the large rectangle:** Height $= l + b$, width $= 4l$: $$4l(l + b) = 72$$"
+        },
+        {
+          "step": 3,
+          "content": "**Substitute $b = \\frac{4l}{5}$:** $$4l\\left(l + \\frac{4l}{5}\\right) = 72 \\;\\Rightarrow\\; 4l\\left(\\frac{9l}{5}\\right) = 72 \\;\\Rightarrow\\; \\frac{36l^2}{5} = 72 \\;\\Rightarrow\\; l^2 = 10 \\;\\Rightarrow\\; l = \\sqrt{10}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Find the breadth and perimeter:** $$b = \\frac{4\\sqrt{10}}{5}, \\quad \\text{Perimeter} = 2(l + b) = 2\\left(\\sqrt{10} + \\frac{4\\sqrt{10}}{5}\\right) = \\frac{18\\sqrt{10}}{5} \\approx 11.38 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The perimeter of each small rectangle is 18√10/5 cm ≈ 11.38 cm.",
+      "verified": true,
+      "notes": "**Exam Tip:** Use the equal widths of the two rows to relate l and b before using the total area."
+    },
+    {
+      "id": "9-math-5-ec-q20",
+      "questionNumber": 20,
+      "question": "Show that the areas of the shaded blue triangle and the shaded red triangle are equal. Find a way of cutting up the blue triangle into some number of pieces and rearranging the pieces to cover the red triangle.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** In the figure, lines are drawn from one vertex of a triangle to the points of trisection of the opposite side, so the opposite side is divided into three equal parts: $BD = DE = EC$."
+        },
+        {
+          "step": 2,
+          "content": "**Compare the triangles:** Both triangles have the same height $h$ because they share the same top vertex and their bases lie on the same straight line: $$\\text{area}(ABD) = \\frac{1}{2} \\times BD \\times h, \\quad \\text{area}(AEC) = \\frac{1}{2} \\times EC \\times h$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Since $BD = EC$, the areas are equal: $$\\text{area}(ABD) = \\text{area}(AEC)$$ The blue triangle can be cut into two pieces along the line from the vertex to the middle trisection point and rearranged to cover the red triangle."
+        }
+      ],
+      "answer": "Both triangles have equal bases (trisection parts) and the same height, so their areas are equal.",
+      "verified": true,
+      "notes": "**Exam Tip:** Triangles with equal bases on the same line and the same vertex have equal areas."
+    },
+    {
+      "id": "9-math-5-ec-q21",
+      "questionNumber": 21,
+      "question": "The figure shows a quarter circle in a square. Its centre is at one vertex, and it passes through two adjacent vertices. There are two semicircles on two adjacent sides as diameters. They create the shaded regions $A$ and $B$. Show that $A$ and $B$ have equal area.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the side of the square be $2r$, so the radius of each semicircle is $r$ and the radius of the quarter circle is $2r$. Label the four regions under the quarter arc as $A$, $B$, $C$, $D$."
+        },
+        {
+          "step": 2,
+          "content": "**Areas of the two semicircles:** $$C + A = \\frac{1}{2}\\pi r^2, \\quad D + A = \\frac{1}{2}\\pi r^2 \\;\\Rightarrow\\; C + D + 2A = \\pi r^2 \\quad (1)$$"
+        },
+        {
+          "step": 3,
+          "content": "**Area of the quarter circle:** $$A + B + C + D = \\frac{1}{4}\\pi(2r)^2 = \\pi r^2 \\quad (2)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Compare (1) and (2):** $$C + D + 2A = A + B + C + D \\;\\Rightarrow\\; A = B$$"
+        }
+      ],
+      "answer": "Comparing the total area of the two semicircles with the quarter circle gives A = B.",
+      "verified": true,
+      "notes": "**Exam Tip:** Label the unshaded regions and use the total areas of the semicircles and the quarter circle."
+    },
+    {
+      "id": "9-math-5-ec-q22",
+      "questionNumber": 22,
+      "question": "In Fig. 6.50, four semicircles have been drawn within the given square whose side is 2 units. The centres of these semicircles are the midpoints of the sides. They create a 4-petalled flower (shown in blue). Find the perimeter and the area of this flower.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Side of square $= 2$ units. Each semicircle has diameter 2 units, so radius $= 1$ unit. Each petal is formed by two quarter-circular arcs of radius 1."
+        },
+        {
+          "step": 2,
+          "content": "**Perimeter of one petal:** $$2 \\times \\frac{1}{4} \\times 2\\pi r = 2 \\times \\frac{\\pi}{2} = \\pi$$"
+        },
+        {
+          "step": 3,
+          "content": "**Total perimeter of the flower:** $$4 \\times \\pi = 4\\pi = 4 \\times \\frac{22}{7} = \\frac{88}{7} \\text{ units}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Area of one half-petal (section):** Each section is a quarter sector of radius 1 minus a right triangle with legs 1 and 1: $$\\frac{1}{4}\\pi(1)^2 - \\frac{1}{2} \\times 1 \\times 1 = \\frac{\\pi}{4} - \\frac{1}{2}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Total area of the flower (8 sections):** $$8\\left(\\frac{\\pi}{4} - \\frac{1}{2}\\right) = 2\\pi - 4 = 2 \\times \\frac{22}{7} - 4 = \\frac{44}{7} - \\frac{28}{7} = \\frac{16}{7} \\text{ square units}$$"
+        }
+      ],
+      "answer": "Perimeter = 4π = 88/7 units; Area = 2π − 4 = 16/7 square units.",
+      "verified": true,
+      "notes": "**Exam Tip:** The flower has 8 identical sections, each being a quarter sector minus a right triangle."
+    },
+    {
+      "id": "9-math-5-ec-q23",
+      "questionNumber": 23,
+      "question": "In Fig. 6.51 we see two concentric circles with a common centre $O$. A chord $BC$ of the larger circle is drawn, touching the smaller circle at $A$. The length of $BC$ is $l$. Show that the area of the green region enclosed between the two circles is $\\frac{1}{4}\\pi l^2$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the radius of the larger circle be $R$ and of the smaller circle be $r$. Since $BC$ touches the smaller circle at $A$, $OA \\perp BC$. Also, the perpendicular from $O$ to chord $BC$ bisects it, so $AB = AC = \\frac{l}{2}$."
+        },
+        {
+          "step": 2,
+          "content": "**Apply the Baudhāyana–Pythagoras theorem in right triangle $OAC$:** $$OC^2 = OA^2 + AC^2 \\;\\Rightarrow\\; R^2 = r^2 + \\left(\\frac{l}{2}\\right)^2 \\;\\Rightarrow\\; R^2 - r^2 = \\frac{l^2}{4}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Area of the green region:** $$\\pi R^2 - \\pi r^2 = \\pi(R^2 - r^2) = \\pi \\times \\frac{l^2}{4} = \\frac{1}{4}\\pi l^2$$"
+        }
+      ],
+      "answer": "The green region has area πl²/4.",
+      "verified": true,
+      "notes": "**Exam Tip:** The tangent chord creates a right triangle linking the two radii and half the chord."
+    },
+    {
+      "id": "9-math-5-ec-q24",
+      "questionNumber": 24,
+      "question": "In Fig. 6.52, semicircles have been drawn on all the sides of a right-angled triangle as shown. Show that Area($A$) + Area($B$) = Area($C$).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the sides of the right-angled triangle be $a$, $b$ and $c$, where $c$ is the hypotenuse. The area of a semicircle with diameter $d$ is $\\frac{1}{2}\\pi\\left(\\frac{d}{2}\\right)^2 = \\frac{\\pi d^2}{8}$."
+        },
+        {
+          "step": 2,
+          "content": "**Areas of the semicircles:** $$\\text{Area on } a = \\frac{\\pi a^2}{8}, \\quad \\text{Area on } b = \\frac{\\pi b^2}{8}, \\quad \\text{Area on } c = \\frac{\\pi c^2}{8}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use the Baudhāyana–Pythagoras theorem:** Since $a^2 + b^2 = c^2$, multiplying by $\\frac{\\pi}{8}$: $$\\frac{\\pi a^2}{8} + \\frac{\\pi b^2}{8} = \\frac{\\pi c^2}{8}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** After removing the common overlapping parts, Area($A$) + Area($B$) = Area($C$)."
+        }
+      ],
+      "answer": "The semicircle areas satisfy A + B = C by the Pythagorean theorem.",
+      "verified": true,
+      "notes": "**Exam Tip:** This is a beautiful generalisation of the Baudhāyana–Pythagoras theorem using semicircles."
+    },
+    {
+      "id": "9-math-5-ec-q25",
+      "questionNumber": 25,
+      "question": "Fig. 6.53 shows two circles passing through each other's centres. Find the area of the region enclosed by the two circles in terms of the common radius $r$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** The two circles are congruent and each passes through the centre of the other. The common enclosed region is the union of the two circles. Join the two centres and the two intersection points."
+        },
+        {
+          "step": 2,
+          "content": "**Area of one sector:** Each circle forms a sector of angle $120°$: $$\\frac{120}{360} \\times \\pi r^2 = \\frac{\\pi r^2}{3}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Area of the triangle in the sector:** In $\\triangle AMC$, $AM = \\frac{r}{2}$ and $AC = r$, so $MC = \\frac{\\sqrt{3}r}{2}$ and $CD = \\sqrt{3}r$. Area of $\\triangle ADC = \\frac{1}{2} \\times \\sqrt{3}r \\times \\frac{r}{2} = \\frac{\\sqrt{3}r^2}{4}$."
+        },
+        {
+          "step": 4,
+          "content": "**Area of one segment:** $$\\frac{\\pi r^2}{3} - \\frac{\\sqrt{3}r^2}{4}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Area of the enclosed region (union of both circles):** $$2\\pi r^2 - 2\\left(\\frac{\\pi r^2}{3} - \\frac{\\sqrt{3}r^2}{4}\\right) = \\frac{4\\pi r^2}{3} + \\frac{\\sqrt{3}r^2}{2}$$"
+        }
+      ],
+      "answer": "The area of the region enclosed by the two circles is (4π/3 + √3/2)r².",
+      "verified": true,
+      "notes": "**Exam Tip:** The enclosed region is the union of the two circles, so subtract the overlapping lens from 2πr²."
+    },
+    {
+      "id": "9-math-5-ec-q26",
+      "questionNumber": 26,
+      "question": "In Fig. 6.54, we see three triangles within a rectangle. The areas of the triangles are $A$, $B$, $C$, as marked. Show that the area of the rectangle is $\\frac{2(A+C)(B+C)}{C}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the vertical side of triangle $C$ be $p$ and its horizontal side be $q$. Then $C = \\frac{1}{2}pq$, so $pq = 2C$."
+        },
+        {
+          "step": 2,
+          "content": "**Relate $A$ and $B$:** Let the horizontal distance from the left side of the rectangle to $p$ be $x$, and the vertical distance from the bottom side to $q$ be $y$. Then $A = \\frac{1}{2}px$ (so $px = 2A$) and $B = \\frac{1}{2}qy$ (so $qy = 2B$)."
+        },
+        {
+          "step": 3,
+          "content": "**Area of the rectangle:** Length $= x + q$, breadth $= y + p$: $$\\text{Area} = (x+q)(y+p) = xy + xp + qy + qp = xy + 2A + 2B + 2C$$"
+        },
+        {
+          "step": 4,
+          "content": "**Find $xy$:** From $px = 2A$ and $qy = 2B$, and $pq = 2C$: $$xy = \\frac{(2A)(2B)}{pq} = \\frac{4AB}{2C} = \\frac{2AB}{C}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Conclusion:** $$\\text{Area} = \\frac{2AB}{C} + 2A + 2B + 2C = \\frac{2(AB + AC + BC + C^2)}{C} = \\frac{2(A+C)(B+C)}{C}$$"
+        }
+      ],
+      "answer": "The area of the rectangle is 2(A+C)(B+C)/C.",
+      "verified": true,
+      "notes": "**Exam Tip:** Express the rectangle's sides in terms of the triangle dimensions and eliminate the unknowns."
+    },
+    {
+      "id": "9-math-5-ec-q27",
+      "questionNumber": 27,
+      "question": "In the figure we see two shaded regions formed by a quarter circle, a semicircle, and a triangle. Show that the areas of the two shaded regions are equal.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let the area between the two shaded regions be $x$, and let $OA = OB = r$. Then $AOB$ is a right-angled triangle, and $AB^2 = r^2 + r^2 = 2r^2$, so $AB = r\\sqrt{2}$."
+        },
+        {
+          "step": 2,
+          "content": "**Area of the semicircle:** $AB$ is the diameter, so the radius is $\\frac{r\\sqrt{2}}{2}$: $$\\frac{1}{2}\\pi\\left(\\frac{r\\sqrt{2}}{2}\\right)^2 = \\frac{1}{2}\\pi \\times \\frac{r^2}{2} = \\frac{\\pi r^2}{4}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Area of the circular shaded region:** $$\\frac{\\pi r^2}{4} - x$$"
+        },
+        {
+          "step": 4,
+          "content": "**Area of the quarter circle with centre $O$ and radius $r$:** $$\\frac{1}{4}\\pi r^2 = \\frac{\\pi r^2}{4}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Area of the triangular shaded region:** $$\\frac{\\pi r^2}{4} - x$$"
+        },
+        {
+          "step": 6,
+          "content": "**Conclusion:** Both shaded regions have area $\\frac{\\pi r^2}{4} - x$, so they are equal."
+        }
+      ],
+      "answer": "Both shaded regions equal πr²/4 − x, so they are equal in area.",
+      "verified": true,
+      "notes": "**Exam Tip:** The semicircle and the quarter circle have equal areas, so subtracting the same middle region leaves equal shaded parts."
+    }
+  ]
+}

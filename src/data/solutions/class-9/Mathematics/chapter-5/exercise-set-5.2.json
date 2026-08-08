@@ -1,0 +1,53 @@
+{
+  "name": "Exercise sEt 5.2",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.2-q1",
+      "questionNumber": 1,
+      "question": "Show that the triangle formed by a chord and the centre of the circle is isosceles.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $AB$ be a chord of a circle with centre $C$. Consider the triangle $\\triangle CAB$."
+        },
+        {
+          "step": 2,
+          "content": "**Observe the sides:** $CA$ and $CB$ are both radii of the circle, so $CA = CB$."
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** A triangle with two equal sides is isosceles. Hence $\\triangle CAB$ is isosceles, with $AB$ as its base."
+        }
+      ],
+      "answer": "CA = CB (both are radii), so the triangle is isosceles.",
+      "verified": true,
+      "notes": "**Exam Tip:** Any triangle formed by joining the centre to the two ends of a chord is isosceles, because two of its sides are radii."
+    },
+    {
+      "id": "9-math-4-ex5.2-q2",
+      "questionNumber": 2,
+      "question": "Show that if two such isosceles triangles (occurring in the previous question) have equal base length, they are congruent to each other.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up:** Let $AB$ and $DE$ be two chords of equal length in a circle with centre $C$. Consider $\\triangle CAB$ and $\\triangle CDE$."
+        },
+        {
+          "step": 2,
+          "content": "**Compare the sides:** $CA = CD$ (both radii), $CB = CE$ (both radii), and $AB = DE$ (given, equal base length)."
+        },
+        {
+          "step": 3,
+          "content": "**Apply SSS congruence:** All three pairs of corresponding sides are equal, so by the SSS congruence rule: $$\\triangle CAB \\cong \\triangle CDE$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** The two isosceles triangles are congruent. In particular, the angles subtended by the equal chords at the centre are equal."
+        }
+      ],
+      "answer": "By SSS congruence: CA = CD, CB = CE, AB = DE, so the triangles are congruent.",
+      "verified": true,
+      "notes": "**Exam Tip:** This result is exactly Theorem 2 — equal chords subtend equal angles at the centre."
+    }
+  ]
+}

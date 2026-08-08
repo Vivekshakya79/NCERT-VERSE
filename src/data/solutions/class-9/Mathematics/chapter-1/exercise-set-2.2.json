@@ -1,0 +1,235 @@
+{
+  "name": "Exercise sEt 2.2",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.2-q1",
+      "questionNumber": 1,
+      "question": "Find the value of the linear polynomial $5x - 3$ if: **(i)** $x = 0$ **(ii)** $x = -1$ **(iii)** $x = 2$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the method:** To evaluate a polynomial at a given value, substitute that value in place of the variable and simplify."
+        },
+        {
+          "step": 2,
+          "content": "**(i) When $x = 0$:** $$5(0) - 3 = 0 - 3 = -3$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) When $x = -1$:** $$5(-1) - 3 = -5 - 3 = -8$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) When $x = 2$:** $$5(2) - 3 = 10 - 3 = 7$$"
+        }
+      ],
+      "answer": "(i) $-3$  (ii) $-8$  (iii) $7$",
+      "verified": true,
+      "formulaBox": {
+        "title": "Evaluating a Polynomial",
+        "content": "$$\\text{Substitute the given value of the variable and simplify.}$$"
+      },
+      "notes": "**Common Mistake:** When substituting a negative value like $x = -1$, students often write $5 - 1 - 3$ instead of $5(-1) - 3$. Always multiply the coefficient by the substituted value first."
+    },
+    {
+      "id": "9-math-1-ex2.2-q2",
+      "questionNumber": 2,
+      "question": "Find the value of the quadratic polynomial $7s^2 - 4s + 6$ if: **(i)** $s = 0$ **(ii)** $s = -3$ **(iii)** $s = 4$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the method:** Substitute the given value of $s$ into the polynomial and simplify using the order of operations (powers first, then multiplication, then addition/subtraction)."
+        },
+        {
+          "step": 2,
+          "content": "**(i) When $s = 0$:** $$7(0)^2 - 4(0) + 6 = 0 - 0 + 6 = 6$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) When $s = -3$:** $$7(-3)^2 - 4(-3) + 6 = 7(9) + 12 + 6 = 63 + 12 + 6 = 81$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) When $s = 4$:** $$7(4)^2 - 4(4) + 6 = 7(16) - 16 + 6 = 112 - 16 + 6 = 102$$"
+        }
+      ],
+      "answer": "(i) $6$  (ii) $81$  (iii) $102$",
+      "verified": true,
+      "notes": "**Common Mistake:** When $s = -3$, students often compute $(-3)^2 = -9$ instead of $9$. Remember: the square of a negative number is positive, so $(-3)^2 = 9$."
+    },
+    {
+      "id": "9-math-1-ex2.2-q3",
+      "questionNumber": 3,
+      "question": "The present age of Salil's mother is three times Salil's present age. After 5 years, their ages will add up to 70 years. Find their present ages.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let Salil's present age be $x$ years. Then his mother's present age is $3x$ years (three times Salil's age)."
+        },
+        {
+          "step": 2,
+          "content": "**Ages after 5 years:** After 5 years, Salil's age will be $x + 5$ and his mother's age will be $3x + 5$."
+        },
+        {
+          "step": 3,
+          "content": "**Form the equation:** The sum of their ages after 5 years is 70: $$(x + 5) + (3x + 5) = 70$$ $$4x + 10 = 70$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $x$:** $$4x = 70 - 10 = 60 \\implies x = 15$$"
+        },
+        {
+          "step": 5,
+          "content": "**Find both ages:** Salil's present age $= x = 15$ years. Mother's present age $= 3x = 3 \\times 15 = 45$ years."
+        },
+        {
+          "step": 6,
+          "content": "**Verify:** After 5 years, Salil will be 20 and his mother 50. Their sum is $20 + 50 = 70$. ✓"
+        }
+      ],
+      "answer": "Salil is **15 years** old and his mother is **45 years** old.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Age Problems",
+        "content": "$$\\text{Present age} = x \\quad \\Rightarrow \\quad \\text{Age after } n \\text{ years} = x + n$$"
+      },
+      "notes": "**Exam Tip:** Always verify your answer by substituting back into the conditions of the problem. This catches arithmetic errors."
+    },
+    {
+      "id": "9-math-1-ex2.2-q4",
+      "questionNumber": 4,
+      "question": "The difference between two positive integers is 63. The ratio of the two integers is 2:5. Find the two integers.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Since the ratio of the two integers is 2:5, let the two integers be $2x$ and $5x$."
+        },
+        {
+          "step": 2,
+          "content": "**Form the equation:** The difference between the two integers is 63: $$5x - 2x = 63$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve for $x$:** $$3x = 63 \\implies x = 21$$"
+        },
+        {
+          "step": 4,
+          "content": "**Find the integers:** First integer $= 2x = 2 \\times 21 = 42$. Second integer $= 5x = 5 \\times 21 = 105$."
+        },
+        {
+          "step": 5,
+          "content": "**Verify:** Difference $= 105 - 42 = 63$. ✓  Ratio $= 42 : 105 = 2 : 5$. ✓"
+        }
+      ],
+      "answer": "The two integers are **42** and **105**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Ratio Problems",
+        "content": "$$\\text{Ratio } a : b \\; \\Rightarrow \\; \\text{numbers are } ax \\text{ and } bx$$"
+      },
+      "notes": "**Exam Tip:** When a ratio is given as $a:b$, always represent the quantities as $ax$ and $bx$. This automatically keeps the ratio correct."
+    },
+    {
+      "id": "9-math-1-ex2.2-q5",
+      "questionNumber": 5,
+      "question": "Ruby has 3 times as many two-rupee coins as she has five-rupee coins. If she has a total of ₹88, how many coins does she have of each type?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let the number of five-rupee coins be $x$. Then the number of two-rupee coins is $3x$ (three times as many)."
+        },
+        {
+          "step": 2,
+          "content": "**Value of the coins:** Value of five-rupee coins $= 5x$ rupees. Value of two-rupee coins $= 2 \\times 3x = 6x$ rupees."
+        },
+        {
+          "step": 3,
+          "content": "**Form the equation:** Total value is ₹88: $$5x + 6x = 88$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $x$:** $$11x = 88 \\implies x = 8$$"
+        },
+        {
+          "step": 5,
+          "content": "**Find the number of coins:** Five-rupee coins $= x = 8$. Two-rupee coins $= 3x = 3 \\times 8 = 24$."
+        },
+        {
+          "step": 6,
+          "content": "**Verify:** Value $= 5 \\times 8 + 2 \\times 24 = 40 + 48 = 88$. ✓"
+        }
+      ],
+      "answer": "Ruby has **8 five-rupee coins** and **24 two-rupee coins**.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students often write the value of two-rupee coins as $2x$ instead of $2 \\times 3x = 6x$. Remember to multiply the value per coin by the number of coins."
+    },
+    {
+      "id": "9-math-1-ex2.2-q6",
+      "questionNumber": 6,
+      "question": "A farmer cuts a 300 feet fence into two pieces of different sizes. The longer piece is four times as long as the shorter piece. How long are the two pieces?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let the length of the shorter piece be $x$ feet. Then the longer piece is $4x$ feet."
+        },
+        {
+          "step": 2,
+          "content": "**Form the equation:** The total length of the fence is 300 feet: $$x + 4x = 300$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve for $x$:** $$5x = 300 \\implies x = 60$$"
+        },
+        {
+          "step": 4,
+          "content": "**Find the lengths:** Shorter piece $= x = 60$ feet. Longer piece $= 4x = 4 \\times 60 = 240$ feet."
+        },
+        {
+          "step": 5,
+          "content": "**Verify:** Total $= 60 + 240 = 300$ feet. ✓  Longer $= 4 \\times 60 = 240$. ✓"
+        }
+      ],
+      "answer": "The shorter piece is **60 feet** and the longer piece is **240 feet**.",
+      "verified": true,
+      "notes": "**Exam Tip:** In 'part-whole' problems, the sum of the parts always equals the whole. Here, the two pieces together make up the full 300 feet."
+    },
+    {
+      "id": "9-math-1-ex2.2-q7",
+      "questionNumber": 7,
+      "question": "If the length of a rectangle is three more than twice its width and its perimeter is 24 cm, what are the dimensions of the rectangle?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let the width of the rectangle be $w$ cm. Then the length is $2w + 3$ cm (three more than twice the width)."
+        },
+        {
+          "step": 2,
+          "content": "**Recall the perimeter formula:** $$\\text{Perimeter} = 2(\\text{length} + \\text{width})$$"
+        },
+        {
+          "step": 3,
+          "content": "**Form the equation:** The perimeter is 24 cm: $$2[(2w + 3) + w] = 24$$ $$2(3w + 3) = 24$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $w$:** $$3w + 3 = 12 \\implies 3w = 9 \\implies w = 3$$"
+        },
+        {
+          "step": 5,
+          "content": "**Find the length:** Length $= 2w + 3 = 2(3) + 3 = 9$ cm."
+        },
+        {
+          "step": 6,
+          "content": "**Verify:** Perimeter $= 2(9 + 3) = 2 \\times 12 = 24$ cm. ✓"
+        }
+      ],
+      "answer": "Width = **3 cm**, Length = **9 cm**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Perimeter of a Rectangle",
+        "content": "$$P = 2(l + w)$$"
+      },
+      "notes": "**Common Mistake:** Students often forget to multiply the whole bracket by 2. Remember the perimeter formula is $2(l + w)$, not $l + w$."
+    }
+  ]
+}

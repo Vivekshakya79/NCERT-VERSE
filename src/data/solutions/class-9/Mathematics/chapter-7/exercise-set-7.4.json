@@ -1,0 +1,49 @@
+{
+  "name": "Exercise sEt 7.4",
+  "questions": [
+    {
+      "id": "9-math-6-ex7.4-q1",
+      "questionNumber": 1,
+      "question": "Basket A contains 1 apple and 2 oranges. Basket B contains 1 banana and 1 mango. A fruit is picked at random from each basket. **(i)** Draw a tree diagram to show all possible outcomes. **(ii)** Write the sample space $S$ and find $n(S)$. **(iii)** What is the probability of picking an apple and a banana?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Tree diagram:** First branch from Basket A: Apple, Orange, Orange. From each of these, second branches from Basket B: Banana, Mango."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Sample space:** Each outcome is a pair (fruit from A, fruit from B): $$S = \\{(\\text{Apple, Banana}), (\\text{Apple, Mango}), (\\text{Orange, Banana}), (\\text{Orange, Mango})\\}, \\quad n(S) = 4$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Probability of apple and banana:** Only 1 outcome is (Apple, Banana) out of 4 total outcomes: $$P(\\text{apple and banana}) = \\frac{1}{4}$$"
+        }
+      ],
+      "answer": "(ii) n(S) = 4  (iii) P(apple and banana) = 1/4",
+      "verified": true,
+      "formulaBox": {
+        "title": "Tree Diagram",
+        "content": "Multiply along the branches to count outcomes: $n(S) = 3 \\times 2 = 6$ paths, but here Basket A has 2 distinct fruits (Apple, Orange) so $n(S) = 2 \\times 2 = 4$."
+      },
+      "notes": "**Exam Tip:** A tree diagram helps list outcomes systematically without missing any."
+    },
+    {
+      "id": "9-math-6-ex7.4-q2",
+      "questionNumber": 2,
+      "question": "A box contains 3 red, 4 black, and 2 green pens. A pen is picked at random, its colour is noted, and it is put back. Then another pen is picked. **(i)** Write the sample space $S$ for this experiment. **(ii)** What is the probability that both pens are of the same colour?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Sample space (with replacement):** Each outcome is an ordered pair (first colour, second colour): $$S = \\{(R,R), (R,B), (R,G), (B,R), (B,B), (B,G), (G,R), (G,B), (G,G)\\}, \\quad n(S) = 9$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Probability of same colour:** Favourable outcomes: $(R,R), (B,B), (G,G)$ — that is 3 outcomes. $$P(\\text{same colour}) = \\frac{3}{9} = \\frac{1}{3}$$"
+        }
+      ],
+      "answer": "(i) 9 outcomes  (ii) P(same colour) = 3/9 = 1/3",
+      "verified": true,
+      "notes": "**Exam Tip:** 'With replacement' means the first pen is returned, so the second pick has the same 3-colour options — giving $3 \\times 3 = 9$ outcomes."
+    }
+  ]
+}

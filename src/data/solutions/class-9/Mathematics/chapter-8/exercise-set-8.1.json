@@ -1,0 +1,141 @@
+{
+  "name": "Exercise sEt 8.1",
+  "questions": [
+    {
+      "id": "9-math-7-ex8.1-q1",
+      "questionNumber": 1,
+      "question": "Find the first five terms of the sequence in which the nth term is given by **(i)** $t_n = 3n - 4$, **(ii)** $t_n = 2 - 5n$, and **(iii)** $t_n = n^2 - 2n + 3$ for $n \\ge 1$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) $t_n = 3n - 4$:** Substitute $n = 1, 2, 3, 4, 5$. $$t_1 = 3(1) - 4 = -1, \\quad t_2 = 3(2) - 4 = 2, \\quad t_3 = 3(3) - 4 = 5$$ $$t_4 = 3(4) - 4 = 8, \\quad t_5 = 3(5) - 4 = 11$$ First five terms: **−1, 2, 5, 8, 11**."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) $t_n = 2 - 5n$:** Substitute $n = 1, 2, 3, 4, 5$. $$t_1 = 2 - 5(1) = -3, \\quad t_2 = 2 - 5(2) = -8, \\quad t_3 = 2 - 5(3) = -13$$ $$t_4 = 2 - 5(4) = -18, \\quad t_5 = 2 - 5(5) = -23$$ First five terms: **−3, −8, −13, −18, −23**."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) $t_n = n^2 - 2n + 3$:** Substitute $n = 1, 2, 3, 4, 5$. $$t_1 = 1^2 - 2(1) + 3 = 2, \\quad t_2 = 2^2 - 2(2) + 3 = 3, \\quad t_3 = 3^2 - 2(3) + 3 = 6$$ $$t_4 = 4^2 - 2(4) + 3 = 11, \\quad t_5 = 5^2 - 2(5) + 3 = 18$$ First five terms: **2, 3, 6, 11, 18**."
+        }
+      ],
+      "answer": "(i) −1, 2, 5, 8, 11  (ii) −3, −8, −13, −18, −23  (iii) 2, 3, 6, 11, 18",
+      "verified": true,
+      "formulaBox": {
+        "title": "Explicit Rule",
+        "content": "$$t_n = \\text{expression in } n$$"
+      },
+      "notes": "**Exam Tip:** To find the first five terms, substitute $n = 1, 2, 3, 4, 5$ one by one into the explicit rule."
+    },
+    {
+      "id": "9-math-7-ex8.1-q2",
+      "questionNumber": 2,
+      "question": "Find the 10th and 15th terms of the sequence $t_n = 5n - 3$ for $n \\ge 1$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**10th term:** Substitute $n = 10$ in $t_n = 5n - 3$. $$t_{10} = 5(10) - 3 = 50 - 3 = 47$$"
+        },
+        {
+          "step": 2,
+          "content": "**15th term:** Substitute $n = 15$ in $t_n = 5n - 3$. $$t_{15} = 5(15) - 3 = 75 - 3 = 72$$"
+        }
+      ],
+      "answer": "10th term = 47, 15th term = 72",
+      "verified": true,
+      "notes": "**Exam Tip:** The explicit formula lets you jump straight to any term without computing the earlier ones."
+    },
+    {
+      "id": "9-math-7-ex8.1-q3",
+      "questionNumber": 3,
+      "question": "Determine whether 97 and 172 are terms of the sequence $t_n = 5n - 3$ for $n \\ge 1$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Check 97:** Set $t_n = 97$. $$5n - 3 = 97 \\;\\Rightarrow\\; 5n = 100 \\;\\Rightarrow\\; n = 20$$ Since $n = 20$ is a natural number, **97 is a term** of the sequence — it is the 20th term."
+        },
+        {
+          "step": 2,
+          "content": "**Check 172:** Set $t_n = 172$. $$5n - 3 = 172 \\;\\Rightarrow\\; 5n = 175 \\;\\Rightarrow\\; n = 35$$ Since $n = 35$ is a natural number, **172 is also a term** of the sequence — it is the 35th term."
+        }
+      ],
+      "answer": "Yes — 97 is the 20th term and 172 is the 35th term",
+      "verified": true,
+      "notes": "**Exam Tip:** A number is a term of a sequence only if solving $t_n = \\text{number}$ gives a natural number $n$."
+    },
+    {
+      "id": "9-math-7-ex8.1-q4",
+      "questionNumber": 4,
+      "question": "Which term of the sequence $t_n = 5n - 3$ for $n \\ge 1$ is 607?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "Set $t_n = 607$ and solve for $n$. $$5n - 3 = 607 \\;\\Rightarrow\\; 5n = 610 \\;\\Rightarrow\\; n = 122$$"
+        },
+        {
+          "step": 2,
+          "content": "Since $n = 122$ is a natural number, **607 is the 122nd term** of the sequence."
+        }
+      ],
+      "answer": "607 is the 122nd term",
+      "verified": true,
+      "notes": "**Exam Tip:** Always check that the value of $n$ you obtain is a natural number before concluding the number is a term."
+    },
+    {
+      "id": "9-math-7-ex8.1-q5",
+      "questionNumber": 5,
+      "question": "A sequence is given by the recursive rule $t_1 = -5$, $t_{n+1} = t_n + 3$ for $n \\ge 1$. Find the first five terms of the sequence. Is 52 a term of this sequence? If so, which term is it?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**First five terms using the recursive rule:** $$t_1 = -5$$ $$t_2 = t_1 + 3 = -5 + 3 = -2$$ $$t_3 = t_2 + 3 = -2 + 3 = 1$$ $$t_4 = t_3 + 3 = 1 + 3 = 4$$ $$t_5 = t_4 + 3 = 4 + 3 = 7$$ First five terms: **−5, −2, 1, 4, 7**."
+        },
+        {
+          "step": 2,
+          "content": "**Write the explicit rule:** This is an AP with $a = -5$ and $d = 3$. $$t_n = a + (n - 1)d = -5 + (n - 1)(3) = -5 + 3n - 3 = 3n - 8$$"
+        },
+        {
+          "step": 3,
+          "content": "**Check whether 52 is a term:** Set $t_n = 52$. $$3n - 8 = 52 \\;\\Rightarrow\\; 3n = 60 \\;\\Rightarrow\\; n = 20$$ Since $n = 20$ is a natural number, **52 is a term** of the sequence — it is the 20th term."
+        }
+      ],
+      "answer": "First five terms: −5, −2, 1, 4, 7. Yes, 52 is the 20th term.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Recursive Rule",
+        "content": "$$t_1 = a, \\quad t_n = t_{n-1} + d \\text{ for } n \\ge 2$$"
+      },
+      "notes": "**Exam Tip:** A recursive rule needs the earlier terms; an explicit rule gives any term directly."
+    },
+    {
+      "id": "9-math-7-ex8.1-q6",
+      "questionNumber": 6,
+      "question": "Let $T_1 = 1$, $T_2 = 2$, $T_3 = 4$, and $T_n = T_{n-1} + T_{n-2} + T_{n-3}$ for $n \\ge 4$. Find $T_4$, $T_5$, $T_6$, $T_7$, and $T_8$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**$T_4$:** Using $T_n = T_{n-1} + T_{n-2} + T_{n-3}$ with $n = 4$: $$T_4 = T_3 + T_2 + T_1 = 4 + 2 + 1 = 7$$"
+        },
+        {
+          "step": 2,
+          "content": "**$T_5$:** $$T_5 = T_4 + T_3 + T_2 = 7 + 4 + 2 = 13$$"
+        },
+        {
+          "step": 3,
+          "content": "**$T_6$:** $$T_6 = T_5 + T_4 + T_3 = 13 + 7 + 4 = 24$$"
+        },
+        {
+          "step": 4,
+          "content": "**$T_7$:** $$T_7 = T_6 + T_5 + T_4 = 24 + 13 + 7 = 44$$"
+        },
+        {
+          "step": 5,
+          "content": "**$T_8$:** $$T_8 = T_7 + T_6 + T_5 = 44 + 24 + 13 = 81$$"
+        }
+      ],
+      "answer": "T₄ = 7, T₅ = 13, T₆ = 24, T₇ = 44, T₈ = 81",
+      "verified": true,
+      "notes": "**Exam Tip:** This rule uses the previous **three** terms — a recursive rule can involve two or more earlier terms."
+    }
+  ]
+}

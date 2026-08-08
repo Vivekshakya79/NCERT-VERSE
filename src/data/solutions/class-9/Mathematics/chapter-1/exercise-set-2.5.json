@@ -1,0 +1,91 @@
+{
+  "name": "Exercise sEt 2.5",
+  "questions": [
+    {
+      "id": "9-math-1-ex2.5-q1",
+      "questionNumber": 1,
+      "question": "A learning platform charges a fixed monthly fee and an additional cost per digital learning module accessed. A student observes that when she accessed 10 modules, her bill was ₹400. When she accessed 14 modules, her bill was ₹500. If the monthly bill $y$ depends on the number of modules accessed, $x$, according to the relation $y = ax + b$, find the values of $a$ and $b$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Form the equations:** When $x = 10$, $y = 400$ and when $x = 14$, $y = 500$. Substituting into $y = ax + b$: $$400 = 10a + b \\quad \\text{and} \\quad 500 = 14a + b$$"
+        },
+        {
+          "step": 2,
+          "content": "**Subtract the equations to eliminate $b$:** $$(500 - 400) = (14a + b) - (10a + b)$$ $$100 = 4a \\implies a = 25$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find $b$:** Substitute $a = 25$ into $400 = 10a + b$: $$400 = 10(25) + b = 250 + b \\implies b = 150$$"
+        },
+        {
+          "step": 4,
+          "content": "**Write the relationship:** $$y = 25x + 150$$ The fixed monthly fee is ₹150 and each module costs ₹25."
+        }
+      ],
+      "answer": "$a = 25$, $b = 150$, so $y = 25x + 150$.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Finding a and b (Substitution / Elimination)",
+        "content": "$$y = ax + b: \\;\\; a = \\frac{\\text{change in } y}{\\text{change in } x} = \\frac{500-400}{14-10} = 25,\\quad b = y - ax$$"
+      },
+      "notes": "**Exam Tip:** $a$ represents the cost per module and $b$ represents the fixed monthly fee. You can check: $25 \\times 10 + 150 = 400$ ✓ and $25 \\times 14 + 150 = 500$ ✓."
+    },
+    {
+      "id": "9-math-1-ex2.5-q2",
+      "questionNumber": 2,
+      "question": "A gym charges a fixed monthly fee and an additional cost per hour for using the badminton court. A student using the gym observed that when she used the badminton court for 10 hours, her bill was ₹800. When she used it for 15 hours, her bill was ₹1100. If the monthly bill $y$ depends on the hours of use of the badminton court, $x$, according to the relation $y = ax + b$, find the values of $a$ and $b$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Form the equations:** When $x = 10$, $y = 800$ and when $x = 15$, $y = 1100$. Substituting into $y = ax + b$: $$800 = 10a + b \\quad \\text{and} \\quad 1100 = 15a + b$$"
+        },
+        {
+          "step": 2,
+          "content": "**Subtract the equations to eliminate $b$:** $$(1100 - 800) = (15a + b) - (10a + b)$$ $$300 = 5a \\implies a = 60$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find $b$:** Substitute $a = 60$ into $800 = 10a + b$: $$800 = 10(60) + b = 600 + b \\implies b = 200$$"
+        },
+        {
+          "step": 4,
+          "content": "**Write the relationship:** $$y = 60x + 200$$ The fixed monthly fee is ₹200 and each hour of badminton court use costs ₹60."
+        }
+      ],
+      "answer": "$a = 60$, $b = 200$, so $y = 60x + 200$.",
+      "verified": true,
+      "notes": "**Exam Tip:** Check your answer by substituting: $60 \\times 10 + 200 = 800$ ✓ and $60 \\times 15 + 200 = 1100$ ✓."
+    },
+    {
+      "id": "9-math-1-ex2.5-q3",
+      "questionNumber": 3,
+      "question": "Consider the relationship between temperature measured in degrees Celsius (°C) and degrees Fahrenheit (°F), which is given by $°C = a °F + b$. Find $a$ and $b$, given that ice melts at 0 degrees Celsius and 32 degrees Fahrenheit, and water boils at 100 degrees Celsius and 212 degrees Fahrenheit. **(Hint:** When $°C = 0$, $°F = 32$ and when $°C = 100$, $°F = 212$. Use this information to find $a$ and $b$, and thus, the linear relationship between $°C$ and $°F$.)",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Form the equations:** Substituting $°C = 0$, $°F = 32$ and $°C = 100$, $°F = 212$ into $°C = a°F + b$: $$0 = 32a + b \\quad \\text{and} \\quad 100 = 212a + b$$"
+        },
+        {
+          "step": 2,
+          "content": "**Subtract the equations to eliminate $b$:** $$100 - 0 = (212a + b) - (32a + b)$$ $$100 = 180a \\implies a = \\frac{100}{180} = \\frac{5}{9}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find $b$:** Substitute $a = \\frac{5}{9}$ into $0 = 32a + b$: $$0 = 32 \\times \\frac{5}{9} + b = \\frac{160}{9} + b \\implies b = -\\frac{160}{9}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Write the relationship:** $$°C = \\frac{5}{9}°F - \\frac{160}{9}$$ This is the Celsius–Fahrenheit conversion formula. It can also be written in the familiar form $°F = \\frac{9}{5}°C + 32$."
+        }
+      ],
+      "answer": "$a = \\frac{5}{9}$, $b = -\\frac{160}{9}$, so $°C = \\frac{5}{9}°F - \\frac{160}{9}$ (equivalently $°F = \\frac{9}{5}°C + 32$).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Celsius ↔ Fahrenheit",
+        "content": "$$°C = \\frac{5}{9}(°F - 32) \\;\\;\\;\\text{or}\\;\\;\\; °F = \\frac{9}{5}°C + 32$$"
+      },
+      "notes": "**Verify:** For $°F = 32$: $\\frac{5}{9} \\times 32 - \\frac{160}{9} = \\frac{160}{9} - \\frac{160}{9} = 0$ ✓. For $°F = 212$: $\\frac{5}{9} \\times 212 - \\frac{160}{9} = \\frac{1060 - 160}{9} = 100$ ✓."
+    }
+  ]
+}

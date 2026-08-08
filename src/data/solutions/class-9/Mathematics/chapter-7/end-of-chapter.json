@@ -1,0 +1,456 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-6-ec-q1",
+      "questionNumber": 1,
+      "question": "Fill in the blanks: **(i)** The probability of an impossible event is ______. **(ii)** The set of all possible outcomes of an experiment is called the ______. **(iii)** The probability of a certain event is ______. **(iv)** The probability of getting heads when a fair coin is tossed is ______.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i)** An impossible event has no favourable outcomes, so its probability is $\\frac{0}{n(S)} = 0$."
+        },
+        {
+          "step": 2,
+          "content": "**(ii)** The set of all possible outcomes of an experiment is called the **sample space**."
+        },
+        {
+          "step": 3,
+          "content": "**(iii)** A certain event always happens, so its probability is $\\frac{n(S)}{n(S)} = 1$."
+        },
+        {
+          "step": 4,
+          "content": "**(iv)** A fair coin has 2 equally likely outcomes, so $P(\\text{heads}) = \\frac{1}{2}$."
+        }
+      ],
+      "answer": "(i) 0  (ii) sample space  (iii) 1  (iv) 1/2",
+      "verified": true,
+      "formulaBox": {
+        "title": "Probability Range",
+        "content": "$$0 \\le P(E) \\le 1$$"
+      },
+      "notes": "**Exam Tip:** Probability is always a number between 0 and 1 inclusive."
+    },
+    {
+      "id": "9-math-6-ec-q2",
+      "questionNumber": 2,
+      "question": "In a survey of 50 students, 15 said they like football. What is the relative frequency of students who like football?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Relative frequency** is the ratio of the number of favourable responses to the total number of responses: $$\\text{Relative frequency} = \\frac{15}{50} = \\frac{3}{10} = 0.3$$"
+        }
+      ],
+      "answer": "Relative frequency = 15/50 = 3/10 = 0.3",
+      "verified": true,
+      "notes": "**Exam Tip:** Relative frequency is the same as experimental probability."
+    },
+    {
+      "id": "9-math-6-ec-q3",
+      "questionNumber": 3,
+      "question": "Are the following events equally likely? Give reasons. **(i)** A car starts or does not start when the key is turned. **(ii)** A fair coin shows heads or tails. **(iii)** A fair die shows 1, 2, 3, 4, 5 or 6. **(iv)** A marble drawn from a bag containing 3 red and 7 blue marbles is red or blue. **(v)** A newborn baby is a boy or a girl.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Car starts or does not start:** **Not equally likely.** A car is much more likely to start than to fail to start, so the outcomes are not equally likely."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Fair coin shows heads or tails:** **Yes, equally likely.** Each has probability $\\frac{1}{2}$."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Fair die shows 1–6:** **Yes, equally likely.** Each face has probability $\\frac{1}{6}$."
+        },
+        {
+          "step": 4,
+          "content": "**(iv) Red or blue marble from 3 red and 7 blue:** **Not equally likely.** $P(\\text{red}) = \\frac{3}{10}$ but $P(\\text{blue}) = \\frac{7}{10}$."
+        },
+        {
+          "step": 5,
+          "content": "**(v) Newborn baby is a boy or a girl:** **Yes, roughly equally likely.** The chances are approximately equal (about $\\frac{1}{2}$ each)."
+        }
+      ],
+      "answer": "(i) No  (ii) Yes  (iii) Yes  (iv) No  (v) Yes (roughly)",
+      "verified": true,
+      "notes": "**Exam Tip:** Outcomes are equally likely only when each has the same chance of occurring."
+    },
+    {
+      "id": "9-math-6-ec-q4",
+      "questionNumber": 4,
+      "question": "Find the probability of the following events: **(i)** Getting at least one head when two coins are tossed. **(ii)** Getting an even number when a card is drawn from cards numbered 1 to 10. **(iii)** Getting a number greater than 4 when a die is rolled. **(iv)** Getting a ball that is not red when a ball is drawn from a bag containing 3 red, 2 blue and 1 green ball. **(v)** Getting exactly two heads when three coins are tossed.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) At least one head with two coins:** Sample space $S = \\{HH, HT, TH, TT\\}$, $n(S) = 4$. Favourable: $\\{HH, HT, TH\\}$, $n(E) = 3$. $$P = \\frac{3}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Even number from cards 1 to 10:** $S = \\{1, 2, \\dots, 10\\}$, $n(S) = 10$. Even numbers: $\\{2, 4, 6, 8, 10\\}$, $n(E) = 5$. $$P = \\frac{5}{10} = \\frac{1}{2}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Number greater than 4 on a die:** $S = \\{1, 2, 3, 4, 5, 6\\}$, $n(S) = 6$. Favourable: $\\{5, 6\\}$, $n(E) = 2$. $$P = \\frac{2}{6} = \\frac{1}{3}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) Not red from 3 red, 2 blue, 1 green:** Total balls $= 6$. Not red means blue or green: $2 + 1 = 3$ balls. $$P = \\frac{3}{6} = \\frac{1}{2}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) Exactly two heads with three coins:** $S = \\{HHH, HHT, HTH, THH, HTT, THT, TTH, TTT\\}$, $n(S) = 8$. Favourable: $\\{HHT, HTH, THH\\}$, $n(E) = 3$. $$P = \\frac{3}{8}$$"
+        }
+      ],
+      "answer": "(i) 3/4  (ii) 1/2  (iii) 1/3  (iv) 1/2  (v) 3/8",
+      "verified": true,
+      "formulaBox": {
+        "title": "Theoretical Probability",
+        "content": "$$P(E) = \\frac{n(E)}{n(S)}$$"
+      },
+      "notes": "**Exam Tip:** For 'at least one' and 'exactly' questions, always list the full sample space carefully."
+    },
+    {
+      "id": "9-math-6-ec-q5",
+      "questionNumber": 5,
+      "question": "A bag contains 3 candies: one strawberry, one lemon and one mint. A candy is picked at random. What is the probability of picking the strawberry candy?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Sample space:** $S = \\{\\text{strawberry, lemon, mint}\\}$, $n(S) = 3$."
+        },
+        {
+          "step": 2,
+          "content": "**Favourable outcome:** Only 1 candy is strawberry, so $n(E) = 1$. $$P(\\text{strawberry}) = \\frac{1}{3}$$"
+        }
+      ],
+      "answer": "P(strawberry) = 1/3",
+      "verified": true,
+      "notes": "**Exam Tip:** When all outcomes are equally likely, probability is simply favourable outcomes divided by total outcomes."
+    },
+    {
+      "id": "9-math-6-ec-q6",
+      "questionNumber": 6,
+      "question": "Riya has 2 shirts (red and blue) and 3 pairs of pants (black, white and grey). In how many different ways can she wear a shirt and a pair of pants? List all the possible outfits.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Count the combinations:** For each of the 2 shirts there are 3 choices of pants, so the total number of outfits is: $$2 \\times 3 = 6$$"
+        },
+        {
+          "step": 2,
+          "content": "**List all outfits:**"
+        }
+      ],
+      "answer": "6 different outfits.",
+      "verified": true,
+      "tableData": {
+        "headers": [
+          "Shirt",
+          "Pants",
+          "Outfit"
+        ],
+        "rows": [
+          [
+            "Red",
+            "White",
+            "Red + White"
+          ],
+          [
+            "Red",
+            "Black",
+            "Red + Black"
+          ],
+          [
+            "Red",
+            "White",
+            "Red + White"
+          ],
+          [
+            "Blue",
+            "White",
+            "Blue + White"
+          ],
+          [
+            "Blue",
+            "Black",
+            "Blue + Black"
+          ],
+          [
+            "Blue",
+            "White",
+            "Blue + White"
+          ]
+        ]
+      },
+      "notes": "**Exam Tip:** The multiplication principle: if one choice has $m$ options and another has $n$ options, together they give $m \\times n$ combinations."
+    },
+    {
+      "id": "9-math-6-ec-q7",
+      "questionNumber": 7,
+      "question": "A tyre company kept a record of the distance (in km) before a tyre needed to be replaced. The table shows the results of 1000 tyres. **(i)** What is the probability that a tyre will need to be replaced before 4000 km? **(ii)** What is the probability that a tyre will last more than 4000 km but less than 14000 km? **(iii)** What is the probability that a tyre will last more than 14000 km?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Total number of tyres:** $1000$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) Replaced before 4000 km:** 20 tyres. $$P = \\frac{20}{1000} = \\frac{1}{50}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Lasts more than 4000 km but less than 14000 km:** $210 + 325 = 535$ tyres. $$P = \\frac{535}{1000}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Lasts more than 14000 km:** 445 tyres. $$P = \\frac{445}{1000}$$"
+        }
+      ],
+      "answer": "(i) 20/1000 = 1/50  (ii) 535/1000  (iii) 445/1000",
+      "verified": true,
+      "tableData": {
+        "headers": [
+          "Distance (km)",
+          "Number of tyres"
+        ],
+        "rows": [
+          [
+            "less than 4000",
+            "20"
+          ],
+          [
+            "4000 to 9000",
+            "210"
+          ],
+          [
+            "9001 to 14000",
+            "325"
+          ],
+          [
+            "more than 14000",
+            "445"
+          ]
+        ]
+      },
+      "notes": "**Exam Tip:** These are experimental probabilities based on the recorded data of 1000 tyres."
+    },
+    {
+      "id": "9-math-6-ec-q8",
+      "questionNumber": 8,
+      "question": "The letters of the word PEACE are written on 5 cards, one letter on each card, and placed in a bag. A card is drawn at random. **(i)** What is the probability of drawing a card with the letter P, E or C? **(ii)** What is the probability of drawing a card that is not E?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Sample space:** $S = \\{P, E, A, C, E\\}$, $n(S) = 5$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) Drawing P, E or C:** The letters P, E, C appear on 4 cards (P, E, C and the second E). $$P = \\frac{4}{5}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Not drawing E:** The non-E cards are P, A, C — 3 cards. $$P = \\frac{3}{5}$$"
+        }
+      ],
+      "answer": "(i) 4/5  (ii) 3/5",
+      "verified": true,
+      "notes": "**Exam Tip:** Count each card separately — the letter E appears on two cards, so it counts twice."
+    },
+    {
+      "id": "9-math-6-ec-q9",
+      "questionNumber": 9,
+      "question": "A spinning arrow is on a disc with numbers 1 to 8 marked on it. Find the probability that the arrow stops on: **(i)** the number 8, **(ii)** an odd number, **(iii)** a number greater than 2, **(iv)** a number less than 9, **(v)** a multiple of 3.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Sample space:** $S = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$, $n(S) = 8$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) Number 8:** Only 1 outcome. $$P = \\frac{1}{8}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Odd number:** $\\{1, 3, 5, 7\\}$ — 4 outcomes. $$P = \\frac{4}{8} = \\frac{1}{2}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Greater than 2:** $\\{3, 4, 5, 6, 7, 8\\}$ — 6 outcomes. $$P = \\frac{6}{8} = \\frac{3}{4}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(iv) Less than 9:** All 8 numbers are less than 9. $$P = \\frac{8}{8} = 1$$"
+        },
+        {
+          "step": 6,
+          "content": "**(v) Multiple of 3:** $\\{3, 6\\}$ — 2 outcomes. $$P = \\frac{2}{8} = \\frac{1}{4}$$"
+        }
+      ],
+      "answer": "(i) 1/8  (ii) 1/2  (iii) 3/4  (iv) 1  (v) 1/4",
+      "verified": true,
+      "notes": "**Exam Tip:** A probability of 1 means the event is certain to happen."
+    },
+    {
+      "id": "9-math-6-ec-q10",
+      "questionNumber": 10,
+      "question": "A bag contains 4 red and 5 blue balls. Two balls are drawn one after the other without replacement. **(i)** Draw a tree diagram to show all possible outcomes. **(ii)** Find the probability of getting a red ball first and then a blue ball. **(iii)** Find the probability of getting two blue balls.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Tree diagram:** First draw: Red ($\\frac{4}{9}$) or Blue ($\\frac{5}{9}$). After a red is drawn, 3 red and 5 blue remain (8 balls); after a blue is drawn, 4 red and 4 blue remain (8 balls)."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Red then blue:** $$P(R \\text{ then } B) = \\frac{4}{9} \\times \\frac{5}{8} = \\frac{20}{72} = \\frac{5}{18}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Two blue balls:** $$P(B \\text{ then } B) = \\frac{5}{9} \\times \\frac{4}{8} = \\frac{20}{72} = \\frac{5}{18}$$"
+        }
+      ],
+      "answer": "(ii) 5/18  (iii) 5/18",
+      "verified": true,
+      "formulaBox": {
+        "title": "Without Replacement",
+        "content": "After the first draw, the total number of balls decreases, so the denominator changes from 9 to 8."
+      },
+      "notes": "**Exam Tip:** 'Without replacement' means the first ball is not returned, so the second draw has 8 balls."
+    },
+    {
+      "id": "9-math-6-ec-q11",
+      "questionNumber": 11,
+      "question": "A pair of dice is rolled. Give an example of: **(i)** an event whose probability is 0, **(ii)** an event whose probability is 1.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Event with probability 0 (impossible event):** Getting a sum of 1 when a pair of dice is rolled. The smallest possible sum is $1 + 1 = 2$, so a sum of 1 can never occur. $$P = 0$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Event with probability 1 (certain event):** Getting a sum less than 13. The largest possible sum is $6 + 6 = 12$, so the sum is always less than 13. $$P = 1$$"
+        }
+      ],
+      "answer": "(i) Getting a sum of 1 (impossible)  (ii) Getting a sum less than 13 (certain)",
+      "verified": true,
+      "notes": "**Exam Tip:** An impossible event has probability 0 and a certain event has probability 1."
+    },
+    {
+      "id": "9-math-6-ec-q12",
+      "questionNumber": 12,
+      "question": "Find the probability of the following events: **(i)** When two dice are rolled, the sum of the numbers on the dice is a prime number greater than 5. **(ii)** A bag contains 4 red, 3 green and 2 blue balls. Two balls are drawn without replacement. The probability that the two balls are of different colours. **(iii)** Three coins are tossed. The first coin shows heads and exactly two coins show heads. **(iv)** A four-digit number is formed using the digits 1, 2, 3, 4 without repetition. The number is even. **(v)** An MCQ test has 3 questions, each with 4 options. A student guesses all answers. The probability that exactly 2 answers are correct.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Two dice, sum is a prime greater than 5:** Total outcomes $n(S) = 36$. Prime numbers greater than 5 are 7 and 11. Sum 7: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$ — 6 outcomes. Sum 11: $(5,6),(6,5)$ — 2 outcomes. Favourable $= 6 + 2 = 8$. $$P = \\frac{8}{36} = \\frac{2}{9}$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Two balls of different colours from 4 red, 3 green, 2 blue (without replacement):** Total outcomes: $9 \\times 8 = 72$. Favourable (different colours) $= 72 - \\text{(same colour)}$. Same colour: $RR = 4 \\times 3 = 12$, $GG = 3 \\times 2 = 6$, $BB = 2 \\times 1 = 2$; total same $= 20$. Different $= 72 - 20 = 52$. $$P = \\frac{52}{72} = \\frac{13}{18}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Three coins, first is heads and exactly two heads:** $n(S) = 8$. Favourable: $\\{HHT, HTH\\}$ — 2 outcomes. $$P = \\frac{2}{8} = \\frac{1}{4}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iv) Four-digit number from 1, 2, 3, 4 without repetition, even:** Total numbers: $4 \\times 3 \\times 2 \\times 1 = 24$. For an even number, the last digit must be 2 or 4 (2 choices), then the remaining 3 digits can be arranged in $3! = 6$ ways: favourable $= 2 \\times 6 = 12$. $$P = \\frac{12}{24} = \\frac{1}{2}$$"
+        },
+        {
+          "step": 5,
+          "content": "**(v) MCQ: 3 questions, 4 options each, exactly 2 correct:** For each question, $P(\\text{correct}) = \\frac{1}{4}$ and $P(\\text{wrong}) = \\frac{3}{4}$. Exactly 2 correct can happen in 3 ways (which question is wrong). Each way: $\\frac{1}{4} \\times \\frac{1}{4} \\times \\frac{3}{4} = \\frac{3}{64}$. $$P = 3 \\times \\frac{3}{64} = \\frac{9}{64}$$"
+        }
+      ],
+      "answer": "(i) 2/9  (ii) 13/18  (iii) 1/4  (iv) 1/2  (v) 9/64",
+      "verified": true,
+      "notes": "**Exam Tip:** For 'different colours', it is often easier to compute the total and subtract the 'same colour' cases."
+    },
+    {
+      "id": "9-math-6-ec-q13",
+      "questionNumber": 13,
+      "question": "A box contains 4 balls numbered 1, 2, 3 and 4. Two balls are drawn. **(i)** How many outcomes are there if the first ball is put back before the second is drawn (with replacement)? **(ii)** How many outcomes are there if the first ball is not put back (without replacement)? **(iii)** What are the sizes of the sample spaces in the two cases?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) With replacement:** Each draw has 4 choices, so $4 \\times 4 = 16$ outcomes."
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Without replacement:** First draw has 4 choices, second draw has 3 choices, so $4 \\times 3 = 12$ outcomes."
+        },
+        {
+          "step": 3,
+          "content": "**(iii) Sample space sizes:** With replacement: $n(S) = 16$; without replacement: $n(S) = 12$."
+        }
+      ],
+      "answer": "(i) 16  (ii) 12  (iii) 16 and 12",
+      "verified": true,
+      "notes": "**Exam Tip:** With replacement the sample space is larger because the same ball can be drawn twice."
+    },
+    {
+      "id": "9-math-6-ec-q14",
+      "questionNumber": 14,
+      "question": "A coin is tossed and a card is drawn from 6 cards numbered 1 to 6. Write the sample space $S$ and find $n(S)$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Sample space:** Each outcome is a pair (coin result, card number): $$S = \\{(H,1), (H,2), (H,3), (H,4), (H,5), (H,6), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)\\}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Size of sample space:** $$n(S) = 2 \\times 6 = 12$$"
+        }
+      ],
+      "answer": "n(S) = 12",
+      "verified": true,
+      "notes": "**Exam Tip:** When two independent experiments are combined, multiply the number of outcomes."
+    },
+    {
+      "id": "9-math-6-ec-q15",
+      "questionNumber": 15,
+      "question": "Three coins are tossed. Which of the following is the correct sample space for the number of heads? **(i)** $\\{1, 2, 3\\}$ **(ii)** $\\{0, 1, 2\\}$ **(iii)** $\\{0, 1, 2, 3, 4\\}$ **(iv)** $\\{0, 1, 2, 3\\}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Possible number of heads when three coins are tossed:** You can get 0, 1, 2 or 3 heads."
+        },
+        {
+          "step": 2,
+          "content": "**Check each option:** (i) $\\{1, 2, 3\\}$ misses 0 heads. (ii) $\\{0, 1, 2\\}$ misses 3 heads. (iii) $\\{0, 1, 2, 3, 4\\}$ includes 4 heads, which is impossible with 3 coins."
+        },
+        {
+          "step": 3,
+          "content": "**Correct sample space:** $$\\{0, 1, 2, 3\\} \\quad \\text{(option iv)}$$"
+        }
+      ],
+      "answer": "(iv) {0, 1, 2, 3}",
+      "verified": true,
+      "notes": "**Exam Tip:** The sample space must contain every possible outcome and no impossible ones."
+    },
+    {
+      "id": "9-math-6-ec-q16",
+      "questionNumber": 16,
+      "question": "A drop of dye is dropped on a rectangular sheet of paper of size 3 m by 2 m. A circle of diameter 1 m is drawn inside the rectangle. What is the probability that the drop of dye falls inside the circle?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Area of the rectangle:** $$A_{\\text{rect}} = 3 \\times 2 = 6 \\text{ m}^2$$"
+        },
+        {
+          "step": 2,
+          "content": "**Area of the circle:** The diameter is 1 m, so the radius is $\\frac{1}{2}$ m. $$A_{\\text{circle}} = \\pi r^2 = \\pi \\left(\\frac{1}{2}\\right)^2 = \\frac{\\pi}{4} \\text{ m}^2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Probability (geometric probability):** $$P = \\frac{\\text{Area of circle}}{\\text{Area of rectangle}} = \\frac{\\frac{\\pi}{4}}{6} = \\frac{\\pi}{24}$$"
+        }
+      ],
+      "answer": "P = π/24",
+      "verified": true,
+      "formulaBox": {
+        "title": "Geometric Probability",
+        "content": "$$P = \\frac{\\text{Area of favourable region}}{\\text{Area of total region}}$$"
+      },
+      "notes": "**Exam Tip:** When outcomes are spread over a region, probability is the ratio of areas."
+    }
+  ]
+}

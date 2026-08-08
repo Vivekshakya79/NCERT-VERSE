@@ -1,0 +1,63 @@
+{
+  "name": "Exercise sEt 7.3",
+  "questions": [
+    {
+      "id": "9-math-6-ex7.3-q1",
+      "questionNumber": 1,
+      "question": "When a single 6-sided die is rolled, what is the total number of possible outcomes in the sample space?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the sample space:** $$S = \\{1, 2, 3, 4, 5, 6\\}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Count the outcomes:** $$n(S) = 6$$"
+        }
+      ],
+      "answer": "The total number of possible outcomes is 6.",
+      "verified": true,
+      "notes": "**Exam Tip:** The sample size n(S) is the number of elements in the sample space."
+    },
+    {
+      "id": "9-math-6-ex7.3-q2",
+      "questionNumber": 2,
+      "question": "For the following experiments write down the sample space $S$. **(i)** Rolling a die and tossing a coin together. **(ii)** Choosing a random integer between $-5$ and $+5$. **(iii)** A box containing 5 green and 7 red balls. One ball is drawn at random.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Rolling a die and tossing a coin:** Die outcomes: 1–6; coin outcomes: H, T. Each outcome is a pair (die number, coin result): $$S = \\{(1,H), (1,T), (2,H), (2,T), (3,H), (3,T), (4,H), (4,T), (5,H), (5,T), (6,H), (6,T)\\}, \\quad n(S) = 12$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Choosing a random integer between $-5$ and $+5$ (including both endpoints):** $$S = \\{-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5\\}, \\quad n(S) = 11$$"
+        },
+        {
+          "step": 3,
+          "content": "**(iii) A box with 5 green and 7 red balls, one drawn at random:** If the balls are identical except for colour, the sample space is by colour: $$S = \\{G, R\\}, \\quad n(S) = 2$$ (If the balls are individually distinguishable, S would have 12 elements, but the colour-based sample space is standard at this level.)"
+        }
+      ],
+      "answer": "(i) 12 outcomes  (ii) 11 integers  (iii) {G, R} with n(S) = 2",
+      "verified": true,
+      "notes": "**Exam Tip:** The sample space must include every possible outcome exactly once."
+    },
+    {
+      "id": "9-math-6-ex7.3-q3",
+      "questionNumber": 3,
+      "question": "In a village fair, there are 3 popular snacks available: Samosa, Pakora, and Bhaji. For drinks, villagers can choose either Chai or Lassi. **(i)** List the sample space of all possible snack and drink combinations a person could choose at the fair. **(ii)** List the event 'Selecting Samosa as a snack'.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Sample space of snack–drink combinations:** $$S = \\{(\\text{Samosa, Chai}), (\\text{Samosa, Lassi}), (\\text{Pakora, Chai}), (\\text{Pakora, Lassi}), (\\text{Bhaji, Chai}), (\\text{Bhaji, Lassi})\\}, \\quad n(S) = 6$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Event 'Selecting Samosa as a snack':** $$E = \\{(\\text{Samosa, Chai}), (\\text{Samosa, Lassi})\\}$$ The event has 2 outcomes out of 6 total outcomes: $$P(\\text{Samosa}) = \\frac{2}{6} = \\frac{1}{3}$$"
+        }
+      ],
+      "answer": "(i) 6 combinations  (ii) P(Samosa) = 2/6 = 1/3",
+      "verified": true,
+      "notes": "**Exam Tip:** An event is a subset of the sample space — here, all outcomes that include Samosa."
+    }
+  ]
+}

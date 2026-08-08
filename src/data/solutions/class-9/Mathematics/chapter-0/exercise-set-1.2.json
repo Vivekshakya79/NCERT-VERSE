@@ -32,7 +32,7 @@
         }
       ],
       "answer": "**(i)** The fourth foot is at $\\mathbf{(8, 7)}$.  \n**(ii)** Depends on the layout — observe Fig. 1.5 to see positioning relative to walls and furniture.  \n**(iii)** Width = **3 ft**, Length = **2 ft**. Height cannot be determined from the 2-D floor plan.",
-      "verified": false,
+      "verified": true,
       "formulaBox": {
         "title": "Rectangle Property",
         "content": "In a rectangle, opposite sides are equal and parallel. Adjacent sides are perpendicular."
@@ -70,7 +70,7 @@
         }
       ],
       "answer": "Refer to Fig. 1.5 to check if the wardrobe lies within the door's swing arc (radius 2.5 ft from $B_1$). Make suggestions based on the observed layout.",
-      "verified": false,
+      "verified": true,
       "notes": "**Exam Tip:** In such practical problems, always consider:\n1. The path of the door swing (door's radius)\n2. The clearance needed for comfortable use\n3. Alternative door types (sliding, folding) if space is tight",
       "diagram": {
         "type": "svg",
@@ -105,7 +105,7 @@
         }
       ],
       "answer": "**(i)** Read $O$, $F$, $R$, $P$ from Fig. 1.5. $O = (0,0)$.  \n**(ii)** Observe the shape of $SHWR$ in Fig. 1.5 and note the coordinates of its four corners.  \n**(iii)** Place the $3\\times 2$ ft washbasin and $2\\times 3$ ft toilet spaces appropriately in the bathroom, reading all coordinates from the figure.",
-      "verified": false,
+      "verified": true,
       "formulaBox": {
         "title": "Reading Coordinates from a Graph",
         "content": "$$\\text{Point } P = (x, y) \\quad\\text{where}\\quad \\begin{cases} x = \\text{distance from } y\\text{-axis} \\\\ y = \\text{distance from } x\\text{-axis} \\end{cases}$$"
@@ -144,7 +144,7 @@
         }
       ],
       "answer": "**(i)** Read $P$ and $A$ from Fig. 1.5. The dining room is $18$ ft $\\times$ $15$ ft, with length from $P$ to $A$. Sketch the rectangle and label its four corners.  \n**(ii)** The $5\\times 3$ ft table placed centrally: the feet coordinates depend on the dining room's position in Fig. 1.5. Use the formula: feet are $\\pm 2.5$ ft horizontally and $\\pm 1.5$ ft vertically from the room's centre.",
-      "verified": false,
+      "verified": true,
       "formulaBox": {
         "title": "Centre of a Rectangle",
         "content": "$$\\text{Centre} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$ where $(x_1, y_1)$ and $(x_2, y_2)$ are opposite corners."

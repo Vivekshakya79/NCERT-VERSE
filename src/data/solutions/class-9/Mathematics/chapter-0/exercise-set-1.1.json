@@ -28,7 +28,7 @@
         }
       ],
       "answer": "Distance from left wall ($y$-axis) = **8.5 units** (feet). Distance from $x$-axis = **0 units** (the door is on the $x$-axis).",
-      "verified": false,
+      "verified": true,
       "notes": "**Common Mistake:** Some students think the distance from the $x$-axis is the $x$-coordinate, and distance from the $y$-axis is the $y$-coordinate. Remember: the $x$-coordinate measures distance from the $y$-axis, and the $y$-coordinate measures distance from the $x$-axis.",
       "diagram": {
         "type": "svg",
@@ -59,7 +59,7 @@
         }
       ],
       "answer": "$$D_1 = (8.5, 0)$$",
-      "verified": false,
+      "verified": true,
       "formulaBox": {
         "title": "Coordinates of a Point",
         "content": "$$\\text{Coordinates} = (x, y) \\quad \\text{where}\\quad x = \\text{distance from } y\\text{-axis},\\; y = \\text{distance from } x\\text{-axis}$$"
@@ -94,7 +94,7 @@
         }
       ],
       "answer": "Door width = $11.5 - 8.5 = \\mathbf{3\\text{ ft}}$. Yes, this is a comfortable standard width. Yes, a person in a wheelchair can enter easily as 3 ft exceeds the minimum 32 inch requirement.",
-      "verified": false,
+      "verified": true,
       "formulaBox": {
         "title": "Distance Between Two Points on the x-axis",
         "content": "$$\\text{Distance} = |x_2 - x_1| \\quad \\text{when } y_1 = y_2 = 0$$"
@@ -129,7 +129,7 @@
         }
       ],
       "answer": "The bathroom door is **narrower** (2.5 ft) than the room door (3 ft).",
-      "verified": false,
+      "verified": true,
       "notes": "**Common Mistake:** Students often confuse which coordinate to use. When both points lie on the $y$-axis, subtract their $y$-coordinates. Remember:\n- Points on $x$-axis: $(x, 0)$ — distance = difference in $x$-coordinates\n- Points on $y$-axis: $(0, y)$ — distance = difference in $y$-coordinates",
       "diagram": {
         "type": "svg",

@@ -1,0 +1,233 @@
+{
+  "name": "Exercise sEt 3.3",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.3-q1",
+      "questionNumber": 1,
+      "question": "Prove that the following rational numbers are equal: **(i)** $\\frac{2}{3}$ and $\\frac{4}{6}$ **(ii)** $\\frac{5}{4}$ and $\\frac{10}{8}$ **(iii)** $-\\frac{3}{5}$ and $-\\frac{6}{10}$ **(iv)** $\\frac{9}{3}$ and $3$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the equality rule:** Two rational numbers $\\frac{a}{b}$ and $\\frac{c}{d}$ are equal if $ad = bc$ (cross-multiplication). Equivalently, they are equal if one can be obtained from the other by dividing/multiplying numerator and denominator by the same number."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{2}{3}$ and $\\frac{4}{6}$:** Cross-multiply: $2 \\times 6 = 12$ and $3 \\times 4 = 12$. Since $12 = 12$, they are equal. (Also $\\frac{4}{6} = \\frac{2}{3}$ after dividing by 2.)"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{5}{4}$ and $\\frac{10}{8}$:** Cross-multiply: $5 \\times 8 = 40$ and $4 \\times 10 = 40$. Since $40 = 40$, they are equal. (Also $\\frac{10}{8} = \\frac{5}{4}$ after dividing by 2.)"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-\\frac{3}{5}$ and $-\\frac{6}{10}$:** Cross-multiply: $(-3) \\times 10 = -30$ and $5 \\times (-6) = -30$. Since $-30 = -30$, they are equal. (Also $-\\frac{6}{10} = -\\frac{3}{5}$ after dividing by 2.)"
+        },
+        {
+          "step": 5,
+          "content": "**(iv) $\\frac{9}{3}$ and $3$:** Write $3$ as $\\frac{3}{1}$. Cross-multiply: $9 \\times 1 = 9$ and $3 \\times 3 = 9$. Since $9 = 9$, they are equal. (Also $\\frac{9}{3} = 3$.)"
+        }
+      ],
+      "answer": "All four pairs are equal: (i) 2/3 = 4/6, (ii) 5/4 = 10/8, (iii) −3/5 = −6/10, (iv) 9/3 = 3.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Equality of Rational Numbers",
+        "content": "$$\\frac{a}{b} = \\frac{c}{d} \\;\\iff\\; ad = bc$$"
+      },
+      "notes": "**Exam Tip:** Cross-multiplication is the fastest way to check equality of two fractions. Remember to include negative signs when cross-multiplying."
+    },
+    {
+      "id": "9-math-2-ex3.3-q2",
+      "questionNumber": 2,
+      "question": "Find the sum: **(i)** $\\frac{2}{5} + \\frac{3}{10}$ **(ii)** $\\frac{7}{12} + \\frac{5}{8}$ **(iii)** $-\\frac{4}{7} + \\frac{3}{14}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the rule:** To add fractions, first express them with the same denominator, then add the numerators: $\\frac{a}{b} + \\frac{c}{b} = \\frac{a+c}{b}$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{2}{5} + \\frac{3}{10}$:** LCM of 5 and 10 is 10. $\\frac{2}{5} = \\frac{4}{10}$. So: $$\\frac{4}{10} + \\frac{3}{10} = \\frac{7}{10}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{7}{12} + \\frac{5}{8}$:** LCM of 12 and 8 is 24. $\\frac{7}{12} = \\frac{14}{24}$ and $\\frac{5}{8} = \\frac{15}{24}$. So: $$\\frac{14}{24} + \\frac{15}{24} = \\frac{29}{24}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-\\frac{4}{7} + \\frac{3}{14}$:** LCM of 7 and 14 is 14. $-\\frac{4}{7} = -\\frac{8}{14}$. So: $$-\\frac{8}{14} + \\frac{3}{14} = -\\frac{5}{14}$$"
+        }
+      ],
+      "answer": "(i) $\\frac{7}{10}$  (ii) $\\frac{29}{24}$  (iii) $-\\frac{5}{14}$",
+      "verified": true,
+      "formulaBox": {
+        "title": "Adding Fractions",
+        "content": "$$\\frac{a}{b} + \\frac{c}{b} = \\frac{a+c}{b} \\quad \\text{(same denominator first)}$$"
+      },
+      "notes": "**Common Mistake:** Students often add numerators and denominators directly ($\\frac{2}{5} + \\frac{3}{10} = \\frac{5}{15}$). Always make the denominators equal first."
+    },
+    {
+      "id": "9-math-2-ex3.3-q3",
+      "questionNumber": 3,
+      "question": "Find the difference: **(i)** $\\frac{5}{6} - \\frac{1}{4}$ **(ii)** $\\frac{11}{8} - \\frac{3}{4}$ **(iii)** $-\\frac{7}{9} - \\left(-\\frac{2}{3}\\right)$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the rule:** To subtract fractions, express them with the same denominator, then subtract the numerators: $\\frac{a}{b} - \\frac{c}{b} = \\frac{a-c}{b}$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{5}{6} - \\frac{1}{4}$:** LCM of 6 and 4 is 12. $\\frac{5}{6} = \\frac{10}{12}$ and $\\frac{1}{4} = \\frac{3}{12}$. So: $$\\frac{10}{12} - \\frac{3}{12} = \\frac{7}{12}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{11}{8} - \\frac{3}{4}$:** LCM of 8 and 4 is 8. $\\frac{3}{4} = \\frac{6}{8}$. So: $$\\frac{11}{8} - \\frac{6}{8} = \\frac{5}{8}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-\\frac{7}{9} - \\left(-\\frac{2}{3}\\right)$:** Subtracting a negative is adding: $-\\frac{7}{9} + \\frac{2}{3}$. LCM of 9 and 3 is 9. $\\frac{2}{3} = \\frac{6}{9}$. So: $$-\\frac{7}{9} + \\frac{6}{9} = -\\frac{1}{9}$$"
+        }
+      ],
+      "answer": "(i) $\\frac{7}{12}$  (ii) $\\frac{5}{8}$  (iii) $-\\frac{1}{9}$",
+      "verified": true,
+      "notes": "**Common Mistake:** In part (iii), students often forget that subtracting a negative fraction means adding it. $-\\frac{7}{9} - (-\\frac{2}{3}) = -\\frac{7}{9} + \\frac{2}{3}$."
+    },
+    {
+      "id": "9-math-2-ex3.3-q4",
+      "questionNumber": 4,
+      "question": "Find the product: **(i)** $\\frac{2}{3} \\times \\frac{3}{10}$ **(ii)** $\\frac{7}{11} \\times \\frac{5}{8}$ **(iii)** $-\\frac{4}{7} \\times \\frac{5}{14}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the rule:** $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$. Multiply the numerators together and the denominators together."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{2}{3} \\times \\frac{3}{10}$:** $$\\frac{2 \\times 3}{3 \\times 10} = \\frac{6}{30} = \\frac{1}{5}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{7}{11} \\times \\frac{5}{8}$:** $$\\frac{7 \\times 5}{11 \\times 8} = \\frac{35}{88}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-\\frac{4}{7} \\times \\frac{5}{14}$:** $$\\frac{(-4) \\times 5}{7 \\times 14} = \\frac{-20}{98} = -\\frac{10}{49}$$"
+        }
+      ],
+      "answer": "(i) $\\frac{1}{5}$  (ii) $\\frac{35}{88}$  (iii) $-\\frac{10}{49}$",
+      "verified": true,
+      "formulaBox": {
+        "title": "Multiplying Fractions",
+        "content": "$$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$$"
+      },
+      "notes": "**Exam Tip:** Always simplify the final answer to its lowest terms. In part (i), $\\frac{6}{30}$ simplifies to $\\frac{1}{5}$."
+    },
+    {
+      "id": "9-math-2-ex3.3-q5",
+      "questionNumber": 5,
+      "question": "Find the quotient: **(i)** $\\frac{2}{3} \\div \\frac{3}{10}$ **(ii)** $\\frac{7}{11} \\div \\frac{5}{8}$ **(iii)** $-\\frac{4}{7} \\div \\frac{5}{14}$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall the rule:** To divide by a fraction, multiply by its reciprocal: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{ad}{bc}$."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $\\frac{2}{3} \\div \\frac{3}{10}$:** $$\\frac{2}{3} \\times \\frac{10}{3} = \\frac{20}{9}$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $\\frac{7}{11} \\div \\frac{5}{8}$:** $$\\frac{7}{11} \\times \\frac{8}{5} = \\frac{56}{55}$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $-\\frac{4}{7} \\div \\frac{5}{14}$:** $$-\\frac{4}{7} \\times \\frac{14}{5} = \\frac{-56}{35} = -\\frac{8}{5}$$"
+        }
+      ],
+      "answer": "(i) $\\frac{20}{9}$  (ii) $\\frac{56}{55}$  (iii) $-\\frac{8}{5}$",
+      "verified": true,
+      "formulaBox": {
+        "title": "Dividing Fractions",
+        "content": "$$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{ad}{bc}$$"
+      },
+      "notes": "**Common Mistake:** Students often forget to flip the second fraction. 'Keep, Change, Flip' — keep the first fraction, change ÷ to ×, flip the second fraction."
+    },
+    {
+      "id": "9-math-2-ex3.3-q6",
+      "questionNumber": 6,
+      "question": "Show that: $\\left(\\frac{1}{2} + \\frac{3}{4}\\right) \\times \\frac{8}{3} = \\frac{1}{2} \\times \\frac{8}{3} + \\frac{3}{4} \\times \\frac{8}{3}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Evaluate the LHS:** First add inside the bracket. $\\frac{1}{2} = \\frac{2}{4}$, so: $$\\frac{1}{2} + \\frac{3}{4} = \\frac{2}{4} + \\frac{3}{4} = \\frac{5}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Continue LHS:** $$\\frac{5}{4} \\times \\frac{8}{3} = \\frac{40}{12} = \\frac{10}{3}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Evaluate the right-hand side:** $$\\frac{1}{2} \\times \\frac{8}{3} + \\frac{3}{4} \\times \\frac{8}{3} = \\frac{8}{6} + \\frac{24}{12} = \\frac{4}{3} + \\frac{6}{3} = \\frac{10}{3}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Compare:** LHS $= \\frac{10}{3}$ and RHS $= \\frac{10}{3}$. Since LHS $=$ RHS, the distributive law is verified."
+        }
+      ],
+      "answer": "LHS = RHS = $\\frac{10}{3}$, so the distributive law holds.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Distributive Law",
+        "content": "$$p(q + r) = pq + pr$$"
+      },
+      "notes": "**Exam Tip:** The distributive law lets you multiply each term inside the bracket separately. This is a key property of rational numbers."
+    },
+    {
+      "id": "9-math-2-ex3.3-q7",
+      "questionNumber": 7,
+      "question": "Simplify the following using the distributive property: $\\frac{7}{9}\\left(\\frac{6}{7} - \\frac{3}{4}\\right)$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Apply the distributive property:** $$\\frac{7}{9}\\left(\\frac{6}{7} - \\frac{3}{4}\\right) = \\frac{7}{9} \\times \\frac{6}{7} - \\frac{7}{9} \\times \\frac{3}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Simplify each product:** $$\\frac{7}{9} \\times \\frac{6}{7} = \\frac{42}{63} = \\frac{6}{9} = \\frac{2}{3}$$ $$\\frac{7}{9} \\times \\frac{3}{4} = \\frac{21}{36} = \\frac{7}{12}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Subtract:** $$\\frac{2}{3} - \\frac{7}{12} = \\frac{8}{12} - \\frac{7}{12} = \\frac{1}{12}$$"
+        }
+      ],
+      "answer": "$$\\frac{7}{9}\\left(\\frac{6}{7} - \\frac{3}{4}\\right) = \\frac{1}{12}$$",
+      "verified": true,
+      "notes": "**Exam Tip:** Using the distributive property here avoids computing $\\frac{6}{7} - \\frac{3}{4}$ first. Both methods give the same answer — the distributive property often simplifies the arithmetic."
+    },
+    {
+      "id": "9-math-2-ex3.3-q8",
+      "questionNumber": 8,
+      "question": "Find the rational number $x$ such that: $\\frac{5}{6}(x + \\frac{3}{5}) = \\frac{5}{6}x + \\frac{1}{2}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Expand the left-hand side using the distributive property:** $$\\frac{5}{6}(x + \\frac{3}{5}) = \\frac{5}{6}x + \\frac{5}{6} \\times \\frac{3}{5}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Simplify the second term:** $$\\frac{5}{6} \\times \\frac{3}{5} = \\frac{15}{30} = \\frac{1}{2}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Compare both sides:** The equation becomes: $$\\frac{5}{6}x + \\frac{1}{2} = \\frac{5}{6}x + \\frac{1}{2}$$ Both sides are identical."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Since both sides are exactly the same for every value of $x$, the equation is an **identity** — it is true for **every rational number $x$**."
+        }
+      ],
+      "answer": "The equation is an identity, so $x$ can be **any rational number**.",
+      "verified": true,
+      "notes": "**Conceptual Insight:** This question verifies the distributive property. When both sides simplify to the same expression, the equation is true for all values of the variable."
+    }
+  ]
+}

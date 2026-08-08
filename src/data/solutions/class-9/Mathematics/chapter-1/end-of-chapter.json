@@ -1,0 +1,433 @@
+{
+  "name": "End-of-Chapter Exercises",
+  "questions": [
+    {
+      "id": "9-math-1-ec-q1",
+      "questionNumber": 1,
+      "question": "Write a polynomial of degree 3 in the variable $x$, in which the coefficient of the $x^2$ term is $-7$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the requirements:** The polynomial must be of degree 3, so the highest power of $x$ must be 3 (the coefficient of $x^3$ must be non-zero). The coefficient of the $x^2$ term must be $-7$."
+        },
+        {
+          "step": 2,
+          "content": "**Construct the polynomial:** We can choose any non-zero coefficient for $x^3$ and any values for the $x$ and constant terms. For example: $$x^3 - 7x^2 + 5x + 2$$"
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** The highest power is 3 (degree 3 ✓). The coefficient of $x^2$ is $-7$ ✓."
+        }
+      ],
+      "answer": "One such polynomial is $x^3 - 7x^2 + 5x + 2$. (There are infinitely many correct answers.)",
+      "verified": true,
+      "notes": "**Exam Tip:** Any polynomial of the form $ax^3 - 7x^2 + bx + c$ with $a \\neq 0$ satisfies the conditions."
+    },
+    {
+      "id": "9-math-1-ec-q2",
+      "questionNumber": 2,
+      "question": "Find the values of the following polynomials at the indicated values of the variables. **(i)** $5x^2 - 3x + 7$ if $x = 1$ **(ii)** $4t^3 - t^2 + 6$ if $t = a$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Substitute $x = 1$ into $5x^2 - 3x + 7$:** $$5(1)^2 - 3(1) + 7 = 5 - 3 + 7 = 9$$"
+        },
+        {
+          "step": 2,
+          "content": "**(ii) Substitute $t = a$ into $4t^3 - t^2 + 6$:** Replace every $t$ with $a$: $$4a^3 - a^2 + 6$$"
+        }
+      ],
+      "answer": "(i) $9$  (ii) $4a^3 - a^2 + 6$",
+      "verified": true,
+      "notes": "**Exam Tip:** When the variable is replaced by a letter (like $t = a$), the answer remains an algebraic expression — just substitute the letter in place of the variable."
+    },
+    {
+      "id": "9-math-1-ec-q3",
+      "questionNumber": 3,
+      "question": "If we multiply a number by $\\frac{5}{2}$ and add $\\frac{2}{3}$ to the product, we get $-\\frac{7}{12}$. Find the number.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let the number be $x$. According to the problem: $$\\frac{5}{2}x + \\frac{2}{3} = -\\frac{7}{12}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Isolate the term with $x$:** Subtract $\\frac{2}{3}$ from both sides: $$\\frac{5}{2}x = -\\frac{7}{12} - \\frac{2}{3}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Convert to a common denominator (12):** $$\\frac{5}{2}x = -\\frac{7}{12} - \\frac{8}{12} = -\\frac{15}{12} = -\\frac{5}{4}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $x$:** Multiply both sides by $\\frac{2}{5}$: $$x = -\\frac{5}{4} \\times \\frac{2}{5} = -\\frac{10}{20} = -\\frac{1}{2}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Verify:** $\\frac{5}{2} \\times \\left(-\\frac{1}{2}\\right) + \\frac{2}{3} = -\\frac{5}{4} + \\frac{2}{3} = -\\frac{15}{12} + \\frac{8}{12} = -\\frac{7}{12}$ ✓"
+        }
+      ],
+      "answer": "The number is $-\\frac{1}{2}$.",
+      "verified": true,
+      "notes": "**Common Mistake:** Students often forget to subtract $\\frac{2}{3}$ from both sides before multiplying. Always isolate the variable term first."
+    },
+    {
+      "id": "9-math-1-ec-q4",
+      "questionNumber": 4,
+      "question": "A positive number is 5 times another number. If 21 is added to both the numbers, then one of the new numbers becomes twice the other new number. What are the numbers?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variable:** Let the smaller number be $x$. Then the larger number is $5x$."
+        },
+        {
+          "step": 2,
+          "content": "**After adding 21:** The new numbers are $x + 21$ and $5x + 21$. Since $5x + 21$ is larger, it becomes twice the other: $$5x + 21 = 2(x + 21)$$"
+        },
+        {
+          "step": 3,
+          "content": "**Solve the equation:** $$5x + 21 = 2x + 42 \\implies 3x = 21 \\implies x = 7$$"
+        },
+        {
+          "step": 4,
+          "content": "**Find the numbers:** Smaller number $= x = 7$. Larger number $= 5x = 35$."
+        },
+        {
+          "step": 5,
+          "content": "**Verify:** After adding 21: $7 + 21 = 28$ and $35 + 21 = 56$. Indeed $56 = 2 \\times 28$ ✓."
+        }
+      ],
+      "answer": "The numbers are **7** and **35**.",
+      "verified": true,
+      "notes": "**Exam Tip:** 'One number becomes twice the other' means the larger new number equals 2 times the smaller new number. Set up the equation accordingly."
+    },
+    {
+      "id": "9-math-1-ec-q5",
+      "questionNumber": 5,
+      "question": "If you have ₹800 and you save ₹250 every month, find the amount you have after **(i)** 6 months **(ii)** 2 years. Express this as a linear pattern.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** You start with ₹800 and add ₹250 every month. After $n$ months, the amount is: $$800 + 250n$$"
+        },
+        {
+          "step": 2,
+          "content": "**(i) After 6 months:** $$800 + 250 \\times 6 = 800 + 1500 = 2300$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) After 2 years:** 2 years $= 24$ months. $$800 + 250 \\times 24 = 800 + 6000 = 6800$$"
+        },
+        {
+          "step": 4,
+          "content": "**Express as a linear pattern:** The amount after $n$ months is $800 + 250n$, a linear polynomial in $n$. Each month the amount increases by the constant ₹250."
+        }
+      ],
+      "answer": "(i) After 6 months: **₹2,300**. (ii) After 2 years: **₹6,800**. Linear pattern: amount $= 800 + 250n$.",
+      "verified": true,
+      "notes": "**Common Mistake:** For 2 years, students sometimes use $n = 2$ instead of $n = 24$. Always convert years to months when the rate is per month."
+    },
+    {
+      "id": "9-math-1-ec-q6",
+      "questionNumber": 6,
+      "question": "The digits of a two-digit number differ by 3. If the digits are interchanged, and the resulting number is added to the original number, we get 143. Find both the numbers.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Choose the variables:** Let the tens digit be $x$ and the units digit be $y$. The original number is $10x + y$ and the number with digits interchanged is $10y + x$."
+        },
+        {
+          "step": 2,
+          "content": "**Form the first equation (sum):** $$(10x + y) + (10y + x) = 143 \\implies 11x + 11y = 143 \\implies x + y = 13$$"
+        },
+        {
+          "step": 3,
+          "content": "**Form the second equation (digits differ by 3):** Either $x - y = 3$ or $y - x = 3$."
+        },
+        {
+          "step": 4,
+          "content": "**Case 1: $x - y = 3$.** Adding to $x + y = 13$: $2x = 16 \\implies x = 8$, so $y = 5$. The number is $85$."
+        },
+        {
+          "step": 5,
+          "content": "**Case 2: $y - x = 3$.** Adding to $x + y = 13$: $2y = 16 \\implies y = 8$, so $x = 5$. The number is $58$."
+        },
+        {
+          "step": 6,
+          "content": "**Verify:** For 85: digits differ by 3 ✓, $85 + 58 = 143$ ✓. For 58: digits differ by 3 ✓, $58 + 85 = 143$ ✓. Both numbers satisfy the conditions."
+        }
+      ],
+      "answer": "The two numbers are **85** and **58**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Two-Digit Number",
+        "content": "$$\\text{Number} = 10x + y \\quad \\text{where } x = \\text{tens digit},\\; y = \\text{units digit}$$"
+      },
+      "notes": "**Exam Tip:** Since the digits 'differ by 3' without specifying which is larger, there are two valid answers. Always check both cases."
+    },
+    {
+      "id": "9-math-1-ec-q7",
+      "questionNumber": 7,
+      "question": "Draw the graph of the following equations, and identify their slopes and y-intercepts. Also, find the coordinates of the points where these lines cut the y-axis. **(i)** $y = -3x + 4$ **(ii)** $2y = 4x + 7$ **(iii)** $5y = 6x - 10$ **(iv)** $3y = 6x - 11$ Are any of the lines parallel?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Rewrite each equation in the form $y = ax + b$:** (i) $y = -3x + 4$ (already in form). (ii) $2y = 4x + 7 \\implies y = 2x + \\frac{7}{2}$. (iii) $5y = 6x - 10 \\implies y = \\frac{6}{5}x - 2$. (iv) $3y = 6x - 11 \\implies y = 2x - \\frac{11}{3}$."
+        },
+        {
+          "step": 2,
+          "content": "**Identify slope and y-intercept:** (i) slope $= -3$, y-intercept $= 4$, cuts y-axis at $(0, 4)$. (ii) slope $= 2$, y-intercept $= \\frac{7}{2}$, cuts y-axis at $(0, \\frac{7}{2})$. (iii) slope $= \\frac{6}{5}$, y-intercept $= -2$, cuts y-axis at $(0, -2)$. (iv) slope $= 2$, y-intercept $= -\\frac{11}{3}$, cuts y-axis at $(0, -\\frac{11}{3})$."
+        },
+        {
+          "step": 3,
+          "content": "**Check for parallel lines:** Lines (ii) and (iv) both have slope 2. Therefore, **lines (ii) and (iv) are parallel**."
+        },
+        {
+          "step": 4,
+          "content": "**To draw each line:** Plot the y-intercept $(0, b)$ and one more point using the slope, then join with a straight edge. For example, for $y = -3x + 4$: at $x = 1$, $y = 1$, so $(1, 1)$ is another point."
+        }
+      ],
+      "answer": "(i) slope −3, y-int 4, cuts y-axis at (0,4). (ii) slope 2, y-int 7/2, cuts at (0,7/2). (iii) slope 6/5, y-int −2, cuts at (0,−2). (iv) slope 2, y-int −11/3, cuts at (0,−11/3). **Lines (ii) and (iv) are parallel** (both slope 2).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Slope and y-intercept",
+        "content": "$$y = ax + b \\;\\Rightarrow\\; \\text{slope} = a,\\; \\text{y-intercept} = b,\\; \\text{cuts y-axis at } (0, b)$$"
+      },
+      "notes": "**Exam Tip:** Before reading off the slope and y-intercept, always rewrite the equation in the form $y = ax + b$. Lines with equal slopes are parallel."
+    },
+    {
+      "id": "9-math-1-ec-q8",
+      "questionNumber": 8,
+      "question": "If the temperature of a liquid can be measured in Kelvin units as $x$ K and in Fahrenheit units as $y$ °F, the relation between the two systems is given by the linear equation $y = \\frac{9}{5}(x - 273) + 32$. **(i)** Find the temperature of the liquid in Fahrenheit if the temperature of the liquid is 313 K. **(ii)** If the temperature is 158 °F, then find the temperature in Kelvin.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**(i) Substitute $x = 313$:** $$y = \\frac{9}{5}(313 - 273) + 32 = \\frac{9}{5}(40) + 32 = 72 + 32 = 104$$"
+        },
+        {
+          "step": 2,
+          "content": "**Answer (i):** The temperature is **104 °F**."
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Substitute $y = 158$:** $$158 = \\frac{9}{5}(x - 273) + 32$$ Subtract 32: $$126 = \\frac{9}{5}(x - 273)$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $x$:** Multiply both sides by $\\frac{5}{9}$: $$x - 273 = 126 \\times \\frac{5}{9} = 70 \\implies x = 343$$"
+        },
+        {
+          "step": 5,
+          "content": "**Answer (ii):** The temperature is **343 K**."
+        }
+      ],
+      "answer": "(i) 104 °F  (ii) 343 K",
+      "verified": true,
+      "notes": "**Real-life connection:** Water boils at 373 K = 212 °F and freezes at 273 K = 32 °F. Check: $\\frac{9}{5}(373 - 273) + 32 = 180 + 32 = 212$ ✓."
+    },
+    {
+      "id": "9-math-1-ec-q9",
+      "questionNumber": 9,
+      "question": "The work done by a body on the application of a constant force is the product of the constant force and the distance travelled by the body in the direction of the force. Express this in the form of a linear equation in two variables (work $w$ and distance $d$), and draw its graph by taking the constant force as 3 units. What is the work done when the distance travelled is 2 units? Verify it by plotting it on the graph.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the linear equation:** Work $=$ force $\\times$ distance. With constant force 3 units: $$w = 3d$$"
+        },
+        {
+          "step": 2,
+          "content": "**Identify points for the graph:** When $d = 0$, $w = 0$, so $(0, 0)$ is on the line. When $d = 2$, $w = 6$, so $(2, 6)$ is on the line. When $d = 4$, $w = 12$, so $(4, 12)$ is on the line."
+        },
+        {
+          "step": 3,
+          "content": "**Draw the graph:** Plot the points $(0, 0)$ and $(4, 12)$ on the coordinate plane (work $w$ on the y-axis, distance $d$ on the x-axis), join them with a ruler and extend the line. All points satisfy $w = 3d$."
+        },
+        {
+          "step": 4,
+          "content": "**Work done when distance is 2 units:** $$w = 3 \\times 2 = 6 \\text{ units}$$"
+        },
+        {
+          "step": 5,
+          "content": "**Verify on the graph:** The point $(2, 6)$ lies on the line $w = 3d$ because $6 = 3 \\times 2$. ✓"
+        }
+      ],
+      "answer": "Linear equation: $w = 3d$. Work done when $d = 2$ is **6 units**. The point (2, 6) lies on the line, verifying the answer.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Work Done",
+        "content": "$$W = F \\times d \\quad \\Rightarrow \\quad w = 3d \\text{ (when force } = 3 \\text{ units)}$$"
+      },
+      "notes": "**Real-life connection:** This is the physics formula Work = Force × Distance. The graph of $w = 3d$ is a straight line through the origin with slope 3."
+    },
+    {
+      "id": "9-math-1-ec-q10",
+      "questionNumber": 10,
+      "question": "The graph of a linear polynomial $p(x)$ passes through the points $(1, 5)$ and $(3, 11)$. **(i)** Find the polynomial $p(x)$. **(ii)** Find the coordinates where the graph of $p(x)$ cuts the axes. **(iii)** Draw the graph of $p(x)$ and verify your answers.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Let $p(x) = ax + b$.** Since the graph passes through $(1, 5)$ and $(3, 11)$: $$5 = a + b \\quad \\text{and} \\quad 11 = 3a + b$$"
+        },
+        {
+          "step": 2,
+          "content": "**Subtract the equations:** $$11 - 5 = (3a + b) - (a + b) \\implies 6 = 2a \\implies a = 3$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find $b$:** Substitute $a = 3$ into $5 = a + b$: $$5 = 3 + b \\implies b = 2$$"
+        },
+        {
+          "step": 4,
+          "content": "**(i) The polynomial is:** $$p(x) = 3x + 2$$"
+        },
+        {
+          "step": 5,
+          "content": "**(ii) Where it cuts the axes:** It cuts the y-axis at $(0, b) = (0, 2)$. It cuts the x-axis where $p(x) = 0$: $$3x + 2 = 0 \\implies x = -\\frac{2}{3}$$ So it cuts the x-axis at $\\left(-\\frac{2}{3}, 0\\right)$."
+        },
+        {
+          "step": 6,
+          "content": "**(iii) Verify:** Check $(1, 5)$: $3(1) + 2 = 5$ ✓. Check $(3, 11)$: $3(3) + 2 = 11$ ✓. Plot $(0, 2)$ and $\\left(-\\frac{2}{3}, 0\\right)$ and join them to draw the graph."
+        }
+      ],
+      "answer": "(i) $p(x) = 3x + 2$. (ii) Cuts y-axis at (0, 2) and x-axis at (−2/3, 0).",
+      "verified": true,
+      "formulaBox": {
+        "title": "Finding a Linear Polynomial from Two Points",
+        "content": "$$a = \\frac{y_2 - y_1}{x_2 - x_1}, \\qquad b = y_1 - ax_1$$"
+      },
+      "notes": "**Exam Tip:** The x-intercept is found by setting $y = 0$; the y-intercept by setting $x = 0$."
+    },
+    {
+      "id": "9-math-1-ec-q11",
+      "questionNumber": 11,
+      "question": "Let $p(x) = ax + b$ and $q(x) = cx + d$ be two linear polynomials such that: **(i)** $p(0) = 5$. **(ii)** The polynomial $p(x) - q(x)$ cuts the x-axis at $(3, 0)$. **(iii)** The sum $p(x) + q(x)$ is equal to $6x + 4$ for all real $x$. Find the polynomials $p(x)$ and $q(x)$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use condition (i):** $p(0) = 5 \\implies a(0) + b = 5 \\implies b = 5$."
+        },
+        {
+          "step": 2,
+          "content": "**Use condition (iii):** $p(x) + q(x) = (a + c)x + (b + d) = 6x + 4$. Comparing coefficients: $$a + c = 6 \\quad \\text{and} \\quad b + d = 4 \\implies 5 + d = 4 \\implies d = -1$$"
+        },
+        {
+          "step": 3,
+          "content": "**Use condition (ii):** $p(x) - q(x) = (a - c)x + (b - d)$. It cuts the x-axis at $(3, 0)$, so at $x = 3$ the value is 0: $$3(a - c) + (b - d) = 0 \\implies 3(a - c) + (5 - (-1)) = 0 \\implies 3(a - c) + 6 = 0 \\implies a - c = -2$$"
+        },
+        {
+          "step": 4,
+          "content": "**Solve for $a$ and $c$:** From $a + c = 6$ and $a - c = -2$: adding gives $2a = 4 \\implies a = 2$, and then $c = 4$."
+        },
+        {
+          "step": 5,
+          "content": "**Write the polynomials:** $$p(x) = 2x + 5, \\qquad q(x) = 4x - 1$$"
+        },
+        {
+          "step": 6,
+          "content": "**Verify:** $p(0) = 5$ ✓. $p(x) - q(x) = (2x + 5) - (4x - 1) = -2x + 6$, which is 0 at $x = 3$ ✓. $p(x) + q(x) = 6x + 4$ ✓."
+        }
+      ],
+      "answer": "$p(x) = 2x + 5$ and $q(x) = 4x - 1$.",
+      "verified": true,
+      "notes": "**Exam Tip:** When comparing polynomials, match the coefficients of like terms. This is called the 'method of comparing coefficients'."
+    },
+    {
+      "id": "9-math-1-ec-q12",
+      "questionNumber": 12,
+      "question": "Look at the first three stages of a growing pattern of hexagons made using matchsticks. A new hexagon gets added at every stage which shares a side with the last hexagon of the previous stage. **(i)** Draw the next two stages of the pattern. How many matchsticks will be required at these stages? **(ii)** Complete the table. **(iii)** Find a rule to determine the number of matchsticks required for the nth stage. **(iv)** How many matchsticks will be required for the 15th stage of the pattern? **(v)** Can 200 matchsticks form a stage in this pattern? Justify your answer.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the pattern:** Stage 1 uses 6 matchsticks (a single hexagon). Each new hexagon shares one side with the previous one, so each additional stage adds only 5 new matchsticks."
+        },
+        {
+          "step": 2,
+          "content": "**(i) Next two stages:** Stage 4 uses $16 + 5 = 21$ matchsticks. Stage 5 uses $21 + 5 = 26$ matchsticks."
+        },
+        {
+          "step": 3,
+          "content": "**(ii) Complete the table:** | Stage | 1 | 2 | 3 | 4 | 5 | ... | n | | --- | --- | --- | --- | --- | --- | --- | --- | | Matchsticks | 6 | 11 | 16 | 21 | 26 | ... | 5n + 1 |"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) Find the rule:** The number of matchsticks at stage $n$ is: $$5n + 1$$ Check: Stage 1: $5(1) + 1 = 6$ ✓, Stage 2: $5(2) + 1 = 11$ ✓, Stage 3: $5(3) + 1 = 16$ ✓."
+        },
+        {
+          "step": 5,
+          "content": "**(iv) 15th stage:** $$5(15) + 1 = 75 + 1 = 76 \\text{ matchsticks}$$"
+        },
+        {
+          "step": 6,
+          "content": "**(v) Can 200 matchsticks form a stage?** We need $5n + 1 = 200$: $$5n = 199 \\implies n = 39.8$$ Since $n$ is not a whole number, **200 matchsticks cannot form a stage** in this pattern."
+        }
+      ],
+      "answer": "(i) Stage 4: 21, Stage 5: 26. (iii) Rule: 5n + 1. (iv) 15th stage: 76 matchsticks. (v) No — 5n + 1 = 200 gives n = 39.8, not a whole number.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Matchstick Pattern Rule",
+        "content": "$$\\text{Matchsticks at stage } n = 5n + 1$$"
+      },
+      "notes": "**Exam Tip:** The constant difference between consecutive stages (5) is the coefficient of $n$. The constant term (1) is found by checking stage 1."
+    },
+    {
+      "id": "9-math-1-ec-q13",
+      "questionNumber": 13,
+      "question": "Let $p(x) = ax + b$ and $q(x) = cx + d$ be two linear polynomials such that: **(i)** The graph of $p(x)$ passes through the points $(2, 3)$ and $(6, 11)$. **(ii)** The graph of $q(x)$ passes through the point $(4, -1)$. **(iii)** The graph of $q(x)$ is parallel to the graph of $p(x)$. Find the polynomials $p(x)$ and $q(x)$. Also, find the coordinates of the point where these lines meet the x-axis.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find $p(x)$:** Since the graph passes through $(2, 3)$ and $(6, 11)$: $$3 = 2a + b \\quad \\text{and} \\quad 11 = 6a + b$$ Subtracting: $8 = 4a \\implies a = 2$. Then $3 = 2(2) + b \\implies b = -1$. So $p(x) = 2x - 1$."
+        },
+        {
+          "step": 2,
+          "content": "**Find $q(x)$:** Since $q(x)$ is parallel to $p(x)$, it has the same slope: $c = 2$. So $q(x) = 2x + d$. It passes through $(4, -1)$: $$-1 = 2(4) + d \\implies d = -9$$ So $q(x) = 2x - 9$."
+        },
+        {
+          "step": 3,
+          "content": "**Where $p(x)$ meets the x-axis:** Set $p(x) = 0$: $$2x - 1 = 0 \\implies x = \\frac{1}{2}$$ So $p(x)$ meets the x-axis at $\\left(\\frac{1}{2}, 0\\right)$."
+        },
+        {
+          "step": 4,
+          "content": "**Where $q(x)$ meets the x-axis:** Set $q(x) = 0$: $$2x - 9 = 0 \\implies x = \\frac{9}{2}$$ So $q(x)$ meets the x-axis at $\\left(\\frac{9}{2}, 0\\right)$."
+        },
+        {
+          "step": 5,
+          "content": "**Verify:** $p(2) = 2(2) - 1 = 3$ ✓, $p(6) = 2(6) - 1 = 11$ ✓, $q(4) = 2(4) - 9 = -1$ ✓. Both lines have slope 2, so they are parallel ✓."
+        }
+      ],
+      "answer": "$p(x) = 2x - 1$ and $q(x) = 2x - 9$. They meet the x-axis at (1/2, 0) and (9/2, 0) respectively.",
+      "verified": true,
+      "notes": "**Exam Tip:** Parallel lines have equal slopes. Use the slope of $p(x)$ directly for $q(x)$, then use the given point to find its y-intercept."
+    },
+    {
+      "id": "9-math-1-ec-q14",
+      "questionNumber": 14,
+      "question": "What do all linear functions of the form $f(x) = ax + a$, $a > 0$, have in common?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Rewrite the function:** $$f(x) = ax + a = a(x + 1)$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find a common point:** Substitute $x = -1$: $$f(-1) = a(-1) + a = -a + a = 0$$ So every such function passes through the point $(-1, 0)$."
+        },
+        {
+          "step": 3,
+          "content": "**Interpret the common features:** (1) All the graphs pass through the point $(-1, 0)$ on the x-axis. (2) Since $a > 0$, all have positive slope — they all rise from left to right (linear growth). (3) The y-intercept of each is $a$ (at $(0, a)$), which varies with $a$."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** All functions of the form $f(x) = ax + a$ with $a > 0$ pass through the common point $(-1, 0)$ and represent linear growth with positive slope."
+        }
+      ],
+      "answer": "All such functions pass through the common point (−1, 0), have positive slope (linear growth), and their y-intercept equals a.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Common Point",
+        "content": "$$f(x) = ax + a = a(x+1) \\;\\Rightarrow\\; f(-1) = 0 \\;\\Rightarrow\\; \\text{all pass through } (-1, 0)$$"
+      },
+      "notes": "**Exam Tip:** To find what a family of functions has in common, look for a value of $x$ that makes the expression independent of $a$ — here $x = -1$."
+    }
+  ]
+}

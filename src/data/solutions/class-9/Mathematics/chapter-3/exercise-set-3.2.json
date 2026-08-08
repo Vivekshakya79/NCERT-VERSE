@@ -1,0 +1,113 @@
+{
+  "name": "Exercise sEt 3.2",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.2-q1",
+      "questionNumber": 1,
+      "question": "The temperature in the high-altitude desert of Ladakh is recorded as 4 °C at noon. By midnight, it drops by 15 °C. What is the midnight temperature?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the situation:** The temperature starts at 4 °C and drops (decreases) by 15 °C."
+        },
+        {
+          "step": 2,
+          "content": "**Calculate the midnight temperature:** $$4 - 15 = -11$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The midnight temperature is **-11 °C**."
+        }
+      ],
+      "answer": "The midnight temperature is **-11 °C**.",
+      "verified": true,
+      "notes": "**Real-life connection:** Ladakh is one of the coldest inhabited places in India. Temperatures below zero are common there in winter, which is why negative numbers are essential for temperature."
+    },
+    {
+      "id": "9-math-2-ex3.2-q2",
+      "questionNumber": 2,
+      "question": "A spice trader takes a loan (debt) of ₹850. The next day, he makes a profit (fortune) of ₹1,200. The following week, he incurs a loss of ₹450. Write this sequence as an equation using integers and calculate his final financial standing.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Represent each amount as an integer:** Debt $= -850$, Profit $= +1200$, Loss $= -450$."
+        },
+        {
+          "step": 2,
+          "content": "**Write the equation:** $$-850 + 1200 - 450$$"
+        },
+        {
+          "step": 3,
+          "content": "**Calculate step by step:** $$-850 + 1200 = 350$$ $$350 - 450 = -100$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** The final financial standing is **-₹100**, meaning he has a net loss (debt) of ₹100."
+        }
+      ],
+      "answer": "Equation: $-850 + 1200 - 450 = -100$. Final standing: **-₹100** (a loss of ₹100).",
+      "verified": true,
+      "notes": "**Exam Tip:** Treat debts and losses as negative numbers and profits as positive numbers, then add them all together."
+    },
+    {
+      "id": "9-math-2-ex3.2-q3",
+      "questionNumber": 3,
+      "question": "Calculate the following using Brahmagupta's laws: **(i)** $(-12) \\times 5$ **(ii)** $(-8) \\times (-7)$ **(iii)** $0 - (-14)$ **(iv)** $(-20) \\div 4$",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Recall Brahmagupta's laws:** Debt $\\times$ Fortune $=$ Debt (negative $\\times$ positive $=$ negative). Debt $\\times$ Debt $=$ Fortune (negative $\\times$ negative $=$ positive)."
+        },
+        {
+          "step": 2,
+          "content": "**(i) $(-12) \\times 5$:** Negative $\\times$ Positive $=$ Negative. $$(-12) \\times 5 = -60$$"
+        },
+        {
+          "step": 3,
+          "content": "**(ii) $(-8) \\times (-7)$:** Negative $\\times$ Negative $=$ Positive. $$(-8) \\times (-7) = 56$$"
+        },
+        {
+          "step": 4,
+          "content": "**(iii) $0 - (-14)$:** Subtracting a negative is the same as adding. $$0 - (-14) = 0 + 14 = 14$$"
+        },
+        {
+          "step": 5,
+          "content": "**(iv) $(-20) \\div 4$:** Negative $\\div$ Positive $=$ Negative. $$(-20) \\div 4 = -5$$"
+        }
+      ],
+      "answer": "(i) $-60$  (ii) $56$  (iii) $14$  (iv) $-5$",
+      "verified": true,
+      "formulaBox": {
+        "title": "Brahmagupta's Sign Rules",
+        "content": "$$(-) \\times (+) = (-), \\quad (-) \\times (-) = (+), \\quad 0 - (-a) = a$$"
+      },
+      "notes": "**Common Mistake:** Students often write $(-8) \\times (-7) = -56$. Remember: the product of two negatives is always positive."
+    },
+    {
+      "id": "9-math-2-ex3.2-q4",
+      "questionNumber": 4,
+      "question": "Explain, using a real-world example of debt, why subtracting a negative number is the same as adding a positive number (e.g., $10 - (-5) = 15$).",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Set up the real-world example:** Suppose you have ₹10. A negative number represents a debt, so $-5$ means you owe ₹5."
+        },
+        {
+          "step": 2,
+          "content": "**Interpret $10 - (-5)$:** This means removing a debt of ₹5. If your debt of ₹5 is removed (forgiven), your money effectively increases by ₹5."
+        },
+        {
+          "step": 3,
+          "content": "**Calculate:** $$10 - (-5) = 10 + 5 = 15$$"
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** Subtracting a negative number is the same as adding the corresponding positive number, because removing a debt increases your wealth."
+        }
+      ],
+      "answer": "Removing a debt of ₹5 increases your money by ₹5, so $10 - (-5) = 10 + 5 = 15$.",
+      "verified": true,
+      "notes": "**Conceptual Insight:** This is why 'minus a minus is a plus'. Think of the minus sign as 'remove' and a negative number as 'debt' — removing a debt makes you richer."
+    }
+  ]
+}

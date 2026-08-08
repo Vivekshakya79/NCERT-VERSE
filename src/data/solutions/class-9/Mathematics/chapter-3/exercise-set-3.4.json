@@ -1,0 +1,145 @@
+{
+  "name": "Exercise sEt 3.4",
+  "questions": [
+    {
+      "id": "9-math-2-ex3.4-q1",
+      "questionNumber": 1,
+      "question": "Represent the rational numbers $\\frac{2}{3}$, $-\\frac{5}{4}$ and $1\\frac{1}{2}$ on a single number line.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Convert to a common form for comparison:** $1\\frac{1}{2} = \\frac{3}{2}$. As decimals: $-\\frac{5}{4} = -1.25$, $\\frac{2}{3} \\approx 0.67$, $\\frac{3}{2} = 1.5$."
+        },
+        {
+          "step": 2,
+          "content": "**Locate each number:** $-\\frac{5}{4} = -1.25$ lies between $-2$ and $-1$ (one quarter of the way from $-1$ towards $-2$). $\\frac{2}{3}$ lies between 0 and 1 (two-thirds of the way from 0 to 1). $\\frac{3}{2} = 1.5$ lies exactly halfway between 1 and 2."
+        },
+        {
+          "step": 3,
+          "content": "**Order on the number line:** $$-\\frac{5}{4} < \\frac{2}{3} < \\frac{3}{2}$$ Mark the three points in this order from left to right on the number line."
+        }
+      ],
+      "answer": "On the number line: −5/4 (between −2 and −1), 2/3 (between 0 and 1), 3/2 (between 1 and 2).",
+      "verified": true,
+      "notes": "**Exam Tip:** To place a fraction $\\frac{p}{q}$ on the number line, divide the unit interval into $q$ equal parts and count $p$ parts from 0 (right for positive, left for negative)."
+    },
+    {
+      "id": "9-math-2-ex3.4-q2",
+      "questionNumber": 2,
+      "question": "Find three distinct rational numbers that lie strictly between $-\\frac{1}{2}$ and $\\frac{1}{4}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write both numbers with a common denominator:** LCM of 2 and 4 is 4. $$-\\frac{1}{2} = -\\frac{2}{4} \\quad \\text{and} \\quad \\frac{1}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find numbers between $-\\frac{2}{4}$ and $\\frac{1}{4}$:** The fractions $-\\frac{1}{4}$, $0$ and $\\frac{1}{8}$ all lie strictly between them."
+        },
+        {
+          "step": 3,
+          "content": "**Verify:** $-\\frac{2}{4} < -\\frac{1}{4} < 0 < \\frac{1}{8} < \\frac{1}{4}$. ✓"
+        }
+      ],
+      "answer": "Three such numbers are $-\\frac{1}{4}$, $0$ and $\\frac{1}{8}$. (There are infinitely many correct answers.)",
+      "verified": true,
+      "notes": "**Exam Tip:** There are infinitely many rational numbers between any two rational numbers. Any three distinct numbers in the interval are correct."
+    },
+    {
+      "id": "9-math-2-ex3.4-q3",
+      "questionNumber": 3,
+      "question": "Simplify the expression: $\\left(-\\frac{1}{4}\\right) + \\frac{5}{12}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Find a common denominator:** LCM of 4 and 12 is 12. $$-\\frac{1}{4} = -\\frac{3}{12}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Add the fractions:** $$-\\frac{3}{12} + \\frac{5}{12} = \\frac{2}{12} = \\frac{1}{6}$$"
+        }
+      ],
+      "answer": "$$\\left(-\\frac{1}{4}\\right) + \\frac{5}{12} = \\frac{1}{6}$$",
+      "verified": true,
+      "notes": "**Exam Tip:** Always simplify the final fraction to its lowest terms: $\\frac{2}{12} = \\frac{1}{6}$."
+    },
+    {
+      "id": "9-math-2-ex3.4-q4",
+      "questionNumber": 4,
+      "question": "A tailor has $15\\frac{3}{4}$ metres of fine silk. If making one kurta requires $2\\frac{1}{4}$ metres of silk, exactly how many kurtas can he make?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Convert mixed numbers to improper fractions:** $$15\\frac{3}{4} = \\frac{63}{4} \\quad \\text{and} \\quad 2\\frac{1}{4} = \\frac{9}{4}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Divide the total silk by the silk per kurta:** $$\\frac{63}{4} \\div \\frac{9}{4} = \\frac{63}{4} \\times \\frac{4}{9} = \\frac{63}{9} = 7$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** The tailor can make exactly **7 kurtas**."
+        }
+      ],
+      "answer": "The tailor can make exactly **7 kurtas**.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Number of Items",
+        "content": "$$\\text{Number of kurtas} = \\frac{\\text{total silk}}{\\text{silk per kurta}} = \\frac{63/4}{9/4} = 7$$"
+      },
+      "notes": "**Exam Tip:** When dividing by a fraction, multiply by its reciprocal. Here $\\frac{4}{9}$ cancels the $\\frac{4}{9}$ nicely."
+    },
+    {
+      "id": "9-math-2-ex3.4-q5",
+      "questionNumber": 5,
+      "question": "Find three rational numbers between 3.1415 and 3.1416.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Understand the interval:** We need numbers strictly between 3.1415 and 3.1416. Since both have four decimal places, we can insert numbers with more decimal places."
+        },
+        {
+          "step": 2,
+          "content": "**Insert numbers with five decimal places:** $$3.1415 < 3.14151 < 3.14152 < 3.14153 < 3.1416$$"
+        },
+        {
+          "step": 3,
+          "content": "**Conclusion:** Three rational numbers between 3.1415 and 3.1416 are **3.14151, 3.14152 and 3.14153**."
+        }
+      ],
+      "answer": "3.14151, 3.14152, 3.14153 (any three numbers strictly between 3.1415 and 3.1416 are correct).",
+      "verified": true,
+      "notes": "**Exam Tip:** To find rational numbers between two decimals, add more decimal places. There are infinitely many such numbers."
+    },
+    {
+      "id": "9-math-2-ex3.4-q6",
+      "questionNumber": 6,
+      "question": "Can you think of other way(s) to find a rational number between any two rational numbers?",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Method 1 — Taking the average:** If $a$ and $b$ are two rational numbers, then $\\frac{a+b}{2}$ always lies between them. For example, between 1 and $\\frac{3}{2}$, the average is $\\frac{1 + 3/2}{2} = \\frac{5}{4}$."
+        },
+        {
+          "step": 2,
+          "content": "**Method 2 — Common denominator:** Write both numbers with the same denominator and choose any numerator strictly between the two numerators. For example, between $\\frac{2}{5}$ and $\\frac{3}{5}$, write them as $\\frac{6}{15}$ and $\\frac{9}{15}$; then $\\frac{7}{15}$ and $\\frac{8}{15}$ lie between them."
+        },
+        {
+          "step": 3,
+          "content": "**Method 3 — Decimal expansion:** Convert both numbers to decimals and pick any decimal between them. For example, between 0.3 and 0.4, we can pick 0.35."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** There are infinitely many rational numbers between any two rational numbers, and the average method is the most general."
+        }
+      ],
+      "answer": "Yes: (1) take the average (a+b)/2, (2) use a common denominator and pick intermediate numerators, (3) use decimal expansions.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Rational Number Between a and b",
+        "content": "$$\\frac{a+b}{2} \\text{ always lies between } a \\text{ and } b$$"
+      },
+      "notes": "**Conceptual Insight:** This is the 'density' property of rational numbers — between any two rational numbers there are infinitely many more."
+    }
+  ]
+}

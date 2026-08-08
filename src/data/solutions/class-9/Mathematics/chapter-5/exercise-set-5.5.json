@@ -1,0 +1,83 @@
+{
+  "name": "Exercise sEt 5.5",
+  "questions": [
+    {
+      "id": "9-math-4-ex5.5-q1",
+      "questionNumber": 1,
+      "question": "Find the length of the chord of a circle where the radius is 7 cm and perpendicular distance is 6 cm.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Use the right-triangle relation:** The radius, the perpendicular distance and half the chord form a right triangle: $$\\left(\\frac{\\text{chord}}{2}\\right)^2 = r^2 - d^2 = 7^2 - 6^2 = 49 - 36 = 13$$"
+        },
+        {
+          "step": 2,
+          "content": "**Find half the chord:** $$\\frac{\\text{chord}}{2} = \\sqrt{13}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Find the full chord:** $$\\text{Chord} = 2\\sqrt{13} \\approx 7.21 \\text{ cm}$$"
+        }
+      ],
+      "answer": "The length of the chord is 2√13 cm ≈ 7.21 cm.",
+      "verified": true,
+      "formulaBox": {
+        "title": "Chord Length",
+        "content": "$$\\text{Chord} = 2\\sqrt{r^2 - d^2}$$"
+      },
+      "notes": "**Exam Tip:** Always draw the perpendicular from the centre to the chord — it bisects the chord and forms a right triangle."
+    },
+    {
+      "id": "9-math-4-ex5.5-q2",
+      "questionNumber": 2,
+      "question": "Explain why the following statement is true: If the perpendicular distance of a chord from the centre is $d$ and the radius is $r$, then the chord length is $2\\sqrt{r^2 - d^2}$.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Draw the perpendicular:** Let $AB$ be the chord and $M$ its midpoint. The perpendicular from the centre $O$ to $AB$ meets it at $M$, so $OM = d$ and $OM \\perp AB$."
+        },
+        {
+          "step": 2,
+          "content": "**Form a right triangle:** $\\triangle OMA$ is right-angled at $M$, with $OA = r$ (radius) and $OM = d$."
+        },
+        {
+          "step": 3,
+          "content": "**Apply the Baudhāyana–Pythagoras theorem:** $$OA^2 = OM^2 + AM^2 \\;\\Rightarrow\\; r^2 = d^2 + AM^2 \\;\\Rightarrow\\; AM = \\sqrt{r^2 - d^2}$$"
+        },
+        {
+          "step": 4,
+          "content": "**Double it:** Since the perpendicular from the centre bisects the chord, $AB = 2 \\times AM = 2\\sqrt{r^2 - d^2}$."
+        }
+      ],
+      "answer": "The perpendicular bisects the chord, and the radius, distance d and half-chord form a right triangle, giving chord = 2√(r² − d²).",
+      "verified": true,
+      "notes": "**Exam Tip:** This formula is the single most useful tool for all chord problems."
+    },
+    {
+      "id": "9-math-4-ex5.5-q3",
+      "questionNumber": 3,
+      "question": "In a circle, if the distance of chord $AB$ from the centre is twice the distance of another chord $CD$ from the centre, then can we conclude that $CD = 2AB$? Give reasons for your answer.",
+      "solution": [
+        {
+          "step": 1,
+          "content": "**Write the chord-length formula:** $$AB = 2\\sqrt{r^2 - d_{AB}^2}, \\qquad CD = 2\\sqrt{r^2 - d_{CD}^2}$$"
+        },
+        {
+          "step": 2,
+          "content": "**Substitute the given relation:** Let $d_{AB} = 2d$ and $d_{CD} = d$. Then: $$AB = 2\\sqrt{r^2 - 4d^2}, \\qquad CD = 2\\sqrt{r^2 - d^2}$$"
+        },
+        {
+          "step": 3,
+          "content": "**Check the claimed relation:** $CD = 2AB$ would mean $2\\sqrt{r^2 - d^2} = 4\\sqrt{r^2 - 4d^2}$, i.e., $\\sqrt{r^2 - d^2} = 2\\sqrt{r^2 - 4d^2}$. Squaring: $r^2 - d^2 = 4r^2 - 16d^2$, i.e., $15d^2 = 3r^2$, which is not generally true."
+        },
+        {
+          "step": 4,
+          "content": "**Conclusion:** No. The chord length is not proportional to the distance from the centre — it depends on $\\sqrt{r^2 - d^2}$, which is not linear in $d$. So we cannot conclude $CD = 2AB$."
+        }
+      ],
+      "answer": "No. Chord length = 2√(r² − d²) is not linear in d, so doubling the distance does not halve the chord length.",
+      "verified": true,
+      "notes": "**Exam Tip:** Beware of assuming proportionality — the chord–distance relation is quadratic, not linear."
+    }
+  ]
+}
