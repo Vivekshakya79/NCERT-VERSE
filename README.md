@@ -95,6 +95,47 @@ prisma/
 - `npm run db:studio` — Open Prisma Studio
 - `npm run db:seed` — Seed database
 
+## Deployment (Vercel)
+
+The project is deployed on Vercel. Environment variables are **never committed**
+to git — `.env` is gitignored — so every environment (local, Vercel) must be
+configured separately.
+
+### Required environment variables
+
+| Variable | Description | Required |
+| --- | --- | --- |
+| `DATABASE_URL` | PostgreSQL connection string (Prisma) | Yes (for DB features) |
+| `DEEPSEEK_API_KEY` | OpenRouter API key for the AI Doubt Solver | Yes (for AI) |
+| `DEEPSEEK_MODEL` | OpenRouter model slug (defaults to `google/gemma-4-26b-a4b-it:free`) | No |
+| `NEXT_PUBLIC_APP_URL` | Public app URL | No |
+
+### Setting variables on Vercel
+
+1. Open the project in the [Vercel Dashboard](https://vercel.com/dashboard).
+2. Go to **Settings → Environment Variables**.
+3. Add each key with its value, and tick the environments
+   (**Production**, **Preview**, **Development**).
+4. Click **Save**, then **Deployments → Redeploy** so the new variables take
+   effect.
+
+> ⚠️ **AI Doubt Solver:** if `DEEPSEEK_API_KEY` is missing on Vercel, the live
+> site shows `"AI service is not configured. Please set DEEPSEEK_API_KEY."`
+> (HTTP 503). The app works locally because `.env` holds the key — the same
+> value must be added to Vercel. Free-tier OpenRouter keys can only use
+> `:free` model slugs.
+
+### Using the Vercel CLI instead
+
+```bash
+npm i -g vercel
+vercel login
+vercel link
+vercel env add DEEPSEEK_API_KEY production preview development
+vercel env add DATABASE_URL production preview development
+vercel --prod
+```
+
 ## License
 
 Private project. All rights reserved.
