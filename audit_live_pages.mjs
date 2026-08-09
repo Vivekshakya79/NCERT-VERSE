@@ -125,10 +125,18 @@ for (const t of pages) {
       ok("has viewBox (responsive)", geoSvg.includes("viewBox"));
       ok("has width:100% (fluid)", geoSvg.includes("width:100%"));
       if (t.staged) {
-        // Staged construction: SSR shows stage 0 (Step 1: Draw AB), full
-        // figure is reached via the stage navigation buttons.
-        ok("SSR shows stage 0 (Step 1: Draw AB)", geoSvg.includes("Step 1 — Draw AB") && geoSvg.includes(">A<") && geoSvg.includes(">B<"));
-        ok("stage 0 has no angles yet (progressive)", !geoSvg.includes("70°"));
+        // The default view shows the COMPLETE figure (final construction
+        // stage) — like a textbook diagram. Stage buttons let students step
+        // back through the construction steps.
+        ok(
+          "SSR shows the full figure (last stage)",
+          geoSvg.includes("70°") &&
+            geoSvg.includes("60°") &&
+            geoSvg.includes("50°") &&
+            geoSvg.includes(">O<") &&
+            geoSvg.includes("stroke-dasharray")
+        );
+        ok("full figure has the circumcircle", geoSvg.includes("Triangle ABC with its circumcircle"));
         const stageLabels = [
           "Step 1: Draw AB = 5 cm",
           "Step 2: Construct triangle ABC",

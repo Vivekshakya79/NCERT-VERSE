@@ -24,7 +24,12 @@ export default function GeometryDiagram({
   stages,
   caption,
 }: GeometryDiagramProps) {
-  const [stageIdx, setStageIdx] = useState(0);
+  // Show the COMPLETE figure by default (the final construction stage), like
+  // a textbook diagram. The stage buttons let students step back through the
+  // construction steps one at a time.
+  const [stageIdx, setStageIdx] = useState(
+    stages && stages.length > 1 ? stages.length - 1 : 0
+  );
   const [zoomed, setZoomed] = useState(false);
 
   const activeData = stages?.[stageIdx]?.data ?? data;
