@@ -5,6 +5,7 @@ import { getClassById } from "@/data/classes";
 import { getChapters } from "@/data/chapters";
 import { getExercisesForChapter } from "@/data/solutions-data";
 import { toUnicodeSubscripts } from "@/lib/subscripts";
+import { latexToPlainText } from "@/lib/latex";
 
 interface Props {
   params: Promise<{
@@ -111,10 +112,12 @@ export default async function ExercisePage({ params }: Props) {
                 className="sol-q-card-preview"
                 dangerouslySetInnerHTML={{
                   __html: toUnicodeSubscripts(
-                    q.question
-                      .replace(/\$\$(.+?)\$\$/g, "$1")
-                      .replace(/\$(.+?)\$/g, "$1")
-                      .replace(/\*\*(.+?)\*\*/g, "$1")
+                    latexToPlainText(
+                      q.question
+                        .replace(/\$\$(.+?)\$\$/g, "$1")
+                        .replace(/\$(.+?)\$/g, "$1")
+                        .replace(/\*\*(.+?)\*\*/g, "$1")
+                    )
                   ).slice(0, 120) + (q.question.length > 120 ? "..." : ""),
                 }}
               />

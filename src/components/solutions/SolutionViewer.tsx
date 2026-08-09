@@ -25,6 +25,7 @@ import {
   Exercise,
 } from "@/types";
 import { toUnicodeSubscripts } from "@/lib/subscripts";
+import { latexToPlainText } from "@/lib/latex";
 
 interface SolutionViewerProps {
   classId: number;
@@ -58,7 +59,7 @@ function renderContent(text: string): string {
   // Convert any remaining underscore subscripts (including ones that arrive
   // via content where the `$` delimiters were already stripped, e.g. quick
   // revision / key-formula bullets) into proper Unicode subscripts.
-  return toUnicodeSubscripts(renderLatex(renderMarkdown(text)));
+  return toUnicodeSubscripts(renderLatex(renderMarkdown(latexToPlainText(text))));
 }
 
 // ─── Point-wise Content Parser ──────────────────────────────────────────────
@@ -138,7 +139,7 @@ function renderPointwiseContent(content: string): string {
   
   if (heading) {
     const boldedHeading = toUnicodeSubscripts(
-      heading.replace(/\$([^$]+)\$/g, "<strong>$1</strong>")
+      latexToPlainText(heading).replace(/\$([^$]+)\$/g, "<strong>$1</strong>")
     );
     html += `<div class="sv-pw-heading">${boldedHeading}</div>`;
   }
@@ -153,14 +154,20 @@ function renderPointwiseContent(content: string): string {
     // Don't double-wrap in bullet points
     html += `<div class="sv-pw-body">`;
     if (hasDashList) {
-      // Convert dash lists into the same styling
+      // Route EVERY line through the math pipeline so no raw LaTeX escapes.
+      // Dash lines become bulleted items; other lines (e.g. $$...$$ display
+      // math, continuation lines) are rendered through the same renderContent
+      // pipeline so \frac, \sqrt, $$, \[ \] etc. never reach the HTML raw.
       const rendered = body
-        .replace(/^- (.+)$/gm, (_, line) => {
-          const smartBolded = smartBold(line.trim());
-          const rendered = renderContent(smartBolded);
-          return `<div class="sv-pw-item">${rendered}</div>`;
+        .split(/\n/)
+        .map((line) => {
+          if (/^\s*$/.test(line)) return '<div class="sv-pw-spacer"></div>';
+          const isDash = /^-\s/.test(line);
+          const text = isDash ? line.replace(/^-\s+/, "") : line;
+          const smartBolded = smartBold(text.trim());
+          return `<div class="sv-pw-item">${renderContent(smartBolded)}</div>`;
         })
-        .replace(/\n\n+/g, '<div class="sv-pw-spacer"></div>');
+        .join("");
       html += rendered;
     } else {
       html += renderContent(smartBold(body));
