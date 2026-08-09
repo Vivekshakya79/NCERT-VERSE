@@ -17,7 +17,124 @@
       ],
       "answer": "The length of the chord is 24 cm.",
       "verified": true,
-      "notes": "**Exam Tip:** Remember the 5–12–13 right triangle: here the radius is the hypotenuse."
+      "notes": "**Exam Tip:** Remember the 5–12–13 right triangle: here the radius is the hypotenuse.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.18: A chord of a circle of radius 13 cm at a distance 5 cm from the centre O. Half the chord is 12 cm, so the chord is 24 cm.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Chord at a distance from the centre",
+          "description": "A circle of radius 13 cm with chord AB at distance 5 cm from the centre O. OM is perpendicular to AB, so AM = BM = 12 cm and AB = 24 cm.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 70,
+              "y": 175,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 430,
+              "y": 175,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 175,
+              "color": "#16A34A",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "O",
+              "to": "A",
+              "label": "13 cm",
+              "labelOffset": {
+                "dx": -8,
+                "dy": -6
+              }
+            },
+            {
+              "from": "O",
+              "to": "B"
+            },
+            {
+              "from": "A",
+              "to": "B",
+              "label": "24 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "O",
+              "to": "M",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 195,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M",
+              "from": "O",
+              "to": "A",
+              "color": "#16A34A"
+            }
+          ],
+          "labels": [
+            {
+              "x": 250,
+              "y": 212,
+              "text": "5 cm",
+              "color": "#16A34A",
+              "size": 12,
+              "anchor": "middle"
+            },
+            {
+              "x": 160,
+              "y": 175,
+              "text": "12 cm",
+              "color": "#475569",
+              "size": 12,
+              "anchor": "middle"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ec-q2",
@@ -97,7 +214,120 @@
       ],
       "answer": "OM is perpendicular to AB and passes through the midpoint M, so it is the perpendicular bisector — hence it passes through the centre O.",
       "verified": true,
-      "notes": "**Exam Tip:** The perpendicular bisector of any chord always passes through the centre — this is how the centre of a circle is located."
+      "notes": "**Exam Tip:** The perpendicular bisector of any chord always passes through the centre — this is how the centre of a circle is located.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.19: The perpendicular bisector of chord AB passes through the centre O. OM is perpendicular to AB and passes through its midpoint M.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Perpendicular bisector of a chord passes through the centre",
+          "description": "In a circle with centre O and chord AB, the perpendicular bisector of AB passes through O, meeting AB at its midpoint M.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 340,
+              "color": "#16A34A",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 18
+              }
+            },
+            {
+              "id": "H0",
+              "x": 250,
+              "y": 600,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H1",
+              "x": 250,
+              "y": 80,
+              "showLabel": false,
+              "size": 0
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B"
+            },
+            {
+              "from": "O",
+              "to": "A"
+            },
+            {
+              "from": "O",
+              "to": "B"
+            }
+          ],
+          "constructionLines": [
+            {
+              "from": "H0",
+              "to": "H1",
+              "color": "#8B5CF6",
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M",
+              "from": "O",
+              "to": "A",
+              "color": "#16A34A"
+            }
+          ],
+          "midpointMarkers": [
+            {
+              "segment": [
+                "A",
+                "B"
+              ],
+              "color": "#16A34A"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ec-q6",
@@ -123,7 +353,102 @@
         "title": "Angle in a Semicircle",
         "content": "The angle subtended by a diameter at any point on the circle is 90°."
       },
-      "notes": "**Exam Tip:** This is the famous 'angle in a semicircle is a right angle' result."
+      "notes": "**Exam Tip:** This is the famous 'angle in a semicircle is a right angle' result.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.20: AB is a diameter of the circle and C is a point on the circumference. The angle ACB subtended by the semicircle is 90°.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Angle in a semicircle is a right angle",
+          "description": "AB is a diameter of the circle with centre O, and C is a point on the circumference. The angle ACB is 90°.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "id": "A",
+              "x": 70,
+              "y": 250,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 430,
+              "y": 250,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "C",
+              "x": 250,
+              "y": 70,
+              "labelOffset": {
+                "dx": 0,
+                "dy": -18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "color": "#475569",
+              "width": 1.5,
+              "dashed": true
+            },
+            {
+              "from": "A",
+              "to": "C"
+            },
+            {
+              "from": "B",
+              "to": "C"
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "C",
+              "from": "A",
+              "to": "B",
+              "color": "#16A34A",
+              "size": 16
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "C",
+              "from": "A",
+              "to": "B",
+              "label": "90°",
+              "radius": 40,
+              "color": "#16A34A"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ec-q7",
@@ -167,7 +492,121 @@
       ],
       "answer": "x = 38, ∠P = 86°, ∠R = 94°.",
       "verified": true,
-      "notes": "**Exam Tip:** Check your answer — 86° + 94° = 180°. ✓"
+      "notes": "**Exam Tip:** Check your answer — 86° + 94° = 180°. ✓",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.21: A chord AB of length 6 cm at a distance 3 cm from the centre O. Triangle AOB is an isosceles right triangle with OA = OB = 3√2 cm.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Chord at distance 3 cm from the centre",
+          "description": "A circle with centre O and a chord AB of 6 cm at distance 3 cm from O. Triangle AOB is an isosceles right triangle.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 130,
+              "y": 130,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 370,
+              "y": 130,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 130,
+              "color": "#16A34A",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "O",
+              "to": "A",
+              "label": "3√2 cm",
+              "labelOffset": {
+                "dx": -10,
+                "dy": -6
+              }
+            },
+            {
+              "from": "O",
+              "to": "B",
+              "label": "3√2 cm",
+              "labelOffset": {
+                "dx": 10,
+                "dy": -6
+              }
+            },
+            {
+              "from": "A",
+              "to": "B",
+              "label": "6 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "O",
+              "to": "M",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 169.7,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M",
+              "from": "O",
+              "to": "A",
+              "color": "#16A34A"
+            }
+          ],
+          "labels": [
+            {
+              "x": 250,
+              "y": 190,
+              "text": "3 cm",
+              "color": "#16A34A",
+              "size": 12,
+              "anchor": "middle"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ec-q9",
@@ -211,7 +650,103 @@
         "title": "Brahmagupta's Formula",
         "content": "$$\\text{Area} = \\sqrt{(s-a)(s-b)(s-c)(s-d)}$$"
       },
-      "notes": "**Exam Tip:** Brahmagupta's formula works for any cyclic quadrilateral — it generalises Heron's formula."
+      "notes": "**Exam Tip:** Brahmagupta's formula works for any cyclic quadrilateral — it generalises Heron's formula.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.22: Equal chords AB and AC of a circle with centre O. The centre O lies on the angle bisector of ∠BAC.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Equal chords and the angle bisector",
+          "description": "A circle with centre O and equal chords AB and AC. The centre O lies on the angle bisector of angle BAC.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 14,
+                "dy": -6
+              }
+            },
+            {
+              "id": "A",
+              "x": 250,
+              "y": 70,
+              "labelOffset": {
+                "dx": 0,
+                "dy": -18
+              }
+            },
+            {
+              "id": "B",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "C",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "AB",
+              "labelOffset": {
+                "dx": 10,
+                "dy": -4
+              }
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "label": "AC",
+              "labelOffset": {
+                "dx": -10,
+                "dy": -4
+              }
+            },
+            {
+              "from": "A",
+              "to": "O",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "A",
+              "from": "B",
+              "to": "C",
+              "label": "∠BAO = ∠CAO",
+              "radius": 46,
+              "color": "#16A34A"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ec-q11",

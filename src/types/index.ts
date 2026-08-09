@@ -120,9 +120,15 @@ export interface QuestionSolution {
   verified: boolean; // Whether the solution has been verified by subject experts
   formulaBox?: FormulaBox;
   diagram?: {
-    type: "svg" | "canvas" | "image";
+    type: "svg" | "canvas" | "image" | "geometry";
     content: string;
     caption?: string;
+    /** Structured, data-driven figure data (when type === "geometry") */
+    geometry?: import("@/lib/geometry/types").GeometryDiagramData;
+    /** Progressive construction stages (optional) */
+    stages?: import("@/lib/geometry/types").GeometryStage[];
+    /** Solution step number where this figure belongs (optional) */
+    stepIndex?: number;
   };
   notes?: string;
   tableData?: {

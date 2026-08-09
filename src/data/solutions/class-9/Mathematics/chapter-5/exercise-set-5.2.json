@@ -21,7 +21,86 @@
       ],
       "answer": "CA = CB (both are radii), so the triangle is isosceles.",
       "verified": true,
-      "notes": "**Exam Tip:** Any triangle formed by joining the centre to the two ends of a chord is isosceles, because two of its sides are radii."
+      "notes": "**Exam Tip:** Any triangle formed by joining the centre to the two ends of a chord is isosceles, because two of its sides are radii.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.14: In triangle CAB of a circle with centre C, CA and CB are radii, so the triangle is isosceles with base AB.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Chord and centre form an isosceles triangle",
+          "description": "A circle with centre C and chord AB. CA and CB are radii, so triangle CAB is isosceles.",
+          "points": [
+            {
+              "id": "C",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "C",
+              "to": "A",
+              "label": "r",
+              "labelOffset": {
+                "dx": -10,
+                "dy": -6
+              }
+            },
+            {
+              "from": "C",
+              "to": "B",
+              "label": "r",
+              "labelOffset": {
+                "dx": 10,
+                "dy": -6
+              }
+            },
+            {
+              "from": "A",
+              "to": "B",
+              "label": "chord",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            }
+          ],
+          "circles": [
+            {
+              "center": "C",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ex5.2-q2",
@@ -47,7 +126,101 @@
       ],
       "answer": "By SSS congruence: CA = CD, CB = CE, AB = DE, so the triangles are congruent.",
       "verified": true,
-      "notes": "**Exam Tip:** This result is exactly Theorem 2 — equal chords subtend equal angles at the centre."
+      "notes": "**Exam Tip:** This result is exactly Theorem 2 — equal chords subtend equal angles at the centre.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.15: Two equal chords AB and DE of a circle with centre C. Triangles CAB and CDE are congruent by SSS (CA = CD, CB = CE, AB = DE).",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Equal chords subtend equal angles at the centre",
+          "description": "A circle with centre C and two equal chords AB and DE. Triangles CAB and CDE are congruent by SSS.",
+          "points": [
+            {
+              "id": "C",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "D",
+              "x": 94.1,
+              "y": 160,
+              "labelOffset": {
+                "dx": -18,
+                "dy": -18
+              }
+            },
+            {
+              "id": "E",
+              "x": 405.9,
+              "y": 160,
+              "labelOffset": {
+                "dx": 18,
+                "dy": -18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "C",
+              "to": "A"
+            },
+            {
+              "from": "C",
+              "to": "B"
+            },
+            {
+              "from": "A",
+              "to": "B"
+            },
+            {
+              "from": "C",
+              "to": "D"
+            },
+            {
+              "from": "C",
+              "to": "E"
+            },
+            {
+              "from": "D",
+              "to": "E"
+            }
+          ],
+          "circles": [
+            {
+              "center": "C",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ]
+        }
+      }
     }
   ]
 }

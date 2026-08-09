@@ -26,6 +26,7 @@ import {
 } from "@/types";
 import { toUnicodeSubscripts } from "@/lib/subscripts";
 import { latexToPlainText } from "@/lib/latex";
+import GeometryDiagram from "./GeometryDiagram";
 
 interface SolutionViewerProps {
   classId: number;
@@ -388,8 +389,20 @@ function DiagramView({ diagram }: { diagram: NonNullable<QuestionSolution["diagr
     if (e.key === "Escape") setZoomed(false);
   }, []);
 
+  // Data-driven geometry figures render through the reusable figure engine,
+  // which handles progressive construction stages and its own zoom overlay.
+  if (diagram.type === "geometry") {
+    return (
+      <GeometryDiagram
+        data={diagram.geometry!}
+        stages={diagram.stages}
+        caption={diagram.caption}
+      />
+    );
+  }
+
   const content = diagram.type === "svg" ? (
-    <div className="sv-diagram-svg" dangerouslySetInnerHTML={{ __html: diagram.content }} />
+    <div className="sv-diagram-svg" dangerouslySetInnerHTML={{ __html: diagram.content || "" }} />
   ) : (
     <img
       src={diagram.content}
@@ -676,6 +689,11 @@ export default function SolutionViewer({
                   className="sv-step-content sv-step-pw"
                   dangerouslySetInnerHTML={{ __html: renderPointwiseContent(step.content) }}
                 />
+                {question.diagram && question.diagram.stepIndex === step.step && (
+                  <div className="sv-step-diagram">
+                    <DiagramView diagram={question.diagram} />
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -683,9 +701,9 @@ export default function SolutionViewer({
       </section>
 
       {/* ════════════════════════════════════════════════════════════ */}
-      {/* DIAGRAM */}
+      {/* DIAGRAM (bottom placement for diagrams without a step index) */}
       {/* ════════════════════════════════════════════════════════════ */}
-      {question.diagram && (
+      {question.diagram && question.diagram.stepIndex === undefined && (
         <section className="sv-section sv-fade-in" aria-label="Diagram">
           <InfoBox icon={<Ruler size={16} />} label="Diagram" variant="teal">
             <DiagramView diagram={question.diagram} />

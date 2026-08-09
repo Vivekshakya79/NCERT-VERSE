@@ -29,7 +29,104 @@
         "title": "Theorem 5",
         "content": "The perpendicular from the centre of a circle to a chord bisects the chord."
       },
-      "notes": "**Exam Tip:** This is Theorem 5. The perpendicular from the centre to a chord bisects the chord, and the line from the centre to the midpoint of a chord is perpendicular to it."
+      "notes": "**Exam Tip:** This is Theorem 5. The perpendicular from the centre to a chord bisects the chord, and the line from the centre to the midpoint of a chord is perpendicular to it.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.12: The perpendicular CM from the centre C to chord AB meets AB at M. By RHS congruence, ΔCMA ≅ ΔCMB, so AM = BM — the perpendicular bisects the chord.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Perpendicular from the centre bisects the chord",
+          "description": "A circle with centre C and chord AB. The perpendicular CM from C to AB meets AB at M. Triangles CMA and CMB are congruent by RHS, so AM = BM.",
+          "points": [
+            {
+              "id": "C",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 340,
+              "color": "#16A34A",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 18
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "C",
+              "to": "A"
+            },
+            {
+              "from": "C",
+              "to": "B"
+            },
+            {
+              "from": "A",
+              "to": "B"
+            },
+            {
+              "from": "C",
+              "to": "M",
+              "color": "#16A34A",
+              "width": 2
+            }
+          ],
+          "circles": [
+            {
+              "center": "C",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M",
+              "from": "C",
+              "to": "A",
+              "color": "#16A34A"
+            }
+          ],
+          "midpointMarkers": [
+            {
+              "segment": [
+                "A",
+                "B"
+              ],
+              "color": "#16A34A"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ex5.3-q2",
@@ -55,7 +152,112 @@
       ],
       "answer": "O lies on the angle bisector of ∠BAC, which is also the altitude in an isosceles triangle, so the altitude passes through the centre.",
       "verified": true,
-      "notes": "**Exam Tip:** In an isosceles triangle, the angle bisector, median and altitude from the apex all coincide."
+      "notes": "**Exam Tip:** In an isosceles triangle, the angle bisector, median and altitude from the apex all coincide.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.16: Isosceles triangle ABC (AB = AC) inscribed in a circle with centre O. The altitude from A to BC passes through O.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Isosceles triangle inscribed in a circle",
+          "description": "Isosceles triangle ABC with AB = AC inscribed in a circle with centre O. The altitude from A to BC passes through O.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 14,
+                "dy": -6
+              }
+            },
+            {
+              "id": "A",
+              "x": 250,
+              "y": 70,
+              "labelOffset": {
+                "dx": 0,
+                "dy": -18
+              }
+            },
+            {
+              "id": "B",
+              "x": 94.1,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "C",
+              "x": 405.9,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 340,
+              "showLabel": false,
+              "size": 0
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "AB",
+              "labelOffset": {
+                "dx": -10,
+                "dy": -4
+              }
+            },
+            {
+              "from": "A",
+              "to": "C",
+              "label": "AC",
+              "labelOffset": {
+                "dx": 10,
+                "dy": -4
+              }
+            },
+            {
+              "from": "B",
+              "to": "C"
+            },
+            {
+              "from": "A",
+              "to": "M",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 180,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M",
+              "from": "A",
+              "to": "B",
+              "color": "#16A34A"
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ex5.3-q3",
@@ -81,7 +283,157 @@
         "title": "Distance of a Chord from the Centre",
         "content": "$$d = \\sqrt{r^2 - \\left(\\frac{\\text{chord}}{2}\\right)^2}$$"
       },
-      "notes": "**Exam Tip:** For chords on opposite sides of the centre, add the distances; for chords on the same side, subtract them."
+      "notes": "**Exam Tip:** For chords on opposite sides of the centre, add the distances; for chords on the same side, subtract them.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.17: Two parallel chords AB (6 cm) and CD (8 cm) on opposite sides of the centre O of a circle of radius 5 cm. The distance between their midpoints is 4 + 3 = 7 cm.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Two parallel chords on opposite sides of the centre",
+          "description": "A circle of radius 5 cm with two parallel chords AB (6 cm) and CD (8 cm) on opposite sides of the centre O. Their distances from the centre are 4 cm and 3 cm.",
+          "points": [
+            {
+              "id": "O",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            },
+            {
+              "id": "A",
+              "x": 160,
+              "y": 130,
+              "labelOffset": {
+                "dx": -18,
+                "dy": -18
+              }
+            },
+            {
+              "id": "B",
+              "x": 340,
+              "y": 130,
+              "labelOffset": {
+                "dx": 18,
+                "dy": -18
+              }
+            },
+            {
+              "id": "C",
+              "x": 130,
+              "y": 340,
+              "labelOffset": {
+                "dx": -18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "D",
+              "x": 370,
+              "y": 340,
+              "labelOffset": {
+                "dx": 18,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M1",
+              "x": 250,
+              "y": 130,
+              "color": "#16A34A",
+              "showLabel": false,
+              "size": 3
+            },
+            {
+              "id": "M2",
+              "x": 250,
+              "y": 340,
+              "color": "#16A34A",
+              "showLabel": false,
+              "size": 3
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "6 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -10
+              }
+            },
+            {
+              "from": "C",
+              "to": "D",
+              "label": "8 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "O",
+              "to": "M1",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            },
+            {
+              "from": "O",
+              "to": "M2",
+              "color": "#16A34A",
+              "width": 2,
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 150,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "rightAngles": [
+            {
+              "vertex": "M1",
+              "from": "O",
+              "to": "A",
+              "color": "#16A34A"
+            },
+            {
+              "vertex": "M2",
+              "from": "O",
+              "to": "C",
+              "color": "#16A34A"
+            }
+          ],
+          "labels": [
+            {
+              "x": 250,
+              "y": 215,
+              "text": "4 cm",
+              "color": "#16A34A",
+              "size": 12,
+              "anchor": "middle"
+            },
+            {
+              "x": 250,
+              "y": 295,
+              "text": "3 cm",
+              "color": "#16A34A",
+              "size": 12,
+              "anchor": "middle"
+            }
+          ]
+        }
+      }
     }
   ]
 }

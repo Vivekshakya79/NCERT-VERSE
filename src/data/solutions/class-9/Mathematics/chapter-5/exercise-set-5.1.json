@@ -25,7 +25,791 @@
       ],
       "answer": "The circumcentre lies inside the triangle (all angles are acute).",
       "verified": true,
-      "notes": "**Exam Tip:** For an acute-angled triangle the circumcentre is inside; for an obtuse-angled triangle it is outside; for a right-angled triangle it lies at the midpoint of the hypotenuse."
+      "notes": "**Exam Tip:** For an acute-angled triangle the circumcentre is inside; for an obtuse-angled triangle it is outside; for a right-angled triangle it lies at the midpoint of the hypotenuse.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 2,
+        "caption": "Fig. 5.10: Triangle ABC (∠A = 70°, ∠B = 60°, ∠C = 50°) with the perpendicular bisectors of AB and BC meeting at the circumcentre O, and the circumcircle through A, B and C. Since all angles are acute, O lies inside the triangle.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Triangle ABC with its circumcircle",
+          "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+          "points": [
+            {
+              "id": "A",
+              "x": 100,
+              "y": 100,
+              "labelOffset": {
+                "dx": -15.87637185362599,
+                "dy": -12.163092401416362
+              }
+            },
+            {
+              "id": "B",
+              "x": 400,
+              "y": 100,
+              "labelOffset": {
+                "dx": 16.70392384280531,
+                "dy": -10.999042151649402
+              }
+            },
+            {
+              "id": "C",
+              "x": 215.99776046414843,
+              "y": 418.70122758255377,
+              "labelOffset": {
+                "dx": -2.1217587835151974,
+                "dy": 19.88713502907284
+              }
+            },
+            {
+              "id": "O",
+              "x": 250,
+              "y": 225.86494467659196,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 14,
+                "dy": -6
+              }
+            },
+            {
+              "id": "H0",
+              "x": 250,
+              "y": 360,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H1",
+              "x": 250,
+              "y": -160,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H2",
+              "x": 82.83227524812014,
+              "y": 129.3506137912769,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H3",
+              "x": 533.1654852160283,
+              "y": 389.3506137912768,
+              "showLabel": false,
+              "size": 0
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "AB: 5 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "B",
+              "to": "C"
+            },
+            {
+              "from": "C",
+              "to": "A"
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "A",
+              "from": "B",
+              "to": "C",
+              "label": "70°",
+              "radius": 40,
+              "color": "#2563EB"
+            },
+            {
+              "vertex": "B",
+              "from": "A",
+              "to": "C",
+              "label": "60°",
+              "radius": 40,
+              "color": "#16A34A"
+            },
+            {
+              "vertex": "C",
+              "from": "A",
+              "to": "B",
+              "label": "50°",
+              "radius": 40,
+              "color": "#F59E0B"
+            }
+          ],
+          "constructionLines": [
+            {
+              "from": "H0",
+              "to": "H1",
+              "color": "#8B5CF6",
+              "dashed": true
+            },
+            {
+              "from": "H2",
+              "to": "H3",
+              "color": "#8B5CF6",
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 195.81109339984178,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ]
+        },
+        "stages": [
+          {
+            "label": "Step 1: Draw AB = 5 cm",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Step 1 — Draw AB",
+              "description": "Draw AB of length 5 cm.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -20,
+                    "dy": 18
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 20,
+                    "dy": 18
+                  }
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "Step 2: Construct triangle ABC",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Triangle ABC with its circumcircle",
+              "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -15.87637185362599,
+                    "dy": -12.163092401416362
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 16.70392384280531,
+                    "dy": -10.999042151649402
+                  }
+                },
+                {
+                  "id": "C",
+                  "x": 215.99776046414843,
+                  "y": 418.70122758255377,
+                  "labelOffset": {
+                    "dx": -2.1217587835151974,
+                    "dy": 19.88713502907284
+                  }
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "vertex": "A",
+                  "from": "B",
+                  "to": "C",
+                  "label": "70°",
+                  "radius": 40,
+                  "color": "#2563EB"
+                },
+                {
+                  "vertex": "B",
+                  "from": "A",
+                  "to": "C",
+                  "label": "60°",
+                  "radius": 40,
+                  "color": "#16A34A"
+                },
+                {
+                  "vertex": "C",
+                  "from": "A",
+                  "to": "B",
+                  "label": "50°",
+                  "radius": 40,
+                  "color": "#F59E0B"
+                }
+              ],
+              "constructionLines": [],
+              "circles": []
+            }
+          },
+          {
+            "label": "Step 3: Perpendicular bisector of AB",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Triangle ABC with its circumcircle",
+              "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -15.87637185362599,
+                    "dy": -12.163092401416362
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 16.70392384280531,
+                    "dy": -10.999042151649402
+                  }
+                },
+                {
+                  "id": "C",
+                  "x": 215.99776046414843,
+                  "y": 418.70122758255377,
+                  "labelOffset": {
+                    "dx": -2.1217587835151974,
+                    "dy": 19.88713502907284
+                  }
+                },
+                {
+                  "id": "H0",
+                  "x": 250,
+                  "y": 360,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H1",
+                  "x": 250,
+                  "y": -160,
+                  "showLabel": false,
+                  "size": 0
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "vertex": "A",
+                  "from": "B",
+                  "to": "C",
+                  "label": "70°",
+                  "radius": 40,
+                  "color": "#2563EB"
+                },
+                {
+                  "vertex": "B",
+                  "from": "A",
+                  "to": "C",
+                  "label": "60°",
+                  "radius": 40,
+                  "color": "#16A34A"
+                },
+                {
+                  "vertex": "C",
+                  "from": "A",
+                  "to": "B",
+                  "label": "50°",
+                  "radius": 40,
+                  "color": "#F59E0B"
+                }
+              ],
+              "constructionLines": [
+                {
+                  "from": "H0",
+                  "to": "H1",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                }
+              ],
+              "circles": []
+            }
+          },
+          {
+            "label": "Step 4: Perpendicular bisector of BC",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Triangle ABC with its circumcircle",
+              "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -15.87637185362599,
+                    "dy": -12.163092401416362
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 16.70392384280531,
+                    "dy": -10.999042151649402
+                  }
+                },
+                {
+                  "id": "C",
+                  "x": 215.99776046414843,
+                  "y": 418.70122758255377,
+                  "labelOffset": {
+                    "dx": -2.1217587835151974,
+                    "dy": 19.88713502907284
+                  }
+                },
+                {
+                  "id": "H0",
+                  "x": 250,
+                  "y": 360,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H1",
+                  "x": 250,
+                  "y": -160,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H2",
+                  "x": 82.83227524812014,
+                  "y": 129.3506137912769,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H3",
+                  "x": 533.1654852160283,
+                  "y": 389.3506137912768,
+                  "showLabel": false,
+                  "size": 0
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "vertex": "A",
+                  "from": "B",
+                  "to": "C",
+                  "label": "70°",
+                  "radius": 40,
+                  "color": "#2563EB"
+                },
+                {
+                  "vertex": "B",
+                  "from": "A",
+                  "to": "C",
+                  "label": "60°",
+                  "radius": 40,
+                  "color": "#16A34A"
+                },
+                {
+                  "vertex": "C",
+                  "from": "A",
+                  "to": "B",
+                  "label": "50°",
+                  "radius": 40,
+                  "color": "#F59E0B"
+                }
+              ],
+              "constructionLines": [
+                {
+                  "from": "H0",
+                  "to": "H1",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                },
+                {
+                  "from": "H2",
+                  "to": "H3",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                }
+              ],
+              "circles": []
+            }
+          },
+          {
+            "label": "Step 5: Mark the circumcentre O",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Triangle ABC with its circumcircle",
+              "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -15.87637185362599,
+                    "dy": -12.163092401416362
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 16.70392384280531,
+                    "dy": -10.999042151649402
+                  }
+                },
+                {
+                  "id": "C",
+                  "x": 215.99776046414843,
+                  "y": 418.70122758255377,
+                  "labelOffset": {
+                    "dx": -2.1217587835151974,
+                    "dy": 19.88713502907284
+                  }
+                },
+                {
+                  "id": "O",
+                  "x": 250,
+                  "y": 225.86494467659196,
+                  "color": "#DC2626",
+                  "labelOffset": {
+                    "dx": 14,
+                    "dy": -6
+                  }
+                },
+                {
+                  "id": "H0",
+                  "x": 250,
+                  "y": 360,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H1",
+                  "x": 250,
+                  "y": -160,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H2",
+                  "x": 82.83227524812014,
+                  "y": 129.3506137912769,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H3",
+                  "x": 533.1654852160283,
+                  "y": 389.3506137912768,
+                  "showLabel": false,
+                  "size": 0
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "vertex": "A",
+                  "from": "B",
+                  "to": "C",
+                  "label": "70°",
+                  "radius": 40,
+                  "color": "#2563EB"
+                },
+                {
+                  "vertex": "B",
+                  "from": "A",
+                  "to": "C",
+                  "label": "60°",
+                  "radius": 40,
+                  "color": "#16A34A"
+                },
+                {
+                  "vertex": "C",
+                  "from": "A",
+                  "to": "B",
+                  "label": "50°",
+                  "radius": 40,
+                  "color": "#F59E0B"
+                }
+              ],
+              "constructionLines": [
+                {
+                  "from": "H0",
+                  "to": "H1",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                },
+                {
+                  "from": "H2",
+                  "to": "H3",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                }
+              ],
+              "circles": []
+            }
+          },
+          {
+            "label": "Step 6: Draw the circumcircle",
+            "data": {
+              "width": 500,
+              "height": 500,
+              "title": "Triangle ABC with its circumcircle",
+              "description": "Triangle ABC with the perpendicular bisectors of two sides meeting at the circumcentre O, and the circumcircle passing through A, B and C.",
+              "points": [
+                {
+                  "id": "A",
+                  "x": 100,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": -15.87637185362599,
+                    "dy": -12.163092401416362
+                  }
+                },
+                {
+                  "id": "B",
+                  "x": 400,
+                  "y": 100,
+                  "labelOffset": {
+                    "dx": 16.70392384280531,
+                    "dy": -10.999042151649402
+                  }
+                },
+                {
+                  "id": "C",
+                  "x": 215.99776046414843,
+                  "y": 418.70122758255377,
+                  "labelOffset": {
+                    "dx": -2.1217587835151974,
+                    "dy": 19.88713502907284
+                  }
+                },
+                {
+                  "id": "O",
+                  "x": 250,
+                  "y": 225.86494467659196,
+                  "color": "#DC2626",
+                  "labelOffset": {
+                    "dx": 14,
+                    "dy": -6
+                  }
+                },
+                {
+                  "id": "H0",
+                  "x": 250,
+                  "y": 360,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H1",
+                  "x": 250,
+                  "y": -160,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H2",
+                  "x": 82.83227524812014,
+                  "y": 129.3506137912769,
+                  "showLabel": false,
+                  "size": 0
+                },
+                {
+                  "id": "H3",
+                  "x": 533.1654852160283,
+                  "y": 389.3506137912768,
+                  "showLabel": false,
+                  "size": 0
+                }
+              ],
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B",
+                  "label": "AB: 5 cm",
+                  "labelOffset": {
+                    "dx": 0,
+                    "dy": 16
+                  }
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "vertex": "A",
+                  "from": "B",
+                  "to": "C",
+                  "label": "70°",
+                  "radius": 40,
+                  "color": "#2563EB"
+                },
+                {
+                  "vertex": "B",
+                  "from": "A",
+                  "to": "C",
+                  "label": "60°",
+                  "radius": 40,
+                  "color": "#16A34A"
+                },
+                {
+                  "vertex": "C",
+                  "from": "A",
+                  "to": "B",
+                  "label": "50°",
+                  "radius": 40,
+                  "color": "#F59E0B"
+                }
+              ],
+              "constructionLines": [
+                {
+                  "from": "H0",
+                  "to": "H1",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                },
+                {
+                  "from": "H2",
+                  "to": "H3",
+                  "color": "#8B5CF6",
+                  "dashed": true
+                }
+              ],
+              "circles": [
+                {
+                  "center": "O",
+                  "radius": 195.81109339984178,
+                  "color": "#2563EB",
+                  "width": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "id": "9-math-4-ex5.1-q2",
@@ -47,7 +831,138 @@
       ],
       "answer": "The circumcentre lies outside the triangle (the triangle is obtuse-angled at A).",
       "verified": true,
-      "notes": "**Exam Tip:** The circumcentre of an obtuse-angled triangle always lies outside the triangle, on the side of the obtuse angle."
+      "notes": "**Exam Tip:** The circumcentre of an obtuse-angled triangle always lies outside the triangle, on the side of the obtuse angle.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.11: Triangle ABC with ∠A = 100° (obtuse). The perpendicular bisectors of AB and AC meet at O, the circumcentre, which lies OUTSIDE the triangle. The circumcircle passes through A, B and C.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Obtuse triangle ABC with its circumcircle",
+          "description": "Triangle ABC with ∠A = 100°. The perpendicular bisectors of AB and AC meet at the circumcentre O outside the triangle, and the circumcircle passes through A, B and C.",
+          "points": [
+            {
+              "id": "A",
+              "x": 100,
+              "y": 100,
+              "labelOffset": {
+                "dx": -14.755696256839892,
+                "dy": -13.500719535487036
+              }
+            },
+            {
+              "id": "B",
+              "x": 400,
+              "y": 100,
+              "labelOffset": {
+                "dx": 18.767364422027402,
+                "dy": -6.912744219976608
+              }
+            },
+            {
+              "id": "C",
+              "x": 58.324437359936724,
+              "y": 336.35386072292994,
+              "labelOffset": {
+                "dx": -12.59751809473716,
+                "dy": 15.53391572826278
+              }
+            },
+            {
+              "id": "O",
+              "x": 250.00000000000003,
+              "y": 248.30024053255917,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 14,
+                "dy": -6
+              }
+            },
+            {
+              "id": "H0",
+              "x": 250,
+              "y": 360,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H1",
+              "x": 250,
+              "y": -160,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H2",
+              "x": -176.8877971032058,
+              "y": 173.02840416806308,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H3",
+              "x": 335.2122344631425,
+              "y": 263.32545655486683,
+              "showLabel": false,
+              "size": 0
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "AB: 5 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "B",
+              "to": "C"
+            },
+            {
+              "from": "C",
+              "to": "A",
+              "label": "AC: 4 cm"
+            }
+          ],
+          "angles": [
+            {
+              "vertex": "A",
+              "from": "B",
+              "to": "C",
+              "label": "100°",
+              "radius": 46,
+              "color": "#DC2626"
+            }
+          ],
+          "constructionLines": [
+            {
+              "from": "H0",
+              "to": "H1",
+              "color": "#8B5CF6",
+              "dashed": true
+            },
+            {
+              "from": "H2",
+              "to": "H3",
+              "color": "#8B5CF6",
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 210.93354721811065,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ex5.1-q3",
@@ -77,7 +992,129 @@
         "title": "Circumradius of a Triangle",
         "content": "$$R = \\frac{abc}{4\\Delta}$$"
       },
-      "notes": "**Exam Tip:** The circumcentre is equidistant from all three vertices, so OA = OB = OC always."
+      "notes": "**Exam Tip:** The circumcentre is equidistant from all three vertices, so OA = OB = OC always.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.12: Isosceles triangle ABC with AB = 6 cm, BC = CA = 7 cm. The perpendicular bisectors of AB and BC meet at the circumcentre O. OA = OB = OC ≈ 3.87 cm.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Isosceles triangle ABC with its circumcircle",
+          "description": "Triangle ABC (AB = 6 cm, BC = CA = 7 cm) with perpendicular bisectors meeting at the circumcentre O and the circumcircle through A, B and C.",
+          "points": [
+            {
+              "id": "A",
+              "x": 100,
+              "y": 100,
+              "labelOffset": {
+                "dx": -16.363636363636363,
+                "dy": -11.49919149152138
+              }
+            },
+            {
+              "id": "B",
+              "x": 400,
+              "y": 100,
+              "labelOffset": {
+                "dx": 16.363636363636363,
+                "dy": -11.49919149152138
+              }
+            },
+            {
+              "id": "C",
+              "x": 250,
+              "y": 416.22776601683796,
+              "labelOffset": {
+                "dx": 0,
+                "dy": 20
+              }
+            },
+            {
+              "id": "O",
+              "x": 250,
+              "y": 222.53825933152473,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 14,
+                "dy": -6
+              }
+            },
+            {
+              "id": "H0",
+              "x": 250,
+              "y": 340,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H1",
+              "x": 250,
+              "y": -140,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H2",
+              "x": 108.1581033027397,
+              "y": 155.25674015127612,
+              "showLabel": false,
+              "size": 0
+            },
+            {
+              "id": "H3",
+              "x": 541.8418966972603,
+              "y": 360.9710258655618,
+              "showLabel": false,
+              "size": 0
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "6 cm",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            },
+            {
+              "from": "B",
+              "to": "C",
+              "label": "7 cm"
+            },
+            {
+              "from": "C",
+              "to": "A",
+              "label": "7 cm"
+            }
+          ],
+          "constructionLines": [
+            {
+              "from": "H0",
+              "to": "H1",
+              "color": "#8B5CF6",
+              "dashed": true
+            },
+            {
+              "from": "H2",
+              "to": "H3",
+              "color": "#8B5CF6",
+              "dashed": true
+            }
+          ],
+          "circles": [
+            {
+              "center": "O",
+              "radius": 193.68950668531326,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ]
+        }
+      }
     },
     {
       "id": "9-math-4-ex5.1-q4",
@@ -99,7 +1136,78 @@
       ],
       "answer": "The least possible radius is AB/2 (the circle with AB as diameter).",
       "verified": true,
-      "notes": "**Exam Tip:** The smallest circle through two points has the segment joining them as its diameter."
+      "notes": "**Exam Tip:** The smallest circle through two points has the segment joining them as its diameter.",
+      "diagram": {
+        "type": "geometry",
+        "content": "",
+        "stepIndex": 1,
+        "caption": "Fig. 5.13: The smallest circle through two points A and B has AB as its diameter, with centre M at the midpoint of AB and radius AB/2.",
+        "geometry": {
+          "width": 500,
+          "height": 500,
+          "title": "Smallest circle through two points",
+          "description": "Points A and B with the smallest circle through them — AB as the diameter, centre M at the midpoint.",
+          "points": [
+            {
+              "id": "A",
+              "x": 150,
+              "y": 250,
+              "labelOffset": {
+                "dx": -20,
+                "dy": 18
+              }
+            },
+            {
+              "id": "B",
+              "x": 350,
+              "y": 250,
+              "labelOffset": {
+                "dx": 20,
+                "dy": 18
+              }
+            },
+            {
+              "id": "M",
+              "x": 250,
+              "y": 250,
+              "color": "#DC2626",
+              "labelOffset": {
+                "dx": 0,
+                "dy": -16
+              }
+            }
+          ],
+          "segments": [
+            {
+              "from": "A",
+              "to": "B",
+              "label": "AB",
+              "labelOffset": {
+                "dx": 0,
+                "dy": 16
+              }
+            }
+          ],
+          "circles": [
+            {
+              "center": "M",
+              "radius": 100,
+              "color": "#2563EB",
+              "width": 2
+            }
+          ],
+          "labels": [
+            {
+              "x": 250,
+              "y": 250,
+              "text": "radius = AB/2",
+              "color": "#475569",
+              "size": 12,
+              "anchor": "middle"
+            }
+          ]
+        }
+      }
     }
   ]
 }
