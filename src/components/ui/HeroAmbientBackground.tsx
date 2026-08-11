@@ -1,13 +1,11 @@
 /**
- * HeroAmbientBackground — home page hero background.
+ * HeroAmbientBackground — hero background glow.
  *
- * 6 organic glow regions arranged in a J.J. Thomson "plum pudding" layout:
- * one large center glow behind the heading, with smaller "electron" glows
- * scattered irregularly around it, plus 10 electron particle dots with
- * live floating movement.
+ * 6 organic radial-gradient glow regions arranged around the heading:
+ * one large center glow plus smaller glows scattered irregularly around it.
  *
- * Animated only transform: translate3d() / translate() — GPU accelerated, 60 FPS.
- * Pure CSS, no JavaScript, no canvas, no SVG filters, no backdrop-filter.
+ * Pure CSS, no JavaScript, no canvas, no backdrop-filter. Static (not
+ * animated) so the hero background costs zero per-frame work.
  */
 export function HeroAmbientBackground() {
   return (
@@ -18,18 +16,6 @@ export function HeroAmbientBackground() {
       <div className="hero-ambient-glow" />
       <div className="hero-ambient-glow" />
       <div className="hero-ambient-glow" />
-      <div className="hero-ambient-electrons">
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-        <div className="hero-ambient-electron" />
-      </div>
     </div>
   );
 }

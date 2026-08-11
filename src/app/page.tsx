@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { AlertTriangle, BookOpen, Book, HelpCircle, Sparkles, GraduationCap, PenTool, CheckCircle, Bot, BarChart, Smartphone } from "lucide-react";
+import { AlertTriangle, BookOpen, Book, HelpCircle, Sparkles, PenTool, CheckCircle, Bot, BarChart, Smartphone } from "lucide-react";
 import SearchBar from "@/components/ui/SearchBar";
 import ClassCard from "@/components/cards/ClassCard";
 import FaqAccordion from "@/components/ui/FaqAccordion";
@@ -25,8 +25,11 @@ function StatCard({ target, label }: { target: number; label: string }) {
 
 function SectionErrorBoundary({ children, label }: { children: React.ReactNode; label: string }) {
   const [hasError, setHasError] = useState(false);
-  const hasErrorRef = useRef(hasError);
-  hasErrorRef.current = hasError;
+  const hasErrorRef = useRef(false);
+
+  useEffect(() => {
+    hasErrorRef.current = hasError;
+  }, [hasError]);
 
   useEffect(() => {
     const handler = () => {
@@ -53,13 +56,6 @@ function SectionErrorBoundary({ children, label }: { children: React.ReactNode; 
 export default function HomePage() {
   return (
     <>
-      {/* Global Floating Particles */}
-      <div className="bg-particles" aria-hidden="true">
-        {Array.from({ length: 20 }).map((_, i) => (
-          <div key={i} className="bg-particle" />
-        ))}
-      </div>
-
       {/* Hero Section */}
       <section className="hero" aria-label="Hero banner">
         <HeroAmbientBackground />
@@ -71,12 +67,14 @@ export default function HomePage() {
             Trusted by 50,000+ CBSE Students
           </div>
           <h1 className="hero-seq">
-            Learn Smarter,<br />
-            <span className="highlight">Score Higher</span>
+            Learn Smarter.
+            <br />
+            <span className="highlight">Score Higher.</span>
           </h1>
           <p className="hero-seq hero-sub">
-            Premium study materials for CBSE Classes 6 to 12. NCERT solutions,
-            chapter notes, MCQs, and AI-powered tools.
+            <span className="hero-sub-accent">Free</span> NCERT solutions and
+            study resources for Classes 6–12, aligned with the latest CBSE
+            syllabus and designed to make learning easier.
           </p>
           <div className="hero-seq hero-cta">
             <Link href="/classes" className="btn btn-p">
