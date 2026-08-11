@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { SYSTEM_PROMPT } from "@/lib/ai";
+import { buildSystemPrompt } from "@/lib/ai";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -14,7 +14,12 @@ interface IncomingMessage {
 
 interface RequestBody {
   messages: IncomingMessage[];
+  context?: { class?: string; subject?: string };
 }
+
+const MAX_MESSAGES = 20;
+const MAX_MESSAGE_LENGTH = 4000;
+const MAX_IMAGE_BYTES = 6 * 1024 * 1024;
 
 /**
  * POST /api/ai/chat
@@ -43,11 +48,37 @@ export async function POST(request: Request) {
   if (messages.length === 0) {
     return NextResponse.json({ error: "No messages provided." }, { status: 400 });
   }
+  if (messages.length > MAX_MESSAGES) {
+    return NextResponse.json({ error: "Too many messages in this conversation." }, { status: 400 });
+  }
+  for (const m of messages) {
+    if (m.role !== "user" && m.role !== "assistant") {
+      return NextResponse.json({ error: "Invalid message role." }, { status: 400 });
+    }
+    if (typeof m.content !== "string" || m.content.length > MAX_MESSAGE_LENGTH) {
+      return NextResponse.json({ error: "Message is too long." }, { status: 400 });
+    }
+    if (m.image && m.image.length > MAX_IMAGE_BYTES) {
+      return NextResponse.json({ error: "Image is too large." }, { status: 400 });
+    }
+  }
+
+  const context =
+    body.context && typeof body.context === "object"
+      ? {
+          class:
+            typeof body.context.class === "string" ? body.context.class.slice(0, 40) : undefined,
+          subject:
+            typeof body.context.subject === "string"
+              ? body.context.subject.slice(0, 40)
+              : undefined,
+        }
+      : undefined;
 
   // Build the OpenAI-compatible payload. The last user message may carry an
   // image (data URL) for vision-capable models.
   const payloadMessages: Array<Record<string, unknown>> = [
-    { role: "system", content: SYSTEM_PROMPT },
+    { role: "system", content: buildSystemPrompt(context) },
   ];
 
   for (const msg of messages) {

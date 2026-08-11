@@ -5225,6 +5225,7 @@
 .ai-header-btn:hover { color: var(--pri); border-color: var(--pri); background: rgba(37,99,235,.05); transform: translateY(-1px); }
 .ai-header-title {
   flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -5232,6 +5233,39 @@
   font-weight: 700;
   font-size: 17px;
   color: var(--tx);
+}
+.ai-header-title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ai-class-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ai-class-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--bd);
+  background: #fff;
+  color: var(--tx-2);
+  font-family: var(--body);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 30px 7px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color var(--hover), color var(--hover), background var(--hover);
+}
+.ai-class-select select:hover { border-color: var(--pri); color: var(--pri); }
+.ai-class-select select:disabled { opacity: .5; cursor: not-allowed; }
+.ai-class-chevron {
+  position: absolute;
+  right: 9px;
+  pointer-events: none;
+  color: var(--tx-3);
 }
 .ai-header-logo {
   color: var(--pri);
@@ -5259,8 +5293,29 @@
   animation: slideDown 250ms var(--ease);
 }
 .ai-error svg { flex-shrink: 0; }
-.ai-error button {
+.ai-error-actions {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.ai-error-retry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--pri);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--body);
+  transition: background var(--hover), transform var(--hover);
+}
+.ai-error-retry:hover { background: var(--pri-h); transform: translateY(-1px); }
+.ai-error-retry:disabled { opacity: .5; cursor: not-allowed; }
+.ai-error-close {
   font-size: 20px;
   line-height: 1;
   color: #B91C1C;
@@ -5268,7 +5323,7 @@
   transition: opacity var(--hover);
   font-family: var(--body);
 }
-.ai-error button:hover { opacity: 1; }
+.ai-error-close:hover { opacity: 1; }
 
 /* ── Scroll area ─────────────────────────────────────────── */
 .ai-scroll {
@@ -5374,6 +5429,31 @@
 }
 .ai-action:hover { color: var(--pri); background: rgba(37,99,235,.06); }
 
+/* ── Quick action chips ──────────────────────────────────── */
+.ai-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 4px;
+}
+.ai-quick-action {
+  padding: 6px 12px;
+  border-radius: 50px;
+  border: 1px solid var(--bd);
+  background: #fff;
+  color: var(--tx-2);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--body);
+  transition: color var(--hover), border-color var(--hover), background var(--hover), transform var(--hover);
+}
+.ai-quick-action:hover {
+  color: var(--pri);
+  border-color: var(--pri);
+  background: rgba(37,99,235,.04);
+  transform: translateY(-1px);
+}
+
 /* ── Thinking indicator ──────────────────────────────────── */
 .ai-thinking {
   display: inline-flex;
@@ -5393,6 +5473,19 @@
 @keyframes aiBounce {
   0%, 60%, 100% { transform: translateY(0); opacity: .5; }
   30% { transform: translateY(-6px); opacity: 1; }
+}
+.ai-stream-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  border-radius: 2px;
+  background: var(--pri);
+  animation: aiBlink 1s steps(2, start) infinite;
+}
+@keyframes aiBlink {
+  to { visibility: hidden; }
 }
 
 /* ── Markdown ────────────────────────────────────────────── */
@@ -5656,6 +5749,13 @@
   color: var(--tx-3);
   margin: 10px 0 0;
 }
+.ai-char-count {
+  text-align: right;
+  font-size: 11px;
+  color: var(--tx-3);
+  margin-top: 6px;
+  font-family: var(--body);
+}
 .ai-input-error {
   background: rgba(239,68,68,.08);
   border: 1px solid rgba(239,68,68,.25);
@@ -5763,6 +5863,25 @@
 }
 [data-theme="dark"] .ai-md tr:nth-child(even) td { background: rgba(59,130,246,.04); }
 [data-theme="dark"] .ai-code { background: #0B1220; border-color: rgba(59,130,246,.16); }
+[data-theme="dark"] .ai-class-select select {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(59,130,246,.14);
+  color: var(--tx-2);
+}
+[data-theme="dark"] .ai-class-select select:hover {
+  color: var(--pri-l);
+  border-color: rgba(59,130,246,.35);
+}
+[data-theme="dark"] .ai-quick-action {
+  background: rgba(255,255,255,.05);
+  border-color: rgba(59,130,246,.14);
+  color: var(--tx-2);
+}
+[data-theme="dark"] .ai-quick-action:hover {
+  color: var(--pri-l);
+  border-color: rgba(59,130,246,.35);
+  background: rgba(59,130,246,.1);
+}
 
 /* ── AI Responsive ───────────────────────────────────────── */
 @media (max-width: 1024px) {
@@ -5803,6 +5922,8 @@
   .ai-input-btn { width: 36px; height: 36px; }
   .ai-bubble-user { max-width: 92%; }
   .ai-msg-avatar { width: 28px; height: 28px; }
+  .ai-class-select select { padding: 6px 26px 6px 10px; font-size: 12px; }
+  .ai-header-title { font-size: 15px; }
 }
 
 /* ── AI Tools card link (navigable FeatureCard) ──────────── */

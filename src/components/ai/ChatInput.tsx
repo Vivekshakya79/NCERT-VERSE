@@ -1,7 +1,16 @@
 "use client";
 
-import { memo, useRef, useState, useCallback, type KeyboardEvent, type ChangeEvent } from "react";
+import {
+  memo,
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  type KeyboardEvent,
+  type ChangeEvent,
+} from "react";
 import { Send, Square, ImagePlus, X, Loader2 } from "lucide-react";
+import { MAX_MESSAGE_LENGTH } from "@/lib/ai";
 
 const MAX_IMAGE_BYTES = 4 * 1024 * 1024; // 4 MB
 
@@ -10,14 +19,36 @@ interface ChatInputProps {
   onStop: () => void;
   isStreaming: boolean;
   disabled?: boolean;
+  initialText?: string;
 }
 
-function ChatInput({ onSend, onStop, isStreaming, disabled }: ChatInputProps) {
-  const [text, setText] = useState("");
+function ChatInput({
+  onSend,
+  onStop,
+  isStreaming,
+  disabled,
+  initialText = "",
+}: ChatInputProps) {
+  const [text, setText] = useState(initialText);
   const [image, setImage] = useState<string | null>(null);
   const [imageError, setImageError] = useState<string | null>(null);
   const [readingImage, setReadingImage] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  // On an edit remount, focus the textarea and expand it to fit the draft.
+  useEffect(() => {
+    if (initialText) {
+      const el = textareaRef.current;
+      if (el) {
+        el.focus();
+        el.style.height = "auto";
+        el.style.height = Math.min(el.scrollHeight, 160) + "px";
+      }
+    }
+    // Runs once on mount (the parent remounts this input via `key` for edits).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const canSend = !disabled && !isStreaming && (text.trim().length > 0 || !!image);
 
@@ -110,12 +141,14 @@ function ChatInput({ onSend, onStop, isStreaming, disabled }: ChatInputProps) {
           tabIndex={-1}
         />
         <textarea
+          ref={textareaRef}
           className="ai-textarea"
           value={text}
           onChange={handleInput}
           onKeyDown={handleKeyDown}
           placeholder="Ask your doubt… (Enter to send, Shift+Enter for a new line)"
           rows={1}
+          maxLength={MAX_MESSAGE_LENGTH}
           aria-label="Message"
           disabled={disabled}
         />
@@ -142,6 +175,11 @@ function ChatInput({ onSend, onStop, isStreaming, disabled }: ChatInputProps) {
           </button>
         )}
       </div>
+      {text.length > MAX_MESSAGE_LENGTH - 200 && (
+        <div className="ai-char-count" aria-live="polite">
+          {text.length.toLocaleString()} / {MAX_MESSAGE_LENGTH.toLocaleString()}
+        </div>
+      )}
       <p className="ai-input-hint">
         NCERT VERSE AI can make mistakes. Verify important answers.
       </p>
